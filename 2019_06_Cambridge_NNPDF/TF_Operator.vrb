@@ -1,0 +1,13 @@
+\frametitle{Gradient implementation}
+	1. Computing Gradient of the loss with respect all parameters of the network
+	\begin{equation}
+		\nabla \chi^{2} \longrightarrow \frac{\partial \chi^{2}}{\partial x_{i}}
+	\end{equation}
+	2. TF requires the gradient with respect any operation in the model
+	\begin{equation}
+		\frac{\partial \chi^{2}}{\partial x_{i}} =
+		\frac{\partial \chi^{2}}{\partial y_{N}}
+		\frac{\partial y_{N}}{\partial \textbf{Op}} \ldots
+		\frac{\partial f_{\mu \nu}^{2}}{\partial x_{i}}
+	\end{equation}
+	3. Known the structure of \textbf{Op}, compute manually the gradient and implement it in TF
