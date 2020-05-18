@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Higgs inclusive in gluon fusion}{}% 2
+\BOOKMARK [1][-]{section.3}{Asymptotics}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Small N}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Large N}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{N3LO discussion}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Gaussian Processes for inclusive observables}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Implement asymptotics}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Covariance functions}{section.4}% 9
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Constant kernel}{subsection.4.2}% 10
+\BOOKMARK [3][-]{subsubsection.4.2.2}{RBF}{subsection.4.2}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Matern}{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Rational Quadratic}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Exp-sin}{subsection.4.2}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Dot product}{subsection.4.2}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Hyperoptimization}{section.4}% 16
