@@ -98,6 +98,10 @@
 		\endminipage
 	\end{figure}
 
+	\vspace{1.0 cm}
+	
+	{\scriptsize \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
+
 \end{frame}
 
 % Introduction
@@ -125,13 +129,6 @@
 		\end{itemize}
 	\end{enumerate}
 	
-\end{frame}
-
-% Quantum Chromodynamics in a nutshell
-\begin{frame}
-	
-	\center{\color{blue} Quantum Chromodynamics in a nutshell}
-
 \end{frame}
 
 % The Standard model
@@ -267,13 +264,6 @@
 
 \end{frame}
 
-% Machine Learning
-\begin{frame}
-	
-	\center{\color{blue} Machine Learning}
-
-\end{frame}
-
 % Machine Learning introduction
 \begin{frame}
 
@@ -298,292 +288,11 @@
 
 \end{frame}
 
-% Building a ML model
-\begin{frame}
-
-	\frametitle{Machine learning}
-	\framesubtitle{Building a ML model}
-	
-	\begin{figure}
-		\minipage{0.33\textwidth}
-		\includegraphics[width = \linewidth]{plots/tree2.jpeg}
-		\endminipage\hfill
-		\minipage{0.3\textwidth}
-		\includegraphics[width = \linewidth]{plots/tree1.jpeg}
-		\endminipage\hfill
-		\minipage{0.3\textwidth}
-		\includegraphics[width = \linewidth]{plots/tree3.jpeg}
-		\endminipage
-	\end{figure}
-
-\end{frame}
-
-% Building a ML model - strategy
-\begin{frame}
-
-	\frametitle{Machine learning}
-	\framesubtitle{Building a Ml model}
-	
-		\begin{figure}
-			\includegraphics[width = 0.45\linewidth]{plots/NN.png}
-		\end{figure}
-		
-	\begin{enumerate}
-		\item Turn the input set into an array and build a {\color{red}random} prediction 
-		\item Compare with truth and compute a {\color{blue}Loss} function
-		\item Update the parameters in a specific way
-	\end{enumerate}
-	
-
-\end{frame}
-
-% Building a ML model - tree 1
-\begin{frame}
-
-	\frametitle{Machine learning}
-	\framesubtitle{Building a ML model}
-	
-	\begin{figure}
-
-		\minipage{0.33\textwidth}
-		\begin{columns}
-			\column{0.5\textwidth}
-			\includegraphics[width = \linewidth]{plots/tree2.jpeg}
-			\column{0.5\textwidth}
-			$\longrightarrow$
-		\end{columns}
-		\endminipage
-		\hspace*{-1.25cm}	
-		\minipage{0.3\textwidth}
-		\includegraphics[width = 1.25\linewidth]{plots/NN.png}
-		\endminipage
-		\hspace*{0.75cm}
-		\minipage{0.3\textwidth}
-		$\longrightarrow$
-		{\color{darkgreen}Tree \checkmark}
-		\endminipage
-
-	\end{figure}
-
-\end{frame}
-
-% Building a ML model - tree 2
-\begin{frame}
-
-	\frametitle{Machine learning}
-	\framesubtitle{Building a ML model}
-	
-	\begin{figure}
-		
-		\minipage{0.33\textwidth}
-		\begin{columns}
-			\column{0.5\textwidth}
-			\includegraphics[width = \linewidth]{plots/tree1.jpeg}
-			\column{0.5\textwidth}
-			$\longrightarrow$
-		\end{columns}
-		\endminipage
-		\hspace*{-1.25cm}	
-		\minipage{0.3\textwidth}
-		\includegraphics[width = 1.25\linewidth]{plots/NN.png}
-		\endminipage
-		\hspace*{0.75cm}
-		\minipage{0.3\textwidth}
-		$\longrightarrow$
-		{\color{darkgreen}Tree \checkmark}
-		\endminipage
-		
-	\end{figure}
-
-\end{frame}
-
-% Building a ML model - proton
-\begin{frame}
-
-	\frametitle{Machine learning}
-	\framesubtitle{Building a ML model}
-	
-	\begin{figure}
-		
-		\minipage{0.33\textwidth}
-		\begin{columns}
-			\column{0.5\textwidth}
-			\includegraphics[width = \linewidth]{plots/proton.png}
-			\column{0.5\textwidth}
-			$\longrightarrow$
-		\end{columns}
-		\endminipage
-		\hspace*{-1.25cm}	
-		\minipage{0.3\textwidth}
-		\includegraphics[width = 1.25\linewidth]{plots/NN.png}
-		\endminipage
-		\hspace*{0.75cm}
-		\minipage{0.3\textwidth}
-		$\longrightarrow$
-		{\color{darkred}Not tree X}
-		\endminipage
-		
-	\end{figure}
-
-\end{frame}
-
-% Building a ML model - tree 3
-\begin{frame}
-	
-	\frametitle{Machine learning}
-	\framesubtitle{Building a ML model}
-	
-	\begin{figure}
-		
-		\minipage{0.33\textwidth}
-		\begin{columns}
-			\column{0.5\textwidth}
-			\includegraphics[width = \linewidth]{plots/tree3.jpeg}
-			\column{0.5\textwidth}
-			$\longrightarrow$
-		\end{columns}
-		\endminipage
-		\hspace*{-1.25cm}	
-		\minipage{0.3\textwidth}
-		\includegraphics[width = 1.25\linewidth]{plots/NN.png}
-		\endminipage
-		\hspace*{0.75cm}
-		\minipage{0.3\textwidth}
-		$\longrightarrow$
-		{\color{darkgreen}Tree \checkmark}
-		\endminipage
-		
-	\end{figure}
-
-\end{frame}
-
-% Loss function
-\begin{frame}
-
-	\frametitle{Machine Learning}
-	\framesubtitle{Loss function}
-	
-	\begin{columns}
-		
-		\column{0.45\textwidth}
-		\begin{figure}
-			\centering
-			\begin{tikzpicture}
-			
-				% List of ypred
-				\node (y1) {$y_{1}^{true}$};
-				\node[below = 0.5 cm of y1] (y2) {$y_{2}^{true}$};
-				\node[below = 0.2 cm of y2] (yd) {\vdots};
-				\node[below = 0.2 cm of yd] (yn) {$y_{n}^{true}$};
-				\node[below = 0.3 cm of yn] (ygrid) {\color{blue}$y_{true}$};
-				\coordinate[right = 0.3 cm of y2] (ry2);
-				
-				% Braces
-				\draw[decorate, decoration={brace, amplitude = 4pt, raise = 1pt}, very thick]
-				($(y1.north east) + (0.1, 0.1)$) -- ($(yn.south east) + (0.1, 0.1)$);
-				\draw[decorate, decoration={brace, amplitude = 4pt, raise = 1pt}, very thick]
-				($(yn.south west) + (-0.1, 0.1)$) -- ($(y1.north west) + (-0.1, 0.1)$);
-				
-				% Loss function
-				\node[right = 0.75 cm of y2] (loss) {$-$};
-				
-				% List of ytrue
-				\node[right = 2.0 cm of y1] (y1t) {$y_{1}$};
-				\node[right = 2.0 cm of y2] (y2t) {$y_{2}$};
-				\node[right = 2.3 cm of yd] (ydt) {\vdots};
-				\node[right = 2.0 cm of yn] (ynt) {$y_{n}$};
-				\node[below = 0.3 cm of ynt] (ygrid) {\color{blue}$y_{pred}$};
-				\coordinate[left = 0.3 cm of y2] (ly2t);
-				\coordinate[right = 0.3 cm of y2] (ry2t);
-			
-				% Braces
-				\draw[decorate, decoration = {brace, amplitude = 4pt, raise = 1pt}, very thick]
-				($(y1t.north east) + (0.1, 0.1)$) -- ($(ynt.south east) + (0.1, 0.1)$);
-				\draw[decorate, decoration = {brace, amplitude = 4pt, raise = 1pt}, very thick]
-				($(ynt.south west) + (-0.1, 0.1)$) -- ($(y1t.north west) + (-0.1, 0.1)$);
-			
-				% Loss function
-				\node[left = 1.0 cm of y2] (loss) {$Loss = $};
-							
-			\end{tikzpicture}
-		\end{figure}
-
-		\column{0.35\textwidth}
-		\begin{enumerate}
-			\item Compute a loss function
-			\begin{equation*}
-				L = \sum\limits_{i = 1}^{N} \big( y_{i}^{true} - y_{i}^{pred} \big)^{2}
-			\end{equation*}
-			\item Perfect prediction will mean $L = 0$
-		\end{enumerate}
-
-	\end{columns}
-
-\end{frame}
-
-% Loss function - gradient
-\begin{frame}
-
-	\frametitle{Machine Learning}
-	\framesubtitle{Loss function}
-
-	\begin{columns}
-		
-		\column{0.45\textwidth}
-		
-		\begin{enumerate}
-			\item Loss is a function of weights and bias $L = L(w, b)$
-			\item Compute gradient $\nabla_{w_{ij}} L$ to look for the minimum of L
-		\end{enumerate}
-		
-		\column{0.45\textwidth}
-	
-			\includegraphics[width = \linewidth]{plots/loss.png}
-			
-	\end{columns}
-
-\end{frame}
-
-% Update rule
-\begin{frame}
-
-	\frametitle{Machine Learning}
-	\framesubtitle{Update rule}
-	
-	\begin{columns}
-		
-		\column{0.45\textwidth}
-		
-		Update the parameters of the network following the gradient descend
-		
-		\begin{align}
-			w_{ij} \longrightarrow w_{ij} - \alpha \nabla L \nonumber \\
-			b_{i} \longrightarrow b_{i} - \alpha \nabla L  \nonumber
-		\end{align}
-		
-		Where $\alpha$ is the learning rate
-		
-		\column{0.4\textwidth}
-		
-		\includegraphics[width = 1.25 \linewidth]{plots/loss2.png}
-		
-	\end{columns}
-
-\end{frame}
-
-% The N3PDF project
-\begin{frame}
-
-	\center{\color{blue} The N3PDF project}
-	\center{\color{blue} Machine Learning for the precision determination of PDFs}
-
-\end{frame}
-
-% NNPDF methodology
+% N3PDF methodology
 \begin{frame}
 
 	\frametitle{The N3PDF project}
-	\framesubtitle{The NNPDF methodology}
+	\framesubtitle{Fitting a PDF}
 	
 	Factorize the problem $\longrightarrow$ Convolute the {\color{red}PDFs}  with the partonic ${\color{blue}\hat{\sigma}_{i j}}$
 	
@@ -600,29 +309,6 @@
 	\begin{equation}
 	\sigma_{N} = \sum_{i, j, \alpha, \beta} {\color{red}f_{\alpha}(x_{i}) \; f_{\beta}(x_{j})} \; {\color{blue}\hat{\sigma}_{N i j \alpha \beta}} \; \nonumber
 	\end{equation}
-
-\end{frame}
-
-% General structure of a fit
-\begin{frame}
-
-	\frametitle{The N3PDF project}
-	\framesubtitle{General structure of n3fit}
-
-	\begin{figure}[!htb]
-		\minipage{0.32\textwidth}
-		\includegraphics[width = 0.5\linewidth]{plots/TF.png}
-		\endminipage\hfill
-		\minipage{0.5\textwidth}
-		\includegraphics[width = 0.5\linewidth]{plots/Keras.png}
-		\endminipage\hfill
-	\end{figure}
-
-	\begin{itemize}
-		\item Use TensorFlow and Keras to determine the PDFs
-		\item See paper by S.Carraza - J.Cruz-Martinez \\
-		{\color{blue}"Towards a new generation of parton densities\\ with deep learning models",\\ https://arxiv.org/abs/1907.05075}
-	\end{itemize}
 
 \end{frame}
 
@@ -697,6 +383,33 @@
 		\item Compute $\chi^{2}$ loss function by comparing with data
 		\item Update values of PDF $\longrightarrow$ {\color{violet} Fit}
 	\end{enumerate}
+
+\end{frame}
+
+% Results
+\begin{frame}
+
+\frametitle{Results}
+\framesubtitle{Learning a physical quantity}
+
+\begin{figure}
+	\minipage{0.32\textwidth}
+	\includegraphics[width = \linewidth]{plots/nlo_test_rquad.png}
+	\endminipage\hfill
+	\minipage{0.32\textwidth}
+	\includegraphics[width = \linewidth]{plots/nlo_test_matern.png}
+	\endminipage\hfill
+	\minipage{0.32\textwidth}
+	\includegraphics[width = \linewidth]{plots/nlo_matern1.png}
+	\endminipage
+\end{figure}
+
+\begin{itemize}
+	\item Combination of different kernels leads to better fit
+	\item Excellent numerical agreement up to N3LO
+\end{itemize}
+
+{\color{blue}When there is not theory prediction to compare to, use GP approach to estimate theory uncertainty}
 
 \end{frame}
 

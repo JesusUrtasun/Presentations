@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  23 JUL 2020 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  10 AUG 2020 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,24 +1038,24 @@ Dictionary: translator-theorem-dictionary, Language: English
 <plots/unimi.png, id=14, 1240.635pt x 416.2752pt>
 File: plots/unimi.png Graphic file (type png)
 <use plots/unimi.png>
-Package pdftex.def Info: plots/unimi.png  used on input line 101.
+Package pdftex.def Info: plots/unimi.png  used on input line 105.
 (pdftex.def)             Requested size: 85.35826pt x 28.64044pt.
 <plots/n3pdf.png, id=16, 381.425pt x 133.49875pt>
 File: plots/n3pdf.png Graphic file (type png)
 <use plots/n3pdf.png>
-Package pdftex.def Info: plots/n3pdf.png  used on input line 101.
+Package pdftex.def Info: plots/n3pdf.png  used on input line 105.
 (pdftex.def)             Requested size: 85.35826pt x 29.87498pt.
 <plots/erc.png, id=17, 301.125pt x 202.7575pt>
 File: plots/erc.png Graphic file (type png)
 <use plots/erc.png>
-Package pdftex.def Info: plots/erc.png  used on input line 101.
+Package pdftex.def Info: plots/erc.png  used on input line 105.
 (pdftex.def)             Requested size: 85.35826pt x 57.474pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 101.
+LaTeX Font Info:    Try loading font information for U+msa on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 101.
+LaTeX Font Info:    Try loading font information for U+msb on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1064,210 +1064,87 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/unimi.png> <./plot
 s/n3pdf.png> <./plots/erc.png (PNG copy)>] [2
 
-] [3
-
 ]
-<plots/SM.png, id=48, 361.35pt x 240.4182pt>
+<plots/SM.png, id=43, 361.35pt x 240.4182pt>
 File: plots/SM.png Graphic file (type png)
 <use plots/SM.png>
-Package pdftex.def Info: plots/SM.png  used on input line 155.
+Package pdftex.def Info: plots/SM.png  used on input line 152.
 (pdftex.def)             Requested size: 170.71652pt x 113.58351pt.
- [4
+ [3
 
  <./plots/SM.png>]
-<plots/protons.png, id=57, 491.8375pt x 173.64874pt>
+<plots/protons.png, id=52, 491.8375pt x 173.64874pt>
 File: plots/protons.png Graphic file (type png)
 <use plots/protons.png>
-Package pdftex.def Info: plots/protons.png  used on input line 177.
+Package pdftex.def Info: plots/protons.png  used on input line 174.
 (pdftex.def)             Requested size: 171.14764pt x 60.42555pt.
- [5
+ [4
 
  <./plots/protons.png>]
-<plots/proton.png, id=66, 225.84375pt x 225.84375pt>
+<plots/proton.png, id=61, 225.84375pt x 225.84375pt>
 File: plots/proton.png Graphic file (type png)
 <use plots/proton.png>
-Package pdftex.def Info: plots/proton.png  used on input line 202.
+Package pdftex.def Info: plots/proton.png  used on input line 199.
 (pdftex.def)             Requested size: 85.57382pt x 85.57338pt.
-<plots/proton2.jpg, id=67, 1003.75pt x 1003.75pt>
+<plots/proton2.jpg, id=62, 1003.75pt x 1003.75pt>
 File: plots/proton2.jpg Graphic file (type jpg)
 <use plots/proton2.jpg>
-Package pdftex.def Info: plots/proton2.jpg  used on input line 202.
+Package pdftex.def Info: plots/proton2.jpg  used on input line 199.
 (pdftex.def)             Requested size: 68.45801pt x 68.44707pt.
-[6
 
- <./plots/proton.png> <./plots/proton2.jpg>] [7
+[5
+
+ <./plots/proton.png> <./plots/proton2.jpg>] [6
 
 ]
-<plots/PDF.png, id=88, 388.45125pt x 525.965pt>
+<plots/PDF.png, id=82, 388.45125pt x 525.965pt>
 File: plots/PDF.png Graphic file (type png)
 <use plots/PDF.png>
-Package pdftex.def Info: plots/PDF.png  used on input line 268.
+Package pdftex.def Info: plots/PDF.png  used on input line 265.
 (pdftex.def)             Requested size: 108.12054pt x 146.3944pt.
- [8
+ [7
 
  <./plots/PDF.png>]
-[9
-
-]
-<plots/r2d2.jpeg, id=101, 803.0pt x 803.0pt>
+<plots/r2d2.jpeg, id=90, 803.0pt x 803.0pt>
 File: plots/r2d2.jpeg Graphic file (type jpg)
 <use plots/r2d2.jpeg>
-Package pdftex.def Info: plots/r2d2.jpeg  used on input line 299.
+Package pdftex.def Info: plots/r2d2.jpeg  used on input line 289.
 (pdftex.def)             Requested size: 154.03183pt x 154.02966pt.
- [10
 
- <./plots/r2d2.jpeg>]
-<plots/tree2.jpeg, id=108, 205.76875pt x 246.9225pt>
-File: plots/tree2.jpeg Graphic file (type jpg)
-<use plots/tree2.jpeg>
-Package pdftex.def Info: plots/tree2.jpeg  used on input line 319.
-(pdftex.def)             Requested size: 112.95807pt x 135.5478pt.
-<plots/tree1.jpeg, id=109, 241.90375pt x 209.78375pt>
-File: plots/tree1.jpeg Graphic file (type jpg)
-<use plots/tree1.jpeg>
-Package pdftex.def Info: plots/tree1.jpeg  used on input line 319.
-(pdftex.def)             Requested size: 102.68962pt x 89.05606pt.
-<plots/tree3.jpeg, id=110, 192.72pt x 263.98625pt>
-File: plots/tree3.jpeg Graphic file (type jpg)
-<use plots/tree3.jpeg>
-Package pdftex.def Info: plots/tree3.jpeg  used on input line 319.
-(pdftex.def)             Requested size: 102.68962pt x 140.66127pt.
+[8
+
+ <./plots/r2d2.jpeg>] [9
+
+] [10
+
+]
+<plots/nlo_test_rquad.png, id=109, 462.528pt x 346.896pt>
+File: plots/nlo_test_rquad.png Graphic file (type png)
+<use plots/nlo_test_rquad.png>
+Package pdftex.def Info: plots/nlo_test_rquad.png  used on input line 414.
+(pdftex.def)             Requested size: 109.537pt x 82.15045pt.
+<plots/nlo_test_matern.png, id=110, 462.528pt x 346.896pt>
+File: plots/nlo_test_matern.png Graphic file (type png)
+<use plots/nlo_test_matern.png>
+Package pdftex.def Info: plots/nlo_test_matern.png  used on input line 414.
+(pdftex.def)             Requested size: 109.537pt x 82.15045pt.
+<plots/nlo_matern1.png, id=111, 462.528pt x 346.896pt>
+File: plots/nlo_matern1.png Graphic file (type png)
+<use plots/nlo_matern1.png>
+Package pdftex.def Info: plots/nlo_matern1.png  used on input line 414.
+(pdftex.def)             Requested size: 109.537pt x 82.15045pt.
  [11
 
- <./plots/tree2.jpeg> <./plots/tree1.jpeg> <./plots/tree3.jpeg>]
-<plots/NN.png, id=117, 255.95625pt x 197.73875pt>
-File: plots/NN.png Graphic file (type png)
-<use plots/NN.png>
-Package pdftex.def Info: plots/NN.png  used on input line 338.
-(pdftex.def)             Requested size: 154.03183pt x 118.99718pt.
- [12
-
- <./plots/NN.png>]
-File: plots/tree2.jpeg Graphic file (type jpg)
-<use plots/tree2.jpeg>
-Package pdftex.def Info: plots/tree2.jpeg  used on input line 368.
-(pdftex.def)             Requested size: 56.47903pt x 67.7739pt.
-File: plots/NN.png Graphic file (type png)
-<use plots/NN.png>
-Package pdftex.def Info: plots/NN.png  used on input line 368.
-(pdftex.def)             Requested size: 128.36201pt x 99.16481pt.
-
-Overfull \hbox (25.6724pt too wide) in paragraph at lines 368--368
-[][] 
- []
-
-[13
+ <./plots/nlo_test_rquad.png> <./plots/nlo_test_matern.png> <./plots/nlo_matern
+1.png>] [12
 
 ]
-File: plots/tree1.jpeg Graphic file (type jpg)
-<use plots/tree1.jpeg>
-Package pdftex.def Info: plots/tree1.jpeg  used on input line 398.
-(pdftex.def)             Requested size: 56.47903pt x 48.97908pt.
-File: plots/NN.png Graphic file (type png)
-<use plots/NN.png>
-Package pdftex.def Info: plots/NN.png  used on input line 398.
-(pdftex.def)             Requested size: 128.36201pt x 99.16481pt.
-
-Overfull \hbox (25.6724pt too wide) in paragraph at lines 398--398
-[][] 
- []
-
-[14
-
-]
-File: plots/proton.png Graphic file (type png)
-<use plots/proton.png>
-Package pdftex.def Info: plots/proton.png  used on input line 428.
-(pdftex.def)             Requested size: 56.47903pt x 56.47801pt.
-File: plots/NN.png Graphic file (type png)
-<use plots/NN.png>
-Package pdftex.def Info: plots/NN.png  used on input line 428.
-(pdftex.def)             Requested size: 128.36201pt x 99.16481pt.
-
-Overfull \hbox (25.6724pt too wide) in paragraph at lines 428--428
-[][] 
- []
-
-[15
-
-]
-File: plots/tree3.jpeg Graphic file (type jpg)
-<use plots/tree3.jpeg>
-Package pdftex.def Info: plots/tree3.jpeg  used on input line 458.
-(pdftex.def)             Requested size: 56.47903pt x 77.3637pt.
-File: plots/NN.png Graphic file (type png)
-<use plots/NN.png>
-Package pdftex.def Info: plots/NN.png  used on input line 458.
-(pdftex.def)             Requested size: 128.36201pt x 99.16481pt.
-
-Overfull \hbox (25.6724pt too wide) in paragraph at lines 458--458
-[][] 
- []
-
-[16
-
-]
-Overfull \hbox (26.24773pt too wide) in paragraph at lines 522--522
- [] 
- []
-
-
-Overfull \hbox (7.71184pt too wide) detected at line 522
-\OT1/cmss/m/it/10.95 L \OT1/cmss/m/n/10.95 = [] []\OT1/cmss/m/it/10.95 y[] \OMS
-/cmsy/m/n/10.95 ^^@ \OT1/cmss/m/it/10.95 y[][][]
- []
-
-[17
-
-]
-<plots/loss.png, id=157, 1110.1475pt x 870.25125pt>
-File: plots/loss.png Graphic file (type png)
-<use plots/loss.png>
-Package pdftex.def Info: plots/loss.png  used on input line 545.
-(pdftex.def)             Requested size: 154.03183pt x 120.74547pt.
- [18
-
- <./plots/loss.png (PNG copy)>]
-<plots/loss2.png, id=164, 1606.0pt x 750.805pt>
-File: plots/loss2.png Graphic file (type png)
-<use plots/loss2.png>
-Package pdftex.def Info: plots/loss2.png  used on input line 572.
-(pdftex.def)             Requested size: 171.14503pt x 79.99966pt.
-
-Overfull \hbox (34.229pt too wide) in paragraph at lines 572--572
-[][]  
- []
-
-[19
-
- <./plots/loss2.png (PNG copy)>] [20
-
-] [21
-
-]
-<plots/TF.png, id=185, 217.81375pt x 232.87pt>
-File: plots/TF.png Graphic file (type png)
-<use plots/TF.png>
-Package pdftex.def Info: plots/TF.png  used on input line 627.
-(pdftex.def)             Requested size: 54.7685pt x 58.55136pt.
-<plots/Keras.png, id=186, 1204.5pt x 349.305pt>
-File: plots/Keras.png Graphic file (type png)
-<use plots/Keras.png>
-Package pdftex.def Info: plots/Keras.png  used on input line 627.
-(pdftex.def)             Requested size: 85.57382pt x 24.81628pt.
- [22
-
- <./plots/TF.png> <./plots/Keras.png>] [23
-
-] [24
-
-]
-<plots/thinking2.png, id=207, 287.0725pt x 420.57124pt>
+<plots/thinking2.png, id=127, 287.0725pt x 420.57124pt>
 File: plots/thinking2.png Graphic file (type png)
 <use plots/thinking2.png>
-Package pdftex.def Info: plots/thinking2.png  used on input line 727.
+Package pdftex.def Info: plots/thinking2.png  used on input line 440.
 (pdftex.def)             Requested size: 85.35826pt x 125.0493pt.
- [25
+ [13
 
  <./plots/thinking2.png>]
 \tf@nav=\write6
@@ -1279,19 +1156,20 @@ Package pdftex.def Info: plots/thinking2.png  used on input line 727.
 \tf@snm=\write8
 \openout8 = `HyperGP_IPS.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 729.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 729.
- (./HyperGP_IPS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 729.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 729.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
+
+(./HyperGP_IPS.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
 Package rerunfilecheck Info: File `HyperGP_IPS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23582 strings out of 494923
- 497893 string characters out of 6180742
- 595001 words of memory out of 5000000
- 26290 multiletter control sequences out of 15000+600000
+ 23447 strings out of 494923
+ 496303 string characters out of 6180742
+ 592939 words of memory out of 5000000
+ 26184 multiletter control sequences out of 15000+600000
  16420 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,71p,807b,1043s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1306,12 +1184,12 @@ public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
-10.pfb>
-Output written on HyperGP_IPS.pdf (25 pages, 1573681 bytes).
+sy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+>
+Output written on HyperGP_IPS.pdf (13 pages, 1198746 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
