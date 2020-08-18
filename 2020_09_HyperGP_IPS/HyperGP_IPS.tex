@@ -312,79 +312,7 @@
 
 \end{frame}
 
-% General structure
-\begin{frame}
 
-	\frametitle{The N3PDF project}
-	\framesubtitle{General structure of n3fit}
-
-	\begin{tikzpicture}
-	
-		% List of xs
-		\node (x1) {$x_{1}$};
-		\node[below = 0.5 cm of x1] (x2) {$x_{2}$};
-		\node[below = 0.2 cm of x2] (xd) {\vdots};
-		\node[below = 0.2 cm of xd] (xn) {$x_{n}$};
-		\node[below = 0.3 cm of xn] (xgrid) {\color{blue}$x_{grid}$};
-		\coordinate[right = 0.3 cm of x2] (rx2);
-		% Braces
-		\draw[decorate, decoration={brace, amplitude = 4pt, raise = 1pt}, very thick]
-		($(x1.north east) + (0.1, 0.1)$) -- ($(xn.south east) + (0.1, 0.1)$);
-		\draw[decorate, decoration={brace, amplitude = 4pt, raise = 1pt}, very thick]
-		($(xn.south west) + (-0.1, 0.1)$) -- ($(x1.north west) + (-0.1, 0.1)$);
-		
-		% PDF layer
-		\node[block, fill = violet!40, right = 1.0 cm of x2] (pdf) {PDF};
-		\coordinate[left = 0.1 cm of pdf] (lpdf);
-		\coordinate[right = 0.1 cm of pdf] (rpdf);
-		
-		% List of pdfs
-		\node[right = 3.5 cm of x1] (f1) {$f_{1 \alpha}$};
-		\node[right = 3.5 cm of x2] (f2) {$f_{2 \alpha}$};
-		\node[right = 3.8 cm of xd] (fd) {\vdots};
-		\node[right = 3.5 cm of xn] (fn) {$f_{n \alpha}$};
-		\coordinate[left = 0.3 cm of f2] (lf2);
-		\coordinate[right = 0.3 cm of f2] (rf2);
-		% Braces
-		\draw[decorate, decoration = {brace, amplitude = 4pt, raise = 1pt}, very thick]
-		($(f1.north east) + (0.1, 0.1)$) -- ($(fn.south east) + (0.1, 0.1)$);
-		\draw[decorate, decoration = {brace, amplitude = 4pt, raise = 1pt}, very thick]
-		($(fn.south west) + (-0.1, 0.1)$) -- ($(f1.north west) + (-0.1, 0.1)$);
-		
-		% Convolution layer
-		\node[block, fill = violet!40, right = 1.0 cm of f2] (conv) {Convolution};
-		\coordinate[left = 0.1 cm of conv] (lconv);
-		\coordinate[right = 0.1 cm of conv] (rconv);
-		\coordinate[below = 0.1 cm of conv] (bconv);
-		
-		% List of y
-		\node[right = 4.0 cm of f1] (y1) {$\sigma_{1}$};
-		\node[right = 4.0 cm of f2] (y2) {$\sigma_{2}$};
-		\node[right = 4.3 cm of fd] (yd) {\vdots};
-		\node[right = 4.0 cm of fn] (yn) {$\sigma_{n}$};
-		\node[above = 0.3 cm of y1] (ypred) {\color{blue}$\sigma_{pred}$};
-		\coordinate[left = 0.3 cm of y2] (ly2);
-		% Braces
-		\draw[decorate, decoration = {brace, amplitude = 4pt, raise = 1pt}, very thick]
-		($(y1.north east) + (0.1, 0.1)$) -- ($(yn.south east) + (0.1, 0.1)$);
-		\draw[decorate, decoration = {brace, amplitude = 4pt, raise = 1pt}, very thick]
-		($(yn.south west) + (-0.1, 0.1)$) -- ($(y1.north west) + (-0.1, 0.1)$);
-		
-		% Connect all nodes defined above
-		\draw[arrow, very thick] (rx2) -- (lpdf);
-		\draw[arrow, very thick] (rpdf) -- (lf2);
-		\draw[arrow, very thick] (rf2) -- (lconv);
-		\draw[arrow, very thick] (rconv) -- (ly2);
-	
-	\end{tikzpicture}
-	
-	\begin{enumerate}
-		\item Build a NN to compute $\sigma_{pred}$ observables from a grid $x_{i}$
-		\item Compute $\chi^{2}$ loss function by comparing with data
-		\item Update values of PDF $\longrightarrow$ {\color{violet} Fit}
-	\end{enumerate}
-
-\end{frame}
 
 % Results
 \begin{frame}
@@ -418,23 +346,16 @@
 	
 	\frametitle{Summary $\&$ Conclusions}
 
+	\vspace{2.0 cm}
+	
 	\begin{enumerate}
 		\item PDFs are required to have accurate predictions in high energy physics
-		\item ML provides a new way of determine the PDFs
-		\item Operator implementation leads to memory saving by taking full control on the computation
+		\item ML provides an effective way of fitting a curve
+		\item Theory uncertainty can be extracted from the confidence interval given by the Gaussian Process
 	\end{enumerate}
 
-\end{frame}
+	\vspace{2.0 cm}
 
-% Thank you
-\begin{frame}
-
-	\center {\color{blue} Thank you!}
-	
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/thinking2.png}
-	\end{figure}
-	
 	{\small \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
 
 \end{frame}

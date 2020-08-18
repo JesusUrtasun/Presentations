@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  10 AUG 2020 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  18 AUG 2020 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1115,38 +1115,28 @@ Package pdftex.def Info: plots/r2d2.jpeg  used on input line 289.
 
  <./plots/r2d2.jpeg>] [9
 
-] [10
-
 ]
-<plots/nlo_test_rquad.png, id=109, 462.528pt x 346.896pt>
+<plots/nlo_test_rquad.png, id=103, 462.528pt x 346.896pt>
 File: plots/nlo_test_rquad.png Graphic file (type png)
 <use plots/nlo_test_rquad.png>
-Package pdftex.def Info: plots/nlo_test_rquad.png  used on input line 414.
+Package pdftex.def Info: plots/nlo_test_rquad.png  used on input line 342.
 (pdftex.def)             Requested size: 109.537pt x 82.15045pt.
-<plots/nlo_test_matern.png, id=110, 462.528pt x 346.896pt>
+<plots/nlo_test_matern.png, id=104, 462.528pt x 346.896pt>
 File: plots/nlo_test_matern.png Graphic file (type png)
 <use plots/nlo_test_matern.png>
-Package pdftex.def Info: plots/nlo_test_matern.png  used on input line 414.
+Package pdftex.def Info: plots/nlo_test_matern.png  used on input line 342.
 (pdftex.def)             Requested size: 109.537pt x 82.15045pt.
-<plots/nlo_matern1.png, id=111, 462.528pt x 346.896pt>
+<plots/nlo_matern1.png, id=105, 462.528pt x 346.896pt>
 File: plots/nlo_matern1.png Graphic file (type png)
 <use plots/nlo_matern1.png>
-Package pdftex.def Info: plots/nlo_matern1.png  used on input line 414.
+Package pdftex.def Info: plots/nlo_matern1.png  used on input line 342.
 (pdftex.def)             Requested size: 109.537pt x 82.15045pt.
- [11
+ [10
 
  <./plots/nlo_test_rquad.png> <./plots/nlo_test_matern.png> <./plots/nlo_matern
-1.png>] [12
+1.png>] [11
 
 ]
-<plots/thinking2.png, id=127, 287.0725pt x 420.57124pt>
-File: plots/thinking2.png Graphic file (type png)
-<use plots/thinking2.png>
-Package pdftex.def Info: plots/thinking2.png  used on input line 440.
-(pdftex.def)             Requested size: 85.35826pt x 125.0493pt.
- [13
-
- <./plots/thinking2.png>]
 \tf@nav=\write6
 \openout6 = `HyperGP_IPS.nav'.
 
@@ -1156,20 +1146,19 @@ Package pdftex.def Info: plots/thinking2.png  used on input line 440.
 \tf@snm=\write8
 \openout8 = `HyperGP_IPS.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
-
-(./HyperGP_IPS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
+ (./HyperGP_IPS.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 Package rerunfilecheck Info: File `HyperGP_IPS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23447 strings out of 494923
- 496303 string characters out of 6180742
- 592939 words of memory out of 5000000
- 26184 multiletter control sequences out of 15000+600000
+ 23254 strings out of 494923
+ 493592 string characters out of 6180742
+ 588304 words of memory out of 5000000
+ 25996 multiletter control sequences out of 15000+600000
  16420 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,71p,807b,1043s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1186,10 +1175,10 @@ sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 >
-Output written on HyperGP_IPS.pdf (13 pages, 1198746 bytes).
+Output written on HyperGP_IPS.pdf (11 pages, 1182350 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
