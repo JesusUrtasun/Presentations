@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  2 SEP 2020 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  7 SEP 2020 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1086,12 +1086,12 @@ Package pdftex.def Info: plots/protons.png  used on input line 182.
 <plots/proton.png, id=67, 225.84375pt x 225.84375pt>
 File: plots/proton.png Graphic file (type png)
 <use plots/proton.png>
-Package pdftex.def Info: plots/proton.png  used on input line 207.
+Package pdftex.def Info: plots/proton.png  used on input line 210.
 (pdftex.def)             Requested size: 85.57382pt x 85.57338pt.
 <plots/proton2.jpg, id=68, 1003.75pt x 1003.75pt>
 File: plots/proton2.jpg Graphic file (type jpg)
 <use plots/proton2.jpg>
-Package pdftex.def Info: plots/proton2.jpg  used on input line 207.
+Package pdftex.def Info: plots/proton2.jpg  used on input line 210.
 (pdftex.def)             Requested size: 68.45801pt x 68.44707pt.
 [6
 
@@ -1100,46 +1100,57 @@ Package pdftex.def Info: plots/proton2.jpg  used on input line 207.
 ] [8
 
 ]
-<plots/ee_hadrons.png, id=95, 480.79625pt x 252.945pt>
+<plots/ee_hadrons.png, id=96, 480.79625pt x 252.945pt>
 File: plots/ee_hadrons.png Graphic file (type png)
 <use plots/ee_hadrons.png>
-Package pdftex.def Info: plots/ee_hadrons.png  used on input line 280.
+Package pdftex.def Info: plots/ee_hadrons.png  used on input line 285.
 (pdftex.def)             Requested size: 154.03183pt x 81.03668pt.
  [9
 
  <./plots/ee_hadrons.png>]
-<plots/qcd_corrections.png, id=103, 507.8975pt x 436.63126pt>
+<plots/qcd_corrections.png, id=104, 507.8975pt x 436.63126pt>
 File: plots/qcd_corrections.png Graphic file (type png)
 <use plots/qcd_corrections.png>
-Package pdftex.def Info: plots/qcd_corrections.png  used on input line 306.
+Package pdftex.def Info: plots/qcd_corrections.png  used on input line 315.
 (pdftex.def)             Requested size: 154.03183pt x 132.41614pt.
  [10
 
  <./plots/qcd_corrections.png>] [11
 
-] [12
+]
+<plots/resummed.png, id=120, 462.528pt x 318.7107pt>
+File: plots/resummed.png Graphic file (type png)
+<use plots/resummed.png>
+Package pdftex.def Info: plots/resummed.png  used on input line 358.
+(pdftex.def)             Requested size: 170.71652pt x 117.63417pt.
+ [12
 
-] [13
+ <./plots/resummed.png>]
+[13
+
+] [14
+
+] [15
 
 ]
-<plots/hturbo_LL.png, id=130, 462.528pt x 318.7107pt>
+<plots/hturbo_LL.png, id=147, 462.528pt x 318.7107pt>
 File: plots/hturbo_LL.png Graphic file (type png)
 <use plots/hturbo_LL.png>
-Package pdftex.def Info: plots/hturbo_LL.png  used on input line 361.
+Package pdftex.def Info: plots/hturbo_LL.png  used on input line 413.
 (pdftex.def)             Requested size: 109.537pt x 75.47572pt.
-<plots/hturbo_NLL.png, id=131, 462.528pt x 318.7107pt>
+<plots/hturbo_NLL.png, id=148, 462.528pt x 318.7107pt>
 File: plots/hturbo_NLL.png Graphic file (type png)
 <use plots/hturbo_NLL.png>
-Package pdftex.def Info: plots/hturbo_NLL.png  used on input line 361.
+Package pdftex.def Info: plots/hturbo_NLL.png  used on input line 413.
 (pdftex.def)             Requested size: 109.537pt x 75.47572pt.
-<plots/hturbo_all.png, id=132, 462.528pt x 318.7107pt>
+<plots/hturbo_all.png, id=149, 462.528pt x 318.7107pt>
 File: plots/hturbo_all.png Graphic file (type png)
 <use plots/hturbo_all.png>
-Package pdftex.def Info: plots/hturbo_all.png  used on input line 361.
+Package pdftex.def Info: plots/hturbo_all.png  used on input line 413.
 (pdftex.def)             Requested size: 109.537pt x 75.47572pt.
- [14
+ [16
 
- <./plots/hturbo_LL.png> <./plots/hturbo_NLL.png> <./plots/hturbo_all.png>] [15
+ <./plots/hturbo_LL.png> <./plots/hturbo_NLL.png> <./plots/hturbo_all.png>] [17
 
 ]
 \tf@nav=\write6
@@ -1151,40 +1162,41 @@ Package pdftex.def Info: plots/hturbo_all.png  used on input line 361.
 \tf@snm=\write8
 \openout8 = `Jesus_Urtasun_HTurbo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
-
-(./Jesus_Urtasun_HTurbo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+ (./Jesus_Urtasun_HTurbo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
 Package rerunfilecheck Info: File `Jesus_Urtasun_HTurbo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23271 strings out of 494923
- 493927 string characters out of 6180742
- 588336 words of memory out of 5000000
- 26006 multiletter control sequences out of 15000+600000
- 16420 words of font info for 61 fonts, out of 8000000 for 9000
+ 23292 strings out of 494923
+ 494289 string characters out of 6180742
+ 587427 words of memory out of 5000000
+ 26020 multiletter control sequences out of 15000+600000
+ 17020 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,71p,816b,1043s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
->
-Output written on Jesus_Urtasun_HTurbo.pdf (15 pages, 1083830 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Jesus_Urtasun_HTurbo.pdf (17 pages, 1135330 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

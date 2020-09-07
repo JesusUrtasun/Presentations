@@ -113,7 +113,7 @@
 		\item {\color{blue}QCD in a nutshell}
 		\begin{itemize}
 			\item The Standard Model $\&$ strong interactions
-			\item Probing mater at the nuclear scale
+			\item Running QCD coupling
 			\item Factorization theorem
 		\end{itemize}
 		\item {\color{blue}Dealing with divergences}
@@ -199,10 +199,13 @@
 
 	\begin{itemize}
 		\item Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
-		\item Interactions take place only at partonic level
+		\item Interactions take place only at partonic level $\longrightarrow$ asymptotic freedom
+		\item Running coupling given by Renormalization Group Equation (RGE)
 	\end{itemize}
 
-	{\color{blue}Parton Distribution Functions: probability distribution of finding a particular parton (u, d, ..., g) carrying a fraction x of the proton's momentum}
+	\begin{equation}
+		{\color{blue}\mu\frac{d\alpha(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
+	\end{equation}
 
 \end{frame}
 
@@ -277,6 +280,8 @@
 	
 	\end{columns}
 
+	Write the cross section as a perturbative series
+	
 \end{frame}
 
 % Perturbative QCD
@@ -299,9 +304,56 @@
 		\includegraphics[width = \linewidth]{plots/qcd_corrections.png}
 	\end{figure}
 	
-	Fixed Order computations diverge!
-	
 \end{columns}
+
+\begin{equation}
+	\sigma_{q\bar{q}g} = C_{F} \frac{\alpha_{s}}{2\pi} \sigma_{q\bar{q}^{\textrm{Born}}} \int d\cos\theta \frac{dl^{0}}{l} \frac{4}{(1 - cos\theta)(1 + cos\theta)} \nonumber
+\end{equation}
+
+	Fixed Order computations diverge!
+
+\end{frame}
+
+% Resummation QCD
+\begin{frame}
+
+	\frametitle{Resummation in QCD}
+	\framesubtitle{Resumming large logs}
+
+	By truncating the perturbative series at some fixed order, logarithmically enhanced contributions of the form $\ln^{m}(M^{2}/q_{\perp}^{2})$ appear. Then the $q_{\perp}$ distribution need to be evaluated by replacing the partonic cross section as follows
+	
+	\begin{equation}
+		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} \rightarrow 
+		\Bigg[ \frac{d\hat{\sigma}^{\textrm{res.}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{l.a.}} + 
+		\Bigg[ \frac{d\hat{\sigma}^{\textrm{fin.}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \nonumber
+	\end{equation}
+
+	Resummed expression 
+	\begin{equation}
+		\frac{d\hat{\sigma}_{ab}^{\textrm{res.}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; \mathcal{W}_{ab}(b, M, \hat{s}; \alpha_{s}(\mu_{R}^{2}), \mu_{R}^{2}, \mu_{F}^{2}) \nonumber
+	\end{equation}
+	
+	Being
+	\begin{equation}
+		\mathcal{W}_{N}(b, M, \hat{s}; \alpha_{s}(\mu_{R}^{2}), \mu_{R}^{2}, \mu_{F}^{2}) = \mathcal{H} \times exp\{\mathcal{G}\} \nonumber
+	\end{equation}
+
+\end{frame}
+
+\begin{frame}
+
+	\frametitle{Resummation in QCD}
+	\framesubtitle{Resumming large logs}
+		
+		\begin{figure}[!htb]
+			\includegraphics[width = 6 cm]{plots/resummed.png}
+		\end{figure}
+		
+		\begin{enumerate}
+			\item FO distribution diverges at small $q_{\perp}$
+			\item Sudakov factor kills the divergence
+			\item Matched at some intermediate accuracy
+		\end{enumerate}
 
 \end{frame}
 
