@@ -154,6 +154,7 @@
 	\begin{enumerate}
 		\item Color factor (3 color for each quark)
 		\item Sum over charges of different flavour quarks
+		\item Corrections near the threshold and at higher orders
 
 	\end{enumerate}	
 	
@@ -174,6 +175,8 @@
 		\includegraphics[width = 10 cm]{plots/eq_R0_3.png}
 	\end{figure}
 
+	Define renormalized coupling, running with the scale \\
+	UV logarithmic divergence in $\log(\mu^{2} / Q^{2})$
 \end{frame}
 
 % Hadron collisions III
@@ -182,6 +185,7 @@
 	\frametitle{Hadron collisions}
 	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
 	
+	Questions for a field theory
 	\begin{enumerate}
 		\item Can we go to arbitrarily large energies? $\rightarrow$ divergences arise, renormalization / factorization needed
 		\item Can we compute $R_{0}$ for every process? $\rightarrow$ IR observables
@@ -195,18 +199,18 @@
 	\frametitle{Hadron collisions}
 	\framesubtitle{Renormalization group}
 	
-	\begin{enumerate}
+	\begin{itemize}
 		\item UV divergences are encountered in field theories
 		\item Take a physical quantity $G$ depending on a scale $M$, a coupling $\alpha$ and some invariants $s_{1}, ..., s_{n}$	
-		\item Define a "renormalized" $\alpha_{\textrm{Ren}} = \alpha + c_{1}\alpha^{2} + c_{2}\alpha^{3} + ...$
-	\end{enumerate}
+		\item Define a "renormalized" coupling $\alpha_{\textrm{Ren}} = \alpha + c_{1}\alpha^{2} + c_{2}\alpha^{3} + ...$
+	\end{itemize}
  
 	The physical quantity in terms of $\{\alpha, M\}$ and $\{\alpha_{\textrm{Ren}}, \mu\}$ 
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/eq_RGE.png}
 	\end{figure}
 
-	Physics must be invariant under change of $\{\alpha_{\textrm{Ren}}, \mu\}$
+	{\color{blue}Physics must be invariant under change of $\{\alpha_{\textrm{Ren}}, \mu\}$}
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/eq_RGE_2.png}
 	\end{figure}
@@ -225,8 +229,8 @@
 		{\color{blue}\mu\frac{d\alpha_{s}(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
 		\end{equation}
 		\item Coupling {\color{blue}$\alpha_{s}$} evolves with scale {\color{blue}$\mu$} as given by RGE $\rightarrow$ LO behavior driven by $\beta_{0}$
-		\item $\beta_{0}^{\textrm{QCD}} < 0 \implies$ weakly coupled at large energies, asymptotic freedom
-		\item $\beta_{0}^{\textrm{QED}} > 0 \implies$ strongly coupled at large energies, UV unsafe
+		\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies, asymptotic freedom
+		\item $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies, UV divergent!
 		
 	\end{itemize}
 
@@ -246,8 +250,8 @@
 
 	\begin{align}
 		\mathcal{M}_{\textrm{Born}} &= \bar{u}(k)\epsilon^{\mu}\gamma_{\mu}v(k') \nonumber \\
-		\mathcal{M}_{1} &= \mathcal{M} \frac{k_{\alpha}}{k \cdot l} \nonumber \\
-		\mathcal{M}_{1} &= -\mathcal{M} \frac{k'_{\alpha}}{k' \cdot l} \nonumber		 
+		\mathcal{M}_{1} &= \mathcal{M} \frac{k_{\alpha}}{k \cdot l} \longrightarrow \textrm{Real radiation} \nonumber \\
+		\mathcal{M}_{1} &= -\mathcal{M} \frac{k'_{\alpha}}{k' \cdot l} \longrightarrow \textrm{Virtual contribution} \nonumber		 
 	\end{align}
 
 \end{frame}
@@ -264,9 +268,9 @@
 		\includegraphics[width = 7 cm]{plots/qcd_corrections_2.png}
 	\end{figure}
 	
-	Sum real and virtual contributions to the Born matrix element, with phase space element $d^{3}l = (l^{0})^{2} dl^{0} d\cos\theta d\phi$
+	Sum real and virtual contributions to the Born matrix element, square and integrate with phase space element $d^{3}l = (l^{0})^{2} dl^{0} d\cos\theta d\phi$
 	\begin{figure}
-		\includegraphics[width = 9 cm]{plots/eq_qqbg.png}
+		\includegraphics[width = 9.5 cm]{plots/eq_qqbg.png}
 	\end{figure}
 
 \end{frame}
@@ -278,38 +282,24 @@
 	\framesubtitle{Jets in $e^{+}e^{-}$}
 	
 	\begin{figure}
-		\includegraphics[width = 9 cm]{plots/eq_qqbg.png}
+		\includegraphics[width = 9.5 cm]{plots/eq_qqbg.png}
 	\end{figure}
 
 	\begin{itemize}
 		\item Soft $(l^{0} \rightarrow 0)$ and collinear $(\theta \rightarrow 0, \pi)$ divergences
-		\item No renormalization procedure to apply $\rightarrow$ divergences coming from long distance effects
+		\item No renormalization procedure to apply $\rightarrow$ divergences coming from long distance effects (fermion masses, hadronization, etc)
 		\item Kinoshita-Lee-Nauemberg theorem {\color{blue}(*)}
 	\end{itemize}
 
+	{\color{blue}Understand Born cross section as the LO term in a well defined perturbative expansion}
+	
 \end{frame}
 
 % Jets in e+e- IV
 \begin{frame}
 
 	\frametitle{Hadron collisions}
-	\framesubtitle{Jets in $e^{+}e^{-}$}
-	
-	Sterman - Weinberg jets. "In a hadronic event with CM energy $E$, 2 cones can be found with opening $\delta$ containing $(1 - \epsilon)$ fraction of $E$."
-	
-	\begin{figure}
-		\includegraphics[width = 12 cm]{plots/eq_SW_jets.png}
-	\end{figure}
-
-	When all contributions summed, the cross section is no longer singular {\color{red}(*)}
-	
-\end{frame}
-
-% Jets in e+e- V
-\begin{frame}
-
-	\frametitle{Hadron collisions}
-	\framesubtitle{Jets in $e^{+}e^{-}$}
+	\framesubtitle{Sterman-Weinberg jets}
 	
 	Sterman - Weinberg jets. "In a hadronic event with CM energy $E$, 2 cones can be found with opening $\delta$ containing $(1 - \epsilon)$ fraction of $E$."
 	
@@ -319,6 +309,23 @@
 
 \end{frame}
 
+% Jets in e+e- V
+\begin{frame}
+
+	\frametitle{Hadron collisions}
+	\framesubtitle{Sterman-Weinberg jets}
+	
+	Sterman - Weinberg jets. "In a hadronic event with CM energy $E$, 2 cones can be found with opening $\delta$ containing $(1 - \epsilon)$ fraction of $E$."
+	
+	\begin{figure}
+		\includegraphics[width = 12 cm]{plots/eq_SW_jets.png}
+	\end{figure}
+
+	When all contributions summed, the cross section is no longer singular {\color{red}(*)} \\
+	Computed in terms of partons, but representing hadronic final state \\
+	Jets as IR finite final state {\color{red}(*)}
+	
+\end{frame}
 
 % Collinear factorization
 \begin{frame}
@@ -334,254 +341,169 @@
 	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
 	
 	\begin{itemize} 
-		\item When computing partonic cross section, collinear partons can be emitted from incoming/outgoing parton.
-		\item Cross section dominated by collinear decay
+		\item When computing partonic cross section, collinear partons can be emitted from incoming/outgoing parton
+		\item $\sigma$ dominated by collinear decay of parton with small virtuality
 	\end{itemize}
 
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/collinear_factorization.png}
 	\end{figure}
 
-	Factorization theorem 
+	Factorization theorem $\longrightarrow$ Factor out tree level amplitude and splitting
 	\begin{figure}
 	\includegraphics[width = 8 cm]{plots/eq_factorization_theorem.png}
 	\end{figure}
 	
 \end{frame}
 
-% Factorization theorem
+% Collinear factorization II
 \begin{frame}
 
-	\frametitle{QCD in a nutshell}
-	\framesubtitle{Factorization theorem}
+	\frametitle{Collinear factorization}
+	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
 	
-	Observables in hadronic events $\longrightarrow$ $\sigma$ is hard to compute
+	\begin{itemize} 
+		\item Kinematics of splitting $(t, z, \phi)$
+		\begin{itemize}
+			\item $t$ has dimensions of energy (virtuality, $p_{\perp}$, angular variable)
+			\item $z$ represents the fraction of momentum of radiated parton
+			\item $\phi$ represents azimuth of the $k, l$ plane
+		\end{itemize}
+	
+	\vspace{0.5cm}
+	
+		\item Factorization holds for small angles. Applied recursively
+	\end{itemize}
 	
 	\begin{figure}
-		\begin{tikzpicture}
-		% Incoming first proton 
-		\draw [thick, fermion] (-4, 0.7)--(-2, 0.7);
-		\draw [thick, fermion] (-4, 0)--(-2.7, 0);
-		\draw [thick, fermion] (-4, -0.7)--(-2, -0.7);
-		\draw [thick, very thick, pattern = north east lines] (-2, 0) circle [radius = 0.7];
-		% Gluons
-		\draw [thick, gluon] (-1.3, 0)--(0, 0);
-		\draw [thick, gluon] (0, 0)--(1.3, 0);
-		\node at (-0.5, 0.5) {$\vec{x_{1}p}$};
-		\node at (0.5, -0.5) {$\vec{x_{2}p}$};
-		\draw [thick, very thick, fill = black, pattern = north east lines] (0, 0) circle [radius = 0.03];
-		% Incoming second proton
-		\draw [thick, very thick, pattern = north east lines] (2, 0) circle [radius = 0.7];
-		\draw [thick, fermionbar] (2, 0.7)--(4, 0.7);
-		\draw [thick, fermionbar] (2.7, 0)--(4, 0);
-		\draw [thick, fermionbar] (2, -0.7)--(4, -0.7);
-		\end{tikzpicture}
+		\includegraphics[width = 7 cm]{plots/shower_4.png}
 	\end{figure}
+
+\end{frame}
+
+% Parton showers
+\begin{frame}
+
+	\center{\color{blue}Parton showers and MC generators}
+
+\end{frame}
+
+% Shower equation I
+\begin{frame}
+
+	\frametitle{Parton showers and MC generators}
+	\framesubtitle{Formal representation of a shower}
 	
-	Factorize the problem $\longrightarrow$ Convolute the {\color{red}PDFs}  with the partonic ${\color{blue}\hat{\sigma}_{i j}}$
+	Approximated description of a hadronic final state. Model a given hard scattering with arbitrary number of enhanced radiations
 	
-	\begin{equation}
-		\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
-	\end{equation}
-	
-	\begin{itemize}
-		\item Partonic {\color{blue}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
-		\item {\color{red}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/shower_1.png}
+	\end{figure}
+		
+	\begin{itemize} 
+		\item Enseble of all possible showers from a parton {\color{blue}i} at scale {\color{blue}t}
+		\item Sudakov form factor $\Delta_{i}(t, t_{0})$  such that $\Delta_{i}(t_{0}, t_{0})$ = 1
+		\item Shower $S_{i}(t, E)$ 	such that $S_{i}^{\textrm{inc}} = \sum_{\mathcal{F}} S_{i}(t, E) = 1 $
 	\end{itemize}
 
 \end{frame}
 
-% Dealing with divergences
+% Shower equation II
 \begin{frame}
 
-\center{\color{blue}Dealing with divergences}
-
-\end{frame}
-
-% Partonic cross section and pQCD
-\begin{frame}
-
-	\frametitle{Partonic cross section and pQCD}
-	\framesubtitle{Why do we need series expansion?}
-	\begin{columns}
-		
-		\column{0.45\textwidth}
-		
-		\begin{enumerate}
-			\item QCD in $e+e-$ collisions
-			\item Measure only hadrons in the final state
-			\item Factorization theorem helps us to understand short range interactions
-		\end{enumerate}
-		
-		\column{0.45\textwidth}
-		\begin{figure}[!htb]
-			\includegraphics[width = \linewidth]{plots/ee_hadrons.png}
-		\end{figure}
-	
-	\end{columns}
-	
-	\vspace{1cm}
-	
-	Write the cross section as a perturbative series
-	\begin{equation}
-		\hat{\sigma} = \sigma^{\texttt{Born}} \Bigg( 1 +
-		\frac{\alpha_{s}}{2\pi} \sigma^{(1)} + 
-		\Big(\frac{\alpha_{s}}{2\pi}\Big)^{2} \sigma^{(2)} + 
-		\Big(\frac{\alpha_{s}}{2\pi}\Big)^{3} \sigma^{(3)} + ... \Bigg) \nonumber
-	\end{equation}
-	Leading order predictions can strongly depend on the renormalization and factorization scales $\rightarrow$ {\color{red}Go for higher order corrections!}
-\end{frame}
-
-% Perturbative QCD
-\begin{frame}
-
-	\frametitle{Perturbative QCD}
-	\framesubtitle{Higher order corrections}
-	\begin{columns}
-	
-	\column{0.45\textwidth}
-	
-	\begin{enumerate}
-		\item Higher order corrections as virtual and real contributions
-		\item Large number of diagrams to consider $\rightarrow$ harder to compute
-	\end{enumerate}
-	
-	\column{0.45\textwidth}
-	\begin{figure}[!htb]
-		\includegraphics[width = \linewidth]{plots/qcd_corrections.png}
+	\frametitle{Parton showers and MC generators}
+	\framesubtitle{Formal representation of a shower}
+	 
+	 
+	 Ensemble of all possible radiations as the sum of no radiation, with radiation and shower from radiated partons
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/shower_2.png}
 	\end{figure}
 	
-\end{columns}
-
-\begin{equation}
-	\sigma_{q\bar{q}g} = C_{F} \frac{\alpha_{s}}{2\pi} \sigma_{q\bar{q}^{\textrm{Born}}} \int d\cos\theta \frac{dl^{0}}{l} \frac{4}{(1 - cos\theta)(1 + cos\theta)} \nonumber
-\end{equation}
-
-	Fixed Order computations diverge!
+	\begin{itemize} 
+		\item Ansatz for Sudakov $$\Delta_{i}(t, t') = \exp\Bigg\{- \int_{t'}^{t} \frac{dt''}{t''}\int dz \sum_{jl} P_{i, jl}(z) \frac{\alpha_{s}(t')}{2\pi} \Bigg\}$$
+		\item Therefore $\partial \Delta(t, t') / \partial t \propto \Delta(t, t') \longrightarrow$ apply shower recursively
+	\end{itemize}
 
 \end{frame}
 
-% Resummation QCD
+% Shower equation III
 \begin{frame}
 
-	\frametitle{Resummation in QCD}
-	\framesubtitle{Resumming large logs}
-
-	Truncated fixed order predictions $\rightarrow$ divergent $\ln^{m}(M^{2}/q_{\perp}^{2})$ appear.\\
-	Then the $q_{\perp}$ distribution need to be evaluated by replacing the partonic cross section as follows
+	\frametitle{Parton showers and MC generators}
+	\framesubtitle{Shower algorithm}
 	
-	\begin{equation}
-		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} \rightarrow 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{res.}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{l.a.}} + 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{fin.}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \nonumber
-	\end{equation}
+	Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
+	\begin{enumerate} 
+		\item Set scale $t$ to $Q$, hard scale of the process
+		\item Generate random number $0 < r < 1$
+		\item Solve $r = \Delta_{i}(t, t')$ for t'
+		\item i) if $t' < t_{0}$, no further branching and stop shower
+		\item ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$
+		\item For each branched partons set $t = t'$ and start from (2)
+	\end{enumerate}
 
-	Resummed expression 
-	\begin{equation}
-		\frac{d\hat{\sigma}_{ab}^{\textrm{res.}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; \mathcal{W}_{ab}(b, M, \hat{s}; \alpha_{s}(\mu_{R}^{2}), \mu_{R}^{2}, \mu_{F}^{2}) \nonumber
-	\end{equation}
+\end{frame}
+
+% Shower equation ISR I
+\begin{frame}
+
+	\frametitle{Parton showers and MC generators}
+	\framesubtitle{Initial state radiation}
 	
-	Being
-	\begin{equation}
-		\mathcal{W}_{N}(b, M, \hat{s}; \alpha_{s}(\mu_{R}^{2}), \mu_{R}^{2}, \mu_{F}^{2}) = \mathcal{H} \times exp\{\mathcal{G}\} \nonumber
-	\end{equation}
-
+	ISR already important in QED $\longrightarrow$ Used to determine the $Z$ peak at LEP
+	\begin{figure}
+		\includegraphics[width = 3 cm]{plots/shower_ISR.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item QCD coupling much larger $\longrightarrow$ QCD ISR even more important
+		\item Specially large for small momentum transfer
+		\item Same as final state partons \textit{always} manifest as jets, initial state ones \textit{always} lead to ISR
+	\end{itemize}
+	
 \end{frame}
 
+% Shower equation ISR II
 \begin{frame}
 
-	\frametitle{Resummation in QCD}
-	\framesubtitle{Resumming large logs}
-		
-		\begin{figure}[!htb]
-			\includegraphics[width = 6 cm]{plots/hqt_resummed.png}
-		\end{figure}
-		
-		\begin{enumerate}
-			\item FO distribution diverges at small $q_{\perp}$
-			\item Sudakov factor kills the divergence
-			\item Matched at some intermediate accuracy
-		\end{enumerate}
-
-\end{frame}
-
-% HTurbo
-\begin{frame}
-
-\center{\color{blue}HTurbo: Fast predictions for Higgs production}
-
-\end{frame}
-
-% HqT and HRes
-\begin{frame}
-
-	\frametitle{HqT and HRes}
-	\framesubtitle{Predictions for Higgs $q_{\perp}$ distribution}
+	\frametitle{Parton showers and MC generators}
+	\framesubtitle{Initial state radiation}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/hqt_resummed.png}
+		\includegraphics[width = 5.5 cm]{plots/shower_ISR_2.png}
 	\end{figure}
-\end{frame}
-
-% DYturbo
-\begin{frame}
-
-	\frametitle{HTurbo}
-	\framesubtitle{Higgs distribution from Drell Yan}
-	Take DYTurbo from \href{https://dyturbo.hepforge.org/}{DYTurbo}\\
-	Ref. at \href{https://arxiv.org/abs/1910.07049}{1910.07049}
-	\begin{enumerate}
-		\item Matrix element
-		\item Sudakov factors
-		\item Hard coefficients 
-		\item LO integration
-	\end{enumerate}
-
-\end{frame}
-
-% Results
-\begin{frame}
-
-\frametitle{Results}
-\framesubtitle{Comparison HTurbo and HqT}
-
-\begin{figure}
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_LL.png}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_NLL.png}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_all.png}
-	\endminipage
-\end{figure}
-
-\begin{itemize}
-	\item HTurbo produces qt distributions that match HRes and HqT
-	\item Excellent numerical agreement up to NNLO
-\end{itemize}
-
-\end{frame}
-
-% Conclusions
-\begin{frame}
 	
-	\frametitle{Summary $\&$ Conclusions}
-
-	\vspace{2.0 cm}
+	\begin{itemize} 
+		\item Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
+		\item Difference in Sudakov factors and Splitting functions start at NLO
+	\end{itemize}
 	
-	\begin{enumerate}
-		\item Fast predictions are required towards the precision era of the LHC
-		\item HTurbo produces qt distributions that perfectly match HRes and HqT
-		\item Predictions by HTurbo are much faster than any of the existing codes
-		\item Next steps: Implement PDF evolution N3LO distributions
+	\begin{figure}
+		\includegraphics[width = 10 cm]{plots/shower_ISR_3.png}
+	\end{figure}
 
-	\end{enumerate}
+\end{frame}
 
-	\vspace{2.0 cm}
+% Shower equation III
+\begin{frame}
 
-	{\small \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
+	\frametitle{Parton showers and MC generators}
+	\framesubtitle{Ordering variables}
+	
+	HERWIG
+	\begin{itemize} 
+		\item Ordering variable $t = E^{2}\theta^{2}/2$
+		\item Order of transverse momentum as "angular ordering"
+		\item IR cut-off needed
+	\end{itemize}
+
+	PYTHIA
+	\begin{itemize} 
+		\item There is not angular ordering. Virtualies strictly ordered in the shower.
+		\item More natural kinematics
+		\item Unphysical increase of number of partons $\longrightarrow$ solve by veto branchings that violate angular ordering.
+	\end{itemize}
 
 \end{frame}
 
