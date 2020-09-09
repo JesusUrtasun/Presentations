@@ -112,15 +112,14 @@
 	\begin{enumerate}
 		\item {\color{blue}QCD in a nutshell}
 		\begin{itemize}
-			\item The Standard Model $\&$ strong interactions
-			\item Running QCD coupling
-			\item Factorization theorem
+			\item Factorization in QCD
+			\item Partonic cross section
+			\item Perturbative QCD
 		\end{itemize}
 		\item {\color{blue}Dealing with divergences}
 		\begin{itemize}
-			\item Perturbative QCD and series expansion
-			\item Fixed order calculations
-			\item Resummation
+			\item Higher order corrections
+			\item Resummation in QCD
 		\end{itemize}
 		\item {\color{blue}HTurbo}
 		\begin{itemize}
@@ -139,53 +138,11 @@
 
 \end{frame}
 
-% The Standard model
-\begin{frame}
-
-	\frametitle{QCD in a nutshell}
-	\framesubtitle{The Standard Model}
-
-	\begin{figure}
-		\includegraphics[width = 6 cm]{plots/SM.png}
-	\end{figure}
- 
-	
-	Quantum Field Theory describing physics at the TeV scale
-	\begin{enumerate}
-		\item Fermions composing matter
-		\item Bosons mediating interactions
-		\item Scalar Higgs generating mass
-	\end{enumerate}	
-	
-\end{frame}
-
-% Explore the proton structure
-\begin{frame}
-
-	\frametitle{QCD in a nutshell}
-	\framesubtitle{Explore the strong interactions}
-	
-	How to explore proton's inner structure?
-	
-	\begin{figure}
-		\includegraphics[width = 0.5\linewidth]{plots/protons.png}
-	\end{figure}
-	
-	
-	\begin{itemize}
-		\item Point-like projectile on the object $\longrightarrow$ DIS
-		\item Smash the two objects $\longrightarrow$ LHC physics
-	\end{itemize}
-	
-	{\color{blue}"A way to analyze high energy collisions is to consider any hadron as a composition of point-like constituents $\longrightarrow$ \textbf{partons"} } R.Feynman, 1969 
-
-\end{frame}
-
 % Parton Distribution Functions
 \begin{frame}
 
 	\frametitle{QCD in a nutshell}
-	\framesubtitle{Parton Distribution Functions}
+	\framesubtitle{Address nuclear structure}
 	
 	\begin{figure}
 		\minipage{0.5\textwidth}
@@ -196,95 +153,100 @@
 		\endminipage
 	\end{figure}
 	
-
 	\begin{itemize}
 		\item Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
-		\item Interactions take place only at partonic level $\longrightarrow$ asymptotic freedom
-		\item Running coupling given by Renormalization Group Equation (RGE)
+		\item Smash two hadrons to explore internal structure $\longrightarrow$ LHC physics
 	\end{itemize}
-
-	\begin{equation}
-		{\color{blue}\mu\frac{d\alpha(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
-	\end{equation}
 
 \end{frame}
 
-% Factorization theorem
+% Factorization theorem I
 \begin{frame}
 
 	\frametitle{QCD in a nutshell}
 	\framesubtitle{Factorization theorem}
-	
-	Observables in hadronic events $\longrightarrow$ $\sigma$ is hard to compute
-	
+
 	\begin{figure}
-		\begin{tikzpicture}
-		% Incoming first proton 
-		\draw [thick, fermion] (-4, 0.7)--(-2, 0.7);
-		\draw [thick, fermion] (-4, 0)--(-2.7, 0);
-		\draw [thick, fermion] (-4, -0.7)--(-2, -0.7);
-		\draw [thick, very thick, pattern = north east lines] (-2, 0) circle [radius = 0.7];
-		% Gluons
-		\draw [thick, gluon] (-1.3, 0)--(0, 0);
-		\draw [thick, gluon] (0, 0)--(1.3, 0);
-		\node at (-0.5, 0.5) {$\vec{x_{1}p}$};
-		\node at (0.5, -0.5) {$\vec{x_{2}p}$};
-		\draw [thick, very thick, fill = black, pattern = north east lines] (0, 0) circle [radius = 0.03];
-		% Incoming second proton
-		\draw [thick, very thick, pattern = north east lines] (2, 0) circle [radius = 0.7];
-		\draw [thick, fermionbar] (2, 0.7)--(4, 0.7);
-		\draw [thick, fermionbar] (2.7, 0)--(4, 0);
-		\draw [thick, fermionbar] (2, -0.7)--(4, -0.7);
-		\end{tikzpicture}
+		\includegraphics[width = 8 cm]{plots/factorization_1.png}
 	\end{figure}
 	
-	Factorize the problem $\longrightarrow$ Convolute the {\color{red}PDFs}  with the partonic ${\color{blue}\hat{\sigma}_{i j}}$
+	Factorize the problem $\longrightarrow$ Convolute the {\color{blue}PDFs} with the partonic ${\color{red}\hat{\sigma}_{i j}}$
 	
 	\begin{equation}
 		\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
 	\end{equation}
 	
 	\begin{itemize}
-		\item Partonic {\color{blue}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
-		\item {\color{red}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
+		\item Partonic {\color{red}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
+		\item {\color{blue}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
 	\end{itemize}
 
 \end{frame}
 
-% Dealing with divergences
+% Factorization theorem II
 \begin{frame}
+	
+	\frametitle{QCD in a nutshell}
+	\framesubtitle{Factorization theorem}
+	
+	\begin{figure}
+		\includegraphics[width = 8 cm]{plots/factorization_2.png}
+	\end{figure}
 
-\center{\color{blue}Dealing with divergences}
-
+	Factorize the problem $\longrightarrow$ Convolute the {\color{blue}PDFs} with the partonic ${\color{red}\hat{\sigma}_{i j}}$
+	
+	\begin{equation}
+		\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
+	\end{equation}
+	
+	\begin{itemize}
+		\item Partonic {\color{red}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
+		\item {\color{blue}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
+	\end{itemize}
+	
 \end{frame}
 
 % Partonic cross section and pQCD
 \begin{frame}
 
 	\frametitle{Partonic cross section and pQCD}
-	\framesubtitle{Why do we need series expansion?}
+	\framesubtitle{Perturbative QCD}
 	\begin{columns}
 		
 		\column{0.45\textwidth}
 		
-		\begin{enumerate}
-			\item QCD in e+e- collisions
-			\item Measure only hadrons in the final state
+		\begin{itemize}
 			\item Factorization theorem helps us to understand short range interactions
-		\end{enumerate}
+			\item Write cross section as a perturbative series
+			
+		\end{itemize}
 		
 		\column{0.45\textwidth}
 		\begin{figure}[!htb]
-			\includegraphics[width = \linewidth]{plots/ee_hadrons.png}
+			\includegraphics[width = 5 cm]{plots/factorization_3.png}
 		\end{figure}
 	
 	\end{columns}
-
-	Write the cross section as a perturbative series
 	
+	\begin{equation}
+		\hat{\sigma} = \sigma^{\texttt{Born}} \Bigg( 1 +
+		\frac{\alpha_{s}}{2\pi} \sigma^{(1)} + 
+		\Big(\frac{\alpha_{s}}{2\pi}\Big)^{2} \sigma^{(2)} + 
+		\Big(\frac{\alpha_{s}}{2\pi}\Big)^{3} \sigma^{(3)} + ... \Bigg) \nonumber
+	\end{equation}
+	
+	Leading order predictions can strongly depend on the renormalization and factorization scales $\rightarrow$ {\color{red}Need higher order corrections}
+
 \end{frame}
 
-% Perturbative QCD
+% Dealing with divergences
+\begin{frame}
+
+	\center{\color{blue}Dealing with divergences}
+
+\end{frame}
+
+% Higher order corrections
 \begin{frame}
 
 	\frametitle{Perturbative QCD}
@@ -294,9 +256,9 @@
 	\column{0.45\textwidth}
 	
 	\begin{enumerate}
-		\item QCD in e+e- collisions
-		\item Measure only hadrons in the final state
-		\item Factorization theorem helps us to understand short range interactions
+		\item Higher order corrections are {\color{red}not an easy task} due to {\color{red} infrared (IR) singularities}
+		\item Soft and collinear singularities
+		\item Impossible direct use of numerical techniques
 	\end{enumerate}
 	
 	\column{0.45\textwidth}
@@ -304,57 +266,82 @@
 		\includegraphics[width = \linewidth]{plots/qcd_corrections.png}
 	\end{figure}
 	
-\end{columns}
-
-\begin{equation}
-	\sigma_{q\bar{q}g} = C_{F} \frac{\alpha_{s}}{2\pi} \sigma_{q\bar{q}^{\textrm{Born}}} \int d\cos\theta \frac{dl^{0}}{l} \frac{4}{(1 - cos\theta)(1 + cos\theta)} \nonumber
-\end{equation}
-
-	Fixed Order computations diverge!
+	\end{columns}
 
 \end{frame}
 
-% Resummation QCD
+% Resummation in QCD I
+\begin{frame}
+
+	\frametitle{Resummation in QCD}
+	\framesubtitle{Resumming large logs}
+	
+	Produce a final state from hadron collisions and study the $q_{\perp}$ distribution 
+	
+	\begin{columns}
+	\column{0.45\textwidth}
+	
+	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
+	
+	\column{0.45\textwidth}
+
+	\begin{figure}
+		\includegraphics[width = 4cm]{plots/qT_diagram.png}
+	\end{figure}
+	
+	\end{columns}
+
+	\vspace{1cm}
+
+	Truncated fixed order predictions $\rightarrow$ {\color{red}divergent $\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}.\\
+	Then the $q_{\perp}$ distribution need to be evaluated by replacing the partonic cross section as follows
+
+\end{frame}
+
+% Resummation in QCD II
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
 	\framesubtitle{Resumming large logs}
 
-	By truncating the perturbative series at some fixed order, logarithmically enhanced contributions of the form $\ln^{m}(M^{2}/q_{\perp}^{2})$ appear. Then the $q_{\perp}$ distribution need to be evaluated by replacing the partonic cross section as follows
+	Replace partonic $q_{\perp}$ distribution as follows
 	
 	\begin{equation}
 		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} \rightarrow 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{res.}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{l.a.}} + 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{fin.}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \nonumber
+		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{l.a.}} + 
+		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \nonumber
 	\end{equation}
 
-	Resummed expression 
-	\begin{equation}
-		\frac{d\hat{\sigma}_{ab}^{\textrm{res.}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; \mathcal{W}_{ab}(b, M, \hat{s}; \alpha_{s}(\mu_{R}^{2}), \mu_{R}^{2}, \mu_{F}^{2}) \nonumber
-	\end{equation}
-	
-	Being
-	\begin{equation}
-		\mathcal{W}_{N}(b, M, \hat{s}; \alpha_{s}(\mu_{R}^{2}), \mu_{R}^{2}, \mu_{F}^{2}) = \mathcal{H} \times exp\{\mathcal{G}\} \nonumber
-	\end{equation}
+	such that
+	\begin{align}
+		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} &\sim \sum \alpha_{s}^{n} \log^{m} \frac{M^{2}}{Q_{\perp}^{2}} \textrm{\quad for \quad} q_{\perp} \rightarrow 0 \nonumber \\
+		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &\sim 0 \nonumber \textrm{\quad for \quad} q_{\perp} \rightarrow 0
+	\end{align}
 
 \end{frame}
 
+% Resummation in QCD III
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
-	\framesubtitle{Resumming large logs}
-		
-		\begin{figure}[!htb]
-			\includegraphics[width = 6 cm]{plots/resummed.png}
-		\end{figure}
-		
-		\begin{enumerate}
-			\item FO distribution diverges at small $q_{\perp}$
-			\item Sudakov factor kills the divergence
-			\item Matched at some intermediate accuracy
-		\end{enumerate}
+	\framesubtitle{$q_{\perp}$ subtraction}
+	
+	Resummation holds in impact parameter space $b$
+	\begin{equation}
+		\frac{d\hat{\sigma}_{ab}^{\textrm{res.}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; {\color{red} \mathcal{W}_{ab}(b, M)} \nonumber
+	\end{equation}
+	
+	Which is expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$
+	\begin{equation}
+		{\color{red} \mathcal{W}_{N}(b, M) = \mathcal{H}_{N}(\alpha_{s}) \times exp\{\mathcal{G}_{N}(\alpha_{s}, L)\}} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
+	\end{equation}
 
+	\begin{itemize}
+		\item Resummed effects exponentiated in a universal Sudakov factor
+		\item Process-dependence factorized in the hard factor
+	\end{itemize}
+
+	
 \end{frame}
 
 % HTurbo
@@ -368,22 +355,51 @@
 \begin{frame}
 
 	\frametitle{HqT and HRes}
-	\framesubtitle{Predictions for Higgs qT distribution}
+	\framesubtitle{Predictions for Higgs $q_{\perp}$ distribution}
 	
+	\begin{columns}
+		
+		\column{0.45\textwidth}
+			
+			\begin{itemize}
+				\item HqT and HRes {\color{blue}[de Florian, G.F., Grazzini, Tommasini]} produce $q_{\perp}$ distributions
+				\item Higher order corrections require {\color{red}high computation time}
+				\item Codes producing fast predictions are needed for precision era of the LHC
+			\end{itemize}
+
+		\column{0.45\textwidth}
+	
+		\begin{figure}
+			\includegraphics[width = 7 cm]{plots/higgs_qt_all.png}
+		\end{figure}		
+			
+	\end{columns}
+
 \end{frame}
 
 % DYturbo
 \begin{frame}
 
-	\frametitle{DYTurbo}
-	\framesubtitle{Modify a fast version for Drell Yan}
-
+	\frametitle{HTurbo}
+	\framesubtitle{Higgs distribution from Drell-Yan}
+	Start from DYTurbo [Camarda et al.] ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}} and {\color{blue} \href{https://dyturbo.hepforge.org/}{/dyturbo}}
 	\begin{enumerate}
-		\item Matrix element
-		\item Sudakov factor
-		\item Hard coefficients
-		\item LO integration
+		\item Matrix element $gg \rightarrow H$ as LO amplitude
+		\item Set Sudakov and Hard coefficients for Higgs production
 	\end{enumerate}
+	
+	\begin{align}
+		\mathcal{G}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
+		\mathcal{H}(\alpha_{s}) &= 1 + \frac{\alpha_{s}}{\pi}\mathcal{H}^{(1)} + \Big(\frac{\alpha_{s}}{\pi}\Big)^{2}\mathcal{H}^{(2)} + ...  \nonumber
+	\end{align}
+	
+	Build predictions up to NNLO
+		
+	\begin{align}
+		&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
+		&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
+		&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
+	\end{align}
 
 \end{frame}
 
@@ -401,13 +417,13 @@
 	\includegraphics[width = \linewidth]{plots/hturbo_NLL.png}
 	\endminipage\hfill
 	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_all.png}
+	\includegraphics[width = \linewidth]{plots/hturbo_NLL.png}
 	\endminipage
 \end{figure}
 
 \begin{itemize}
 	\item HTurbo produces qt distributions that match HRes and HqT
-	\item Excellent numerical agreement up to NNLO
+	\item Discrepancy at the 1/1000 level at NLL, at the 1/10 for NLL
 \end{itemize}
 
 \end{frame}
@@ -429,8 +445,21 @@
 
 	\vspace{2.0 cm}
 
-	{\small \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
+\end{frame}
+
+% Conclusions
+\begin{frame}
+
+\center {\color{blue}Thank you!}
+
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/thinking.png}
+	\end{figure}		
+
+
+{\small \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
 
 \end{frame}
+
 
 \end{document}
