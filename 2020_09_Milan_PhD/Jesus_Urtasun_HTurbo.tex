@@ -116,10 +116,10 @@
 			\item Partonic cross section
 			\item Perturbative QCD
 		\end{itemize}
-		\item {\color{blue}Dealing with divergences}
+		\item {\color{blue}Resummation in QCD}
 		\begin{itemize}
 			\item Higher order corrections
-			\item Resummation in QCD
+			\item Resummation of $q_{\perp}$
 		\end{itemize}
 		\item {\color{blue}HTurbo}
 		\begin{itemize}
@@ -156,6 +156,7 @@
 	\begin{itemize}
 		\item Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
 		\item Smash two hadrons to explore internal structure $\longrightarrow$ LHC physics
+		\item Compute cross section is a {\color{red}hard problem} $\longrightarrow$ {\color{blue}QCD Factorization}
 	\end{itemize}
 
 \end{frame}
@@ -167,58 +168,50 @@
 	\framesubtitle{Factorization theorem}
 
 	\begin{figure}
-		\includegraphics[width = 8 cm]{plots/factorization_1.png}
+		\includegraphics[width = 7 cm]{plots/factorization_1.png}
 	\end{figure}
 	
-	Factorize the problem $\longrightarrow$ Convolute the {\color{blue}PDFs} with the partonic ${\color{red}\hat{\sigma}_{i j}}$
+	Factorization in QCD $\longrightarrow$ Convolute the {\color{blue}PDFs} with the partonic ${\color{red}\hat{\sigma}_{\alpha\beta}^{\textrm{F}}}$
 	
 	\begin{equation}
-		\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
+		\sigma^{\textrm{F}}(p_{1}, p_{2}) =
+		\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha}(x_{1}, \mu_{F}^{2}) \ast f_{\beta}(x_{2}, \mu_{F}^{2})}
+		\; \ast \;  
+		{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
 	\end{equation}
-	
-	\begin{itemize}
-		\item Partonic {\color{red}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
-		\item {\color{blue}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
-	\end{itemize}
 
 \end{frame}
 
-% Factorization theorem II
+% Partonic cross section
 \begin{frame}
 	
 	\frametitle{QCD in a nutshell}
-	\framesubtitle{Factorization theorem}
+	\framesubtitle{Partonic cross section}
 	
 	\begin{figure}
-		\includegraphics[width = 8 cm]{plots/factorization_2.png}
+		\includegraphics[width = 7 cm]{plots/factorization_2.png}
 	\end{figure}
-
-	Factorize the problem $\longrightarrow$ Convolute the {\color{blue}PDFs} with the partonic ${\color{red}\hat{\sigma}_{i j}}$
-	
-	\begin{equation}
-		\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
-	\end{equation}
 	
 	\begin{itemize}
-		\item Partonic {\color{red}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
-		\item {\color{blue}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
+		\item {\color{blue}PDFs} ${\color{blue} f_{\alpha}(x_{i}, \mu_{F}^{2})}$ absorb the non perturbative effects, evaluated at $\mu_{F}$
+		\item Partonic {\color{red}$\hat{\sigma}^{\textrm{F}}_{\alpha \beta}$} can be computed as perturbative series in $\alpha_{s}$
 	\end{itemize}
 	
 \end{frame}
 
-% Partonic cross section and pQCD
+% Perturbative QCD
 \begin{frame}
 
-	\frametitle{Partonic cross section and pQCD}
+	\frametitle{QCD in a nutshell}
 	\framesubtitle{Perturbative QCD}
+	
 	\begin{columns}
 		
 		\column{0.45\textwidth}
 		
 		\begin{itemize}
-			\item Factorization theorem helps us to understand short range interactions
-			\item Write cross section as a perturbative series
-			
+			\item Born cross section as LO value of a perturbative series
+			\item $\sigma^{(1)}, \sigma^{(2)}, \sigma^{(3)}$ are the NLO, NNLO, N3LO corrections
 		\end{itemize}
 		
 		\column{0.45\textwidth}
@@ -242,14 +235,14 @@
 % Dealing with divergences
 \begin{frame}
 
-	\center{\color{blue}Dealing with divergences}
+	\center{\color{blue}Resummation in QCD}
 
 \end{frame}
 
 % Higher order corrections
 \begin{frame}
 
-	\frametitle{Perturbative QCD}
+	\frametitle{Resummation in QCD}
 	\framesubtitle{Higher order corrections}
 	\begin{columns}
 	
@@ -270,11 +263,11 @@
 
 \end{frame}
 
-% Resummation in QCD I
+% q_{\perp} resummationI
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
-	\framesubtitle{Resumming large logs}
+	\framesubtitle{$q_{\perp}$ resummation}
 	
 	Produce a final state from hadron collisions and study the $q_{\perp}$ distribution 
 	
@@ -282,19 +275,20 @@
 	\column{0.45\textwidth}
 	
 	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
-	
-	\column{0.45\textwidth}
 
+	\column{0.55\textwidth}
+	
 	\begin{figure}
 		\includegraphics[width = 4cm]{plots/qT_diagram.png}
 	\end{figure}
-	
+
 	\end{columns}
 
-	\vspace{1cm}
+	\begin{figure}
+		\includegraphics[width = 7cm]{plots/qT_logs_table.png}
+	\end{figure}
 
-	Truncated fixed order predictions $\rightarrow$ {\color{red}divergent $\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}.\\
-	Then the $q_{\perp}$ distribution need to be evaluated by replacing the partonic cross section as follows
+	Truncated fixed order predictions $\rightarrow$ {\color{red}divergent $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}.
 
 \end{frame}
 
@@ -302,7 +296,7 @@
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
-	\framesubtitle{Resumming large logs}
+	\framesubtitle{$q_{\perp}$ resummation}
 
 	Replace partonic $q_{\perp}$ distribution as follows
 	
@@ -324,14 +318,14 @@
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
-	\framesubtitle{$q_{\perp}$ subtraction}
+	\framesubtitle{$q_{\perp}$ resummation}
 	
 	Resummation holds in impact parameter space $b$
 	\begin{equation}
 		\frac{d\hat{\sigma}_{ab}^{\textrm{res.}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; {\color{red} \mathcal{W}_{ab}(b, M)} \nonumber
 	\end{equation}
 	
-	Which is expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$
+	Which is expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$)
 	\begin{equation}
 		{\color{red} \mathcal{W}_{N}(b, M) = \mathcal{H}_{N}(\alpha_{s}) \times exp\{\mathcal{G}_{N}(\alpha_{s}, L)\}} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
 	\end{equation}
@@ -363,7 +357,7 @@
 			
 			\begin{itemize}
 				\item HqT and HRes {\color{blue}[de Florian, G.F., Grazzini, Tommasini]} produce $q_{\perp}$ distributions
-				\item Higher order corrections require {\color{red}high computation time}
+				\item Higher order corrections require {\color{red}high computation times}
 				\item Codes producing fast predictions are needed for precision era of the LHC
 			\end{itemize}
 
@@ -377,54 +371,122 @@
 
 \end{frame}
 
-% DYturbo
+% DYturbo II
+\begin{frame}
+
+\frametitle{HTurbo}
+\framesubtitle{Starting point DYTurbo}
+	
+	Start from \textbf{DYTurbo} [Camarda et al.] ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, producing $q_{\perp}$ distribution fro Drell-Yan ($q\bar{q} \rightarrow l^{+}l^{-}$)
+	
+	\begin{itemize}
+		\item Set LO amplitude to be $gg \rightarrow H$
+		\item Set Sudakov and Hard coefficients for Higgs production
+		\item Compare with \textbf{HRes} and \textbf{HqT}
+	\end{itemize}
+
+\end{frame}
+
+% DYturbo II
 \begin{frame}
 
 	\frametitle{HTurbo}
-	\framesubtitle{Higgs distribution from Drell-Yan}
-	Start from DYTurbo [Camarda et al.] ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}} and {\color{blue} \href{https://dyturbo.hepforge.org/}{/dyturbo}}
-	\begin{enumerate}
-		\item Matrix element $gg \rightarrow H$ as LO amplitude
+	\framesubtitle{Starting point DYTurbo}
+	
+	\begin{itemize}
+		\item Set LO amplitude to be $gg \rightarrow H$
 		\item Set Sudakov and Hard coefficients for Higgs production
-	\end{enumerate}
+		\item Compare with \textbf{HRes} and \textbf{HqT}
+	\end{itemize}
 	
 	\begin{align}
 		\mathcal{G}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
 		\mathcal{H}(\alpha_{s}) &= 1 + \frac{\alpha_{s}}{\pi}\mathcal{H}^{(1)} + \Big(\frac{\alpha_{s}}{\pi}\Big)^{2}\mathcal{H}^{(2)} + ...  \nonumber
 	\end{align}
 	
-	Build predictions up to NNLO
+	\begin{columns}
 		
-	\begin{align}
-		&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
-		&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
-		&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
-	\end{align}
+		\column{0.45\textwidth}
+
+		Build predictions up to NNLO
+	
+		\column{0.45\textwidth}
+		
+		\begin{align}
+			&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
+			&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
+			&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
+		\end{align}
+		
+	\end{columns}
 
 \end{frame}
 
-% Results
+% Results LL
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{Comparison HTurbo and HqT}
+	
+	\begin{figure}
+		\includegraphics[width = 8cm]{plots/hturbo_LL.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item HTurbo produces qt distributions that match HRes and HqT
+		\item Excellent numerical agreement up to the 1/1000
+	\end{itemize}
+
+\end{frame}
+
+% Results NLL
 \begin{frame}
 
-\frametitle{Results}
-\framesubtitle{Comparison HTurbo and HqT}
+	\frametitle{Results}
+	\framesubtitle{Comparison HTurbo and HqT}
+	
+	\begin{figure}
+		\includegraphics[width = 8cm]{plots/hturbo_NLL_noevol.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item Excellent numerical agreement up to the 1/1000
+		\item Perfect agreement when switching off PDF evolution
+	\end{itemize}
 
-\begin{figure}
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_LL.png}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_NLL.png}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/hturbo_NLL.png}
-	\endminipage
-\end{figure}
+\end{frame}
 
-\begin{itemize}
-	\item HTurbo produces qt distributions that match HRes and HqT
-	\item Discrepancy at the 1/1000 level at NLL, at the 1/10 for NLL
-\end{itemize}
+% Results NNLL
+\begin{frame}
+
+	\frametitle{Results}
+	\framesubtitle{Comparison HTurbo and HqT}
+	
+	\begin{figure}
+		\includegraphics[width = 8cm]{plots/hturbo_NNLL_f2only2.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item Excellent numerical agreement up to the 1/1000
+		\item Perfect agreement when switching off PDF evolution
+	\end{itemize}
+
+\end{frame}
+
+% Results NNLL
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{Comparison HTurbo and HqT}
+	
+	\begin{figure}
+		\includegraphics[width = 8cm]{plots/hturbo_all_noevol.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item Excellent numerical agreement up to the 1/1000
+		\item Perfect agreement when switching off PDF evolution
+	\end{itemize}
 
 \end{frame}
 
