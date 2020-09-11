@@ -134,34 +134,23 @@
 % QCD in a nutshell
 \begin{frame}
 
-\center{\color{blue}QCD in a nutshell}
+	\center{\color{blue}QCD in a nutshell}
 
 \end{frame}
 
-% Parton Distribution Functions
+% LHC physics
 \begin{frame}
 
 	\frametitle{QCD in a nutshell}
-	\framesubtitle{Address nuclear structure}
+	\framesubtitle{LHC physics}
 	
 	\begin{figure}
-		\minipage{0.5\textwidth}
-		\includegraphics[width = 0.5\linewidth]{plots/proton.png}
-		\endminipage\hfill
-		\minipage{0.5\textwidth}
-		\includegraphics[width = 0.4\linewidth]{plots/proton2.jpg}
-		\endminipage
+		\includegraphics[width = 9.5 cm]{plots/lhc_measurements.png}
 	\end{figure}
-	
-	\begin{itemize}
-		\item Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
-		\item Smash two hadrons to explore internal structure $\longrightarrow$ LHC physics
-		\item Compute cross section is a {\color{red}hard problem} $\longrightarrow$ {\color{blue}QCD Factorization}
-	\end{itemize}
 
 \end{frame}
 
-% Factorization theorem I
+% Factorization theorem
 \begin{frame}
 
 	\frametitle{QCD in a nutshell}
@@ -171,7 +160,7 @@
 		\includegraphics[width = 7 cm]{plots/factorization_1.png}
 	\end{figure}
 	
-	Factorization in QCD $\longrightarrow$ Convolute the {\color{blue}PDFs} with the partonic ${\color{red}\hat{\sigma}_{\alpha\beta}^{\textrm{F}}}$
+	Compute cross sections is a {\color{red}Hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
 	
 	\begin{equation}
 		\sigma^{\textrm{F}}(p_{1}, p_{2}) =
@@ -228,7 +217,7 @@
 		\Big(\frac{\alpha_{s}}{2\pi}\Big)^{3} \sigma^{(3)} + ... \Bigg) \nonumber
 	\end{equation}
 	
-	Leading order predictions can strongly depend on the renormalization and factorization scales $\rightarrow$ {\color{red}Need higher order corrections}
+	Leading order predictions can strongly depend on the renormalization and factorization scales $\rightarrow$ {\color{red}Need higher order corrections!}
 
 \end{frame}
 
@@ -250,8 +239,8 @@
 	
 	\begin{enumerate}
 		\item Higher order corrections are {\color{red}not an easy task} due to {\color{red} infrared (IR) singularities}
-		\item Soft and collinear singularities
-		\item Impossible direct use of numerical techniques
+		\item Final state radiations cancel by combining real and virtual contributions
+		\item Initial state radiations factorized inside the PDFs, then {\color{blue} IR-free, finite $\hat{\sigma}$}
 	\end{enumerate}
 	
 	\column{0.45\textwidth}
@@ -263,20 +252,24 @@
 
 \end{frame}
 
-% q_{\perp} resummationI
+% qT resummation I
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
 	\framesubtitle{$q_{\perp}$ resummation}
 	
-	Produce a final state from hadron collisions and study the $q_{\perp}$ distribution 
+	\center	Study the differential $q_{\perp}$ distribution \\
+	\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
 	
 	\begin{columns}
-	\column{0.45\textwidth}
 	
-	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
-
 	\column{0.55\textwidth}
+
+	\begin{figure}
+		\includegraphics[width = 7.5cm]{plots/qT_logs_table.png}
+	\end{figure}
+
+	\column{0.45\textwidth}
 	
 	\begin{figure}
 		\includegraphics[width = 4cm]{plots/qT_diagram.png}
@@ -284,11 +277,9 @@
 
 	\end{columns}
 
-	\begin{figure}
-		\includegraphics[width = 7cm]{plots/qT_logs_table.png}
-	\end{figure}
+	\vspace{0.5 cm}
 
-	Truncated fixed order predictions $\rightarrow$ {\color{red}divergent $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}.
+	Truncated fixed order predictions $\rightarrow$ {\color{red}divergent $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
 
 \end{frame}
 
@@ -303,18 +294,19 @@
 	\begin{equation}
 		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} \rightarrow 
 		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{l.a.}} + 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \nonumber
+		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \textrm{\quad, such that} \nonumber
 	\end{equation}
 
-	such that
 	\begin{align}
 		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} &\sim \sum \alpha_{s}^{n} \log^{m} \frac{M^{2}}{Q_{\perp}^{2}} \textrm{\quad for \quad} q_{\perp} \rightarrow 0 \nonumber \\
 		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &\sim 0 \nonumber \textrm{\quad for \quad} q_{\perp} \rightarrow 0
 	\end{align}
 
+	Resummed and finite components need to be matched at some logarithmic accuracy (LL, NLL, NNL, ...)
+
 \end{frame}
 
-% Resummation in QCD III
+% qT resummation III
 \begin{frame}
 
 	\frametitle{Resummation in QCD}
@@ -322,7 +314,7 @@
 	
 	Resummation holds in impact parameter space $b$
 	\begin{equation}
-		\frac{d\hat{\sigma}_{ab}^{\textrm{res.}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; {\color{red} \mathcal{W}_{ab}(b, M)} \nonumber
+		\frac{d\hat{\sigma}_{ab}^{\textrm{(res.)}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; {\color{red} \mathcal{W}_{ab}(b, M)} \nonumber
 	\end{equation}
 	
 	Which is expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$)
@@ -331,8 +323,8 @@
 	\end{equation}
 
 	\begin{itemize}
-		\item Resummed effects exponentiated in a universal Sudakov factor
-		\item Process-dependence factorized in the hard factor
+		\item Resummed effects exponentiated in the Sudakov factor {\color{red}$\mathcal{G}_{N}(\alpha_{s}, L)$}
+		\item Process-dependence factorized in the hard factor {\color{red}$\mathcal{H}_{N}(\alpha_{s})$}
 	\end{itemize}
 
 	
@@ -341,7 +333,7 @@
 % HTurbo
 \begin{frame}
 
-\center{\color{blue}HTurbo: Fast predictions for Higgs production}
+	\center{\color{blue}HTurbo: Fast predictions for Higgs production}
 
 \end{frame}
 
@@ -355,13 +347,13 @@
 		
 		\column{0.45\textwidth}
 			
-			\begin{itemize}
-				\item HqT and HRes {\color{blue}[de Florian, G.F., Grazzini, Tommasini]} produce $q_{\perp}$ distributions
-				\item Higher order corrections require {\color{red}high computation times}
-				\item Codes producing fast predictions are needed for precision era of the LHC
-			\end{itemize}
+		\begin{itemize}
+			\item HqT and HRes {\color{blue}[de Florian, G.F., Grazzini, Tommasini]} produce $q_{\perp}$ distributions
+			\item Higher order corrections require {\color{red}high computation times}
+			\item Codes producing fast predictions are needed for precision era of the LHC
+		\end{itemize}
 
-		\column{0.45\textwidth}
+		\column{0.55\textwidth}
 	
 		\begin{figure}
 			\includegraphics[width = 7 cm]{plots/higgs_qt_all.png}
@@ -371,7 +363,7 @@
 
 \end{frame}
 
-% DYturbo II
+% DYturbo I
 \begin{frame}
 
 \frametitle{HTurbo}
@@ -384,6 +376,10 @@
 		\item Set Sudakov and Hard coefficients for Higgs production
 		\item Compare with \textbf{HRes} and \textbf{HqT}
 	\end{itemize}
+
+	\vspace{0.5 cm}
+
+	{\color{red} State of the art is just up to NNLL!}
 
 \end{frame}
 
@@ -408,15 +404,15 @@
 		
 		\column{0.45\textwidth}
 
-		Build predictions up to NNLO
-	
-		\column{0.45\textwidth}
-		
 		\begin{align}
 			&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
 			&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
 			&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
 		\end{align}
+	
+		\column{0.45\textwidth}
+		
+		Start by building predictions up to NNLO, then add {\color{blue}N$^{3}$LL}
 		
 	\end{columns}
 
@@ -426,15 +422,15 @@
 \begin{frame}
 	
 	\frametitle{Results}
-	\framesubtitle{Comparison HTurbo and HqT}
+	\framesubtitle{Comparison HTurbo and HqT - LL}
 	
 	\begin{figure}
 		\includegraphics[width = 8cm]{plots/hturbo_LL.png}
 	\end{figure}
 	
 	\begin{itemize}
-		\item HTurbo produces qt distributions that match HRes and HqT
-		\item Excellent numerical agreement up to the 1/1000
+		\item HTurbo $q_{\perp}$ distribution matches HRes and HqT at LL
+		\item Excellent numerical agreement up to the 1/1000 level
 	\end{itemize}
 
 \end{frame}
@@ -443,15 +439,15 @@
 \begin{frame}
 
 	\frametitle{Results}
-	\framesubtitle{Comparison HTurbo and HqT}
+	\framesubtitle{Comparison HTurbo and HqT - NLL}
 	
 	\begin{figure}
 		\includegraphics[width = 8cm]{plots/hturbo_NLL_noevol.png}
 	\end{figure}
 	
 	\begin{itemize}
-		\item Excellent numerical agreement up to the 1/1000
-		\item Perfect agreement when switching off PDF evolution
+		\item HTurbo $q_{\perp}$ distribution matches HRes and HqT at NLL
+		\item Agreement obtained by switching off PDF evolution
 	\end{itemize}
 
 \end{frame}
@@ -460,32 +456,32 @@
 \begin{frame}
 
 	\frametitle{Results}
-	\framesubtitle{Comparison HTurbo and HqT}
+	\framesubtitle{Comparison HTurbo and HqT - NNLL}
 	
 	\begin{figure}
 		\includegraphics[width = 8cm]{plots/hturbo_NNLL_f2only2.png}
 	\end{figure}
 	
 	\begin{itemize}
-		\item Excellent numerical agreement up to the 1/1000
-		\item Perfect agreement when switching off PDF evolution
-	\end{itemize}
+		\item HTurbo $q_{\perp}$ distribution matches HRes and HqT at NNLL
+		\item Agreement obtained by switching off PDF evolution
+\end{itemize}
 
 \end{frame}
 
-% Results NNLL
+% Results all
 \begin{frame}
 	
 	\frametitle{Results}
-	\framesubtitle{Comparison HTurbo and HqT}
+	\framesubtitle{Comparison HTurbo and HqT - all orders}
 	
 	\begin{figure}
 		\includegraphics[width = 8cm]{plots/hturbo_all_noevol.png}
 	\end{figure}
 	
 	\begin{itemize}
-		\item Excellent numerical agreement up to the 1/1000
-		\item Perfect agreement when switching off PDF evolution
+		\item Higher orders lead to more reliable predictions {\color{darkgreen}$\checkmark$} 
+		\item Agreement up to NNLL $\longrightarrow$ {\color{blue}ready for N$^{3}$LL}
 	\end{itemize}
 
 \end{frame}
@@ -499,9 +495,9 @@
 	
 	\begin{enumerate}
 		\item Fast predictions are required towards the precision era of the LHC
-		\item HTurbo produces qt distributions that perfectly match HRes and HqT
-		\item Predictions by HTurbo are much faster than any of the existing codes
-		\item Next steps: Implement PDF evolution N3LO distributions
+		\item qt distributions from HTurbo {\color{blue}match HRes and HqT up to NNLL}
+		\item HTurbo is {\color{blue}much faster than any of the existing Higgs codes}
+		\item Next steps: Implement PDF evolution and {\color{blue}N$^{3}$LO distributions}
 
 	\end{enumerate}
 
