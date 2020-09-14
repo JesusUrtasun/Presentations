@@ -69,7 +69,7 @@
 %************************************************************************************************************
 
 % Title and author
-\title[Fast predictions for Higgs production]{Fast predictions for Higgs production}
+\title[QCD predictions for Higgs production]{QCD predictions for Higgs production}
 \author{\textbf {Jes\'us Urtasun Elizari}}
 %\institute{\textbf {University of Milan}}
 \date{Milan, September 2020}
@@ -82,7 +82,7 @@
 	%\maketitle
 	\vspace{1.0 cm}
 	
-	\center{\color{blue}HTurbo: Fast predictions for Higgs production at the LHC}
+	\center{\color{blue}High precision perturbative QCD predictions \\ for Higgs production at the LHC}
 	
 	\vspace{0.25 cm}
 	\center{Jes\'us Urtasun Elizari}
@@ -302,7 +302,7 @@
 		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &\sim 0 \nonumber \textrm{\quad for \quad} q_{\perp} \rightarrow 0
 	\end{align}
 
-	Resummed and finite components need to be matched at some logarithmic accuracy (LL, NLL, NNL, ...)
+	Resummed and finite components need to be matched at some logarithmic accuracy (LL, NLL, NNLL, ...)
 
 \end{frame}
 
@@ -319,7 +319,7 @@
 	
 	Which is expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$)
 	\begin{equation}
-		{\color{red} \mathcal{W}_{N}(b, M) = \mathcal{H}_{N}(\alpha_{s}) \times exp\{\mathcal{G}_{N}(\alpha_{s}, L)\}} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
+		{\color{red} \mathcal{W}_{N}(b, M) = \mathcal{H}_{N}(\alpha_{s}) \times \exp\{\mathcal{G}_{N}(\alpha_{s}, L)\}} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
 	\end{equation}
 
 	\begin{itemize}
@@ -366,14 +366,19 @@
 % DYturbo I
 \begin{frame}
 
-\frametitle{HTurbo}
-\framesubtitle{Starting point DYTurbo}
+	\frametitle{HTurbo}
+	\framesubtitle{Starting point DYTurbo}
+		
+	\begin{itemize}
+		\item Start from \textbf{DYTurbo} [Camarda et al.] ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, producing $q_{\perp}$ distribution fro Drell-Yan ($q\bar{q} \rightarrow l^{+}l^{-}$) 
+	\end{itemize}
 	
-	Start from \textbf{DYTurbo} [Camarda et al.] ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, producing $q_{\perp}$ distribution fro Drell-Yan ($q\bar{q} \rightarrow l^{+}l^{-}$)
+	{\color{blue}C++} interface rather that {\color{red}Fortran} of \textbf{HRes} or \textbf{HqT}
 	
 	\begin{itemize}
-		\item Set LO amplitude to be $gg \rightarrow H$
+		\item Set LO amplitude $gg \rightarrow H$
 		\item Set Sudakov and Hard coefficients for Higgs production
+		\item Implement PDF evolution
 		\item Compare with \textbf{HRes} and \textbf{HqT}
 	\end{itemize}
 
@@ -396,8 +401,8 @@
 	\end{itemize}
 	
 	\begin{align}
-		\mathcal{G}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
-		\mathcal{H}(\alpha_{s}) &= 1 + \frac{\alpha_{s}}{\pi}\mathcal{H}^{(1)} + \Big(\frac{\alpha_{s}}{\pi}\Big)^{2}\mathcal{H}^{(2)} + ...  \nonumber
+		\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
+		\mathcal{H}_{N}(\alpha_{s}) &= 1 + \frac{\alpha_{s}}{\pi}\mathcal{H}^{(1)} + \Big(\frac{\alpha_{s}}{\pi}\Big)^{2}\mathcal{H}^{(2)} + ...  \nonumber
 	\end{align}
 	
 	\begin{columns}
@@ -495,7 +500,7 @@
 	
 	\begin{enumerate}
 		\item Fast predictions are required towards the precision era of the LHC
-		\item qt distributions from HTurbo {\color{blue}match HRes and HqT up to NNLL}
+		\item $q_{\perp}$ distributions from HTurbo {\color{blue}match HRes and HqT up to NNLL}
 		\item HTurbo is {\color{blue}much faster than any of the existing Higgs codes}
 		\item Next steps: Implement PDF evolution and {\color{blue}N$^{3}$LO distributions}
 
@@ -508,14 +513,13 @@
 % Conclusions
 \begin{frame}
 
-\center {\color{blue}Thank you!}
+	\center {\color{blue}Thank you!}
 
 	\begin{figure}
 		\includegraphics[width = 4 cm]{plots/thinking.png}
 	\end{figure}		
 
-
-{\small \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
+	{\small \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
 
 \end{frame}
 
