@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  16 SEP 2020 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.18)  16 SEP 2020 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,72 +863,72 @@ s/n3pdf.png> <./plots/erc.png (PNG copy)>] [2
 ] [3
 
 ]
-<plots/lhc_measurements.png, id=51, 1247.66125pt x 911.405pt>
+<plots/lhc_measurements.png, id=49, 1247.66125pt x 911.405pt>
 File: plots/lhc_measurements.png Graphic file (type png)
 <use plots/lhc_measurements.png>
-Package pdftex.def Info: plots/lhc_measurements.png  used on input line 102.
+Package pdftex.def Info: plots/lhc_measurements.png  used on input line 101.
 (pdftex.def)             Requested size: 270.30118pt x 197.4502pt.
 
-Overfull \vbox (3.44621pt too high) detected at line 102
+Overfull \vbox (3.44621pt too high) detected at line 101
  []
 
 [4
 
  <./plots/lhc_measurements.png>]
-<plots/factorization_1.png, id=60, 1054.94125pt x 646.415pt>
+<plots/factorization_1.png, id=58, 1054.94125pt x 646.415pt>
 File: plots/factorization_1.png Graphic file (type png)
 <use plots/factorization_1.png>
-Package pdftex.def Info: plots/factorization_1.png  used on input line 125.
+Package pdftex.def Info: plots/factorization_1.png  used on input line 124.
 (pdftex.def)             Requested size: 199.16928pt x 122.04091pt.
 
-Overfull \hbox (10.40851pt too wide) detected at line 125
+Overfull \hbox (10.40851pt too wide) detected at line 124
 \OML/cmm/m/it/10.95 ^^[[]\OT1/cmss/m/n/10.95 (\OT1/cmss/m/it/10.95 p[]\OML/cmm/
 m/it/10.95 ; \OT1/cmss/m/it/10.95 p[]\OT1/cmss/m/n/10.95 ) = [][] \OT1/cmss/m/i
 t/10.95 dx[]dx[] [][]  \OMS/cmsy/m/n/10.95 ^^C  [][]
  []
 
 
-Overfull \vbox (4.53477pt too high) detected at line 125
+Overfull \vbox (4.53477pt too high) detected at line 124
  []
 
 [5
 
  <./plots/factorization_1.png>]
-<plots/factorization_2.png, id=74, 1058.95625pt x 648.4225pt>
+<plots/factorization_2.png, id=73, 1058.95625pt x 648.4225pt>
 File: plots/factorization_2.png Graphic file (type png)
 <use plots/factorization_2.png>
-Package pdftex.def Info: plots/factorization_2.png  used on input line 142.
+Package pdftex.def Info: plots/factorization_2.png  used on input line 141.
 (pdftex.def)             Requested size: 199.16928pt x 121.9549pt.
  [6
 
  <./plots/factorization_2.png>]
-<plots/factorization_3.png, id=82, 447.6725pt x 368.37625pt>
+<plots/factorization_3.png, id=81, 447.6725pt x 368.37625pt>
 File: plots/factorization_3.png Graphic file (type png)
 <use plots/factorization_3.png>
-Package pdftex.def Info: plots/factorization_3.png  used on input line 175.
+Package pdftex.def Info: plots/factorization_3.png  used on input line 174.
 (pdftex.def)             Requested size: 142.26378pt x 117.06776pt.
  [7
 
  <./plots/factorization_3.png>] [8
 
 ]
-<plots/qcd_corrections.png, id=98, 507.8975pt x 436.63126pt>
+<plots/qcd_corrections.png, id=97, 507.8975pt x 436.63126pt>
 File: plots/qcd_corrections.png Graphic file (type png)
 <use plots/qcd_corrections.png>
-Package pdftex.def Info: plots/qcd_corrections.png  used on input line 206.
+Package pdftex.def Info: plots/qcd_corrections.png  used on input line 205.
 (pdftex.def)             Requested size: 154.03183pt x 132.41614pt.
  [9
 
  <./plots/qcd_corrections.png>]
-<plots/qT_diagram.png, id=106, 402.50375pt x 222.8325pt>
+<plots/qT_diagram.png, id=105, 402.50375pt x 222.8325pt>
 File: plots/qT_diagram.png Graphic file (type png)
 <use plots/qT_diagram.png>
-Package pdftex.def Info: plots/qT_diagram.png  used on input line 235.
+Package pdftex.def Info: plots/qT_diagram.png  used on input line 236.
 (pdftex.def)             Requested size: 113.81102pt x 63.0047pt.
-<plots/qT_logs_table.png, id=107, 727.71875pt x 239.89626pt>
+<plots/qT_logs_table.png, id=106, 727.71875pt x 239.89626pt>
 File: plots/qT_logs_table.png Graphic file (type png)
 <use plots/qT_logs_table.png>
-Package pdftex.def Info: plots/qT_logs_table.png  used on input line 235.
+Package pdftex.def Info: plots/qT_logs_table.png  used on input line 236.
 (pdftex.def)             Requested size: 213.39566pt x 70.34781pt.
  [10
 
@@ -939,7 +939,7 @@ Package pdftex.def Info: plots/qT_logs_table.png  used on input line 235.
 ] [13
 
 ]
-<plots/higgs_qt_all.png, id=138, 462.528pt x 318.7107pt>
+<plots/higgs_qt_all.png, id=137, 462.528pt x 318.7107pt>
 File: plots/higgs_qt_all.png Graphic file (type png)
 <use plots/higgs_qt_all.png>
 Package pdftex.def Info: plots/higgs_qt_all.png  used on input line 315.
@@ -956,45 +956,49 @@ Overfull \hbox (10.90582pt too wide) in paragraph at lines 315--315
 ] [16
 
 ]
-<plots/hturbo_LL.png, id=159, 462.528pt x 318.7107pt>
+<plots/hturbo_LL.png, id=158, 462.528pt x 318.7107pt>
 File: plots/hturbo_LL.png Graphic file (type png)
 <use plots/hturbo_LL.png>
-Package pdftex.def Info: plots/hturbo_LL.png  used on input line 388.
+Package pdftex.def Info: plots/hturbo_LL.png  used on input line 382.
 (pdftex.def)             Requested size: 227.62204pt x 156.84557pt.
  [17
 
  <./plots/hturbo_LL.png>]
-<plots/hturbo_NLL_noevol.png, id=167, 462.528pt x 318.7107pt>
+<plots/hturbo_NLL_noevol.png, id=166, 462.528pt x 318.7107pt>
 File: plots/hturbo_NLL_noevol.png Graphic file (type png)
 <use plots/hturbo_NLL_noevol.png>
-Package pdftex.def Info: plots/hturbo_NLL_noevol.png  used on input line 405.
+Package pdftex.def Info: plots/hturbo_NLL_noevol.png  used on input line 399.
 (pdftex.def)             Requested size: 227.62204pt x 156.84557pt.
  [18
 
  <./plots/hturbo_NLL_noevol.png>]
-<plots/hturbo_NNLL_f2only2.png, id=175, 462.528pt x 318.7107pt>
+<plots/hturbo_NNLL_f2only2.png, id=174, 462.528pt x 318.7107pt>
 File: plots/hturbo_NNLL_f2only2.png Graphic file (type png)
 <use plots/hturbo_NNLL_f2only2.png>
-Package pdftex.def Info: plots/hturbo_NNLL_f2only2.png  used on input line 422.
+Package pdftex.def Info: plots/hturbo_NNLL_f2only2.png  used on input line 416.
 
 (pdftex.def)             Requested size: 227.62204pt x 156.84557pt.
  [19
 
  <./plots/hturbo_NNLL_f2only2.png>]
-<plots/hturbo_all_noevol.png, id=185, 462.528pt x 318.7107pt>
+<plots/hturbo_all_noevol.png, id=184, 462.528pt x 318.7107pt>
 File: plots/hturbo_all_noevol.png Graphic file (type png)
 <use plots/hturbo_all_noevol.png>
-Package pdftex.def Info: plots/hturbo_all_noevol.png  used on input line 439.
+Package pdftex.def Info: plots/hturbo_all_noevol.png  used on input line 433.
 (pdftex.def)             Requested size: 227.62204pt x 156.84557pt.
  [20
 
- <./plots/hturbo_all_noevol.png>] [21
+ <./plots/hturbo_all_noevol.png>]
+Overfull \vbox (17.7515pt too high) detected at line 457
+ []
+
+[21
 
 ]
-<plots/thinking.png, id=200, 287.0725pt x 420.57124pt>
+<plots/thinking.png, id=199, 287.0725pt x 420.57124pt>
 File: plots/thinking.png Graphic file (type png)
 <use plots/thinking.png>
-Package pdftex.def Info: plots/thinking.png  used on input line 471.
+Package pdftex.def Info: plots/thinking.png  used on input line 470.
 (pdftex.def)             Requested size: 113.81102pt x 166.73668pt.
  [22
 
@@ -1008,19 +1012,18 @@ Package pdftex.def Info: plots/thinking.png  used on input line 471.
 \tf@snm=\write8
 \openout8 = `Jesus_Urtasun_HTurbo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
-
-(./Jesus_Urtasun_HTurbo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
+ (./Jesus_Urtasun_HTurbo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 473.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
 Package rerunfilecheck Info: File `Jesus_Urtasun_HTurbo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  17107 strings out of 494923
  325625 string characters out of 6180742
- 392564 words of memory out of 5000000
+ 391564 words of memory out of 5000000
  19962 multiletter control sequences out of 15000+600000
  19127 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1043,7 +1046,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Jesus_Urtasun_HTurbo.pdf (22 pages, 1044966 bytes).
+Output written on Jesus_Urtasun_HTurbo.pdf (22 pages, 1045856 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  194 compressed objects within 2 object streams
