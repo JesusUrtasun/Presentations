@@ -113,7 +113,7 @@
 		\item {\color{blue}QCD in a nutshell}
 		\begin{itemize}
 			\item The Standard Model of particle physics
-			\item QCD and strong interactions
+			\item LHC physics and theory uncertainties
 			\item Factorization theorem
 		\end{itemize}
 		\item {\color{blue}Machine Learning}
@@ -123,8 +123,8 @@
 		\end{itemize}
 		\item {\color{blue}Gaussian Process and theory uncertainties}
 		\begin{itemize}
-			\item The NNPDF methodology
-			\item Operator implementation in TensorFlow
+			\item The N3PDF project
+			\item Kernel based methods
 			\item Results $\&$ Conclusions
 		\end{itemize}
 	\end{enumerate}
@@ -143,12 +143,25 @@
  
 	
 	Quantum Field Theory describing physics at the TeV scale
-	\begin{enumerate}
-		\item Fermions composing matter
-		\item Bosons mediating interactions
-		\item Scalar Higgs generating mass
-	\end{enumerate}	
 	
+	\begin{itemize}
+		\item Fermions composing matter (leptons and quarks)
+		\item Bosons as mediators of the interactions
+		\item Scalar Higgs generating mass
+	\end{itemize}	
+	
+\end{frame}
+
+% LHC physics
+\begin{frame}
+	
+	\frametitle{QCD in a nutshell}
+	\framesubtitle{LHC physics}
+	
+	\begin{figure}
+		\includegraphics[width = 9.5 cm]{plots/lhc_measurements.png}
+	\end{figure}
+
 \end{frame}
 
 % Explore the proton structure
@@ -173,70 +186,24 @@
 
 \end{frame}
 
-% Parton Distribution Functions
-\begin{frame}
-
-	\frametitle{QCD in a nutshell}
-	\framesubtitle{Parton Distribution Functions}
-	
-	\begin{figure}
-		\minipage{0.5\textwidth}
-		\includegraphics[width = 0.5\linewidth]{plots/proton.png}
-		\endminipage\hfill
-		\minipage{0.5\textwidth}
-		\includegraphics[width = 0.4\linewidth]{plots/proton2.jpg}
-		\endminipage
-	\end{figure}
-	
-
-	\begin{itemize}
-		\item Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
-		\item Interactions take place only at partonic level
-	\end{itemize}
-
-	{\color{blue}Parton Distribution Functions: probability distribution of finding a particular parton (u, d, ..., g) carrying a fraction x of the proton's momentum}
-
-\end{frame}
-
 % Factorization theorem
 \begin{frame}
 
-	\frametitle{QCD in a nutshell}
-	\framesubtitle{Factorization theorem}
-	
-	Observables in hadronic events $\longrightarrow$ $\sigma$ is hard to compute
-	
-	\begin{figure}
-		\begin{tikzpicture}
-		% Incoming first proton 
-		\draw [thick, fermion] (-4, 0.7)--(-2, 0.7);
-		\draw [thick, fermion] (-4, 0)--(-2.7, 0);
-		\draw [thick, fermion] (-4, -0.7)--(-2, -0.7);
-		\draw [thick, very thick, pattern = north east lines] (-2, 0) circle [radius = 0.7];
-		% Gluons
-		\draw [thick, gluon] (-1.3, 0)--(0, 0);
-		\draw [thick, gluon] (0, 0)--(1.3, 0);
-		\node at (-0.5, 0.5) {$\vec{x_{1}p}$};
-		\node at (0.5, -0.5) {$\vec{x_{2}p}$};
-		\draw [thick, very thick, fill = black, pattern = north east lines] (0, 0) circle [radius = 0.03];
-		% Incoming second proton
-		\draw [thick, very thick, pattern = north east lines] (2, 0) circle [radius = 0.7];
-		\draw [thick, fermionbar] (2, 0.7)--(4, 0.7);
-		\draw [thick, fermionbar] (2.7, 0)--(4, 0);
-		\draw [thick, fermionbar] (2, -0.7)--(4, -0.7);
-		\end{tikzpicture}
-	\end{figure}
-	
-	Factorize the problem $\longrightarrow$ Convolute the {\color{red}PDFs}  with the partonic ${\color{blue}\hat{\sigma}_{i j}}$
-	
-	\begin{equation}
-		\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
-	\end{equation}
-	
-	\begin{itemize}
-		\item Partonic {\color{blue}$\hat{\sigma}$} can be computed as perturbative series in $\alpha_{s}$
-		\item {\color{red}PDFs} absorb the non perturbative effects, evaluated at $\mu_{F}$
-	\end{itemize}
+\frametitle{QCD in a nutshell}
+\framesubtitle{Factorization theorem}
+
+\begin{figure}
+	\includegraphics[width = 7 cm]{plots/factorization_1.png}
+\end{figure}
+
+Compute cross sections is a {\color{red}hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
+
+\begin{equation}
+	\sigma^{\textrm{F}}(p_{1}, p_{2}) =
+	\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha}(x_{1}, \mu_{F}^{2}) \ast f_{\beta}(x_{2}, \mu_{F}^{2})}
+	\; \ast \;  
+	{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
+\end{equation}
 
 \end{frame}
 
@@ -252,7 +219,7 @@
 		\begin{enumerate}
 			\item A subset of Artificial Intelligence (AI) algorithms 
 			\item Used to solve \textit{complex} tasks like classification and regression
-			\item Rely on comparison with data $\longrightarrow$ {\color{red}Learning}
+			\item Rely on comparison with data $\longrightarrow$ {\color{red}Learning} through minimization of some loss
 		\end{enumerate}
 		
 		\column{0.45\textwidth}
@@ -268,52 +235,41 @@
 \begin{frame}
 
 	\frametitle{The N3PDF project}
-	\framesubtitle{Fitting a PDF}
-	
-	Factorize the problem $\longrightarrow$ Convolute the {\color{red}PDFs}  with the partonic ${\color{blue}\hat{\sigma}_{i j}}$
-	
-	\begin{equation}
-	\sigma = \int_{0}^{1} dx_{1} \; dx_{2} \; {\color{red} f_{\alpha}(x_{1}, \mu_{F}) \ast f_{\beta}(x_{2}, \mu_{F})} \ast {\color{blue}\hat{\sigma}_{\alpha \beta}(\alpha_{s}(\mu_{R}), \mu_{F})} \; \nonumber
-	\end{equation}
-	
-	\begin{itemize}
-		\item Partonic ${\color{blue}\hat{\sigma}_{\alpha\beta}}$ is computed perturbatively. Hadronic $\sigma$ is measured.
-		\item Use a Neural Networks to generate (\textit{fit}) the PDFs
-		\item Generate a vector of observables $\sigma_{N}$ to be compared with data
-	\end{itemize}
-	
-	\begin{equation}
-	\sigma_{N} = \sum_{i, j, \alpha, \beta} {\color{red}f_{\alpha}(x_{i}) \; f_{\beta}(x_{j})} \; {\color{blue}\hat{\sigma}_{N i j \alpha \beta}} \; \nonumber
-	\end{equation}
+	\framesubtitle{Machine Learning for subnuclear structure}
+
+	\begin{enumerate}
+		\item Take the asymptotics of $\hat{\sigma}(N)$ computed by following \href{https://arxiv.org/abs/1303.3590}{{\color{blue}1303.3590}} as input (training) data.
+		\item Assume the points are sampled from a Gaussian distribution $f(x) \sim N(\mu, K(\Theta, x, x'))$.
+		\item Train $\Theta$ by minimizing a $\chi^{2}(f(x)|\Theta, x)$ to guess the underlying law through exhaustive search $\longrightarrow$ {\color{blue}hyperoptimization}
+		\item Use the Mellin-space exact coefficient functions computed by \href{https://www.ge.infn.it/~bonvini/higgs/}{{\color{blue}ggHiggs}} as true values for testing and validation.
+	\end{enumerate}
 
 \end{frame}
-
-
 
 % Results
 \begin{frame}
 
-\frametitle{Results}
-\framesubtitle{Learning a physical quantity}
-
-\begin{figure}
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/nlo_test_rquad.png}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/nlo_test_matern.png}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}
-	\includegraphics[width = \linewidth]{plots/nlo_matern1.png}
-	\endminipage
-\end{figure}
-
-\begin{itemize}
-	\item Combination of different kernels leads to better fit
-	\item Excellent numerical agreement up to N3LO
-\end{itemize}
-
-{\color{blue}When there is not theory prediction to compare to, use GP approach to estimate theory uncertainty}
+	\frametitle{Results}
+	\framesubtitle{Learning a physical quantity}
+	
+	\begin{figure}
+		\minipage{0.32\textwidth}
+		\includegraphics[width = \linewidth]{plots/nlo_test_rquad.png}
+		\endminipage\hfill
+		\minipage{0.32\textwidth}
+		\includegraphics[width = \linewidth]{plots/nlo_test_matern.png}
+		\endminipage\hfill
+		\minipage{0.32\textwidth}
+		\includegraphics[width = \linewidth]{plots/nlo_matern1.png}
+		\endminipage
+	\end{figure}
+	
+	\begin{itemize}
+		\item Combination of different kernels leads to better fit
+		\item Excellent numerical agreement up to N3LO
+	\end{itemize}
+	
+	{\color{blue}When there is not theory prediction to compare to, use GP approach to estimate theory uncertainty}
 
 \end{frame}
 
@@ -325,8 +281,9 @@
 	\vspace{2.0 cm}
 	
 	\begin{enumerate}
-		\item PDFs are required to have accurate predictions in high energy physics
+		\item Precise predictions are required towards precision era of the LHC
 		\item ML provides an effective way of fitting a curve
+		\item Kernel-based methods particularly powerful for interpolation
 		\item Theory uncertainty can be extracted from the confidence interval given by the Gaussian Process
 	\end{enumerate}
 
