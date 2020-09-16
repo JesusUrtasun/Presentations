@@ -9,64 +9,15 @@
 
 % Customization
 \mode<presentation>{
-\usetheme{CambridgeUS}
-\usecolortheme{dolphin}
-\setbeamertemplate{navigation symbols}{}
+	\usetheme{CambridgeUS}
+	\usecolortheme{dolphin}
+	\setbeamertemplate{navigation symbols}{}
 }
-
-%\setbeamertemplate{footline}[frame number]
-
-%TikZ diagrams
-\usepackage{tikz}
-\usetikzlibrary{patterns}
-\usetikzlibrary{arrows,shapes}
-\usetikzlibrary{shapes.multipart}
-\usetikzlibrary{trees}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{matrix,arrows}
-\usetikzlibrary{positioning}
-\usetikzlibrary{calc,through}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{pgffor}
 
 % Define colors
 \definecolor{darkgreen}{rgb}{0.0, 0.5, 0.13}
 \definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
 \definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
-
-% For using TikZ
-\usetikzlibrary{decorations.pathmorphing}
-\usetikzlibrary{decorations.markings}
-\tikzset{
-	vector/.style={decorate, decoration={snake,amplitude=3pt}, draw},
-	gluon/.style={decorate, decoration={coil,amplitude=2.5pt},draw},
-	provector/.style={decorate, decoration={snake,amplitude=2.5pt}, draw},
-	antivector/.style={decorate, decoration={snake,amplitude=-2.5pt}, draw},
-	fermion/.style={draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black,thick]{>}}}},
-	fermionbar/.style={draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black,thick]{<}}}},
-	fermionnoarrow/.style={draw=black},
-	gluon/.style={decorate, draw=black,
-		decoration={coil,amplitude=2.5pt, segment length=3pt}},
-	gluon2/.style={decorate, draw=black,
-		decoration={coil,amplitude=1.75pt, segment length=2.75pt}},
-	scalar/.style={dashed,draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black]{>}}}},
-	scalarbar/.style={dashed,draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black]{<}}}},
-	scalarnoarrow/.style={dashed,draw=black},
-	electron/.style={draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black]{>}}}},
-	bigvector/.style={decorate, decoration={snake,amplitude=4pt}, draw},
-}
-
-% Blocks
-\tikzstyle{block} = [draw, rectangle, minimum height = 3em, rounded corners, minimum width = 4em]
-\tikzstyle{block2} = [draw, rectangle, minimum height = 3em, rounded corners, minimum width = 7em]
-\tikzstyle{circle} = [draw, circle, radius = 1.5]
-\tikzstyle{arrow} = [thick,->]
-%************************************************************************************************************
 
 % Title and author
 \title[QCD predictions for Higgs production]{QCD predictions for Higgs production}
@@ -156,11 +107,13 @@
 	\frametitle{QCD in a nutshell}
 	\framesubtitle{Factorization theorem}
 
+	\vspace{0.4 cm}
+	
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/factorization_1.png}
 	\end{figure}
 	
-	Compute cross sections is a {\color{red}Hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
+	Compute cross sections is a {\color{red}hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
 	
 	\begin{equation}
 		\sigma^{\textrm{F}}(p_{1}, p_{2}) =
@@ -258,26 +211,24 @@
 	\frametitle{Resummation in QCD}
 	\framesubtitle{$q_{\perp}$ resummation}
 	
-	\center	Study the differential $q_{\perp}$ distribution \\
-	\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
-	
 	\begin{columns}
 	
-	\column{0.55\textwidth}
+		\column{0.55\textwidth}
+		
+		\center	Study the differential $q_{\perp}$ distribution \\
+		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
+	
+		\column{0.45\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 4cm]{plots/qT_diagram.png}
+		\end{figure}
+
+	\end{columns}
 
 	\begin{figure}
 		\includegraphics[width = 7.5cm]{plots/qT_logs_table.png}
 	\end{figure}
-
-	\column{0.45\textwidth}
-	
-	\begin{figure}
-		\includegraphics[width = 4cm]{plots/qT_diagram.png}
-	\end{figure}
-
-	\end{columns}
-
-	\vspace{0.5 cm}
 
 	Truncated fixed order predictions $\rightarrow$ {\color{red}divergent $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
 
@@ -289,17 +240,17 @@
 	\frametitle{Resummation in QCD}
 	\framesubtitle{$q_{\perp}$ resummation}
 
-	Replace partonic $q_{\perp}$ distribution as follows
+	Write partonic $q_{\perp}$ distribution as follows
 	
 	\begin{equation}
-		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} \rightarrow 
+		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} =
 		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{l.a.}} + 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \textrm{\quad, such that} \nonumber
+		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \textrm{\quad, \quad such that} \nonumber
 	\end{equation}
 
 	\begin{align}
-		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} &\sim \sum \alpha_{s}^{n} \log^{m} \frac{M^{2}}{Q_{\perp}^{2}} \textrm{\quad for \quad} q_{\perp} \rightarrow 0 \nonumber \\
-		\int dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &\sim 0 \nonumber \textrm{\quad for \quad} q_{\perp} \rightarrow 0
+		\int_{0}^{Q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} &\sim \sum \alpha_{s}^{n} \log^{m} \frac{M^{2}}{Q_{\perp}^{2}} \textrm{\quad for \quad} Q_{\perp} \rightarrow 0 \nonumber \\
+		\int_{0}^{Q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &\sim 0 \nonumber \textrm{\quad for \quad} Q_{\perp} \rightarrow 0
 	\end{align}
 
 	Resummed and finite components need to be matched at some logarithmic accuracy (LL, NLL, NNLL, ...)
@@ -368,17 +319,13 @@
 
 	\frametitle{HTurbo}
 	\framesubtitle{Starting point DYTurbo}
-		
-	\begin{itemize}
-		\item Start from \textbf{DYTurbo} [Camarda et al.] ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, producing $q_{\perp}$ distribution fro Drell-Yan ($q\bar{q} \rightarrow l^{+}l^{-}$) 
-	\end{itemize}
-	
-	{\color{blue}C++} interface rather that {\color{red}Fortran} of \textbf{HRes} or \textbf{HqT}
+
+	Start from \textbf{DYTurbo} {\color{blue}[Camarda et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, producing $q_{\perp}$ distribution for Drell-Yan ($q\bar{q} \rightarrow l^{+}l^{-}$) 
 	
 	\begin{itemize}
+		\item 	{\color{blue}C++} interface rather that {\color{red}Fortran} of \textbf{HRes} or \textbf{HqT}
 		\item Set LO amplitude $gg \rightarrow H$
 		\item Set Sudakov and Hard coefficients for Higgs production
-		\item Implement PDF evolution
 		\item Compare with \textbf{HRes} and \textbf{HqT}
 	\end{itemize}
 
