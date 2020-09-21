@@ -16,58 +16,6 @@
 
 %\setbeamertemplate{footline}[frame number]
 
-%TikZ diagrams
-\usepackage{tikz}
-\usetikzlibrary{patterns}
-\usetikzlibrary{arrows,shapes}
-\usetikzlibrary{shapes.multipart}
-\usetikzlibrary{trees}
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{matrix,arrows}
-\usetikzlibrary{positioning}
-\usetikzlibrary{calc,through}
-\usetikzlibrary{decorations.pathreplacing}
-\usepackage{pgffor}
-
-% Define colors
-\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.13}
-\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
-\definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
-
-% For using TikZ
-\usetikzlibrary{decorations.pathmorphing}
-\usetikzlibrary{decorations.markings}
-\tikzset{
-	vector/.style={decorate, decoration={snake,amplitude=3pt}, draw},
-	gluon/.style={decorate, decoration={coil,amplitude=2.5pt},draw},
-	provector/.style={decorate, decoration={snake,amplitude=2.5pt}, draw},
-	antivector/.style={decorate, decoration={snake,amplitude=-2.5pt}, draw},
-	fermion/.style={draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black,thick]{>}}}},
-	fermionbar/.style={draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black,thick]{<}}}},
-	fermionnoarrow/.style={draw=black},
-	gluon/.style={decorate, draw=black,
-		decoration={coil,amplitude=2.5pt, segment length=3pt}},
-	gluon2/.style={decorate, draw=black,
-		decoration={coil,amplitude=1.75pt, segment length=2.75pt}},
-	scalar/.style={dashed,draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black]{>}}}},
-	scalarbar/.style={dashed,draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black]{<}}}},
-	scalarnoarrow/.style={dashed,draw=black},
-	electron/.style={draw=black, postaction={decorate},
-		decoration={markings,mark=at position .55 with {\arrow[draw=black]{>}}}},
-	bigvector/.style={decorate, decoration={snake,amplitude=4pt}, draw},
-}
-
-% Blocks
-\tikzstyle{block} = [draw, rectangle, minimum height = 3em, rounded corners, minimum width = 4em]
-\tikzstyle{block2} = [draw, rectangle, minimum height = 3em, rounded corners, minimum width = 7em]
-\tikzstyle{circle} = [draw, circle, radius = 1.5]
-\tikzstyle{arrow} = [thick,->]
-%************************************************************************************************************
-
 % Title and author
 \title[QCD and Monte Carlo]{Quantum Coherent Phenomena}
 \author{\textbf {Jes\'us Urtasun Elizari}}
@@ -108,17 +56,7 @@
 	
 	\begin{enumerate}
 		\item {\color{blue}Introduction}
-		\begin{itemize}
-			\item Hadron collisions and strong interactions
-			\item Renormalization group
-			\item Jets and IR divergences
-		\end{itemize}
 		\item {\color{blue}System and Hamiltonian}
-		\begin{itemize}
-			\item Factorization theorem
-			\item Kinematics of splitting
-			\item Recursive factorization
-		\end{itemize}
 		\item {\color{blue}Reservoir engineering strategies}
 		\item {\color{blue}Implementation}
 		\item {\color{blue}Full system}
@@ -136,350 +74,268 @@
 
 	\begin{enumerate}
 		\item Generation and detection of entangled states of macroscopic M.O
-		\item Reservoir engineering 
-		\item Generating highly pure, entangled 2 mode squeezed states via coupling to a cavity mode
+		\item Reservoir engineering $\longrightarrow$ Two-mode squeezed states. Bogoliuov modes
+		\item Coherent feedback, steady state as EPR channel 
+		\item Reservoir engineering studied in optomechanical systems. Krauter demonstrations (*)
 	\end{enumerate}	
 	
 \end{frame}
 
-% Introduction I
+% System and Hamiltonian I
 \begin{frame}
 
 	\frametitle{Introduction}
 	\framesubtitle{System representation}
 	
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 7 cm]{plots/plot_system.png}
+		\end{figure}	
+
+		\column{0.45\textwidth}
+
+		\begin{itemize}
+			\item Two mechanical oscillators, resonance frequencies $\omega_{a}, \omega_{b}$
+			\item Dispersively coupled $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
+		\end{itemize}
+
+	\end{columns}
+
+\end{frame}
+
+% System and Hamiltonian II
+\begin{frame}
+	
+	\frametitle{Introduction}
+	\framesubtitle{System representation}
+	
+	Hamiltonian of the system
 	\begin{figure}
-		\includegraphics[width = 8 cm]{plots/system.png}
+		\includegraphics[width = 8 cm]{plots/hamiltonian_1.png}
+	\end{figure}
+	
+	Under usual approximations, obtain the master formula 
+	\begin{figure}
+		\includegraphics[width = 8 cm]{plots/master_eq_1.png}
+	\end{figure}
+
+	Being $\mathcal{D}$ dispersive superoperator, dampings and $\mathcal{H}'$
+	
+\end{frame}
+
+% Reservoir engineering I
+\begin{frame}
+	
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Bogoliubov operators}
+	
+	2 mechanical oscillators. Modes $\hat{a}, \hat{b} \longrightarrow$ Bogoliuov operators 
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/bogoliubov_1.png}
 	\end{figure}	
 
-\end{frame}
-
-% Hadron collisions III
-\begin{frame}
-	
-	\frametitle{Hadron collisions}
-	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
-	
-	Questions for a field theory
-	\begin{enumerate}
-		\item Can we go to arbitrarily large energies? $\rightarrow$ divergences arise, renormalization / factorization needed
-		\item Can we compute $R_{0}$ for every process? $\rightarrow$ IR observables
-	\end{enumerate}	
-
-\end{frame}
-
-% Renormalization group I
-\begin{frame}
-
-	\frametitle{Hadron collisions}
-	\framesubtitle{Renormalization group}
-	
-	\begin{itemize}
-		\item UV divergences are encountered in field theories
-		\item Take a physical quantity $G$ depending on a scale $M$, a coupling $\alpha$ and some invariants $s_{1}, ..., s_{n}$	
-		\item Define a "renormalized" coupling $\alpha_{\textrm{Ren}} = \alpha + c_{1}\alpha^{2} + c_{2}\alpha^{3} + ...$
-	\end{itemize}
- 
-	The physical quantity in terms of $\{\alpha, M\}$ and $\{\alpha_{\textrm{Ren}}, \mu\}$ 
+	Rotation with respect to some frame (*)
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/eq_RGE.png}
-	\end{figure}
+		\includegraphics[width = 8 cm]{plots/hamiltonian_2.png}
+	\end{figure}	
 
-	{\color{blue}Physics must be invariant under change of $\{\alpha_{\textrm{Ren}}, \mu\}$}
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/eq_RGE_2.png}
-	\end{figure}
+	Choice of $\Omega$ \\
+	Collective mechanical quadratures (...)
 
 \end{frame}
 
-% Renormalization group II
+% Reservoir engineering II
 \begin{frame}
-
-	\frametitle{Hadron collisions}
-	\framesubtitle{Renormalization group}
 	
-	\begin{itemize}
-		\item Running coupling given by Renormalization Group Equation (RGE)
-		\begin{equation}
-		{\color{blue}\mu\frac{d\alpha_{s}(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
-		\end{equation}
-		\item Coupling {\color{blue}$\alpha_{s}$} evolves with scale {\color{blue}$\mu$} as given by RGE $\rightarrow$ LO behavior driven by $\beta_{0}$
-		\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies, asymptotic freedom
-		\item $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies, UV divergent!
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Ground state}
+	
+	2-mode squeezed state defined by $|r> = S_{2}(r) |00>$
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/2_squeezed_mode.png}
+	\end{figure}	
+	
+	(...)
+	
+\end{frame}
+
+% Reservoir engineering III
+\begin{frame}
+	
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Hamiltonian}
+	
+	Adding freq. difference between the mechanic oscillators, we break degeneracy of the Bogoliubov modes $\longrightarrow$ they couple to different frequency components of the reservoir 
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/hamiltonian_3.png}
+	\end{figure}	
+	
+	where $\Omega$ is the effective frequency and $\mathcal{G}$ an effective coupling.
+	\begin{columns} 
 		
-	\end{itemize}
+		\column{0.5\textwidth}
+		
+		In terms of the original operators
+		\begin{figure}
+			\includegraphics[width = 7.5 cm]{plots/hamiltonian_4.png}
+		\end{figure}
+
+		\column{0.5\textwidth}
+		
+		Optomechanical couplings\\
+		related by
+		\begin{figure}
+			\includegraphics[width = 4 cm]{plots/optomechanic_couplings.png}
+		\end{figure}
+
+	\end{columns}
 
 \end{frame}
 
-% Jets in e+e- I
-\begin{frame}
-	
-	\frametitle{Hadron collisions}
-	\framesubtitle{Jets in $e^{+}e^{-}$}
-	
-	Consider $\alpha_{s}$ corrections to born level amplitude
-	
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/qcd_corrections_2.png}
-	\end{figure}
-
-	\begin{align}
-		\mathcal{M}_{\textrm{Born}} &= \bar{u}(k)\epsilon^{\mu}\gamma_{\mu}v(k') \nonumber \\
-		\mathcal{M}_{1} &= \mathcal{M} \frac{k_{\alpha}}{k \cdot l} \longrightarrow \textrm{Real radiation} \nonumber \\
-		\mathcal{M}_{1} &= -\mathcal{M} \frac{k'_{\alpha}}{k' \cdot l} \longrightarrow \textrm{Virtual contribution} \nonumber		 
-	\end{align}
-
-\end{frame}
-
-% Jets in e+e- II
+% Reservoir engineering IV
 \begin{frame}
 
-	\frametitle{Hadron collisions}
-	\framesubtitle{Jets in $e^{+}e^{-}$}
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Goal}
 	
-	Consider $\alpha_{s}$ corrections to born level amplitude
-	
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/qcd_corrections_2.png}
-	\end{figure}
-	
-	Sum real and virtual contributions to the Born matrix element, square and integrate with phase space element $d^{3}l = (l^{0})^{2} dl^{0} d\cos\theta d\phi$
-	\begin{figure}
-		\includegraphics[width = 9.5 cm]{plots/eq_qqbg.png}
-	\end{figure}
-
-\end{frame}
-
-% Jets in e+e- III
-\begin{frame}
-
-	\frametitle{Hadron collisions}
-	\framesubtitle{Jets in $e^{+}e^{-}$}
-	
-	\begin{figure}
-		\includegraphics[width = 9.5 cm]{plots/eq_qqbg.png}
-	\end{figure}
-
+	Engineer the driving Hamiltonian such that the squeezed-system results in $\hat{beta}_{i}$ cooled to their ground state.
 	\begin{itemize}
-		\item Soft $(l^{0} \rightarrow 0)$ and collinear $(\theta \rightarrow 0, \pi)$ divergences
-		\item No renormalization procedure to apply $\rightarrow$ divergences coming from long distance effects (fermion masses, hadronization, etc)
-		\item Kinoshita-Lee-Nauemberg theorem {\color{blue}(*)}
-	\end{itemize}
+		\item Experimental advantage
+		\item Second method
+		\item Third approach (*)
+	\end{itemize}	
 
-	{\color{blue}Understand Born cross section as the LO term in a well defined perturbative expansion}
-	
 \end{frame}
 
-% Jets in e+e- IV
+% Implementation I
 \begin{frame}
 
-	\frametitle{Hadron collisions}
-	\framesubtitle{Sterman-Weinberg jets}
+	\frametitle{Implementation}
+	\framesubtitle{Different cases}
 	
-	Sterman - Weinberg jets. "In a hadronic event with CM energy $E$, 2 cones can be found with opening $\delta$ containing $(1 - \epsilon)$ fraction of $E$."
+	Hamiltonian is already implemented in conventional optomechanical setups. Focus on regime $|G_{+}|<|G_{-}|$
 	
+	\begin{itemize}
+		\item Two-tone driving ($g_{a} = g_{b}$)
+		\item Four-tone driving ($g_{a} = g_{b}$)
+		\item Case similar ($g_{a} \sim g_{b}$)
+	\end{itemize}	
+	
+	(...)
+
+\end{frame}
+
+
+% Adiabatic limit I
+\begin{frame}
+	
+	\frametitle{Adiabatic limit}
+	\framesubtitle{Our system}
+	
+	Operator  $\hat{c} = -2i\mathcal{G}(\hat{\beta}_{1} + \hat{\beta}_{2})/k$\\
+	Substitute into the dissipative terms of master equation $\longrightarrow$ adiabatically eliminated master equation
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/SW_jets.png}
+		\includegraphics[width = 9 cm]{plots/master_eq_2.png}
+	\end{figure}
+
+	with optomechanical damping rate
+	\begin{figure}
+		\includegraphics[width = 3 cm]{plots/optomechanic_dumping.png}
+	\end{figure}
+	
+	Alternative view of the cooling of the Bogoliuov modes is possible (*)
+
+\end{frame}
+
+% Adiabatic limit II
+\begin{frame}
+	
+	\frametitle{Adiabatic limit}
+	\framesubtitle{Entanglement}
+	
+	Entanglement criterion using Duan inequality 
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/entanglement_quad.png}
+	\end{figure}	
+	
+	Where we introduced the quadrature modes as
+	\begin{figure}
+		\includegraphics[width = 6.5 cm]{plots/entanglement_quad_2.png}
+	\end{figure}
+
+	Where we introduced the quadrature modes as
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/entanglement_duan_criterion.png}
 	\end{figure}
 
 \end{frame}
 
-% Jets in e+e- V
+% Adiabatic limit III
 \begin{frame}
-
-	\frametitle{Hadron collisions}
-	\framesubtitle{Sterman-Weinberg jets}
 	
-	Sterman - Weinberg jets. "In a hadronic event with CM energy $E$, 2 cones can be found with opening $\delta$ containing $(1 - \epsilon)$ fraction of $E$."
+	\frametitle{Adiabatic limit}
+	\framesubtitle{Entanglement}
 	
-	\begin{figure}
-		\includegraphics[width = 12 cm]{plots/eq_SW_jets.png}
-	\end{figure}
-
-	When all contributions summed, the cross section is no longer singular {\color{red}(*)} \\
-	Computed in terms of partons, but representing hadronic final state \\
-	Jets as IR finite final state {\color{red}(*)}
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6 cm]{plots/plot_entanglement.png}
+		\end{figure}	
 	
-\end{frame}
-
-% Collinear factorization
-\begin{frame}
-
-	\center{\color{blue}Collinear factorization}
-
-\end{frame}
-
-% Collinear factorization I
-\begin{frame}
-
-	\frametitle{Collinear factorization}
-	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
-	
-	\begin{itemize} 
-		\item When computing partonic cross section, collinear partons can be emitted from incoming/outgoing parton
-		\item $\sigma$ dominated by collinear decay of parton with small virtuality
-	\end{itemize}
-
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/collinear_factorization.png}
-	\end{figure}
-
-	Factorization theorem $\longrightarrow$ Factor out tree level amplitude and splitting
-	\begin{figure}
-	\includegraphics[width = 8 cm]{plots/eq_factorization_theorem.png}
-	\end{figure}
-	
-\end{frame}
-
-% Collinear factorization II
-\begin{frame}
-
-	\frametitle{Collinear factorization}
-	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
-	
-	\begin{itemize} 
-		\item Kinematics of splitting $(t, z, \phi)$
+		\column{0.65\textwidth}
+		
 		\begin{itemize}
-			\item $t$ has dimensions of energy (virtuality, $p_{\perp}$, angular variable)
-			\item $z$ represents the fraction of momentum of radiated parton
-			\item $\phi$ represents azimuth of the $k, l$ plane
+			\item 1
+			\item 2
+			\item 3
 		\end{itemize}
-	
-	\vspace{0.5cm}
-	
-		\item Factorization holds for small angles. Applied recursively
-	\end{itemize}
-	
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/shower_4.png}
-	\end{figure}
-
-\end{frame}
-
-% Parton showers
-\begin{frame}
-
-	\center{\color{blue}Parton showers and MC generators}
-
-\end{frame}
-
-% Shower equation I
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Formal representation of a shower}
-	
-	Approximated description of a hadronic final state. Model a given hard scattering with arbitrary number of enhanced radiations
-	
-	\begin{figure}
-		\includegraphics[width = 4 cm]{plots/shower_1.png}
-	\end{figure}
 		
-	\begin{itemize} 
-		\item Enseble of all possible showers from a parton {\color{blue}i} at scale {\color{blue}t}
-		\item Sudakov form factor $\Delta_{i}(t, t_{0})$  such that $\Delta_{i}(t_{0}, t_{0})$ = 1
-		\item Shower $S_{i}(t, E)$ 	such that $S_{i}^{\textrm{inc}} = \sum_{\mathcal{F}} S_{i}(t, E) = 1 $
-	\end{itemize}
+	\end{columns}
 
 \end{frame}
 
-% Shower equation II
+% Adiabatic limit IV
 \begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Formal representation of a shower}
-	 
-	 
-	 Ensemble of all possible radiations as the sum of no radiation, with radiation and shower from radiated partons
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/shower_2.png}
-	\end{figure}
 	
-	\begin{itemize} 
-		\item Ansatz for Sudakov $$\Delta_{i}(t, t') = \exp\Bigg\{- \int_{t'}^{t} \frac{dt''}{t''}\int dz \sum_{jl} P_{i, jl}(z) \frac{\alpha_{s}(t')}{2\pi} \Bigg\}$$
-		\item Therefore $\partial \Delta(t, t') / \partial t \propto \Delta(t, t') \longrightarrow$ apply shower recursively
-	\end{itemize}
+	\frametitle{Adiabatic limit}
+	\framesubtitle{Entanglement}
+	
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6 cm]{plots/plot_steady_state.png}
+		\end{figure}	
+		
+		\column{0.65\textwidth}
+		
+		\begin{itemize}
+			\item 1
+			\item 2
+			\item 3
+		\end{itemize}
+		
+	\end{columns}
 
 \end{frame}
 
-% Shower equation III
+% Conclusions
 \begin{frame}
 
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Shower algorithm}
+	\frametitle{Conclusions}
 	
-	Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
-	\begin{enumerate} 
-		\item Set scale $t$ to $Q$, hard scale of the process
-		\item Generate random number $0 < r < 1$
-		\item Solve $r = \Delta_{i}(t, t')$ for t'
-		\item i) if $t' < t_{0}$, no further branching and stop shower
-		\item ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$
-		\item For each branched partons set $t = t'$ and start from (2)
+	\begin{enumerate}
+		\item Configuring a three-mode optomechanical system such as the steady state includes highly pure and highly entangled two-mode squeezed state.
+		\item Symmetry on the steady-state makes it attractive for implementation of  continuous-variable teleportation protocols
+		\item Problem of unequal single-photon optomechanical couplings solved by using four-tone driving scheme
+		\item Proposal implementable for existing technology
 	\end{enumerate}
-
+		
 \end{frame}
-
-% Shower equation ISR I
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Initial state radiation}
-	
-	ISR already important in QED $\longrightarrow$ Used to determine the $Z$ peak at LEP
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_ISR.png}
-	\end{figure}
-	
-	\begin{itemize}
-		\item QCD coupling much larger $\longrightarrow$ QCD ISR even more important
-		\item Specially large for small momentum transfer
-		\item Same as final state partons \textit{always} manifest as jets, initial state ones \textit{always} lead to ISR
-	\end{itemize}
-	
-\end{frame}
-
-% Shower equation ISR II
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Initial state radiation}
-	
-	\begin{figure}
-		\includegraphics[width = 5.5 cm]{plots/shower_ISR_2.png}
-	\end{figure}
-	
-	\begin{itemize} 
-		\item Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
-		\item Difference in Sudakov factors and Splitting functions start at NLO
-	\end{itemize}
-	
-	\begin{figure}
-		\includegraphics[width = 10 cm]{plots/shower_ISR_3.png}
-	\end{figure}
-
-\end{frame}
-
-% Shower equation III
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Ordering variables}
-	
-	HERWIG
-	\begin{itemize} 
-		\item Ordering variable $t = E^{2}\theta^{2}/2$
-		\item Order of transverse momentum as "angular ordering"
-		\item IR cut-off needed
-	\end{itemize}
-
-	PYTHIA
-	\begin{itemize} 
-		\item There is not angular ordering
-		\item More natural kinematics
-		\item Unphysical increase of number of partons $\longrightarrow$ solve by imposing veto to branchings that violate angular ordering
-	\end{itemize}
-
-\end{frame}
-
 \end{document}
