@@ -6,6 +6,7 @@
 \usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{array}
+\usepackage{braket}
 
 % Customization
 \mode<presentation>{
@@ -55,13 +56,12 @@
 	\frametitle{Outline}
 	
 	\begin{enumerate}
-		\item {\color{blue}Introduction}
-		\item {\color{blue}System and Hamiltonian}
+		\item {\color{blue}Introduction, system and Hamiltonian}
 		\item {\color{blue}Reservoir engineering strategies}
 		\item {\color{blue}Implementation}
 		\item {\color{blue}Full system}
 		\item {\color{blue}Experimental observability}
-		\item {\color{blue}Two cavity modes, one mechanical oscillator}
+		\item {\color{blue}Conclusions}
 	\end{enumerate}
 	
 \end{frame}
@@ -74,9 +74,9 @@
 
 	\begin{enumerate}
 		\item Generation and detection of entangled states of macroscopic M.O
-		\item Reservoir engineering $\longrightarrow$ Two-mode squeezed states. Bogoliuov modes
-		\item Coherent feedback, steady state as EPR channel 
-		\item Reservoir engineering studied in optomechanical systems. Krauter demonstrations (*)
+		\item Reservoir engineering $\longrightarrow$ Two-mode squeezed states
+		\item Easy to implement in existing experimental configurations
+		\item Quantum optomechanics $\longrightarrow$ couple Bogoliubov modes to a single reservoir (damped cavity)
 	\end{enumerate}	
 	
 \end{frame}
@@ -87,22 +87,15 @@
 	\frametitle{Introduction}
 	\framesubtitle{System representation}
 	
-	\begin{columns}
-		
-		\column{0.5\textwidth}
-		
+	\begin{itemize}
+		\item Two mechanical oscillators, resonance frequencies $\omega_{a}, \omega_{b}$
+		\item Dispersively coupled $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
+		\item Dispersively coupled $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
+	\end{itemize}
+
 		\begin{figure}
-			\includegraphics[width = 7 cm]{plots/plot_system.png}
+			\includegraphics[width = 8 cm]{plots/plot_system.png}
 		\end{figure}	
-
-		\column{0.45\textwidth}
-
-		\begin{itemize}
-			\item Two mechanical oscillators, resonance frequencies $\omega_{a}, \omega_{b}$
-			\item Dispersively coupled $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
-		\end{itemize}
-
-	\end{columns}
 
 \end{frame}
 
@@ -110,9 +103,9 @@
 \begin{frame}
 	
 	\frametitle{Introduction}
-	\framesubtitle{System representation}
+	\framesubtitle{System and Hamiltonian}
 	
-	Hamiltonian of the system
+	Quantum optomechanics Hamiltonian
 	\begin{figure}
 		\includegraphics[width = 8 cm]{plots/hamiltonian_1.png}
 	\end{figure}
@@ -122,8 +115,18 @@
 		\includegraphics[width = 8 cm]{plots/master_eq_1.png}
 	\end{figure}
 
-	Being $\mathcal{D}$ dispersive superoperator, dampings and $\mathcal{H}'$
+	Being $\mathcal{H}' = \mathcal{H} - \mathcal{H}_{\textrm{diss}}$, and $\mathcal{D}[\hat{c}]$ the dispersive superoperator
 	
+\end{frame}
+
+% Reservoir engineering I
+\begin{frame}
+
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Linearized optomechanics}
+	
+
+
 \end{frame}
 
 % Reservoir engineering I
@@ -132,18 +135,17 @@
 	\frametitle{Reservoir engineering strategies}
 	\framesubtitle{Bogoliubov operators}
 	
-	2 mechanical oscillators. Modes $\hat{a}, \hat{b} \longrightarrow$ Bogoliuov operators 
+	Define the {\color{blue}Bogoliuov} modes in terms of the modes $\hat{a}, \hat{b} \longrightarrow$
 	\begin{figure}
 		\includegraphics[width = 5 cm]{plots/bogoliubov_1.png}
 	\end{figure}	
 
-	Rotation with respect to some frame (*)
+	Rotation with respect to a frame, being r the {\color{blue}squeezing parameter} 
 	\begin{figure}
 		\includegraphics[width = 8 cm]{plots/hamiltonian_2.png}
 	\end{figure}	
 
-	Choice of $\Omega$ \\
-	Collective mechanical quadratures (...)
+	Choice of $\Omega$ for non-trivial rotation of collective mechanical quadratures $\hat{X}_{\pm}$, $hat{P}_{\pm}$
 
 \end{frame}
 
@@ -151,14 +153,18 @@
 \begin{frame}
 	
 	\frametitle{Reservoir engineering strategies}
-	\framesubtitle{Ground state}
+	\framesubtitle{Squeezed modes}
 	
 	2-mode squeezed state defined by $|r> = S_{2}(r) |00>$
 	\begin{figure}
 		\includegraphics[width = 5 cm]{plots/2_squeezed_mode.png}
 	\end{figure}	
-	
-	(...)
+
+	Such that $\hat{\beta}_{1}$ and $\hat{\beta}_{2}$ are the two-mode squeezed state with squeezing parameter $r$
+
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/plot_squeezed.png}
+	\end{figure}
 	
 \end{frame}
 
@@ -166,47 +172,41 @@
 \begin{frame}
 	
 	\frametitle{Reservoir engineering strategies}
-	\framesubtitle{Hamiltonian}
+	\framesubtitle{Squeezed modes}
 	
-	Adding freq. difference between the mechanic oscillators, we break degeneracy of the Bogoliubov modes $\longrightarrow$ they couple to different frequency components of the reservoir 
-	\begin{figure}
-		\includegraphics[width = 8.5 cm]{plots/hamiltonian_3.png}
-	\end{figure}	
-	
-	where $\Omega$ is the effective frequency and $\mathcal{G}$ an effective coupling.
-	\begin{columns} 
-		
-		\column{0.5\textwidth}
-		
-		In terms of the original operators
-		\begin{figure}
-			\includegraphics[width = 7.5 cm]{plots/hamiltonian_4.png}
-		\end{figure}
+	\begin{itemize}
+		\item i) Two cavity modes to independently cool the Bogoliubov modes (beam splitter $\hat{\beta}^{\dagger}_{i} \hat{c}_{i}$)
+		\item ii) Couple the cavity to one Bogoliubov mode, and then this to the other via $\hat{\beta}^{\dagger}_{1} \hat{\beta}_{2}$ and the this to the other one
+		\item iii) Couple the cavity to sum of the Bogoliubov modes , then the sum to the difference . Again, beam splitter interaction $\hat{\beta}^{\dagger}_{\textrm{sum}} \hat{\beta}_{\textrm{diff}}$ allows diff to cool.
+		\begin{align}
+			\hat{\beta}_{\textrm{sum}} = \frac{1}{\sqrt{2}}(\hat{\beta}_{1} + \hat{\beta}_{2}) \nonumber \\
+			\hat{\beta}_{\textrm{diff}} = \frac{1}{\sqrt{2}}(\hat{\beta}_{1} - \hat{\beta}_{2}) \nonumber
+		\end{align}
+	\end{itemize}
 
-		\column{0.5\textwidth}
-		
-		Optomechanical couplings\\
-		related by
-		\begin{figure}
-			\includegraphics[width = 4 cm]{plots/optomechanic_couplings.png}
-		\end{figure}
-
-	\end{columns}
+	Cooling $\hat{\beta}_{\textrm{sum}}$ and $\hat{\beta}_{\textrm{diff}}$ is equivalent to cool $\hat{\beta}_{1}$ and $\hat{\beta}_{2}$ given $<\hat{\beta}^{\dagger}_{\textrm{sum}} \hat{\beta}_{\textrm{sum}}> + <\hat{\beta}^{\dagger}_{\textrm{diff}} \hat{\beta}_{\textrm{diff}}> = <\hat{\beta}^{\dagger}_{1} \hat{\beta}_{1}> + \hat{\beta}^{\dagger}_{2} \hat{\beta}_{2}$
 
 \end{frame}
 
 % Reservoir engineering IV
 \begin{frame}
-
-	\frametitle{Reservoir engineering strategies}
-	\framesubtitle{Goal}
 	
-	Engineer the driving Hamiltonian such that the squeezed-system results in $\hat{beta}_{i}$ cooled to their ground state.
-	\begin{itemize}
-		\item Experimental advantage
-		\item Second method
-		\item Third approach (*)
-	\end{itemize}	
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Hamiltonian}
+	
+	Hamiltonian in terms of the Bogoliubov modes
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/hamiltonian_3.png}
+	\end{figure}	
+	
+	where $\Omega$ is the effective frequency and $\mathcal{G}$ an effective coupling.
+	
+	Written in terms of the original operators,
+	\begin{figure}
+		\includegraphics[width = 7.5 cm]{plots/hamiltonian_4.png}
+	\end{figure}
+
+	with couplings related by $\mathcal{G} \equiv \sqrt{G_{-}^{2} - G_{+}^{2}}$ and $\tanh r \equiv = G_{+}/G_{-}$
 
 \end{frame}
 
@@ -228,6 +228,80 @@
 
 \end{frame}
 
+% Implementation - 2 tone driving
+\begin{frame}
+
+	\frametitle{Implementation}
+	\framesubtitle{2 - tone driving}
+	
+	Single photon coupling rates equal $\longrightarrow$ cavity drive tones at $\omega_{c} \pm \omega_{m}$
+	
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/hamiltonian_2_tone.png}
+	\end{figure}
+
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 7 cm]{plots/plot_2_tone.png}
+		\end{figure}	
+		
+		\column{0.45\textwidth}
+		
+		\begin{itemize}
+			\item Interaction picture with respect to $H_{0}$
+			\item Find the steady state amplitudes at the sidebands
+			\begin{figure}
+				\includegraphics[width = 5 cm]{plots/ss_2_tone.png}
+			\end{figure}
+			\item Assumptions used (...)
+		\end{itemize}
+		
+	\end{columns}
+
+\end{frame}
+
+% Implementation - 4 tone driving
+\begin{frame}
+	
+	\frametitle{Implementation}
+	\framesubtitle{4 - tone driving}
+	
+	Couplings unequal $\longrightarrow$ driving tones applied with detuning of $\Omega$ from the sidebands $\omega_{c} \pm (\omega_{a} - \Omega)$ and $\omega_{c} \pm (\omega_{b} + \Omega)$
+	
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/plot_4_tone.png}
+	\end{figure}	
+	
+	\begin{figure}
+		\includegraphics[width = 8 cm]{plots/hamiltonian_4_tone.png}
+	\end{figure}
+
+\end{frame}
+
+% Implementation - 4 tone driving
+\begin{frame}
+	
+	\frametitle{Implementation}
+	\framesubtitle{4 - tone driving}
+	
+	Couplings unequal $\longrightarrow$ driving tones applied with detuning of $\Omega$ from the sidebands $\omega_{c} \pm (\omega_{a} - \Omega)$ and $\omega_{c} \pm (\omega_{b} + \Omega)$
+	
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/ss_4_tone.png}
+	\end{figure}
+
+	\begin{itemize}
+		\item Where we demand the strengths match as $\bar{c}_{1\pm} / \bar{c}_{2\pm} = g_{b} / g_{a}$
+		\item Working in interaction picture with respect to Hamiltonian (4)
+		\item Imprecision in the matching lead to add contributions as in Hamiltonian (14)
+	\end{itemize}
+
+	Condition $\gamma \ll \Omega \ll (\omega_{a} - \omega_{b})/2 - \gamma$, {\color{blue}sufficiently coupled} Bogoliubov modes and unwanted sideband processes have no effect.
+
+\end{frame}
 
 % Adiabatic limit I
 \begin{frame}
@@ -235,8 +309,12 @@
 	\frametitle{Adiabatic limit}
 	\framesubtitle{Our system}
 	
-	Operator  $\hat{c} = -2i\mathcal{G}(\hat{\beta}_{1} + \hat{\beta}_{2})/k$\\
-	Substitute into the dissipative terms of master equation $\longrightarrow$ adiabatically eliminated master equation
+	\begin{itemize}
+		\item Assume the system responds rapidly to mechanical motion $k > \Omega, G_{\pm}$, but still in $\omega_{a}, \omega_{b} \gg k$
+		\item Get rid of the cavity operator $\hat{c} = -2i\mathcal{G}(\hat{\beta}_{1} + \hat{\beta}_{2})/k$\\
+		\item Obtain adiabatically eliminated master equation
+	\end{itemize}
+
 	\begin{figure}
 		\includegraphics[width = 9 cm]{plots/master_eq_2.png}
 	\end{figure}
@@ -245,12 +323,20 @@
 	\begin{figure}
 		\includegraphics[width = 3 cm]{plots/optomechanic_dumping.png}
 	\end{figure}
-	
-	Alternative view of the cooling of the Bogoliuov modes is possible (*)
 
+	Easy to obtain steady state, and to measure entanglement and purity.
+	 
 \end{frame}
 
 % Adiabatic limit II
+\begin{frame}
+
+	\frametitle{Adiabatic limit}
+	\framesubtitle{Entangled systems}
+
+\end{frame}
+
+% Adiabatic limit III
 \begin{frame}
 	
 	\frametitle{Adiabatic limit}
@@ -273,7 +359,30 @@
 
 \end{frame}
 
-% Adiabatic limit III
+% Adiabatic limit IV
+\begin{frame}
+	
+	\frametitle{Adiabatic limit}
+	\framesubtitle{Purity}
+	
+	Entanglement criterion using Duan inequality 
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/entanglement_quad.png}
+	\end{figure}	
+	
+	Where we introduced the quadrature modes as
+	\begin{figure}
+		\includegraphics[width = 6.5 cm]{plots/entanglement_quad_2.png}
+	\end{figure}
+	
+	Where we introduced the quadrature modes as
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/entanglement_duan_criterion.png}
+	\end{figure}
+
+\end{frame}
+
+% Adiabatic limit V
 \begin{frame}
 	
 	\frametitle{Adiabatic limit}
@@ -322,6 +431,42 @@
 		\end{itemize}
 		
 	\end{columns}
+
+\end{frame}
+
+% Time dependence
+\begin{frame}
+
+\frametitle{Time dependence}
+\framesubtitle{time dependence}
+
+	\begin{figure}
+		\includegraphics[width = 9 cm]{plots/plot_time_dependence.png}
+	\end{figure}	
+	
+\end{frame}
+
+% Experimental observability
+\begin{frame}
+	
+	\frametitle{Experimental observability}
+	\framesubtitle{Output spectrum}
+	
+	\begin{figure}
+		\includegraphics[width = 6 cm]{plots/spectrum.png}
+	\end{figure}	
+
+\end{frame}
+
+% Experimental observability
+\begin{frame}
+
+\frametitle{Experimental observability}
+\framesubtitle{Output spectrum}
+	
+	\begin{figure}
+		\includegraphics[width = 9 cm]{plots/plot_spectrum.png}
+	\end{figure}	
 
 \end{frame}
 
