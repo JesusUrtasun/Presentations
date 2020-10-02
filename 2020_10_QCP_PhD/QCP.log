@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  1 OCT 2020 13:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  2 OCT 2020 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,10 +888,10 @@ thkerncmss.
 ] [3
 
 ]
-<plots/plot_system.png, id=47, 677.53125pt x 218.8175pt>
+<plots/plot_system.png, id=46, 677.53125pt x 218.8175pt>
 File: plots/plot_system.png Graphic file (type png)
 <use plots/plot_system.png>
-Package pdftex.def Info: plots/plot_system.png  used on input line 100.
+Package pdftex.def Info: plots/plot_system.png  used on input line 98.
 (pdftex.def)             Requested size: 227.62204pt x 73.51215pt.
  [4
 
@@ -899,230 +899,256 @@ Package pdftex.def Info: plots/plot_system.png  used on input line 100.
 <plots/hamiltonian_1.png, id=58, 696.6025pt x 123.46124pt>
 File: plots/hamiltonian_1.png Graphic file (type png)
 <use plots/hamiltonian_1.png>
-Package pdftex.def Info: plots/hamiltonian_1.png  used on input line 120.
+Package pdftex.def Info: plots/hamiltonian_1.png  used on input line 119.
 (pdftex.def)             Requested size: 227.62204pt x 40.34106pt.
 <plots/master_eq_1.png, id=59, 750.805pt x 127.47626pt>
 File: plots/master_eq_1.png Graphic file (type png)
 <use plots/master_eq_1.png>
-Package pdftex.def Info: plots/master_eq_1.png  used on input line 120.
+Package pdftex.def Info: plots/master_eq_1.png  used on input line 119.
 (pdftex.def)             Requested size: 227.62204pt x 38.6458pt.
  [5
 
  <./plots/hamiltonian_1.png> <./plots/master_eq_1.png>]
-[6
-
-]
-<plots/bogoliubov_1.png, id=76, 395.4775pt x 136.51pt>
+<plots/bogoliubov_1.png, id=70, 395.4775pt x 136.51pt>
 File: plots/bogoliubov_1.png Graphic file (type png)
 <use plots/bogoliubov_1.png>
-Package pdftex.def Info: plots/bogoliubov_1.png  used on input line 150.
+Package pdftex.def Info: plots/bogoliubov_1.png  used on input line 140.
 (pdftex.def)             Requested size: 142.26378pt x 49.10606pt.
-<plots/hamiltonian_2.png, id=77, 663.47874pt x 75.28125pt>
+<plots/hamiltonian_2.png, id=71, 663.47874pt x 75.28125pt>
 File: plots/hamiltonian_2.png Graphic file (type png)
 <use plots/hamiltonian_2.png>
-Package pdftex.def Info: plots/hamiltonian_2.png  used on input line 150.
+Package pdftex.def Info: plots/hamiltonian_2.png  used on input line 140.
 (pdftex.def)             Requested size: 227.62204pt x 25.82732pt.
- [7
+
+[6
 
  <./plots/bogoliubov_1.png> <./plots/hamiltonian_2.png>]
-<plots/2_squeezed_mode.png, id=87, 416.55624pt x 85.31876pt>
+<plots/2_squeezed_mode.png, id=80, 416.55624pt x 85.31876pt>
 File: plots/2_squeezed_mode.png Graphic file (type png)
 <use plots/2_squeezed_mode.png>
-Package pdftex.def Info: plots/2_squeezed_mode.png  used on input line 169.
+Package pdftex.def Info: plots/2_squeezed_mode.png  used on input line 157.
 (pdftex.def)             Requested size: 142.26378pt x 29.13817pt.
-<plots/plot_squeezed.png, id=88, 643.40375pt x 368.37625pt>
+<plots/plot_squeezed.png, id=81, 643.40375pt x 368.37625pt>
 File: plots/plot_squeezed.png Graphic file (type png)
 <use plots/plot_squeezed.png>
-Package pdftex.def Info: plots/plot_squeezed.png  used on input line 169.
+Package pdftex.def Info: plots/plot_squeezed.png  used on input line 157.
 (pdftex.def)             Requested size: 199.16928pt x 114.03244pt.
+ [7
 
-Overfull \vbox (7.8333pt too high) detected at line 169
- []
+ <./plots/2_squeezed_mode.png> <./plots/plot_squeezed.png>]
+File: plots/2_squeezed_mode.png Graphic file (type png)
+<use plots/2_squeezed_mode.png>
+Package pdftex.def Info: plots/2_squeezed_mode.png  used on input line 176.
+(pdftex.def)             Requested size: 142.26378pt x 29.13817pt.
+ [8
 
-[8
+] [9
 
- <./plots/2_squeezed_mode.png> <./plots/plot_squeezed.png>] [9
+] [10
 
 ]
-<plots/hamiltonian_3.png, id=103, 797.98125pt x 83.31125pt>
+<plots/hamiltonian_3.png, id=111, 797.98125pt x 83.31125pt>
 File: plots/hamiltonian_3.png Graphic file (type png)
 <use plots/hamiltonian_3.png>
-Package pdftex.def Info: plots/hamiltonian_3.png  used on input line 211.
+Package pdftex.def Info: plots/hamiltonian_3.png  used on input line 242.
 (pdftex.def)             Requested size: 241.84842pt x 25.24907pt.
-<plots/hamiltonian_4.png, id=104, 653.44125pt x 133.49875pt>
+<plots/hamiltonian_4.png, id=112, 653.44125pt x 133.49875pt>
 File: plots/hamiltonian_4.png Graphic file (type png)
 <use plots/hamiltonian_4.png>
-Package pdftex.def Info: plots/hamiltonian_4.png  used on input line 211.
+Package pdftex.def Info: plots/hamiltonian_4.png  used on input line 242.
 (pdftex.def)             Requested size: 213.39566pt x 43.59637pt.
- [10
+ [11
 
- <./plots/hamiltonian_3.png> <./plots/hamiltonian_4.png>] [11
+ <./plots/hamiltonian_3.png> <./plots/hamiltonian_4.png>] [12
 
 ]
-<plots/hamiltonian_2_tone.png, id=120, 658.46pt x 71.26625pt>
-File: plots/hamiltonian_2_tone.png Graphic file (type png)
-<use plots/hamiltonian_2_tone.png>
-Package pdftex.def Info: plots/hamiltonian_2_tone.png  used on input line 264.
-(pdftex.def)             Requested size: 199.16928pt x 21.55618pt.
-<plots/plot_2_tone.png, id=121, 809.0225pt x 481.8pt>
+<plots/plot_2_tone.png, id=128, 809.0225pt x 481.8pt>
 File: plots/plot_2_tone.png Graphic file (type png)
 <use plots/plot_2_tone.png>
-Package pdftex.def Info: plots/plot_2_tone.png  used on input line 264.
+Package pdftex.def Info: plots/plot_2_tone.png  used on input line 279.
 (pdftex.def)             Requested size: 199.16928pt x 118.61179pt.
+<plots/hamiltonian_2_tone.png, id=129, 658.46pt x 71.26625pt>
+File: plots/hamiltonian_2_tone.png Graphic file (type png)
+<use plots/hamiltonian_2_tone.png>
+Package pdftex.def Info: plots/hamiltonian_2_tone.png  used on input line 279.
+(pdftex.def)             Requested size: 199.16928pt x 21.55618pt.
+ [13
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 264--264
- [] 
- []
-
-<plots/ss_2_tone.png, id=122, 393.47pt x 100.375pt>
+ <./plots/plot_2_tone.png> <./plots/hamiltonian_2_tone.png>]
+<plots/ss_2_tone.png, id=139, 393.47pt x 100.375pt>
 File: plots/ss_2_tone.png Graphic file (type png)
 <use plots/ss_2_tone.png>
-Package pdftex.def Info: plots/ss_2_tone.png  used on input line 264.
+Package pdftex.def Info: plots/ss_2_tone.png  used on input line 305.
 (pdftex.def)             Requested size: 142.26378pt x 36.29118pt.
-
-Overfull \hbox (10.132pt too wide) in paragraph at lines 264--264
- [] 
- []
-
-[12
-
- <./plots/hamiltonian_2_tone.png> <./plots/plot_2_tone.png> <./plots/ss_2_tone.
-png>]
-<plots/plot_4_tone.png, id=132, 687.56876pt x 407.5225pt>
-File: plots/plot_4_tone.png Graphic file (type png)
-<use plots/plot_4_tone.png>
-Package pdftex.def Info: plots/plot_4_tone.png  used on input line 282.
-(pdftex.def)             Requested size: 199.16928pt x 118.04791pt.
-<plots/hamiltonian_4_tone.png, id=133, 700.6175pt x 134.5025pt>
-File: plots/hamiltonian_4_tone.png Graphic file (type png)
-<use plots/hamiltonian_4_tone.png>
-Package pdftex.def Info: plots/hamiltonian_4_tone.png  used on input line 282.
-(pdftex.def)             Requested size: 227.62204pt x 43.69841pt.
-
-Overfull \vbox (10.67984pt too high) detected at line 282
- []
-
-[13
-
- <./plots/plot_4_tone.png> <./plots/hamiltonian_4_tone.png>]
-<plots/ss_4_tone.png, id=143, 385.44pt x 92.345pt>
-File: plots/ss_4_tone.png Graphic file (type png)
-<use plots/ss_4_tone.png>
-Package pdftex.def Info: plots/ss_4_tone.png  used on input line 304.
-(pdftex.def)             Requested size: 142.26378pt x 34.08397pt.
+File: plots/ss_2_tone.png Graphic file (type png)
+<use plots/ss_2_tone.png>
+Package pdftex.def Info: plots/ss_2_tone.png  used on input line 305.
+(pdftex.def)             Requested size: 142.26378pt x 36.29118pt.
  [14
 
+ <./plots/ss_2_tone.png>]
+<plots/plot_4_tone.png, id=148, 687.56876pt x 407.5225pt>
+File: plots/plot_4_tone.png Graphic file (type png)
+<use plots/plot_4_tone.png>
+Package pdftex.def Info: plots/plot_4_tone.png  used on input line 323.
+(pdftex.def)             Requested size: 199.16928pt x 118.04791pt.
+<plots/hamiltonian_4_tone.png, id=149, 700.6175pt x 134.5025pt>
+File: plots/hamiltonian_4_tone.png Graphic file (type png)
+<use plots/hamiltonian_4_tone.png>
+Package pdftex.def Info: plots/hamiltonian_4_tone.png  used on input line 323.
+(pdftex.def)             Requested size: 227.62204pt x 43.69841pt.
+
+Overfull \vbox (10.67984pt too high) detected at line 323
+ []
+
+[15
+
+ <./plots/plot_4_tone.png> <./plots/hamiltonian_4_tone.png>]
+<plots/ss_4_tone.png, id=158, 385.44pt x 92.345pt>
+File: plots/ss_4_tone.png Graphic file (type png)
+<use plots/ss_4_tone.png>
+Package pdftex.def Info: plots/ss_4_tone.png  used on input line 345.
+(pdftex.def)             Requested size: 142.26378pt x 34.08397pt.
+ [16
+
  <./plots/ss_4_tone.png>]
-<plots/master_eq_2.png, id=151, 866.23625pt x 135.50626pt>
+<plots/master_eq_2.png, id=166, 866.23625pt x 135.50626pt>
 File: plots/master_eq_2.png Graphic file (type png)
 <use plots/master_eq_2.png>
-Package pdftex.def Info: plots/master_eq_2.png  used on input line 329.
+Package pdftex.def Info: plots/master_eq_2.png  used on input line 371.
 (pdftex.def)             Requested size: 256.0748pt x 40.05669pt.
-<plots/optomechanic_dumping.png, id=152, 270.00874pt x 119.44624pt>
+<plots/optomechanic_dumping.png, id=167, 270.00874pt x 119.44624pt>
 File: plots/optomechanic_dumping.png Graphic file (type png)
 <use plots/optomechanic_dumping.png>
-Package pdftex.def Info: plots/optomechanic_dumping.png  used on input line 329
+Package pdftex.def Info: plots/optomechanic_dumping.png  used on input line 371
 .
 (pdftex.def)             Requested size: 85.35826pt x 37.76062pt.
- [15
 
- <./plots/master_eq_2.png> <./plots/optomechanic_dumping.png>] [16
+Overfull \vbox (3.40086pt too high) detected at line 371
+ []
 
-]
-<plots/entanglement_quad.png, id=167, 336.25626pt x 130.4875pt>
+[17
+
+ <./plots/master_eq_2.png> <./plots/optomechanic_dumping.png>]
+<plots/entanglement_quad.png, id=176, 336.25626pt x 130.4875pt>
 File: plots/entanglement_quad.png Graphic file (type png)
 <use plots/entanglement_quad.png>
-Package pdftex.def Info: plots/entanglement_quad.png  used on input line 360.
+Package pdftex.def Info: plots/entanglement_quad.png  used on input line 397.
 (pdftex.def)             Requested size: 113.81102pt x 44.16605pt.
-<plots/entanglement_quad_2.png, id=168, 619.31375pt x 70.2625pt>
+<plots/entanglement_quad_2.png, id=177, 619.31375pt x 70.2625pt>
 File: plots/entanglement_quad_2.png Graphic file (type png)
 <use plots/entanglement_quad_2.png>
-Package pdftex.def Info: plots/entanglement_quad_2.png  used on input line 360.
+Package pdftex.def Info: plots/entanglement_quad_2.png  used on input line 397.
 
 (pdftex.def)             Requested size: 184.9429pt x 20.9824pt.
-<plots/entanglement_duan_criterion.png, id=169, 297.11pt x 72.27pt>
+<plots/entanglement_duan_criterion.png, id=178, 297.11pt x 72.27pt>
 File: plots/entanglement_duan_criterion.png Graphic file (type png)
 <use plots/entanglement_duan_criterion.png>
 Package pdftex.def Info: plots/entanglement_duan_criterion.png  used on input l
-ine 360.
+ine 397.
 (pdftex.def)             Requested size: 113.81102pt x 27.68343pt.
- [17
+
+Overfull \vbox (1.34459pt too high) detected at line 397
+ []
+
+[18
 
  <./plots/entanglement_quad.png> <./plots/entanglement_quad_2.png> <./plots/ent
 anglement_duan_criterion.png>]
-File: plots/entanglement_quad.png Graphic file (type png)
-<use plots/entanglement_quad.png>
-Package pdftex.def Info: plots/entanglement_quad.png  used on input line 383.
-(pdftex.def)             Requested size: 113.81102pt x 44.16605pt.
-File: plots/entanglement_quad_2.png Graphic file (type png)
-<use plots/entanglement_quad_2.png>
-Package pdftex.def Info: plots/entanglement_quad_2.png  used on input line 383.
+<plots/entanglement_quadratures.png, id=188, 696.6025pt x 312.16624pt>
+File: plots/entanglement_quadratures.png Graphic file (type png)
+<use plots/entanglement_quadratures.png>
+Package pdftex.def Info: plots/entanglement_quadratures.png  used on input line
+ 412.
+(pdftex.def)             Requested size: 184.9429pt x 82.87608pt.
+ [19
 
-(pdftex.def)             Requested size: 184.9429pt x 20.9824pt.
-File: plots/entanglement_duan_criterion.png Graphic file (type png)
-<use plots/entanglement_duan_criterion.png>
-Package pdftex.def Info: plots/entanglement_duan_criterion.png  used on input l
-ine 383.
-(pdftex.def)             Requested size: 113.81102pt x 27.68343pt.
- [18
-
-]
-<plots/plot_entanglement.png, id=185, 590.205pt x 653.44125pt>
-File: plots/plot_entanglement.png Graphic file (type png)
-<use plots/plot_entanglement.png>
-Package pdftex.def Info: plots/plot_entanglement.png  used on input line 409.
-(pdftex.def)             Requested size: 170.71652pt x 189.00455pt.
-
-Overfull \hbox (29.44214pt too wide) detected at line 409
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-[19
-
- <./plots/plot_entanglement.png>]
-<plots/plot_steady_state.png, id=194, 571.13374pt x 652.4375pt>
-File: plots/plot_steady_state.png Graphic file (type png)
-<use plots/plot_steady_state.png>
-Package pdftex.def Info: plots/plot_steady_state.png  used on input line 435.
-(pdftex.def)             Requested size: 170.71652pt x 195.01596pt.
-
-Overfull \hbox (29.44214pt too wide) detected at line 435
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-
-Overfull \vbox (2.01198pt too high) detected at line 435
- []
+ <./plots/entanglement_quadratures.png>]
+<plots/purity.png, id=197, 675.52374pt x 131.49126pt>
+File: plots/purity.png Graphic file (type png)
+<use plots/purity.png>
+Package pdftex.def Info: plots/purity.png  used on input line 437.
+(pdftex.def)             Requested size: 184.9429pt x 35.99869pt.
 
 [20
 
- <./plots/plot_steady_state.png>]
-<plots/plot_time_dependence.png, id=203, 975.645pt x 627.34375pt>
-File: plots/plot_time_dependence.png Graphic file (type png)
-<use plots/plot_time_dependence.png>
-Package pdftex.def Info: plots/plot_time_dependence.png  used on input line 447
-.
-(pdftex.def)             Requested size: 256.0748pt x 164.65627pt.
- [21
+ <./plots/purity.png>]
+<plots/plot_entanglement.png, id=206, 590.205pt x 653.44125pt>
+File: plots/plot_entanglement.png Graphic file (type png)
+<use plots/plot_entanglement.png>
+Package pdftex.def Info: plots/plot_entanglement.png  used on input line 464.
+(pdftex.def)             Requested size: 170.71652pt x 189.00455pt.
 
- <./plots/plot_time_dependence.png>]
-<plots/spectrum.png, id=211, 661.47125pt x 226.8475pt>
-File: plots/spectrum.png Graphic file (type png)
-<use plots/spectrum.png>
-Package pdftex.def Info: plots/spectrum.png  used on input line 459.
-(pdftex.def)             Requested size: 170.71652pt x 58.54282pt.
+Overfull \hbox (29.44214pt too wide) detected at line 464
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+[21
+
+ <./plots/plot_entanglement.png>]
+<plots/plot_steady_state.png, id=214, 571.13374pt x 652.4375pt>
+File: plots/plot_steady_state.png Graphic file (type png)
+<use plots/plot_steady_state.png>
+Package pdftex.def Info: plots/plot_steady_state.png  used on input line 490.
+(pdftex.def)             Requested size: 170.71652pt x 195.01596pt.
+
+Overfull \hbox (29.44214pt too wide) detected at line 490
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+
+Overfull \vbox (2.01198pt too high) detected at line 490
+ []
 
 [22
 
- <./plots/spectrum.png>]
-<plots/plot_spectrum.png, id=219, 1112.155pt x 408.52625pt>
-File: plots/plot_spectrum.png Graphic file (type png)
-<use plots/plot_spectrum.png>
-Package pdftex.def Info: plots/plot_spectrum.png  used on input line 471.
-(pdftex.def)             Requested size: 256.0748pt x 94.06503pt.
+ <./plots/plot_steady_state.png>]
+<plots/plot_time_dependence.png, id=222, 975.645pt x 627.34375pt>
+File: plots/plot_time_dependence.png Graphic file (type png)
+<use plots/plot_time_dependence.png>
+Package pdftex.def Info: plots/plot_time_dependence.png  used on input line 504
+.
+(pdftex.def)             Requested size: 256.0748pt x 164.65627pt.
  [23
 
- <./plots/plot_spectrum.png>] [24
+ <./plots/plot_time_dependence.png>]
+<plots/spectrum_fourier.png, id=230, 511.9125pt x 104.39pt>
+File: plots/spectrum_fourier.png Graphic file (type png)
+<use plots/spectrum_fourier.png>
+Package pdftex.def Info: plots/spectrum_fourier.png  used on input line 529.
+(pdftex.def)             Requested size: 170.71652pt x 34.81197pt.
+<plots/spectrum.png, id=231, 661.47125pt x 226.8475pt>
+File: plots/spectrum.png Graphic file (type png)
+<use plots/spectrum.png>
+Package pdftex.def Info: plots/spectrum.png  used on input line 529.
+(pdftex.def)             Requested size: 184.9429pt x 63.4234pt.
+
+Overfull \vbox (8.08975pt too high) detected at line 529
+ []
+
+[24
+
+ <./plots/spectrum_fourier.png> <./plots/spectrum.png>]
+<plots/plot_spectrum.png, id=240, 1112.155pt x 408.52625pt>
+File: plots/plot_spectrum.png Graphic file (type png)
+<use plots/plot_spectrum.png>
+Package pdftex.def Info: plots/plot_spectrum.png  used on input line 551.
+(pdftex.def)             Requested size: 256.0748pt x 94.06503pt.
+<plots/spectrum_imperfections.png, id=241, 598.235pt x 96.36pt>
+File: plots/spectrum_imperfections.png Graphic file (type png)
+<use plots/spectrum_imperfections.png>
+Package pdftex.def Info: plots/spectrum_imperfections.png  used on input line 5
+51.
+(pdftex.def)             Requested size: 184.9429pt x 29.78894pt.
+ [25
+
+ <./plots/plot_spectrum.png> <./plots/spectrum_imperfections.png>] [26
+
+] [27
+
+] [28
+
+] [29
 
 ]
 \tf@nav=\write6
@@ -1134,38 +1160,44 @@ Package pdftex.def Info: plots/plot_spectrum.png  used on input line 471.
 \tf@snm=\write8
 \openout8 = `QCP.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
- (./QCP.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 618.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 618.
+
+(./QCP.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 618.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 618.
 Package rerunfilecheck Info: File `QCP.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17254 strings out of 492982
- 329092 string characters out of 6134896
- 398691 words of memory out of 5000000
- 20339 multiletter control sequences out of 15000+600000
- 11590 words of font info for 42 fonts, out of 8000000 for 9000
+ 17303 strings out of 492982
+ 329976 string characters out of 6134896
+ 399698 words of memory out of 5000000
+ 20372 multiletter control sequences out of 15000+600000
+ 13518 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,56p,799b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,56p,799b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb>
-Output written on QCP.pdf (24 pages, 1171248 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+sbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on QCP.pdf (29 pages, 1263281 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

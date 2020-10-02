@@ -18,7 +18,7 @@
 %\setbeamertemplate{footline}[frame number]
 
 % Title and author
-\title[QCD and Monte Carlo]{Quantum Coherent Phenomena}
+\title[Quantum coherent phenomena]{Quantum coherent chenomena}
 \author{\textbf {Jes\'us Urtasun Elizari}}
 %\institute{\textbf {University of Milan}}
 \date{Milan, October 2020}
@@ -34,7 +34,7 @@
 	\center{\color{blue}Two-mode squeezed states in cavity optomechanics\\ via engineering of a single reservoir}
 	
 	\vspace{0.25 cm}
-	\center{Quantum coherent phenomena course seminar - Milan, October 2020}
+	\center{PhD course - Quantum coherent phenomena\\ Milan, October 2020}
 
 	\begin{figure}
 		\minipage{1\textwidth}
@@ -58,8 +58,7 @@
 	\begin{enumerate}
 		\item {\color{blue}Introduction, system and Hamiltonian}
 		\item {\color{blue}Reservoir engineering strategies}
-		\item {\color{blue}Implementation}
-		\item {\color{blue}Full system}
+		\item {\color{blue}Implementation and observable quantities}
 		\item {\color{blue}Experimental observability}
 		\item {\color{blue}Conclusions}
 	\end{enumerate}
@@ -70,13 +69,12 @@
 \begin{frame}
 
 	\frametitle{Introduction}
-	\framesubtitle{Entangled states}
 
 	\begin{enumerate}
-		\item Generation and detection of entangled states of macroscopic M.O
+		\item Generation and detection of entangled states of macroscopic mechanical oscillators
 		\item Reservoir engineering $\longrightarrow$ Two-mode squeezed states
 		\item Easy to implement in existing experimental configurations
-		\item Quantum optomechanics $\longrightarrow$ couple Bogoliubov modes to a single reservoir (damped cavity)
+		\item Quantum optomechanics $\longrightarrow$ describe mesoscopic systems
 	\end{enumerate}	
 	
 \end{frame}
@@ -88,9 +86,9 @@
 	\framesubtitle{System representation}
 	
 	\begin{itemize}
-		\item Two mechanical oscillators, resonance frequencies $\omega_{a}, \omega_{b}$
+		\item Two mechanical oscillators with resonance frequencies $\omega_{a}, \omega_{b}$
 		\item Dispersively coupled $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
-		\item Dispersively coupled $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
+		\item Radiation pressure forces inside the cavity lead motion of the mirrors become highly entangled
 	\end{itemize}
 
 		\begin{figure}
@@ -105,28 +103,19 @@
 	\frametitle{Introduction}
 	\framesubtitle{System and Hamiltonian}
 	
-	Quantum optomechanics Hamiltonian
+	Quantum optomechanics $\longrightarrow$ Hamiltonian describing optical and mechanical modes with same formalism 
 	\begin{figure}
 		\includegraphics[width = 8 cm]{plots/hamiltonian_1.png}
 	\end{figure}
 	
-	Under usual approximations, obtain the master formula 
+	Under usual approximations {\color{blue}}, obtain the master formula 
 	\begin{figure}
 		\includegraphics[width = 8 cm]{plots/master_eq_1.png}
 	\end{figure}
 
-	Being $\mathcal{H}' = \mathcal{H} - \mathcal{H}_{\textrm{diss}}$, and $\mathcal{D}[\hat{c}]$ the dispersive superoperator
+	Being $\mathcal{H}' = \mathcal{H} - \mathcal{H}_{\textrm{diss}}$, and $\mathcal{D}[\hat{c}]$ the dispersive superoperator\\
+	Only dissipation term for $\hat{c} \longrightarrow$ {\color{blue}Assuming cavity is at T = 0}
 	
-\end{frame}
-
-% Reservoir engineering I
-\begin{frame}
-
-	\frametitle{Reservoir engineering strategies}
-	\framesubtitle{Linearized optomechanics}
-	
-
-
 \end{frame}
 
 % Reservoir engineering I
@@ -135,45 +124,87 @@
 	\frametitle{Reservoir engineering strategies}
 	\framesubtitle{Bogoliubov operators}
 	
-	Define the {\color{blue}Bogoliuov} modes in terms of the modes $\hat{a}, \hat{b} \longrightarrow$
+	Define the {\color{blue}Bogoliuov} mechanical modes in terms of the modes $\hat{a}, \hat{b}$
 	\begin{figure}
 		\includegraphics[width = 5 cm]{plots/bogoliubov_1.png}
 	\end{figure}	
 
-	Rotation with respect to a frame, being r the {\color{blue}squeezing parameter} 
+	being r the {\color{blue}squeezing parameter}\\
+	Work in rotating frame with respect to the Hamiltonian
 	\begin{figure}
 		\includegraphics[width = 8 cm]{plots/hamiltonian_2.png}
 	\end{figure}	
 
-	Choice of $\Omega$ for non-trivial rotation of collective mechanical quadratures $\hat{X}_{\pm}$, $hat{P}_{\pm}$
+	where choice of detuning $\Omega$ is such that collective mechanical quadratures $\hat{X}_{\pm}$, $\hat{P}_{\pm}$ rotate in a non-trivial way
 
 \end{frame}
 
 % Reservoir engineering II
 \begin{frame}
-	
+
 	\frametitle{Reservoir engineering strategies}
-	\framesubtitle{Squeezed modes}
+	\framesubtitle{Note on squeezed modes}
 	
-	2-mode squeezed state defined by $|r> = S_{2}(r) |00>$
+	Squeezed modes minimize the variance of quadrature operators
 	\begin{figure}
 		\includegraphics[width = 5 cm]{plots/2_squeezed_mode.png}
 	\end{figure}	
-
-	Such that $\hat{\beta}_{1}$ and $\hat{\beta}_{2}$ are the two-mode squeezed state with squeezing parameter $r$
-
+	
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/plot_squeezed.png}
 	\end{figure}
-	
+
 \end{frame}
 
 % Reservoir engineering III
 \begin{frame}
 	
 	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{2-mode squeezed state}
+	
+	Define the 2-mode squeezed as $\ket{r}_{2} = \hat{S}_{2}(r) \ket{0,0}$
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/2_squeezed_mode.png}
+	\end{figure}	
+
+	such that $[\hat{S}_{2}(r) \hat{a} \hat{S}_{2}^{\dagger}(r)]\ket{r}_{2} = [\hat{S}_{2}(r) \hat{b} \hat{S}_{2}^{\dagger}(r)]\ket{r}_{2} = 0$\\
+	
+	\vspace{0.5cm}
+	
+	Therefore, $\hat{\beta}_{1} = \hat{S}_{2}(r) \hat{a} \hat{S}_{2}^{\dagger}(r)$ and $\hat{\beta}_{2} = \hat{S}_{2}(r) \hat{b} \hat{S}_{2}^{\dagger}(r)$ and their\\ground state is the two-mode squeezed state with squeezing parameter $r$
+
+\end{frame}
+
+% Reservoir engineering V
+\begin{frame}
+	
+	\frametitle{Reservoir engineering strategies}
+	\framesubtitle{Note on Quantum Optomechanics}
+	
+	Linearized Hamiltonian with 2-tone laser with amplitudes $\alpha_{\pm}$)
+	
+	\begin{equation}
+	\mathcal{H} = \hbar \textrm{g}_{+} \; (a^{\dagger}b^{\dagger} + ab) + \hbar \textrm{g}_{-} \; (a^{\dagger}b + ab^{\dagger}) \nonumber
+	\end{equation}
+	
+	being $g_{\pm} = g_{0} \alpha_{\pm}$ \\
+	Study different cases
+	
+	\begin{itemize}
+		\item $g_{-} = 0 \longrightarrow$ Sideband blue $\mathcal{H} = \hbar \textrm{g} \; (a^{\dagger}b^{\dagger} + ab)$ "2 - mode squeezing"
+		\item $g_{+} = 0 \longrightarrow$ Sideband red $\mathcal{H} = \hbar \textrm{g} \; (a^{\dagger}b + ab^{\dagger})$ "beam - splitter"
+		\item $g_{-} = g_{+} = g \longrightarrow \mathcal{H} = \hbar \textrm{g} \; (a^{\dagger}b + ab^{\dagger})$ "backaction evading"
+	\end{itemize}	
+
+\end{frame}
+
+% Reservoir engineering VI
+\begin{frame}
+	
+	\frametitle{Reservoir engineering strategies}
 	\framesubtitle{Squeezed modes}
 	
+	Study different ways of producing our 2-mode squeezed state
 	\begin{itemize}
 		\item i) Two cavity modes to independently cool the Bogoliubov modes (beam splitter $\hat{\beta}^{\dagger}_{i} \hat{c}_{i}$)
 		\item ii) Couple the cavity to one Bogoliubov mode, and then this to the other via $\hat{\beta}^{\dagger}_{1} \hat{\beta}_{2}$ and the this to the other one
@@ -188,7 +219,7 @@
 
 \end{frame}
 
-% Reservoir engineering IV
+% Reservoir engineering VII
 \begin{frame}
 	
 	\frametitle{Reservoir engineering strategies}
@@ -216,15 +247,14 @@
 	\frametitle{Implementation}
 	\framesubtitle{Different cases}
 	
-	Hamiltonian is already implemented in conventional optomechanical setups. Focus on regime $|G_{+}|<|G_{-}|$
-	
+		$\mathcal{H}$ is already implemented in conventional optomechanical setups. Focus on regime $|G_{+}|<|G_{-}|$\\
+		Quantum optomechanics Hamiltonian in terms of $\beta_{1}$ and $\beta_{2}$ modes
+
 	\begin{itemize}
-		\item Two-tone driving ($g_{a} = g_{b}$)
+		\item Two-tone driving $(g_{a} = g_{b}) \longrightarrow$ cavity drive tones at $\omega_{c} \pm \omega_{m}$ 
 		\item Four-tone driving ($g_{a} = g_{b}$)
 		\item Case similar ($g_{a} \sim g_{b}$)
 	\end{itemize}	
-	
-	(...)
 
 \end{frame}
 
@@ -234,32 +264,43 @@
 	\frametitle{Implementation}
 	\framesubtitle{2 - tone driving}
 	
-	Single photon coupling rates equal $\longrightarrow$ cavity drive tones at $\omega_{c} \pm \omega_{m}$
+	Single photon coupling rates equal $\longrightarrow$ cavity drive tones at $\omega_{c} \pm \omega_{m}$\\
 	
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/plot_2_tone.png}
+	\end{figure}	
+
+	Apply our drive Hamiltonian
+
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/hamiltonian_2_tone.png}
 	\end{figure}
 
-	\begin{columns}
-		
-		\column{0.5\textwidth}
-		
+\end{frame}
+
+% Implementation - 2 tone driving
+\begin{frame}
+	
+	\frametitle{Implementation}
+	\framesubtitle{2 - tone driving}
+	
+	Couplings equal $\longrightarrow$ driving tones $\omega_{c} \pm \omega_{m}$ being  $\omega_{m} = (\omega_{a} + \omega_{b}) / 2$
+	Single photon coupling rates equal $\longrightarrow$ cavity drive tones at $\omega_{c} \pm \omega_{m}$\\
+	Driving tones applied with single relative phase\\
+	Interaction picture with respect to $\mathcal{H}_{0}$ leads to H (8) $\checkmark$
+	
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/ss_2_tone.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item Interaction picture with respect to $\mathcal{H}_{0}$
+		\item Find the steady state amplitudes at the sidebands
 		\begin{figure}
-			\includegraphics[width = 7 cm]{plots/plot_2_tone.png}
-		\end{figure}	
-		
-		\column{0.45\textwidth}
-		
-		\begin{itemize}
-			\item Interaction picture with respect to $H_{0}$
-			\item Find the steady state amplitudes at the sidebands
-			\begin{figure}
-				\includegraphics[width = 5 cm]{plots/ss_2_tone.png}
-			\end{figure}
-			\item Assumptions used (...)
-		\end{itemize}
-		
-	\end{columns}
+			\includegraphics[width = 5 cm]{plots/ss_2_tone.png}
+		\end{figure}
+		\item Assumptions used (...)
+	\end{itemize}
 
 \end{frame}
 
@@ -269,7 +310,7 @@
 	\frametitle{Implementation}
 	\framesubtitle{4 - tone driving}
 	
-	Couplings unequal $\longrightarrow$ driving tones applied with detuning of $\Omega$ from the sidebands $\omega_{c} \pm (\omega_{a} - \Omega)$ and $\omega_{c} \pm (\omega_{b} + \Omega)$
+	Driving tones applied with detuning of $\Omega$ from the sidebands $\omega_{c} \pm (\omega_{a} - \Omega)$ and $\omega_{c} \pm (\omega_{b} + \Omega)$
 	
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/plot_4_tone.png}
@@ -288,7 +329,7 @@
 	\framesubtitle{4 - tone driving}
 	
 	Couplings unequal $\longrightarrow$ driving tones applied with detuning of $\Omega$ from the sidebands $\omega_{c} \pm (\omega_{a} - \Omega)$ and $\omega_{c} \pm (\omega_{b} + \Omega)$
-	
+	Interaction picture with respect to $\mathcal{H}_{0}$ leads to H (14) $\checkmark$
 	\begin{figure}
 		\includegraphics[width = 5 cm]{plots/ss_4_tone.png}
 	\end{figure}
@@ -310,8 +351,8 @@
 	\framesubtitle{Our system}
 	
 	\begin{itemize}
-		\item Assume the system responds rapidly to mechanical motion $k > \Omega, G_{\pm}$, but still in $\omega_{a}, \omega_{b} \gg k$
-		\item Get rid of the cavity operator $\hat{c} = -2i\mathcal{G}(\hat{\beta}_{1} + \hat{\beta}_{2})/k$\\
+		\item Assume the system responds rapidly to mechanical motion $k > \Omega, G_{\pm}$, but still in the regime $\omega_{a}, \omega_{b} \gg k$
+		\item Simplify by getting rid of the cavity operator $\hat{c} = -2i\mathcal{G}(\hat{\beta}_{1} + \hat{\beta}_{2})/k$\\
 		\item Obtain adiabatically eliminated master equation
 	\end{itemize}
 
@@ -324,38 +365,49 @@
 		\includegraphics[width = 3 cm]{plots/optomechanic_dumping.png}
 	\end{figure}
 
+	Being $\mathcal{G}$ effective optomechanical coupling\\
 	Easy to obtain steady state, and to measure entanglement and purity.
 	 
 \end{frame}
 
 % Adiabatic limit II
 \begin{frame}
-
+	
 	\frametitle{Adiabatic limit}
-	\framesubtitle{Entangled systems}
+	\framesubtitle{Entanglement}
+	
+	Build a way of identify entanglement on a 2-mode system\\
+	Duan criterion $\longrightarrow$ define collective quadratures
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/entanglement_quad.png}
+	\end{figure}	
+	
+	as combination of the usual quadrature modes
+	\begin{figure}
+		\includegraphics[width = 6.5 cm]{plots/entanglement_quad_2.png}
+	\end{figure}
+
+	Duan inequality states that a state for which
+	\begin{figure}
+		\includegraphics[width = 4 cm]{plots/entanglement_duan_criterion.png}
+	\end{figure}
+
+	is inseparable.
 
 \end{frame}
 
 % Adiabatic limit III
 \begin{frame}
-	
+
 	\frametitle{Adiabatic limit}
 	\framesubtitle{Entanglement}
-	
-	Entanglement criterion using Duan inequality 
+		
+	Quadratures can be written as function of the drive asymmetry 
 	\begin{figure}
-		\includegraphics[width = 4 cm]{plots/entanglement_quad.png}
-	\end{figure}	
-	
-	Where we introduced the quadrature modes as
-	\begin{figure}
-		\includegraphics[width = 6.5 cm]{plots/entanglement_quad_2.png}
+		\includegraphics[width = 6.5 cm]{plots/entanglement_quadratures.png}
 	\end{figure}
 
-	Where we introduced the quadrature modes as
-	\begin{figure}
-		\includegraphics[width = 4 cm]{plots/entanglement_duan_criterion.png}
-	\end{figure}
+	Use also logarithmic negativity 
 
 \end{frame}
 
@@ -365,19 +417,21 @@
 	\frametitle{Adiabatic limit}
 	\framesubtitle{Purity}
 	
-	Entanglement criterion using Duan inequality 
-	\begin{figure}
-		\includegraphics[width = 4 cm]{plots/entanglement_quad.png}
-	\end{figure}	
+	Study purity of the steady state\\
+	Entanglement does not imply pure state\\
 	
-	Where we introduced the quadrature modes as
+	Purity defined as trace of the density matrix
+	\begin{equation}
+		\mu \equiv \textrm{tr}[\rho^{2}] \nonumber
+	\end{equation}	
+		
+	As function of the covariance matrix
+	\begin{equation}
+		\mu = \frac{1}{4 \sqrt{\det \textbf{V}}} \nonumber
+	\end{equation}
+	Purity can be written as function of the drive asymmetry 
 	\begin{figure}
-		\includegraphics[width = 6.5 cm]{plots/entanglement_quad_2.png}
-	\end{figure}
-	
-	Where we introduced the quadrature modes as
-	\begin{figure}
-		\includegraphics[width = 4 cm]{plots/entanglement_duan_criterion.png}
+		\includegraphics[width = 6.5 cm]{plots/purity.png}
 	\end{figure}
 
 \end{frame}
@@ -399,9 +453,10 @@
 		\column{0.65\textwidth}
 		
 		\begin{itemize}
-			\item 1
-			\item 2
-			\item 3
+			\item Case $\gamma_{a} = \gamma_{b}$ and $\bar{n}_{a} = \bar{n}_{b}$
+			\item Solid curve with mechanical thermal occupation $\bar{n} = 0$ and no imperfections on effective coupling $G^{m}_{\pm} = 0$
+			\item Add thermal occupation leads to less entanglement
+			\item Add drive asymmetry leads to less entanglement
 		\end{itemize}
 		
 	\end{columns}
@@ -425,9 +480,9 @@
 		\column{0.65\textwidth}
 		
 		\begin{itemize}
-			\item 1
-			\item 2
-			\item 3
+			\item Solid curve with mechanical thermal occupation $\bar{n} = 0$ and no imperfections on effective coupling $G^{m}_{\pm} = 0$
+			\item Add thermal occupation leads to less entanglement
+			\item Add drive asymmetry leads to less entanglement
 		\end{itemize}
 		
 	\end{columns}
@@ -438,12 +493,14 @@
 \begin{frame}
 
 \frametitle{Time dependence}
-\framesubtitle{time dependence}
+\framesubtitle{Counter rotating terms and time dependence}
 
 	\begin{figure}
 		\includegraphics[width = 9 cm]{plots/plot_time_dependence.png}
 	\end{figure}	
 	
+	Counter-rotating effects lead to degradation of entanglement and purity\\
+	RWA recovers recovers the behavior of time-independent Hamiltonian
 \end{frame}
 
 % Experimental observability
@@ -452,8 +509,21 @@
 	\frametitle{Experimental observability}
 	\framesubtitle{Output spectrum}
 	
+	\begin{itemize}
+		\item Extremely demanding reconstruct covariance matrix
+		\item Directly measure quadratures is a hard problem
+		\item Seek signature of entanglement in output spectrum
+	\end{itemize}
+
+	Spectrum as Fourier transform of expected value	
 	\begin{figure}
-		\includegraphics[width = 6 cm]{plots/spectrum.png}
+		\includegraphics[width = 6 cm]{plots/spectrum_fourier.png}
+	\end{figure}	
+
+	being $\delta \hat{c}_{\textrm{out}} = \hat{c}_{\textrm{out}} - <\hat{c}_{\textrm{out}}>$ \\
+	Spectrum can be related to the occupation of modes
+	\begin{figure}
+		\includegraphics[width = 6.5 cm]{plots/spectrum.png}
 	\end{figure}	
 
 \end{frame}
@@ -467,6 +537,29 @@
 	\begin{figure}
 		\includegraphics[width = 9 cm]{plots/plot_spectrum.png}
 	\end{figure}	
+
+	\begin{itemize}
+		\item Centered around the detunings from the cavity resonance frequency
+		\item Solid black curve without imperfections $G^{m}_{\pm}/G_{\pm} = 0$
+		\item Imperfections on the effective couplings described by
+	\end{itemize}
+
+	\begin{figure}
+		\includegraphics[width = 6.5 cm]{plots/spectrum_imperfections.png}
+	\end{figure}
+
+\end{frame}
+
+% Experimental observability II
+\begin{frame}
+	
+	\frametitle{Experimental observability}
+	\framesubtitle{Output spectrum}	
+	
+	\begin{itemize}
+		\item Experimental work realized in {\color{blue}"Stabilized entanglement of massive mechanical oscillators"}, Nature, 2018.
+		\item Measure output spectrum and reconstruct quadratures to identify entanglement
+	\end{itemize}
 
 \end{frame}
 
@@ -483,4 +576,43 @@
 	\end{enumerate}
 		
 \end{frame}
+
+% Conclusions
+\begin{frame}
+	
+	\frametitle{Back up}
+	\framesubtitle{Thermal occupation}
+	
+	\begin{enumerate}
+		\item Occupation (photons) at $\omega_{c} \sim 10^{10} \textrm{Hz}$
+		\begin{equation}
+			\bar{n}_{\textrm{photons}} = \frac{1}{e^{\frac{\hbar \omega_{c}}{K_{B}T}} - 1} \simeq 0 \nonumber
+		\end{equation}
+		\item Occupation (phonons) $\longrightarrow \omega_{m} \sim 10 \; \textrm{KHz} - 1 \; \textrm{GHz}$
+		\begin{equation}
+			\bar{n}_{\textrm{photons}} = \frac{1}{e^{\hbar \omega_{c} / K_{B}T} - 1} \gg 1 \nonumber
+		\end{equation}
+	\end{enumerate}
+
+\end{frame}
+
+% Conclusions
+\begin{frame}
+	
+	\frametitle{Back up}
+	\framesubtitle{Counter rotating effects}
+	
+	\begin{enumerate}
+		\item Occupation (photons) at $\omega_{c} \sim 10^{10} \textrm{Hz}$
+		\begin{equation}
+		\bar{n}_{\textrm{photons}} = \frac{1}{e^{\frac{\hbar \omega_{c}}{K_{B}T}} - 1} \simeq 0 \nonumber
+		\end{equation}
+		\item Occupation (phonons) $\longrightarrow \omega_{m} \sim 10 \; \textrm{KHz} - 1 \; \textrm{GHz}$
+		\begin{equation}
+		\bar{n}_{\textrm{photons}} = \frac{1}{e^{\hbar \omega_{c} / K_{B}T} - 1} \gg 1 \nonumber
+		\end{equation}
+	\end{enumerate}
+
+\end{frame}
+
 \end{document}
