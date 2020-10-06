@@ -56,7 +56,7 @@
 	\frametitle{Outline}
 	
 	\begin{enumerate}
-		\item {\color{blue}Introduction, system and Hamiltonian}
+		\item {\color{blue}System and Hamiltonian}
 		\item {\color{blue}Implementation strategies}
 		\item {\color{blue}Observable quantities}
 		\item {\color{blue}Experimental observability}
@@ -74,7 +74,7 @@
 	\begin{itemize}
 		\item Two mechanical oscillators with resonance frequencies $\omega_{a}, \omega_{b}$
 		\item Dispersively coupled with rates $g_{a}, g_{b}$ to a common cavity $\omega_{c}$
-		\item Apply radiation pressure forces inside the cavity leading to entangled motion of the mirrors become
+		\item Apply radiation pressure forces inside the cavity leading to generate entangled motion of the mirrors
 	\end{itemize}
 
 		\begin{figure}
@@ -99,7 +99,7 @@
 		\includegraphics[width = 8 cm]{plots/master_eq_1.png}
 	\end{figure}
 
-	Being $\mathcal{H}' = \mathcal{H} - \mathcal{H}_{\textrm{diss}}$, and $\mathcal{D}[\hat{c}]$ the dispersive superoperator\\
+	being $\mathcal{H}' = \mathcal{H} - \mathcal{H}_{\textrm{diss}}$, and $\mathcal{D}[\hat{c}]$ the dispersive superoperator\\
 	Only dissipation term for $\hat{c} \longrightarrow$ {\color{blue}Assuming zero thermal occupation}
 	
 \end{frame}
@@ -118,8 +118,11 @@
 	Where r is the {\color{blue}squeezing parameter}.
 	
 	\vspace{0.5 cm}
-	
-	Work in rotating frame.
+
+	Work in rotating frame with respect to the Hamiltonian:
+	\begin{figure}
+		\includegraphics[width = 8 cm]{plots/hamiltonian_2.png}
+	\end{figure}
 
 \end{frame}
 
@@ -162,7 +165,7 @@
 	
 	\vspace{0.5cm}
 	
-	Therefore, $\hat{\beta}_{1} = \hat{S}_{2}(r) \hat{a} \hat{S}_{2}^{\dagger}(r)$, $\hat{\beta}_{2} = \hat{S}_{2}(r) \hat{b} \hat{S}_{2}^{\dagger}(r)$ and their\\ground state is the two-mode squeezed state with squeezing parameter $r$
+	Therefore, $\hat{\beta}_{1} = \hat{S}_{2}(r) \hat{a} \hat{S}_{2}^{\dagger}(r)$, $\hat{\beta}_{2} = \hat{S}_{2}(r) \hat{b} \hat{S}_{2}^{\dagger}(r)$ and their\\ground state is the two-mode squeezed state with squeezing parameter $r$.
 
 \end{frame}
 
@@ -324,7 +327,7 @@
 		\includegraphics[width = 3 cm]{plots/optomechanic_dumping.png}
 	\end{figure}
 
-	Easy to obtain steady state, and to measure entanglement and purity.
+	easy to obtain steady state, and to measure entanglement and purity.
 	 
 \end{frame}
 
@@ -582,7 +585,7 @@
 	\frametitle{Back up}
 	\framesubtitle{Effective coupling imperfections}
 	
-	Where we demand the driving strengths of the 4-tone driving are "matched" as
+	Imperfections in the optomechanical couplings
 	\begin{align}
 		G_{\pm}^{m} &= \pm(g_{a} - g_{b})\bar{c}_{\pm} / 2 \qquad \textrm{2-tone driving} \nonumber\\
 		G_{\pm}^{m} &= \pm(g_{a}\bar{c}_{1\pm} - g_{b}\bar{c}_{2\pm}) / 2 \qquad \textrm{4-tone driving} \nonumber
