@@ -109,23 +109,6 @@
 
 \end{frame}
 
-% Strong interactions II
-\begin{frame}
-	
-	\frametitle{Strong interactions}
-	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
-	
-	Questions for a field theory
-	
-	\vspace{0.3cm}
-	
-	\begin{enumerate}
-		\item Can we go to arbitrarily large energies? $\rightarrow$ divergences arise, renormalization / factorization needed
-		\item Can we compute $R_{0}$ for every process? $\rightarrow$ IR observables
-	\end{enumerate}	
-
-\end{frame}
-
 % Renormalization group I
 \begin{frame}
 
@@ -165,8 +148,8 @@
 			\begin{equation}
 				\alpha_{s}(\mu) = \frac{1}{b_{0} \log\big( \frac{\mu^{2}}{\Lambda_{s}^{2}}\big)} \nonumber
 			\end{equation}
-			\item \footnotesize $\beta_{0}$
-			\item \footnotesize $\Lambda_{s}$
+			\item \footnotesize $\beta_{0} > 0$ LO coefficient of the $\beta$ function
+			\item \footnotesize $\Lambda_{s}$ parameter that defines value of the coupling at large scales
 		\end{itemize}
 
 	\end{columns}
@@ -191,7 +174,7 @@
 	
 	\footnotesize {Separate process {\color{blue}PDFs} and {\color{red} partonic (hard) interaction}	
 	\begin{equation}
-		\sigma^{\textrm{F}}(p_{1}, p_{2}) =
+		\sigma^{\textrm{F}}(p_{1}, p_{2}) = \sum_{\alpha, \beta}
 		\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha}(x_{1}, \mu_{F}^{2}) \ast f_{\beta}(x_{2}, \mu_{F}^{2})}
 		\; \ast \;  
 		{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
@@ -205,7 +188,7 @@
 	\frametitle{Parton showers}
 	\framesubtitle{MC Parton showers}
 	
-	\footnotesize Partons in the initial and final state emit radiation. State Radiation (ISR) and Final State Radiation (FSR)
+	\footnotesize Partons in the initial and final state emit radiation. State Radiation (ISR) and Final State Radiation (FSR) model by Monte Carlo (MC) shower algorithms.
 	
 	\vspace{0.1 cm}
 	\center \color{red} Shower Monte Carlo programs (HERWIG, PYTHIA)
@@ -213,7 +196,7 @@
 	
 	\begin{itemize} 
 		\item Libraries for computing SM and BSM cross sections
-		\item Shower algorithms produce the parton shower from final state or initial state partons
+		\item Shower algorithms produce the parton shower from final state or initial state partons (accurate only at LO?...)
 		\item Hadronization models, underlying event, decays of unstable hadrons, etc
 	\end{itemize}
 
@@ -227,18 +210,22 @@
 	\framesubtitle{Collinear limit}
 	
 	\begin{itemize} 
-		\item An emitted parton is collinear to an incoming or outgoing parton ($\theta$ small)
-		\item Measurement not sensitive to such small scales
-		\item $\sigma$ dominated by collinear emission $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$
+		\item \footnotesize An emitted parton is collinear to an incoming or outgoing parton ($\theta$ small)
+		\item \footnotesize Measurement not sensitive to such small scales
+		\item \footnotesize $\sigma$ dominated by collinear emission $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$
 	\end{itemize}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/collinear_factorization.png}
+		\includegraphics[width = 6.5 cm]{plots/collinear_factorization.png}
 	\end{figure}
 	
-	Collinear factorization $\longrightarrow$ Factor out tree level amplitude and splitting
+	\footnotesize Collinear factorization $\longrightarrow$ Factor out tree level amplitude and splitting
 	\begin{figure}
-		\includegraphics[width = 8 cm]{plots/eq_factorization_theorem.png}
+		\includegraphics[width = 7 cm]{plots/eq_factorization_theorem.png}
+	\end{figure}
+
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/eq_factorization_ps.png}
 	\end{figure}
 
 \end{frame}
@@ -249,10 +236,19 @@
 	\frametitle{Parton showers}
 	\framesubtitle{Kinematics of splitting}
 	
+	\begin{equation}
+		z = \frac{k^{0}}{k^{0} + l^{0}} \textrm{\quad \footnotesize fraction of energy of the outcoming parton} \nonumber
+	\end{equation}
+	
 	\begin{itemize} 
-		\item Kinematics of splitting $(t, z, \phi)$
+		\item Kinematics of splitting given by $(t, z, \phi)$
 		\begin{itemize}
-			\item $t$ has dimensions of energy (virtuality, $p_{\perp}$, angular variable)
+			\item $t$ has dimensions of energy
+			\begin{itemize}
+				\item virtuality $t = (k + l)^{2}$
+				\item transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} = z^{2}(1 - z)^{2}E^{2}\theta^{2}$
+				\item hardness $E^{2}\theta^{2}$
+			\end{itemize}
 			\item $z$ represents the fraction of momentum of radiated parton
 			\item $\phi$ represents azimuth of the $k, l$ plane
 		\end{itemize}
@@ -263,9 +259,9 @@
 	\end{itemize}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/shower_4.png}
+		\includegraphics[width = 5 cm]{plots/shower_5.png}
 	\end{figure}
-
+	
 \end{frame}
 
 % Parton showers IV
@@ -352,7 +348,7 @@
 
 \end{frame}
 
-FSR IV - MC programs
+% FSR IV - MC programs
 \begin{frame}
 
 	\frametitle{Final state radiation MC}
@@ -415,28 +411,6 @@ FSR IV - MC programs
 
 % ISR MC III
 \begin{frame}
-	
-	\frametitle{Initial state radiation MC}
-	\framesubtitle{Formal representation}
-	
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_ISR_2.png}
-	\end{figure}
-	
-	\begin{itemize} 
-		\item Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
-		\item Difference in Sudakov factors and Splitting functions start at NLO
-	\end{itemize}
-	
-	Backward evolution equation
-	\begin{figure}
-		\includegraphics[width = 10 cm]{plots/shower_ISR_3.png}
-	\end{figure}
-
-\end{frame}
-
-% ISR MC IV
-\begin{frame}
 
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Shower algorithm}
@@ -474,92 +448,6 @@ FSR IV - MC programs
 	
 	\frametitle{Hadronization}
 	\framesubtitle{Clustering models}
-
-\end{frame}
-
-
-
-
-
-
-
-
-
-% Shower equation II
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Formal representation of a shower}
-	 
-	 
-	 Ensemble of all possible radiations as the sum of no radiation, with radiation and shower from radiated partons
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/shower_2.png}
-	\end{figure}
-	
-	\begin{itemize} 
-		\item Ansatz for Sudakov $$\Delta_{i}(t, t') = \exp\Bigg\{- \int_{t'}^{t} \frac{dt''}{t''}\int dz \sum_{jl} P_{i, jl}(z) \frac{\alpha_{s}(t')}{2\pi} \Bigg\}$$
-		\item Therefore $\partial \Delta(t, t') / \partial t \propto \Delta(t, t') \longrightarrow$ apply shower recursively
-	\end{itemize}
-
-\end{frame}
-
-% Shower equation III
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Shower algorithm}
-	
-	Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
-	\begin{enumerate} 
-		\item Set scale $t$ to $Q$, hard scale of the process
-		\item Generate random number $0 < r < 1$
-		\item Solve $r = \Delta_{i}(t, t')$ for t'
-		\item i) if $t' < t_{0}$, no further branching and stop shower
-		\item ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$
-		\item For each branched partons set $t = t'$ and start from (2)
-	\end{enumerate}
-
-\end{frame}
-
-% Shower equation ISR I
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Initial state radiation}
-	
-	ISR already important in QED $\longrightarrow$ Used to determine the $Z$ peak at LEP
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_ISR.png}
-	\end{figure}
-	
-	\begin{itemize}
-		\item QCD coupling much larger $\longrightarrow$ QCD ISR even more important
-		\item Specially large for small momentum transfer
-		\item Same as final state partons \textit{always} manifest as jets, initial state ones \textit{always} lead to ISR
-	\end{itemize}
-	
-\end{frame}
-
-% Shower equation III
-\begin{frame}
-
-	\frametitle{Parton showers and MC generators}
-	\framesubtitle{Ordering variables}
-	
-	HERWIG
-	\begin{itemize} 
-		\item Ordering variable $t = E^{2}\theta^{2}/2$
-		\item Order of transverse momentum as "angular ordering"
-		\item IR cut-off needed
-	\end{itemize}
-
-	PYTHIA
-	\begin{itemize} 
-		\item There is not angular ordering
-		\item More natural kinematics
-		\item Unphysical increase of number of partons $\longrightarrow$ solve by imposing veto to branchings that violate angular ordering
-	\end{itemize}
 
 \end{frame}
 
