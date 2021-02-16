@@ -76,7 +76,7 @@
 	
 \end{frame}
 
-% Strong interactions I
+% Strong interactions
 \begin{frame}
 
 	\frametitle{Strong interactions}
@@ -146,10 +146,10 @@
 		\begin{itemize}
 			\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
 			\begin{equation}
-				\alpha_{s}(\mu) = \frac{1}{b_{0} \log\big( \frac{\mu^{2}}{\Lambda_{s}^{2}}\big)} \nonumber
+				\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{s}^{2}}\big)} \nonumber
 			\end{equation}
-			\item \footnotesize $\beta_{0} > 0$ LO coefficient of the $\beta$ function
-			\item \footnotesize $\Lambda_{s}$ parameter that defines value of the coupling at large scales
+			\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
+			\item \footnotesize $\Lambda_{s}$, parameter that defines value of the coupling at large scales
 		\end{itemize}
 
 	\end{columns}
@@ -166,8 +166,7 @@
 	\frametitle{Factorization theorem}
 	\framesubtitle{QCD factorization}
 	
-	\center \footnotesize LHC processes $H_{1} + H_{2} \rightarrow \textrm{F}$
-	
+	\center \footnotesize LHC processes $H_{1} + H_{2} \rightarrow \textrm{F}$	
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/factorization_1.png}
 	\end{figure}
@@ -188,7 +187,7 @@
 	\frametitle{Parton showers}
 	\framesubtitle{MC Parton showers}
 	
-	\footnotesize Partons in the initial and final state emit radiation. State Radiation (ISR) and Final State Radiation (FSR) model by Monte Carlo (MC) shower algorithms.
+	\footnotesize Partons in the initial and final state emit radiation. Initial state Radiation (ISR) and Final State Radiation (FSR) model by Monte Carlo (MC) shower algorithms.
 	
 	\vspace{0.1 cm}
 	\center \color{red} Shower Monte Carlo programs (HERWIG, PYTHIA)
@@ -211,8 +210,8 @@
 	
 	\begin{itemize} 
 		\item \footnotesize An emitted parton is collinear to an incoming or outgoing parton ($\theta$ small)
-		\item \footnotesize Measurement not sensitive to such small scales
-		\item \footnotesize $\sigma$ dominated by collinear emission $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$
+		\item \footnotesize $\sigma$ dominated by collinear emission $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$ \\
+		(measurement not sensitive to such small scales)
 	\end{itemize}
 	
 	\begin{figure}
@@ -236,31 +235,23 @@
 	\frametitle{Parton showers}
 	\framesubtitle{Kinematics of splitting}
 	
-	\begin{equation}
-		z = \frac{k^{0}}{k^{0} + l^{0}} \textrm{\quad \footnotesize fraction of energy of the outcoming parton} \nonumber
-	\end{equation}
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/shower_kinematics.png}
+	\end{figure}
 	
-	\begin{itemize} 
-		\item Kinematics of splitting given by $(t, z, \phi)$
-		\begin{itemize}
-			\item $t$ has dimensions of energy
-			\begin{itemize}
-				\item virtuality $t = (k + l)^{2}$
-				\item transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} = z^{2}(1 - z)^{2}E^{2}\theta^{2}$
-				\item hardness $E^{2}\theta^{2}$
-			\end{itemize}
-			\item $z$ represents the fraction of momentum of radiated parton
-			\item $\phi$ represents azimuth of the $k, l$ plane
-		\end{itemize}
+	\footnotesize Kinematics of splitting given by $(t, z, \phi)$
+	\begin{itemize}
+		\item $\phi$ represents azimuth of the $k, l$ plane
+		\item $z$ is the fraction of energy of radiated parton $$z = \frac{k^{0}}{k^{0} + l^{0}}$$
+		\item $t$ has dimensions of energy \\
+			- virtuality $$t = (k + l)^{2} = k^{0}l^{0}4\sin^{2}\bigg( \frac{\theta}{2} \bigg) \approx k^{0}l^{0}\theta^{2} \approx z(1 - z)E^{2}\theta^{2}$$ \\
+			- transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} = z^{2}(1 - z)^{2}E^{2}\theta^{2}$ \\
+			- hardness $E^{2}\theta^{2}$ \\
+	\end{itemize}
 	
 	\vspace{0.5cm}
 	
-		\item Factorization holds for small angles. Applied recursively
-	\end{itemize}
-	
-	\begin{figure}
-		\includegraphics[width = 5 cm]{plots/shower_5.png}
-	\end{figure}
+	Factorization holds for small angles. Applied recursively
 	
 \end{frame}
 
@@ -270,20 +261,51 @@
 	\frametitle{Parton showers}
 	\framesubtitle{AP splitting functions}
 	
-	Altarelli-Parisi splitting functions
+	\begin{columns}
 	
-	\begin{figure}
-		\includegraphics[width = 5 cm]{plots/AP_splitting.png}
-	\end{figure}
+		\column{0.4\textwidth}
+			 
+		\footnotesize Altarelli-Parisi splitting functions	
+		\begin{figure}
+			\includegraphics[width = 5 cm]{plots/AP_splitting.png}
+		\end{figure}
+		
+		\column{0.6\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6.5 cm]{plots/AP_iteration_plot.png}
+		\end{figure}
 
-	We can proceed in an iterative way
+	\end{columns}
+
+	\vspace{0.4cm}
+	
+	\footnotesize We can proceed in an iterative way	
 	\begin{figure}
-		\includegraphics[width = 9 cm]{plots/AP_iteration.png}
+		\includegraphics[width = 9 cm]{plots/AP_iteration_eq.png}
 	\end{figure}
 
 	\footnotesize Exclusive final state: limit to the most singular terms, in ordered sequence of angles
 	\color{red} Collinear approximation $\longrightarrow$ Leading log approximation
 	
+\end{frame}
+
+% Parton showers V
+\begin{frame}
+	
+	\frametitle{Parton showers}
+	\framesubtitle{Exclusive final state}
+	
+	\footnotesize Exclusive final state: sum the perturbative expansions to all orders in $alpha_s$ \\
+	\footnotesize Limit to the most singular terms in ordered sequence of angles $alpha_s$
+	
+	\begin{figure}
+		\includegraphics[width = 9 cm]{plots/exclusive_ll.png}
+	\end{figure}
+	
+	\footnotesize Exclusive final state: limit to the most singular terms, in ordered sequence of angles
+	\color{red} Collinear approximation $\longrightarrow$ Leading log approximation
+
 \end{frame}
 
 % FSR MC I
@@ -292,14 +314,21 @@
 	\frametitle{Final state radiation MC}
 	\framesubtitle{General structure}
 	
-	\footnotesize Approximated description of a hadronic final state. Model a given hard scattering with arbitrary number of enhanced radiations
+	\footnotesize Approximated description of a hadronic final state \\
+	\footnotesize Model a given hard scattering with arbitrary number of enhanced radiations
 
 	\begin{itemize} 
 		\item Choose hard interaction with specified Born kinematics.
 		\item Consider all possible splittings for each coloured parton.
 		\item Assign the variables t, z, $\phi$ at each splitting vertex, t ordered in decreasing way.
-		\item At each splitting vertex assign the weight (...)
-		\item Each line has a weight known as Sudakov factor (...)
+		\item At each splitting vertex assign the weight 
+		\begin{figure}
+			\includegraphics[width = 2.5 cm]{plots/AP_weight.png}
+		\end{figure}
+		\item Each line has a weight known as Sudakov factor
+		\begin{figure}
+			\includegraphics[width = 6 cm]{plots/sudakov.png}
+		\end{figure}
 	\end{itemize}
 
 \end{frame}
@@ -310,41 +339,81 @@
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Formal representation of a shower}
 	
-	Approximated description of a hadronic final state. Model a given hard scattering with arbitrary number of enhanced radiations
+	\footnotesize Approximated description of a hadronic final state \\
+	\footnotesize Model a given hard scattering with arbitrary number of enhanced radiations
 	
+	\begin{columns} 
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+		\end{figure}
+
+		\column{0.5\textwidth}
+		
+		\footnotesize Ensemble of all possible branchings at scale t (...)
+
+	\end{columns}
+
 	\begin{figure}
 		\includegraphics[width = 6 cm]{plots/shower_2.png}
 	\end{figure}
 		
-	Forward evolution equation
+	\footnotesize Forward evolution equation
 	\begin{figure}
-		\includegraphics[width = 10 cm]{plots/shower_0.png}
+		\includegraphics[width = 10 cm]{plots/shower_2_eq.png}
 	\end{figure}
 
 \end{frame}
 
-% FSR III - Formal representation of a shower
+% FSR III - Probabilistic interpretation
 \begin{frame}
 
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Probabilistic interpretation}
+
+	\begin{columns} 
 	
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_0.png}
-	\end{figure}
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\footnotesize Probability of branching in the infinitesimal volume
+
+	\end{columns}
+
+	\begin{columns} 
 	
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_1.png}
-	\end{figure}
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\footnotesize Probability of branching in the interval dt'
 
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_2.png}
-	\end{figure}
+	\end{columns}
 
-	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_4.png}
-	\end{figure}
-
+	\begin{columns} 
+	
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\footnotesize Probability of first branching in the infinitesimal volume dt'
+	
+	\end{columns}
 
 \end{frame}
 
@@ -354,14 +423,14 @@
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Shower algorithm}
 	
-	Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
+	\footnotesize Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
 	\begin{enumerate} 
-		\item Set scale $t = Q$, hard scale of the process
-		\item Generate random number $0 < r < 1$
-		\item Solve $r = \Delta_{i}(t, t')$ for t'
-		\item i) if $t' < t_{0}$, no further branching and stop shower
-		\item ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$ (variables, ...)
-		\item For each branched partons set $t = t'$ and start from (2)
+		\item \footnotesize Set scale $t = Q$, hard scale of the process
+		\item \footnotesize Generate random number $0 < r < 1$
+		\item \footnotesize Solve $r = \Delta_{i}(t, t')$ for t'
+		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower
+		\item \footnotesize ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$ (variables, ...)
+		\item \footnotesize For each branched partons set $t = t'$ and start from (2)
 	\end{enumerate}
 
 \end{frame}
@@ -373,12 +442,12 @@
 	\framesubtitle{General structure}
 	
 	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_ISR_0.png}
+		\includegraphics[width = 2 cm]{plots/shower_ISR_0.png}
 	\end{figure}
 	
 	\begin{itemize} 
-		\item Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
-		\item Difference in Sudakov factors and Splitting functions start at NLO
+		\item \footnotesize Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
+		\item \footnotesize Difference in Sudakov factors and Splitting functions start at NLO
 	\end{itemize}
 	
 	\begin{figure}
@@ -398,11 +467,11 @@
 	\end{figure}
 	
 	\begin{itemize} 
-		\item Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
-		\item Difference in Sudakov factors and Splitting functions start at NLO
+		\item \footnotesize Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
+		\item \footnotesize Difference in Sudakov factors and Splitting functions start at NLO
 	\end{itemize}
 	
-	Forward evolution equation. Great amount of computation time to generate configurations -> the scattering that we want
+	\footnotesize Forward evolution equation. Great amount of computation time to generate configurations -> the scattering that we want
 	\begin{figure}
 		\includegraphics[width = 10 cm]{plots/shower_ISR_3.png}
 	\end{figure}
