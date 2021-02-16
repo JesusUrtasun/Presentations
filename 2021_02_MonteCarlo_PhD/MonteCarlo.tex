@@ -76,7 +76,7 @@
 	
 \end{frame}
 
-% Strong interactions
+% Strong interactions I
 \begin{frame}
 
 	\frametitle{Strong interactions}
@@ -105,6 +105,39 @@
 			\item \footnotesize Threshold and higher order corrections
 		\end{enumerate}	
 
+	\end{columns}
+
+\end{frame}
+
+% Strong interactions II
+\begin{frame}
+
+	\frametitle{Strong interactions}
+	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
+	
+	Higher order corrections to $R_{0}$ 
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/ee_hadrons.png}
+	\end{figure}
+	
+	QCD arises already from $e^{+}e^{-}$ annihilation $\rightarrow R_{0}$ ratio
+	
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6 cm]{plots/eq_R0_3.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\begin{enumerate}
+			\item \footnotesize Color factor (3 color for each quark)
+			\item \footnotesize Sum over charges of different flavors
+			\item \footnotesize Threshold and higher order corrections
+		\end{enumerate}	
+		
 	\end{columns}
 
 \end{frame}
@@ -308,7 +341,7 @@
 
 \end{frame}
 
-% FSR MC I
+% FSR I
 \begin{frame}
 
 	\frametitle{Final state radiation MC}
@@ -375,15 +408,15 @@
 
 	\begin{columns} 
 	
-		\column{0.5\textwidth}
+		\column{0.3\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+			\includegraphics[width = 2.5 cm]{plots/probability1.png}
 		\end{figure}
 		
-		\column{0.5\textwidth}
+		\column{0.7\textwidth}
 		
-		\footnotesize Probability of branching in the infinitesimal volume
+		\footnotesize Probability of branching in the infinitesimal volume $dt'\; dz\; d\phi$
 
 	\end{columns}
 
@@ -392,7 +425,7 @@
 		\column{0.5\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+			\includegraphics[width = 4 cm]{plots/probability2.png}
 		\end{figure}
 		
 		\column{0.5\textwidth}
@@ -403,67 +436,112 @@
 
 	\begin{columns} 
 	
-		\column{0.5\textwidth}
+		\column{0.6\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 2.5 cm]{plots/shower_1.png}
+			\includegraphics[width = 5.5 cm]{plots/probability3.png}
 		\end{figure}
 		
-		\column{0.5\textwidth}
+		\column{0.4\textwidth}
 		
-		\footnotesize Probability of first branching in the infinitesimal volume dt'
+		\footnotesize Probability of first branching in the infinitesimal volume $dt'$
 	
+	\end{columns}
+
+	\begin{columns} 
+	
+	\column{0.6\textwidth}
+	
+	\begin{figure}
+		\includegraphics[width = 6 cm]{plots/probability4.png}
+	\end{figure}
+	
+	\column{0.4\textwidth}
+	
+	\footnotesize Sudakov form factor from unitarity
+	
+	\end{columns}
+	
+	\begin{columns} 
+		
+		\column{0.4\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 4 cm]{plots/probability5.png}
+		\end{figure}
+		
+		\column{0.6\textwidth}
+		
+		\footnotesize Probability of no-branching in the infinitesimal volume $dt'\; dz\; d\phi$
+		
 	\end{columns}
 
 \end{frame}
 
-% FSR IV - MC programs
+% FSR IV - Shower algorithm
 \begin{frame}
 
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Shower algorithm}
 	
-	\footnotesize Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
+	\footnotesize Generate hard process with probability proportional to its parton level cross section. \\
+	\footnotesize For each final state colored parton:
 	\begin{enumerate} 
-		\item \footnotesize Set scale $t = Q$, hard scale of the process
-		\item \footnotesize Generate random number $0 < r < 1$
-		\item \footnotesize Solve $r = \Delta_{i}(t, t')$ for t'
-		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower
-		\item \footnotesize ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$ (variables, ...)
-		\item \footnotesize For each branched partons set $t = t'$ and start from (2)
+		\item \footnotesize Set scale $t = Q$, hard scale of the process.
+		\item \footnotesize Generate random number $0 < r < 1$.
+		\item \footnotesize Solve $r = \Delta_{i}(t, t')$ for $t'.$
+		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower.
+		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ following the $P_{i, jl}(z)$ distribution and with azimuth $\phi$ uniform in the interval $[0, 2\pi]$. \\
+		the angle of between their momenta is fixed by $t'$.
+		\item \footnotesize For each branched partons set $t = t'$ and start from (2).
 	\end{enumerate}
 
 \end{frame}
 
-% ISR MC I
+% ISR I
 \begin{frame}
 
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{General structure}
 	
+	\center \footnotesize ISR showers are spacelike
+	\begin{columns}
+		
+		\column{0.3\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 2 cm]{plots/ISR_shower0.png}
+		\end{figure}
+	
+		\column{0.6\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 5 cm]{plots/ISR_spacelike.png}
+		\end{figure}
+		
+	\end{columns}
+
+	\vspace{0.5cm}
+	\footnotesize Consider the splitting between a particle a that splits into b and c
+	
 	\begin{figure}
-		\includegraphics[width = 2 cm]{plots/shower_ISR_0.png}
+		\includegraphics[width = 9 cm]{plots/ISR_splitting.png}
 	\end{figure}
-	
-	\begin{itemize} 
-		\item \footnotesize Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
-		\item \footnotesize Difference in Sudakov factors and Splitting functions start at NLO
-	\end{itemize}
-	
+
 	\begin{figure}
-		\includegraphics[width = 10 cm]{plots/shower_ISR_3.png}
+		\includegraphics[width = 4.5 cm]{plots/ISR_FSR.png}
 	\end{figure}
 
 \end{frame}
 
-% ISR MC II
+% ISR II
 \begin{frame}
 	
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Formal representation}
 	
 	\begin{figure}
-		\includegraphics[width = 3 cm]{plots/shower_ISR_2.png}
+		\includegraphics[width = 4 cm]{plots/shower_ISR_1.png}
 	\end{figure}
 	
 	\begin{itemize} 
@@ -471,9 +549,9 @@
 		\item \footnotesize Difference in Sudakov factors and Splitting functions start at NLO
 	\end{itemize}
 	
-	\footnotesize Forward evolution equation. Great amount of computation time to generate configurations -> the scattering that we want
+	\footnotesize Forward evolution equation. Great amount of computation time to generate configurations leading to the scattering that we want
 	\begin{figure}
-		\includegraphics[width = 10 cm]{plots/shower_ISR_3.png}
+		\includegraphics[width = 8.5 cm]{plots/shower_ISR_2.png}
 	\end{figure}
 
 \end{frame}
@@ -484,14 +562,16 @@
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Shower algorithm}
 	
-	Generate hard process with probability proportional to its parton level cross section. For each final state colored parton:
+	\footnotesize Generate hard process with probability proportional to its parton level cross section.
+	\footnotesize For each final state colored parton:
 	\begin{enumerate} 
-		\item Set scale $t$ to $Q$, hard scale of the process
+		\item Set scale $t = Q$, hard scale of the process.
 		\item Generate random number $0 < r < 1$
-		\item Solve (...) for t'
-		\item i) if $t' < t_{0}$, no further branching and stop shower
-		\item ii) if $t' \geq t_{0}$, one branching into partons $j, l$ with energies $E_{j} = zE_{i}$ and $E_{l} = (1 - z)E_{i}$, z following the $P_{i, jl}(z)$ distribution and $\phi$ uniform in the interval $[0, 2\pi]$
-		\item For parton j (...), for parton l generate a timelike parton shower according to the algorithm shown previously
+		\item Solve $$r = \frac{f^{(i)}_{m} \Delta_{m}(t, t')}{f^{(i)}_{m}(t, x)} \quad \textrm{for }t'.$$
+		\item i) if $t' < t_{0}$, no further branching and stop shower.
+		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ following the $P_{i, jl}(z)$ distribution and with azimuth $\phi$ uniform in the interval $[0, 2\pi]$. \\
+		the angle of between their momenta is fixed by $t'$.
+		\item For parton $j$ set $t = t'$ and start from (2). For parton $l$ generate a timelike parton shower according to the algorithm shown previously.
 	\end{enumerate}
 
 \end{frame}
@@ -502,21 +582,41 @@
 	\frametitle{Hadronization}
 	\framesubtitle{Basics}
 
+	\footnotesize A parton becoming a measurable hadron through the emission of a partonic shower \\
+	\footnotesize Large number of color approximation $\rightarrow$ each parton identified by a unique label \\
+
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/hadronization.png}
+	\end{figure}
+
+	\footnotesize Hadronization models
+	\begin{itemize}
+		\item Lund string model
+		\begin{itemize}
+			\item \footnotesize non perturbative production of quarks and antiquarks
+			\item \footnotesize intermediate gluons are transverse kicks of a continuum medium
+		\end{itemize}
+		\item Cluster models
+		\begin{itemize}
+			\item \footnotesize preconfinement, assuming subsystems of color singlet partons
+			with universal invariant mass distribution (power suppressed at high masses)
+			\item gluons are forced to split in quark-antiquark pair
+		\end{itemize}
+	\end{itemize}
+
 \end{frame}
 
-% Hadronization II
+% Summary
 \begin{frame}
-	
-	\frametitle{Hadronization}
-	\framesubtitle{Lund string model}
 
-\end{frame}
+	\frametitle{Summary}
 
-% Hadronization III
-\begin{frame}
-	
-	\frametitle{Hadronization}
-	\framesubtitle{Clustering models}
+\begin{itemize}
+	\item \footnotesize LHC processes require factorization in perturbative and non perturbative part
+	\item \footnotesize pQCD applied at high energies
+	\item \footnotesize Monte Carlo shower programs describe non perturbative physics in hadron physics
+	\item \footnotesize Agreement and precision Monte Carlo shower programs
+\end{itemize}
 
 \end{frame}
 
