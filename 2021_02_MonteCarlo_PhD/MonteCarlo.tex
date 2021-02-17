@@ -122,24 +122,13 @@
 	
 	QCD arises already from $e^{+}e^{-}$ annihilation $\rightarrow R_{0}$ ratio
 	
-	\begin{columns}
-		
-		\column{0.5\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 6 cm]{plots/eq_R0_3.png}
-		\end{figure}
-		
-		\column{0.5\textwidth}
-		
-		\begin{enumerate}
-			\item \footnotesize Color factor (3 color for each quark)
-			\item \footnotesize Sum over charges of different flavors
-			\item \footnotesize Threshold and higher order corrections
-		\end{enumerate}	
-		
-	\end{columns}
+	\begin{figure}
+		\includegraphics[width = 8 cm]{plots/eq_R0_3.png}
+	\end{figure}
 
+	\footnotesize $\alpha_{s}$ correction completely finite (IR cancellation) \\
+	\footnotesize $\alpha_{s}^{2}$, UV divergences arise (Renormalization)
+	
 \end{frame}
 
 % Renormalization group I
@@ -220,7 +209,7 @@
 	\frametitle{Parton showers}
 	\framesubtitle{MC Parton showers}
 	
-	\footnotesize Partons in the initial and final state emit radiation. Initial state Radiation (ISR) and Final State Radiation (FSR) model by Monte Carlo (MC) shower algorithms.
+	\footnotesize Partons in the initial and final state emit radiation. Initial state Radiation (ISR) and Final State Radiation (FSR) model by Monte Carlo (MC) shower algorithms
 	
 	\vspace{0.1 cm}
 	\center \color{red} Shower Monte Carlo programs (HERWIG, PYTHIA)
@@ -228,12 +217,13 @@
 	
 	\begin{itemize} 
 		\item Libraries for computing SM and BSM cross sections
-		\item Shower algorithms produce the parton shower from final state or initial state partons (accurate only at LO?...)
+		\item Shower algorithms produce a number of enhanced
+		coloured parton emissions \\
+		to be added to the hard process
 		\item Hadronization models, underlying event, decays of unstable hadrons, etc
 	\end{itemize}
 
 \end{frame}
-
 
 % Parton showers II
 \begin{frame}
@@ -242,16 +232,18 @@
 	\framesubtitle{Collinear limit}
 	
 	\begin{itemize} 
-		\item \footnotesize An emitted parton is collinear to an incoming or outgoing parton ($\theta$ small)
-		\item \footnotesize $\sigma$ dominated by collinear emission $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$ \\
+		\item \footnotesize QCD emission processes are enhanced in the collinear limit ($\theta$ small)
+		\item \footnotesize $\sigma$ dominated by collinear splittings $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$ \\
 		(measurement not sensitive to such small scales)
 	\end{itemize}
 	
 	\begin{figure}
-		\includegraphics[width = 6.5 cm]{plots/collinear_factorization.png}
+		\includegraphics[width = 6 cm]{plots/collinear_factorization.png}
 	\end{figure}
 	
-	\footnotesize Collinear factorization $\longrightarrow$ Factor out tree level amplitude and splitting
+	\footnotesize Collinear factorization $\longrightarrow$ The cross section factorizes
+	into the product of a tree-level cross section and a splitting
+	factorFactor out tree level amplitude and splitting
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/eq_factorization_theorem.png}
 	\end{figure}
@@ -274,17 +266,15 @@
 	
 	\footnotesize Kinematics of splitting given by $(t, z, \phi)$
 	\begin{itemize}
+		\item $t$: parameter with dimensions of energy that vanish in the collinear limit \\
+		\begin{itemize}
+			\item Virtuality $t = (k + l)^{2} = k^{0}l^{0}4\sin^{2}\bigg( \frac{\theta}{2} \bigg) \approx k^{0}l^{0}\theta^{2} \approx z(1 - z)E^{2}\theta^{2}$
+			\item Transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} = z^{2}(1 - z)^{2}E^{2}\theta^{2}$
+			\item Hardness $E^{2}\theta^{2}$
+		\end{itemize}
+		\item $z$: fraction of energy of radiated parton $z = \frac{k^{0}}{k^{0} + l^{0}}$
 		\item $\phi$ represents azimuth of the $k, l$ plane
-		\item $z$ is the fraction of energy of radiated parton $$z = \frac{k^{0}}{k^{0} + l^{0}}$$
-		\item $t$ has dimensions of energy \\
-			- virtuality $$t = (k + l)^{2} = k^{0}l^{0}4\sin^{2}\bigg( \frac{\theta}{2} \bigg) \approx k^{0}l^{0}\theta^{2} \approx z(1 - z)E^{2}\theta^{2}$$ \\
-			- transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} = z^{2}(1 - z)^{2}E^{2}\theta^{2}$ \\
-			- hardness $E^{2}\theta^{2}$ \\
 	\end{itemize}
-	
-	\vspace{0.5cm}
-	
-	Factorization holds for small angles. Applied recursively
 	
 \end{frame}
 
@@ -294,11 +284,14 @@
 	\frametitle{Parton showers}
 	\framesubtitle{AP splitting functions}
 	
+	\footnotesize Factorization holds for small angles $\rightarrow$ small $t$ variable \\
+	\footnotesize Difference in the splitting $\rightarrow$ Altarelli-Parisi splitting functions (singular in $z \rightarrow 0, 1$)
+	
+		
 	\begin{columns}
 	
 		\column{0.4\textwidth}
 			 
-		\footnotesize Altarelli-Parisi splitting functions	
 		\begin{figure}
 			\includegraphics[width = 5 cm]{plots/AP_splitting.png}
 		\end{figure}
@@ -318,8 +311,7 @@
 		\includegraphics[width = 9 cm]{plots/AP_iteration_eq.png}
 	\end{figure}
 
-	\footnotesize Exclusive final state: limit to the most singular terms, in ordered sequence of angles
-	\color{red} Collinear approximation $\longrightarrow$ Leading log approximation
+	\footnotesize Angles become, maintaining a strong ordering relation $\theta >> \theta' \rightarrow 0$
 	
 \end{frame}
 
@@ -329,14 +321,13 @@
 	\frametitle{Parton showers}
 	\framesubtitle{Exclusive final state}
 	
-	\footnotesize Exclusive final state: sum the perturbative expansions to all orders in $alpha_s$ \\
-	\footnotesize Limit to the most singular terms in ordered sequence of angles $alpha_s$
+	\footnotesize To describe exclusive final state $\rightarrow$ sum perturbative expansion to all orders in $\alpha_s$ \\
 	
 	\begin{figure}
 		\includegraphics[width = 9 cm]{plots/exclusive_ll.png}
 	\end{figure}
 	
-	\footnotesize Exclusive final state: limit to the most singular terms, in ordered sequence of angles
+	\footnotesize Possible if we limit to the most singular terms, in ordered sequence of angles \\
 	\color{red} Collinear approximation $\longrightarrow$ Leading log approximation
 
 \end{frame}
@@ -351,16 +342,16 @@
 	\footnotesize Model a given hard scattering with arbitrary number of enhanced radiations
 
 	\begin{itemize} 
-		\item Choose hard interaction with specified Born kinematics.
-		\item Consider all possible splittings for each coloured parton.
-		\item Assign the variables t, z, $\phi$ at each splitting vertex, t ordered in decreasing way.
+		\item Choose hard interaction with specified Born kinematics
+		\item Consider all possible tree-level splittings for each coloured parton
+		\item Assign the variables ($t, z, \phi$) at each splitting vertex, $t$ ordered in decreasing way.
 		\item At each splitting vertex assign the weight 
 		\begin{figure}
 			\includegraphics[width = 2.5 cm]{plots/AP_weight.png}
 		\end{figure}
 		\item Each line has a weight known as Sudakov factor
 		\begin{figure}
-			\includegraphics[width = 6 cm]{plots/sudakov.png}
+			\includegraphics[width = 7 cm]{plots/sudakov.png}
 		\end{figure}
 	\end{itemize}
 
@@ -372,8 +363,7 @@
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Formal representation of a shower}
 	
-	\footnotesize Approximated description of a hadronic final state \\
-	\footnotesize Model a given hard scattering with arbitrary number of enhanced radiations
+	\footnotesize Graphical notation for the representation of a shower \\
 	
 	\begin{columns} 
 		
@@ -385,7 +375,7 @@
 
 		\column{0.5\textwidth}
 		
-		\footnotesize Ensemble of all possible branchings at scale t (...)
+		\footnotesize Ensemble of all possible branchings from parton $i$ at scale $t$
 
 	\end{columns}
 
@@ -393,7 +383,7 @@
 		\includegraphics[width = 6 cm]{plots/shower_2.png}
 	\end{figure}
 		
-	\footnotesize Forward evolution equation
+	\footnotesize Forward evolution equation $\rightarrow$ recursive structure
 	\begin{figure}
 		\includegraphics[width = 10 cm]{plots/shower_2_eq.png}
 	\end{figure}
