@@ -63,15 +63,19 @@
 		\begin{itemize}
 			\item Hadron collisions and strong interactions
 			\item Renormalization group
-			\item IR divergences
+			\item QCD factorization
 		\end{itemize}
 		\item {\color{blue}MC and Parton Showers}
 		\begin{itemize}
-			\item Factorization theorem
+			\item Collinear factorization
 			\item Final state radiation
 			\item Initial state radiation
 		\end{itemize}
 		\item {\color{blue}Hadronization: some basics}
+		\begin{itemize}
+			\item \footnotesize Large number of colors approximation
+			\item \footnotesize Hadronization models
+		\end{itemize}
 	\end{enumerate}
 	
 \end{frame}
@@ -109,28 +113,6 @@
 
 \end{frame}
 
-% Strong interactions II
-\begin{frame}
-
-	\frametitle{Strong interactions}
-	\framesubtitle{QCD from $e^{+}e^{-}$ annihilation}
-	
-	Higher order corrections to $R_{0}$ 
-	\begin{figure}
-		\includegraphics[width = 5 cm]{plots/ee_hadrons.png}
-	\end{figure}
-	
-	QCD arises already from $e^{+}e^{-}$ annihilation $\rightarrow R_{0}$ ratio
-	
-	\begin{figure}
-		\includegraphics[width = 8 cm]{plots/eq_R0_3.png}
-	\end{figure}
-
-	\footnotesize $\alpha_{s}$ correction completely finite (IR cancellation) \\
-	\footnotesize $\alpha_{s}^{2}$, UV divergences arise (Renormalization)
-	
-\end{frame}
-
 % Renormalization group I
 \begin{frame}
 
@@ -157,24 +139,24 @@
 
 	\begin{columns}	
 	
-		\column{0.5\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 5 cm]{plots/qcd_coupling.png}
-		\end{figure}
-
-		\column{0.5\textwidth}
+	\column{0.5\textwidth}
 	
-		\begin{itemize}
-			\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
-			\begin{equation}
-				\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{s}^{2}}\big)} \nonumber
-			\end{equation}
-			\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
-			\item \footnotesize $\Lambda_{s}$, parameter that defines value of the coupling at large scales
-		\end{itemize}
-
-	\end{columns}
+	\begin{figure}
+		\includegraphics[width = 5 cm]{plots/qcd_coupling.png}
+	\end{figure}
+	
+	\column{0.5\textwidth}
+	
+	\begin{itemize}
+		\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
+		\begin{equation}
+			\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{s}^{2}}\big)} \nonumber
+		\end{equation}
+		\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
+		\item \footnotesize $\Lambda_{s}$, parameter that defines value of the coupling at large scales
+	\end{itemize}
+	
+\end{columns}
 	
 	\vspace{1cm}
 	\center QCD is weakly coupled for $\mu >> \Lambda_{s} \longrightarrow$ asymptotically free
@@ -243,7 +225,7 @@
 	
 	\footnotesize Collinear factorization $\longrightarrow$ The cross section factorizes
 	into the product of a tree-level cross section and a splitting
-	factorFactor out tree level amplitude and splitting
+	factor out tree level amplitude and splitting
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/eq_factorization_theorem.png}
 	\end{figure}
@@ -311,7 +293,7 @@
 		\includegraphics[width = 9 cm]{plots/AP_iteration_eq.png}
 	\end{figure}
 
-	\footnotesize Angles become, maintaining a strong ordering relation $\theta >> \theta' \rightarrow 0$
+	\footnotesize Angles become small, maintaining a strong ordering relation $\theta' >> \theta \rightarrow 0$
 	
 \end{frame}
 
@@ -344,7 +326,7 @@
 	\begin{itemize} 
 		\item Choose hard interaction with specified Born kinematics
 		\item Consider all possible tree-level splittings for each coloured parton
-		\item Assign the variables ($t, z, \phi$) at each splitting vertex, $t$ ordered in decreasing way.
+		\item Assign the variables ($t, z, \phi$) at each splitting vertex, $t$ ordered in decreasing way
 		\item At each splitting vertex assign the weight 
 		\begin{figure}
 			\includegraphics[width = 2.5 cm]{plots/AP_weight.png}
@@ -448,7 +430,7 @@
 	
 	\column{0.4\textwidth}
 	
-	\footnotesize Sudakov form factor from unitarity
+	\footnotesize Sudakov form factor
 	
 	\end{columns}
 	
@@ -530,10 +512,22 @@
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Formal representation}
 	
-	\begin{figure}
-		\includegraphics[width = 4 cm]{plots/shower_ISR_1.png}
-	\end{figure}
+	\begin{columns}
+
+		\column{0.5\textwidth}		
 	
+		\begin{figure}
+			\includegraphics[width = 4 cm]{plots/ISR_shower_1a.png}
+		\end{figure}
+	
+		\column{0.5\textwidth}
+
+		\begin{figure}
+			\includegraphics[width = 4 cm]{plots/ISR_shower_1b.png}
+		\end{figure}
+			
+	\end{columns}
+
 	\begin{itemize} 
 		\item \footnotesize Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
 		\item \footnotesize Difference in Sudakov factors and Splitting functions start at NLO
@@ -541,7 +535,43 @@
 	
 	\footnotesize Forward evolution equation. Great amount of computation time to generate configurations leading to the scattering that we want
 	\begin{figure}
-		\includegraphics[width = 8.5 cm]{plots/shower_ISR_2.png}
+		\includegraphics[width = 8.5 cm]{plots/ISR_shower_2.png}
+	\end{figure}
+
+\end{frame}
+
+% ISR III
+\begin{frame}
+
+	\frametitle{Initial state radiation MC}
+	\framesubtitle{Backwards evolution equation}
+	
+	\begin{columns}
+		
+		\column{0.5\textwidth}		
+		
+		\begin{figure}
+			\includegraphics[width = 6.5 cm]{plots/ISR_backwards.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 4 cm]{plots/ISR_backwards_eq1.png}
+		\end{figure}
+		
+	\end{columns}
+	
+	\vspace{0.5cm}
+	
+	\begin{itemize}
+		\item \footnotesize Moderns MC programs $\rightarrow$ recursive procedure starting at the large scale rather than the small one \\
+		\item \footnotesize The blob I at the splitting vertex given by the inclusive splitting kernel $P_{jm}$, instead of the exclusive one $P_{j, ml}$ \\
+		\item \footnotesize Backwards evolution equation (scale dependent parton density)
+	\end{itemize}
+
+	\begin{figure}
+		\includegraphics[width = 10 cm]{plots/ISR_backwards_eq2.png}
 	\end{figure}
 
 \end{frame}
@@ -570,9 +600,9 @@
 \begin{frame}
 	
 	\frametitle{Hadronization}
-	\framesubtitle{Basics}
+	\framesubtitle{Some basics}
 
-	\footnotesize A parton becoming a measurable hadron through the emission of a partonic shower \\
+	\footnotesize A parton becomes a measurable hadron through the emission of a partonic shower \\
 	\footnotesize Large number of color approximation $\rightarrow$ each parton identified by a unique label \\
 
 	\begin{figure}
