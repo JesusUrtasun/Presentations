@@ -100,7 +100,7 @@
 	\framesubtitle{LHC physics}
 	
 	\begin{figure}
-		\includegraphics[width = 9.5 cm]{plots/lhc_measurements.png}
+		\includegraphics[width = 9.5 cm]{plots/section1/lhc_measurements.png}
 	\end{figure}
 
 \end{frame}
@@ -114,7 +114,7 @@
 	\vspace{0.4 cm}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/factorization_1.png}
+		\includegraphics[width = 7 cm]{plots/section1/factorization_1.png}
 	\end{figure}
 	
 	Compute hadronic cross sections is a {\color{red}hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
@@ -135,7 +135,7 @@
 	\framesubtitle{Partonic cross section}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/factorization_2.png}
+		\includegraphics[width = 7 cm]{plots/section1/factorization_2.png}
 	\end{figure}
 	
 	\begin{itemize}
@@ -162,7 +162,7 @@
 		
 		\column{0.45\textwidth}
 		\begin{figure}[!htb]
-			\includegraphics[width = 5 cm]{plots/factorization_3.png}
+			\includegraphics[width = 5 cm]{plots/section1/factorization_3.png}
 		\end{figure}
 	
 	\end{columns}
@@ -182,6 +182,104 @@
 \begin{frame}
 
 	\center{\color{blue}The N3PDF project}
+
+\end{frame}
+
+% The N3PDF project
+\begin{frame}
+
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution.png}
+	\end{figure}
+
+\end{frame}
+
+% The N3PDF project
+\begin{frame}
+
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution2.png}
+	\end{figure}
+
+\end{frame}
+
+% Results DIS ratio
+\begin{frame}
+
+	\frametitle{Results}
+	\framesubtitle{Checking computation}
+	
+	{\Large DIS:}
+	\begin{table}
+		\centering
+		\begin{tabular}{c c c c}
+			& TensorFlow & Custom & Ratio \\ \hline
+			& 1.9207904 & 1.9207904 & {\color{darkgreen} 1.0000000} \\
+			Convolution & 2.4611666 & 2.4611664 & {\color{darkgreen} 0.9999999} \\
+			& 1.3516952 & 1.3516952 & {\color{darkgreen} 1.0000000} \\
+			\hline
+			& 1.8794115 & 1.8794115 & {\color{darkgreen} 1.0000000} \\
+			Gradient & 1.505316 & 1.505316 & {\color{darkgreen} 1.0000000} \\
+			& 2.866085 & 2.866085 & {\color{darkgreen} 1.0000000} \\
+			\hline
+		\end{tabular}
+	\end{table}
+
+\end{frame}
+
+% Results hadronic ratio
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{Checking computation}
+	
+	{\Large Hadronic:}
+	\begin{table}
+		\centering
+		\begin{tabular}{c c c c}
+			& TensorFlow & Custom & Ratio \\ \hline
+			& 8.142365 & 8.142366 & {\color{darkgreen} 1.0000001} \\
+			Convolution & 8.947762 & 8.947762 & {\color{darkgreen} 1.0000000} \\
+			& 7.4513326 & 7.4513316 & {\color{darkgreen} 0.9999999} \\
+			\hline
+			& 18.525095 & 18.525095 & {\color{darkgreen} 1.0000000} \\
+			Gradient & 19.182995 & 19.182993 & {\color{darkgreen} 0.9999999} \\
+			& 19.551006 & 19.551004 & {\color{darkgreen} 0.9999999} \\
+			\hline
+		\end{tabular}
+	\end{table}
+
+\end{frame}
+
+% Results memory
+\begin{frame}
+
+	\frametitle{Results}
+	\framesubtitle{Memory saving}
+	
+	{\Large Hadronic only:}
+	\begin{table}
+		\centering
+		\begin{tabular}{c c c c}
+			& TensorFlow & Custom Convolution & Diff \\ \hline
+			Virtual & {\color{red} 17.7 GB} & {\color{darkgreen} 13.8 GB} & {\color{darkgreen} 3.9 GB} \\
+			RES & {\color{red} 12.1 GB} & {\color{darkgreen} 8.39 GB} & {\color{darkgreen} 3.2 GB} \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	\hfill
+	
+	{\Large Global:}
+	\begin{table}
+		\centering
+		\begin{tabular}{c c c c}
+			& TensorFlow & Custom Convolution & Diff \\ \hline
+			Virtual & {\color{red} 23.5 GB} & {\color{darkgreen} 19.7 GB} & {\color{darkgreen} 3.8 GB} \\
+			RES & {\color{red} 18.4 GB} & {\color{darkgreen} 12.5 GB} & {\color{darkgreen} 5.9 GB} \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ https://arxiv.org/abs/1909.10547}
 
 \end{frame}
 
@@ -400,7 +498,7 @@
 	\framesubtitle{Comparison HTurbo and HqT - NLL}
 	
 	\begin{figure}
-		\includegraphics[width = 8cm]{plots/hturbo_NLL_noevol.png}
+		\includegraphics[width = 8cm]{plots/hturbo_NLL.png}
 	\end{figure}
 	
 	\begin{itemize}
@@ -417,7 +515,7 @@
 	\framesubtitle{Comparison HTurbo and HqT - NNLL}
 	
 	\begin{figure}
-		\includegraphics[width = 8cm]{plots/hturbo_NNLL_f2only2.png}
+		\includegraphics[width = 8cm]{plots/hturbo_NNLL.png}
 	\end{figure}
 	
 	\begin{itemize}
@@ -434,7 +532,7 @@
 	\framesubtitle{Comparison HTurbo and HqT - all orders}
 	
 	\begin{figure}
-		\includegraphics[width = 8cm]{plots/hturbo_all_noevol.png}
+		\includegraphics[width = 8cm]{plots/hturbo_all_orders.png}
 	\end{figure}
 	
 	\begin{itemize}
