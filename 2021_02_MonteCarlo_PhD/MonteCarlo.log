@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  22 FEB 2021 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  22 FEB 2021 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,61 +1046,54 @@ g> <./plots/probability4.png> <./plots/probability5.png>]
 <plots/ISR_shower0.png, id=182, 291.0875pt x 278.03876pt>
 File: plots/ISR_shower0.png Graphic file (type png)
 <use plots/ISR_shower0.png>
-Package pdftex.def Info: plots/ISR_shower0.png  used on input line 503.
+Package pdftex.def Info: plots/ISR_shower0.png  used on input line 520.
 (pdftex.def)             Requested size: 71.13188pt x 67.93977pt.
 <plots/ISR_shower0_eq.png, id=183, 813.0375pt x 135.50626pt>
 File: plots/ISR_shower0_eq.png Graphic file (type png)
 <use plots/ISR_shower0_eq.png>
-Package pdftex.def Info: plots/ISR_shower0_eq.png  used on input line 503.
+Package pdftex.def Info: plots/ISR_shower0_eq.png  used on input line 520.
 (pdftex.def)             Requested size: 156.49014pt x 26.0814pt.
  [16
 
  <./plots/ISR_shower0.png> <./plots/ISR_shower0_eq.png>]
-<plots/ISR_shower_1a.png, id=192, 647.41875pt x 248.93pt>
-File: plots/ISR_shower_1a.png Graphic file (type png)
-<use plots/ISR_shower_1a.png>
-Package pdftex.def Info: plots/ISR_shower_1a.png  used on input line 539.
-(pdftex.def)             Requested size: 128.0374pt x 49.23055pt.
-<plots/ISR_shower_1b.png, id=193, 370.38374pt x 111.41624pt>
+<plots/ISR_shower_1b.png, id=192, 370.38374pt x 111.41624pt>
 File: plots/ISR_shower_1b.png Graphic file (type png)
 <use plots/ISR_shower_1b.png>
-Package pdftex.def Info: plots/ISR_shower_1b.png  used on input line 539.
+Package pdftex.def Info: plots/ISR_shower_1b.png  used on input line 552.
 (pdftex.def)             Requested size: 128.0374pt x 38.51514pt.
-<plots/ISR_shower_2.png, id=194, 778.91pt x 219.82124pt>
+<plots/ISR_shower_2.png, id=193, 778.91pt x 219.82124pt>
 File: plots/ISR_shower_2.png Graphic file (type png)
 <use plots/ISR_shower_2.png>
-Package pdftex.def Info: plots/ISR_shower_2.png  used on input line 539.
+Package pdftex.def Info: plots/ISR_shower_2.png  used on input line 552.
 (pdftex.def)             Requested size: 241.84842pt x 68.2512pt.
  [17
 
- <./plots/ISR_shower_1a.png> <./plots/ISR_shower_1b.png> <./plots/ISR_shower_2.
-png>]
-<plots/ISR_backwards.png, id=204, 1091.07625pt x 357.335pt>
+ <./plots/ISR_shower_1b.png> <./plots/ISR_shower_2.png>]
+<plots/ISR_backwards.png, id=202, 1091.07625pt x 357.335pt>
 File: plots/ISR_backwards.png Graphic file (type png)
 <use plots/ISR_backwards.png>
-Package pdftex.def Info: plots/ISR_backwards.png  used on input line 577.
+Package pdftex.def Info: plots/ISR_backwards.png  used on input line 590.
 (pdftex.def)             Requested size: 170.71652pt x 55.90979pt.
-<plots/ISR_backwards_eq1.png, id=205, 545.03625pt x 136.51pt>
+<plots/ISR_backwards_eq1.png, id=203, 545.03625pt x 136.51pt>
 File: plots/ISR_backwards_eq1.png Graphic file (type png)
 <use plots/ISR_backwards_eq1.png>
-Package pdftex.def Info: plots/ISR_backwards_eq1.png  used on input line 577.
+Package pdftex.def Info: plots/ISR_backwards_eq1.png  used on input line 590.
 (pdftex.def)             Requested size: 99.58464pt x 24.9415pt.
-<plots/ISR_backwards_eq2.png, id=206, 1666.225pt x 166.6225pt>
+<plots/ISR_backwards_eq2.png, id=204, 1666.225pt x 166.6225pt>
 File: plots/ISR_backwards_eq2.png Graphic file (type png)
 <use plots/ISR_backwards_eq2.png>
-Package pdftex.def Info: plots/ISR_backwards_eq2.png  used on input line 577.
+Package pdftex.def Info: plots/ISR_backwards_eq2.png  used on input line 590.
 (pdftex.def)             Requested size: 284.52756pt x 28.45256pt.
-
-[18
+ [18
 
  <./plots/ISR_backwards.png> <./plots/ISR_backwards_eq1.png> <./plots/ISR_backw
 ards_eq2.png>] [19
 
 ]
-<plots/hadronization.png, id=223, 1587.9325pt x 106.3975pt>
+<plots/hadronization.png, id=221, 1587.9325pt x 106.3975pt>
 File: plots/hadronization.png Graphic file (type png)
 <use plots/hadronization.png>
-Package pdftex.def Info: plots/hadronization.png  used on input line 615.
+Package pdftex.def Info: plots/hadronization.png  used on input line 629.
 (pdftex.def)             Requested size: 241.84842pt x 16.20407pt.
  [20
 
@@ -1118,20 +1111,19 @@ Package pdftex.def Info: plots/hadronization.png  used on input line 615.
 \tf@snm=\write8
 \openout8 = `MonteCarlo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 658.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 658.
-
-(./MonteCarlo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 658.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 658.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 672.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 672.
+ (./MonteCarlo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 672.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 672.
 Package rerunfilecheck Info: File `MonteCarlo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17318 strings out of 492982
- 330897 string characters out of 6134896
+ 17315 strings out of 492982
+ 330805 string characters out of 6134896
  400567 words of memory out of 5000000
- 20398 multiletter control sequences out of 15000+600000
+ 20396 multiletter control sequences out of 15000+600000
  17330 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,806b,845s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1155,10 +1147,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy9.pfb>
-Output written on MonteCarlo.pdf (22 pages, 1327348 bytes).
+Output written on MonteCarlo.pdf (22 pages, 1308453 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
+ 319 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
  45 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

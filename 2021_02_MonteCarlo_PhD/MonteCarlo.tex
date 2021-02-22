@@ -455,15 +455,15 @@
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Shower algorithm}
 	
-	\footnotesize Generate hard process with probability proportional to its parton level cross section. \\
+	\footnotesize Generate hard process with probability proportional to its parton level cross section \\
 	\footnotesize For each final state colored parton:
 	\begin{enumerate} 
-		\item \footnotesize Set scale $t = Q$, hard scale of the process.
-		\item \footnotesize Generate random number $0 < r < 1$.
-		\item \footnotesize Solve $r = \Delta_{i}(t, t')$ for $t'.$
-		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower.
+		\item \footnotesize Set scale $t = Q$, hard scale of the process
+		\item \footnotesize Generate random number $0 < r < 1$
+		\item \footnotesize Solve $r = \Delta_{i}(t, t')$ for $t'$
+		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower
 		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ with $z$ following a distribution given by  $P_{i, jl}(z)$ and with azimuth $\phi$ uniformly distributed in the interval $[0, 2\pi]$.
-		\item \footnotesize For each branched partons set $t = t'$ and start from (2).
+		\item \footnotesize For each branched partons set $t = t'$ and start from (2)
 	\end{enumerate}
 
 \end{frame}
@@ -474,13 +474,24 @@
 \frametitle{Initial state radiation MC}
 \framesubtitle{General structure}
 	
-	\begin{itemize}
-		\item \footnotesize QCD coupling much larger than QED
-		\item \footnotesize Coupling grows for small momentum transfer $\rightarrow$ we can never neglect QCD ISR
-	\end{itemize}
+	\begin{columns}
 	
+		\column{0.6\textwidth}
+
+		\begin{itemize}
+			\item \footnotesize QCD coupling much larger than QED
+			\item \footnotesize Coupling grows for small momentum transfer
+		\end{itemize}
+
+		\column{0.4\textwidth}
+		
+		 \footnotesize \color{red}We can never neglect QCD ISR
+		 
+	\end{columns}
+
 	\vspace{0.5cm}
-	
+
+	\center \footnotesize Radiation from some initial state leading to some hard collision
 	\begin{columns}
 		
 		\column{0.3\textwidth}
@@ -491,14 +502,20 @@
 		
 		\column{0.6\textwidth}
 		
-		\footnotesize Radiation from some initial state leading to some hard collision \\
-		\footnotesize ISR showers are spacelike $\rightarrow$ initial parton is on shell
-
-		\begin{figure}
-			\includegraphics[width = 5.5 cm]{plots/ISR_shower0_eq.png}
-		\end{figure}
-
+		\begin{itemize}
+			\item \footnotesize Initial parton is on shell
+			\item \footnotesize ISR showers are spacelike
+			\item \footnotesize Parton with scaled momentum $zp$ acquires negative virtuality
+		\end{itemize}
+	
 	\end{columns}
+
+	\vspace{0.25cm}
+	
+	\center \footnotesize Factorization formula
+	\begin{figure}
+		\includegraphics[width = 5.5 cm]{plots/ISR_shower0_eq.png}
+	\end{figure}
 
 \end{frame}
 
@@ -513,21 +530,17 @@
 		\column{0.5\textwidth}		
 	
 		\begin{figure}
-			\includegraphics[width = 4.5 cm]{plots/ISR_shower_1a.png}
+			\includegraphics[width = 4.5 cm]{plots/ISR_shower_1b.png}
 		\end{figure}
 	
 		\column{0.5\textwidth}
 
-			\footnotesize $\delta x \; S_{i}(m, x, t, E)$ is ensemble of all possible states containing a spacelike parton $m$ with energy between $xE$ and $(x + \delta x E)$, scale $t$
-	
-		\begin{figure}
-			\includegraphics[width = 4.5 cm]{plots/ISR_shower_1b.png}
-		\end{figure}
+			\footnotesize $\delta x \; S_{i}(m, x, t, E)$ represents ensemble of all possible states containing a spacelike parton $m$ with energy between $xE$ and $(x + \delta x)E$ and scale $t$
 			
 	\end{columns}
 
-	\begin{itemize} 
-		\item \footnotesize Lines between $t_{1}$ and $t_{2}$, $t_{2}$ and hard scattering are spacelike
+	\begin{itemize}
+		\item \footnotesize Procedure for evolution equation as in FSR (with spacelike showers)
 		\item \footnotesize Difference from FSR in Sudakov factors and Splitting functions arise at NLO
 	\end{itemize}
 	
@@ -566,7 +579,7 @@
 	\vspace{0.5cm}
 	
 	\begin{itemize}
-		\item \footnotesize The blob I at the splitting vertex is given by the inclusive splitting kernel $P_{jm}$ \\
+		\item \footnotesize The {\color{red}blob I} at the splitting vertex is given by the inclusive splitting kernel $P_{jm}$ \\
 		\item \footnotesize Backwards evolution equation (scale dependent parton density)
 	\end{itemize}
 
@@ -582,17 +595,18 @@
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Shower algorithm}
 	
-	\footnotesize Generate hard process with probability proportional to its parton level cross section.
-	\footnotesize For each final state colored parton:
-	\begin{enumerate} 
+	\footnotesize Generate hard process with probability proportional to its parton level cross section \\
+	\footnotesize For each initial state colored parton:
+	\begin{enumerate}
 		\item Set scale $t = Q$, hard scale of the process
 		\item Generate random number $0 < r < 1$
 		\item Solve $$r = \frac{f^{(h)}_{i}(t', x) \Delta_{i}(t, t')}{f^{(h)}_{i}(t, x)} \quad \textrm{for }t'$$
-		\item i) if $t' < t_{0}$, no further branching and stop shower
-		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ with $z$ following a distribution given by  $P_{i, jl}(z)$ and with azimuth $\phi$ uniformly distributed in the interval $[0, 2\pi]$
-		\item For parton $j$ set $t = t'$ and start from (2). For parton $l$ generate a timelike parton shower according to the algorithm shown previously
+		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower
+		\item \footnotesize ii) if $t' \geq t_{0}$, $j, l$ generate $j$ and $z$ following a distribution given by  $P_{ij}(z)$, and  azimuth $\phi$ uniformly distributed in the interval $[0, 2\pi]$ \\
+		Call $l$ radiated parton, assign energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$
+		\item \footnotesize For parton $j$, set $t = t'$ and start from (2)
+		\item \footnotesize For parton $l$, set $t = t'$ and proceed with timelike shower as described in FSR
 	\end{enumerate}
-
 \end{frame}
 
 % Hadronization I
