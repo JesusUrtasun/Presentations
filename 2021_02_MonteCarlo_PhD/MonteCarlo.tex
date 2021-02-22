@@ -215,8 +215,7 @@
 	
 	\begin{itemize} 
 		\item \footnotesize QCD emission processes are enhanced in the collinear limit ($\theta$ small)
-		\item \footnotesize $\sigma$ dominated by collinear splittings $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$ \\
-		(measurement not sensitive to such small scales)
+		\item \footnotesize $\sigma$ dominated by collinear splittings $q \rightarrow qg, g \rightarrow gg, g \rightarrow q\bar{q}$
 	\end{itemize}
 	
 	\begin{figure}
@@ -250,9 +249,9 @@
 	\begin{itemize}
 		\item $t$: parameter with dimensions of energy that vanish in the collinear limit \\
 		\begin{itemize}
-			\item Virtuality $t = (k + l)^{2} = k^{0}l^{0}4\sin^{2}\bigg( \frac{\theta}{2} \bigg) \approx k^{0}l^{0}\theta^{2} \approx z(1 - z)E^{2}\theta^{2}$
-			\item Transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} = z^{2}(1 - z)^{2}E^{2}\theta^{2}$
-			\item Hardness $E^{2}\theta^{2}$
+			\item Virtuality $t = (k + l)^{2} \approx z(1 - z)E^{2}\theta^{2}$
+			\item Transverse momentum $t = k_{\perp}^{2} = l_{\perp}^{2} \approx z^{2}(1 - z)^{2}E^{2}\theta^{2}$
+			\item Hardness $t = E^{2}\theta^{2}$
 		\end{itemize}
 		\item $z$: fraction of energy of radiated parton $z = \frac{k^{0}}{k^{0} + l^{0}}$
 		\item $\phi$ represents azimuth of the $k, l$ plane
@@ -309,8 +308,8 @@
 		\includegraphics[width = 9 cm]{plots/exclusive_ll.png}
 	\end{figure}
 	
-	\footnotesize Possible if we limit to the most singular terms, in ordered sequence of angles \\
-	\color{red} Collinear approximation $\longrightarrow$ Leading log approximation
+	\center \footnotesize Limit to the most singular terms, in ordered sequence of angles \\
+	\center \color{red} Collinear approximation $\longrightarrow$ Leading log approximation
 
 \end{frame}
 
@@ -416,7 +415,7 @@
 		
 		\column{0.4\textwidth}
 		
-		\footnotesize Probability of first branching in the infinitesimal volume $dt'$
+		\footnotesize Probability of no branching in the interval $dt'$
 	
 	\end{columns}
 
@@ -444,7 +443,7 @@
 		
 		\column{0.6\textwidth}
 		
-		\footnotesize Probability of no-branching in the infinitesimal volume $dt'\; dz\; d\phi$
+		\footnotesize Probability of, starting at $t$, first branching in the phase space element $dt'\; dz\; d\phi$
 		
 	\end{columns}
 
@@ -463,8 +462,7 @@
 		\item \footnotesize Generate random number $0 < r < 1$.
 		\item \footnotesize Solve $r = \Delta_{i}(t, t')$ for $t'.$
 		\item \footnotesize i) if $t' < t_{0}$, no further branching and stop shower.
-		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ following the $P_{i, jl}(z)$ distribution and with azimuth $\phi$ uniform in the interval $[0, 2\pi]$. \\
-		the angle of between their momenta is fixed by $t'$.
+		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ with $z$ following a distribution given by  $P_{i, jl}(z)$ and with azimuth $\phi$ uniformly distributed in the interval $[0, 2\pi]$.
 		\item \footnotesize For each branched partons set $t = t'$ and start from (2).
 	\end{enumerate}
 
@@ -473,36 +471,34 @@
 % ISR I
 \begin{frame}
 
-	\frametitle{Initial state radiation MC}
-	\framesubtitle{General structure}
+\frametitle{Initial state radiation MC}
+\framesubtitle{General structure}
 	
-	\center \footnotesize ISR showers are spacelike
+	\begin{itemize}
+		\item \footnotesize QCD coupling much larger than QED
+		\item \footnotesize Coupling grows for small momentum transfer $\rightarrow$ we can never neglect QCD ISR
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	
 	\begin{columns}
 		
 		\column{0.3\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 2 cm]{plots/ISR_shower0.png}
+			\includegraphics[width = 2.5 cm]{plots/ISR_shower0.png}
 		\end{figure}
-	
+		
 		\column{0.6\textwidth}
 		
+		\footnotesize Radiation from some initial state leading to some hard collision \\
+		\footnotesize ISR showers are spacelike $\rightarrow$ initial parton is on shell
+
 		\begin{figure}
-			\includegraphics[width = 5 cm]{plots/ISR_spacelike.png}
+			\includegraphics[width = 5.5 cm]{plots/ISR_shower0_eq.png}
 		\end{figure}
-		
+
 	\end{columns}
-
-	\vspace{0.5cm}
-	\footnotesize Consider the splitting between a particle a that splits into b and c
-	
-	\begin{figure}
-		\includegraphics[width = 9 cm]{plots/ISR_splitting.png}
-	\end{figure}
-
-	\begin{figure}
-		\includegraphics[width = 4.5 cm]{plots/ISR_FSR.png}
-	\end{figure}
 
 \end{frame}
 
@@ -511,29 +507,31 @@
 	
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Formal representation}
-	
+		
 	\begin{columns}
 
 		\column{0.5\textwidth}		
 	
 		\begin{figure}
-			\includegraphics[width = 4 cm]{plots/ISR_shower_1a.png}
+			\includegraphics[width = 4.5 cm]{plots/ISR_shower_1a.png}
 		\end{figure}
 	
 		\column{0.5\textwidth}
 
+			\footnotesize $\delta x \; S_{i}(m, x, t, E)$ is ensemble of all possible states containing a spacelike parton $m$ with energy between $xE$ and $(x + \delta x E)$, scale $t$
+	
 		\begin{figure}
-			\includegraphics[width = 4 cm]{plots/ISR_shower_1b.png}
+			\includegraphics[width = 4.5 cm]{plots/ISR_shower_1b.png}
 		\end{figure}
 			
 	\end{columns}
 
 	\begin{itemize} 
-		\item \footnotesize Lines between $t_{1}$ and $t_{2}$ (consecutive radiations) are spacelike {\color{blue}(*)}
-		\item \footnotesize Difference in Sudakov factors and Splitting functions start at NLO
+		\item \footnotesize Lines between $t_{1}$ and $t_{2}$, $t_{2}$ and hard scattering are spacelike
+		\item \footnotesize Difference from FSR in Sudakov factors and Splitting functions arise at NLO
 	\end{itemize}
 	
-	\footnotesize Forward evolution equation. Great amount of computation time to generate configurations leading to the scattering that we want
+	\footnotesize Forward evolution equation
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/ISR_shower_2.png}
 	\end{figure}
@@ -545,19 +543,22 @@
 
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Backwards evolution equation}
+
+	\footnotesize Great amount of computation time to generate configurations leading to the hard scattering that we want \\
+	\footnotesize Moderns MC programs $\rightarrow$ recursive procedure starting at the large scale \\
 	
 	\begin{columns}
 		
 		\column{0.5\textwidth}		
 		
 		\begin{figure}
-			\includegraphics[width = 6.5 cm]{plots/ISR_backwards.png}
+			\includegraphics[width = 6 cm]{plots/ISR_backwards.png}
 		\end{figure}
 		
 		\column{0.5\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 4 cm]{plots/ISR_backwards_eq1.png}
+			\includegraphics[width = 3.5 cm]{plots/ISR_backwards_eq1.png}
 		\end{figure}
 		
 	\end{columns}
@@ -565,8 +566,7 @@
 	\vspace{0.5cm}
 	
 	\begin{itemize}
-		\item \footnotesize Moderns MC programs $\rightarrow$ recursive procedure starting at the large scale rather than the small one \\
-		\item \footnotesize The blob I at the splitting vertex given by the inclusive splitting kernel $P_{jm}$, instead of the exclusive one $P_{j, ml}$ \\
+		\item \footnotesize The blob I at the splitting vertex is given by the inclusive splitting kernel $P_{jm}$ \\
 		\item \footnotesize Backwards evolution equation (scale dependent parton density)
 	\end{itemize}
 
@@ -585,13 +585,12 @@
 	\footnotesize Generate hard process with probability proportional to its parton level cross section.
 	\footnotesize For each final state colored parton:
 	\begin{enumerate} 
-		\item Set scale $t = Q$, hard scale of the process.
+		\item Set scale $t = Q$, hard scale of the process
 		\item Generate random number $0 < r < 1$
-		\item Solve $$r = \frac{f^{(i)}_{m} \Delta_{m}(t, t')}{f^{(i)}_{m}(t, x)} \quad \textrm{for }t'.$$
-		\item i) if $t' < t_{0}$, no further branching and stop shower.
-		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ following the $P_{i, jl}(z)$ distribution and with azimuth $\phi$ uniform in the interval $[0, 2\pi]$. \\
-		the angle of between their momenta is fixed by $t'$.
-		\item For parton $j$ set $t = t'$ and start from (2). For parton $l$ generate a timelike parton shower according to the algorithm shown previously.
+		\item Solve $$r = \frac{f^{(h)}_{i}(t', x) \Delta_{i}(t, t')}{f^{(h)}_{i}(t, x)} \quad \textrm{for }t'$$
+		\item i) if $t' < t_{0}$, no further branching and stop shower
+		\item \footnotesize ii) if $t' \geq t_{0}$, generate $j, l$ with energies $$E_{j} = zE_{i} \quad \textrm{and}\quad E_{l} = (1 - z)E_{i}, $$ with $z$ following a distribution given by  $P_{i, jl}(z)$ and with azimuth $\phi$ uniformly distributed in the interval $[0, 2\pi]$
+		\item For parton $j$ set $t = t'$ and start from (2). For parton $l$ generate a timelike parton shower according to the algorithm shown previously
 	\end{enumerate}
 
 \end{frame}
@@ -603,39 +602,55 @@
 	\framesubtitle{Some basics}
 
 	\footnotesize A parton becomes a measurable hadron through the emission of a partonic shower \\
-	\footnotesize Large number of color approximation $\rightarrow$ each parton identified by a unique label \\
+	\footnotesize Large number of color approximation 
+	\begin{itemize}
+		\item \footnotesize Color indices ranging from 1 to $N_{c}$ and keep only dominant contribution
+		\item \footnotesize Each parton identified by a unique label
+	\end{itemize}
 
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/hadronization.png}
 	\end{figure}
 
+\end{frame}
+
+% Hadronization I
+\begin{frame}
+
+\frametitle{Hadronization}
+\framesubtitle{Some basics}
+	
 	\footnotesize Hadronization models
 	\begin{itemize}
-		\item Lund string model
-		\begin{itemize}
-			\item \footnotesize non perturbative production of quarks and antiquarks
-			\item \footnotesize intermediate gluons are transverse kicks of a continuum medium
-		\end{itemize}
 		\item Cluster models
 		\begin{itemize}
-			\item \footnotesize preconfinement, assuming subsystems of color singlet partons
-			with universal invariant mass distribution (power suppressed at high masses)
-			\item gluons are forced to split in quark-antiquark pair
+			\item \footnotesize Gluons are forced to split in quark-antiquark pair
+			\item \footnotesize Then decay each color connected quark-antiquark pair independently
+			\item \footnotesize Preconfinement, assuming subsystems of color singlet partons
+			with universal invariant mass distribution (power suppressed at high masses)	
+		\end{itemize}
+		\item Lund string model
+		\begin{itemize}
+			\item \footnotesize Color connected partons collected in a system
+			consisting of a quark, several intermediate gluons, and an antiquark
+			\item \footnotesize Intermediate gluons are transverse kicks of a continuum medium
 		\end{itemize}
 	\end{itemize}
 
-\end{frame}
+	\footnotesize Fragmentation models are one of the most complex aspects of Shower Monte Carlo \\
+	\footnotesize These models have unavoidably a large number of parameters
 
+\end{frame}
 % Summary
 \begin{frame}
 
 	\frametitle{Summary}
 
 \begin{itemize}
-	\item \footnotesize LHC processes require factorization in perturbative and non perturbative part
-	\item \footnotesize pQCD applied at high energies
-	\item \footnotesize Monte Carlo shower programs describe non perturbative physics in hadron physics
-	\item \footnotesize Agreement and precision Monte Carlo shower programs
+	\item \footnotesize LHC processes factorization in perturbative and non-perturbative components
+	\item \footnotesize Perturbative QCD applied only at high energies
+	\item \footnotesize Monte Carlo shower algorithms describe the enhanced emissions produced by initial and final state partons
+	\item \footnotesize Hadronization models describing the non-perturbative physics
 \end{itemize}
 
 \end{frame}
