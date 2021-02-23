@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  22 FEB 2021 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  23 FEB 2021 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,7 +908,7 @@ Package pdftex.def Info: plots/qcd_coupling.png  used on input line 165.
  [5
 
  <./plots/qcd_coupling.png>]
-<plots/factorization_1.png, id=78, 1054.94125pt x 646.415pt>
+<plots/factorization_1.png, id=80, 1054.94125pt x 646.415pt>
 File: plots/factorization_1.png Graphic file (type png)
 <use plots/factorization_1.png>
 Package pdftex.def Info: plots/factorization_1.png  used on input line 186.
@@ -918,182 +918,196 @@ Package pdftex.def Info: plots/factorization_1.png  used on input line 186.
  <./plots/factorization_1.png>] [7
 
 ]
-<plots/collinear_factorization.png, id=96, 468.75125pt x 172.645pt>
+<plots/collinear_factorization.png, id=97, 468.75125pt x 172.645pt>
 File: plots/collinear_factorization.png Graphic file (type png)
 <use plots/collinear_factorization.png>
 Package pdftex.def Info: plots/collinear_factorization.png  used on input line 
-236.
+235.
 (pdftex.def)             Requested size: 170.71652pt x 62.87395pt.
-<plots/eq_factorization_theorem.png, id=97, 691.58376pt x 74.2775pt>
+<plots/eq_factorization_theorem.png, id=98, 691.58376pt x 74.2775pt>
 File: plots/eq_factorization_theorem.png Graphic file (type png)
 <use plots/eq_factorization_theorem.png>
 Package pdftex.def Info: plots/eq_factorization_theorem.png  used on input line
- 236.
+ 235.
 (pdftex.def)             Requested size: 199.16928pt x 21.3903pt.
-<plots/eq_factorization_ps.png, id=98, 625.33624pt x 121.45375pt>
+<plots/eq_factorization_ps.png, id=99, 625.33624pt x 121.45375pt>
 File: plots/eq_factorization_ps.png Graphic file (type png)
 <use plots/eq_factorization_ps.png>
-Package pdftex.def Info: plots/eq_factorization_ps.png  used on input line 236.
+Package pdftex.def Info: plots/eq_factorization_ps.png  used on input line 235.
 
 (pdftex.def)             Requested size: 142.26378pt x 27.62984pt.
  [8
 
  <./plots/collinear_factorization.png> <./plots/eq_factorization_theorem.png> <
 ./plots/eq_factorization_ps.png>]
-<plots/shower_kinematics.png, id=108, 793.96625pt x 251.94125pt>
+<plots/shower_kinematics.png, id=109, 793.96625pt x 251.94125pt>
 File: plots/shower_kinematics.png Graphic file (type png)
 <use plots/shower_kinematics.png>
-Package pdftex.def Info: plots/shower_kinematics.png  used on input line 260.
+Package pdftex.def Info: plots/shower_kinematics.png  used on input line 259.
 (pdftex.def)             Requested size: 142.26378pt x 45.1437pt.
  [9
 
  <./plots/shower_kinematics.png>]
-<plots/AP_splitting.png, id=117, 683.55376pt x 306.14375pt>
+<plots/AP_splitting.png, id=118, 683.55376pt x 306.14375pt>
 File: plots/AP_splitting.png Graphic file (type png)
 <use plots/AP_splitting.png>
-Package pdftex.def Info: plots/AP_splitting.png  used on input line 297.
+Package pdftex.def Info: plots/AP_splitting.png  used on input line 296.
 (pdftex.def)             Requested size: 142.26378pt x 63.71283pt.
 
-Overfull \hbox (5.34775pt too wide) in paragraph at lines 297--297
+Overfull \hbox (5.34775pt too wide) in paragraph at lines 296--296
  [] 
  []
 
-<plots/AP_iteration_plot.png, id=118, 705.63625pt x 226.8475pt>
+<plots/AP_iteration_plot.png, id=119, 705.63625pt x 226.8475pt>
 File: plots/AP_iteration_plot.png Graphic file (type png)
 <use plots/AP_iteration_plot.png>
-Package pdftex.def Info: plots/AP_iteration_plot.png  used on input line 297.
+Package pdftex.def Info: plots/AP_iteration_plot.png  used on input line 296.
 (pdftex.def)             Requested size: 184.9429pt x 59.45317pt.
-<plots/AP_iteration_eq.png, id=119, 1199.48125pt x 98.3675pt>
+<plots/AP_iteration_eq.png, id=120, 1199.48125pt x 98.3675pt>
 File: plots/AP_iteration_eq.png Graphic file (type png)
 <use plots/AP_iteration_eq.png>
-Package pdftex.def Info: plots/AP_iteration_eq.png  used on input line 297.
+Package pdftex.def Info: plots/AP_iteration_eq.png  used on input line 296.
 (pdftex.def)             Requested size: 256.0748pt x 20.99998pt.
 [10
 
  <./plots/AP_splitting.png> <./plots/AP_iteration_plot.png> <./plots/AP_iterati
 on_eq.png>]
-<plots/exclusive_ll.png, id=129, 1317.92375pt x 177.66376pt>
+<plots/exclusive_ll.png, id=130, 1317.92375pt x 177.66376pt>
 File: plots/exclusive_ll.png Graphic file (type png)
 <use plots/exclusive_ll.png>
-Package pdftex.def Info: plots/exclusive_ll.png  used on input line 314.
+Package pdftex.def Info: plots/exclusive_ll.png  used on input line 313.
 (pdftex.def)             Requested size: 256.0748pt x 34.51822pt.
  [11
 
  <./plots/exclusive_ll.png>]
-<plots/AP_weight.png, id=137, 346.29375pt x 119.44624pt>
-File: plots/AP_weight.png Graphic file (type png)
-<use plots/AP_weight.png>
-Package pdftex.def Info: plots/AP_weight.png  used on input line 339.
-(pdftex.def)             Requested size: 71.13188pt x 24.53401pt.
-<plots/sudakov.png, id=138, 645.41125pt x 113.42375pt>
-File: plots/sudakov.png Graphic file (type png)
-<use plots/sudakov.png>
-Package pdftex.def Info: plots/sudakov.png  used on input line 339.
-(pdftex.def)             Requested size: 199.16928pt x 35.00177pt.
- [12
-
- <./plots/AP_weight.png> <./plots/sudakov.png>]
-<plots/shower_1.png, id=147, 220.825pt x 113.42375pt>
+<plots/shower_1.png, id=138, 220.825pt x 113.42375pt>
 File: plots/shower_1.png Graphic file (type png)
 <use plots/shower_1.png>
-Package pdftex.def Info: plots/shower_1.png  used on input line 372.
+Package pdftex.def Info: plots/shower_1.png  used on input line 368.
 (pdftex.def)             Requested size: 71.13188pt x 36.53517pt.
-<plots/shower_2.png, id=148, 663.47874pt x 279.0425pt>
+<plots/shower_2.png, id=139, 663.47874pt x 279.0425pt>
 File: plots/shower_2.png Graphic file (type png)
 <use plots/shower_2.png>
-Package pdftex.def Info: plots/shower_2.png  used on input line 372.
+Package pdftex.def Info: plots/shower_2.png  used on input line 368.
 (pdftex.def)             Requested size: 170.71652pt x 71.79996pt.
-<plots/shower_2_eq.png, id=149, 1502.61375pt x 138.5175pt>
+
+Overfull \hbox (16.6847pt too wide) in paragraph at lines 368--368
+ [] 
+ []
+
+<plots/AP_weight.png, id=140, 346.29375pt x 119.44624pt>
+File: plots/AP_weight.png Graphic file (type png)
+<use plots/AP_weight.png>
+Package pdftex.def Info: plots/AP_weight.png  used on input line 368.
+(pdftex.def)             Requested size: 71.13188pt x 24.53401pt.
+<plots/sudakov.png, id=141, 645.41125pt x 113.42375pt>
+File: plots/sudakov.png Graphic file (type png)
+<use plots/sudakov.png>
+Package pdftex.def Info: plots/sudakov.png  used on input line 368.
+(pdftex.def)             Requested size: 163.60333pt x 28.75046pt.
+<plots/shower_2_eq.png, id=142, 1502.61375pt x 138.5175pt>
 File: plots/shower_2_eq.png Graphic file (type png)
 <use plots/shower_2_eq.png>
-Package pdftex.def Info: plots/shower_2_eq.png  used on input line 372.
+Package pdftex.def Info: plots/shower_2_eq.png  used on input line 368.
 (pdftex.def)             Requested size: 284.52756pt x 26.2277pt.
- [13
 
- <./plots/shower_1.png> <./plots/shower_2.png> <./plots/shower_2_eq.png>]
-<plots/probability1.png, id=160, 462.72874pt x 151.56625pt>
+Overfull \vbox (0.38881pt too high) detected at line 368
+ []
+
+[12
+
+ <./plots/shower_1.png> <./plots/shower_2.png> <./plots/AP_weight.png> <./plots
+/sudakov.png> <./plots/shower_2_eq.png>]
+<plots/probability1.png, id=154, 462.72874pt x 151.56625pt>
 File: plots/probability1.png Graphic file (type png)
 <use plots/probability1.png>
-Package pdftex.def Info: plots/probability1.png  used on input line 450.
+Package pdftex.def Info: plots/probability1.png  used on input line 446.
 (pdftex.def)             Requested size: 71.13188pt x 23.29825pt.
-<plots/probability2.png, id=161, 748.7975pt x 145.54375pt>
+<plots/probability2.png, id=155, 748.7975pt x 145.54375pt>
 File: plots/probability2.png Graphic file (type png)
 <use plots/probability2.png>
-Package pdftex.def Info: plots/probability2.png  used on input line 450.
+Package pdftex.def Info: plots/probability2.png  used on input line 446.
 (pdftex.def)             Requested size: 113.81102pt x 22.12154pt.
-<plots/probability3.png, id=162, 1103.12125pt x 156.585pt>
+<plots/probability3.png, id=156, 1103.12125pt x 156.585pt>
 File: plots/probability3.png Graphic file (type png)
 <use plots/probability3.png>
-Package pdftex.def Info: plots/probability3.png  used on input line 450.
+Package pdftex.def Info: plots/probability3.png  used on input line 446.
 (pdftex.def)             Requested size: 156.49014pt x 22.21324pt.
-<plots/probability4.png, id=163, 1236.62pt x 163.61125pt>
+<plots/probability4.png, id=157, 1236.62pt x 163.61125pt>
 File: plots/probability4.png Graphic file (type png)
 <use plots/probability4.png>
-Package pdftex.def Info: plots/probability4.png  used on input line 450.
+Package pdftex.def Info: plots/probability4.png  used on input line 446.
 (pdftex.def)             Requested size: 170.71652pt x 22.58586pt.
-<plots/probability5.png, id=164, 762.85pt x 133.49875pt>
+<plots/probability5.png, id=158, 762.85pt x 133.49875pt>
 File: plots/probability5.png Graphic file (type png)
 <use plots/probability5.png>
-Package pdftex.def Info: plots/probability5.png  used on input line 450.
-(pdftex.def)             Requested size: 113.81102pt x 19.91597pt.
- [14
+Package pdftex.def Info: plots/probability5.png  used on input line 446.
+(pdftex.def)             Requested size: 128.0374pt x 22.40521pt.
+ [13
 
  <./plots/probability1.png> <./plots/probability2.png> <./plots/probability3.pn
-g> <./plots/probability4.png> <./plots/probability5.png>]
-[15
+g> <./plots/probability4.png> <./plots/probability5.png>] [14
 
 ]
-<plots/ISR_shower0.png, id=182, 291.0875pt x 278.03876pt>
+<plots/ISR_shower0.png, id=177, 291.0875pt x 278.03876pt>
 File: plots/ISR_shower0.png Graphic file (type png)
 <use plots/ISR_shower0.png>
-Package pdftex.def Info: plots/ISR_shower0.png  used on input line 520.
+Package pdftex.def Info: plots/ISR_shower0.png  used on input line 516.
 (pdftex.def)             Requested size: 71.13188pt x 67.93977pt.
-<plots/ISR_shower0_eq.png, id=183, 813.0375pt x 135.50626pt>
+<plots/ISR_shower0_eq.png, id=178, 813.0375pt x 135.50626pt>
 File: plots/ISR_shower0_eq.png Graphic file (type png)
 <use plots/ISR_shower0_eq.png>
-Package pdftex.def Info: plots/ISR_shower0_eq.png  used on input line 520.
+Package pdftex.def Info: plots/ISR_shower0_eq.png  used on input line 516.
 (pdftex.def)             Requested size: 156.49014pt x 26.0814pt.
- [16
+ [15
 
  <./plots/ISR_shower0.png> <./plots/ISR_shower0_eq.png>]
-<plots/ISR_shower_1b.png, id=192, 370.38374pt x 111.41624pt>
+<plots/ISR_shower_1b.png, id=187, 370.38374pt x 111.41624pt>
 File: plots/ISR_shower_1b.png Graphic file (type png)
 <use plots/ISR_shower_1b.png>
-Package pdftex.def Info: plots/ISR_shower_1b.png  used on input line 552.
+Package pdftex.def Info: plots/ISR_shower_1b.png  used on input line 549.
 (pdftex.def)             Requested size: 128.0374pt x 38.51514pt.
-<plots/ISR_shower_2.png, id=193, 778.91pt x 219.82124pt>
+<plots/ISR_shower_2.png, id=188, 778.91pt x 219.82124pt>
 File: plots/ISR_shower_2.png Graphic file (type png)
 <use plots/ISR_shower_2.png>
-Package pdftex.def Info: plots/ISR_shower_2.png  used on input line 552.
+Package pdftex.def Info: plots/ISR_shower_2.png  used on input line 549.
 (pdftex.def)             Requested size: 241.84842pt x 68.2512pt.
- [17
+ [16
 
  <./plots/ISR_shower_1b.png> <./plots/ISR_shower_2.png>]
-<plots/ISR_backwards.png, id=202, 1091.07625pt x 357.335pt>
+<plots/ISR_backwards.png, id=197, 1091.07625pt x 357.335pt>
 File: plots/ISR_backwards.png Graphic file (type png)
 <use plots/ISR_backwards.png>
-Package pdftex.def Info: plots/ISR_backwards.png  used on input line 590.
+Package pdftex.def Info: plots/ISR_backwards.png  used on input line 588.
 (pdftex.def)             Requested size: 170.71652pt x 55.90979pt.
-<plots/ISR_backwards_eq1.png, id=203, 545.03625pt x 136.51pt>
+<plots/ISR_backwards_eq1.png, id=198, 545.03625pt x 136.51pt>
 File: plots/ISR_backwards_eq1.png Graphic file (type png)
 <use plots/ISR_backwards_eq1.png>
-Package pdftex.def Info: plots/ISR_backwards_eq1.png  used on input line 590.
+Package pdftex.def Info: plots/ISR_backwards_eq1.png  used on input line 588.
 (pdftex.def)             Requested size: 99.58464pt x 24.9415pt.
-<plots/ISR_backwards_eq2.png, id=204, 1666.225pt x 166.6225pt>
+<plots/ISR_backwards_eq2.png, id=199, 1666.225pt x 166.6225pt>
 File: plots/ISR_backwards_eq2.png Graphic file (type png)
 <use plots/ISR_backwards_eq2.png>
-Package pdftex.def Info: plots/ISR_backwards_eq2.png  used on input line 590.
+Package pdftex.def Info: plots/ISR_backwards_eq2.png  used on input line 588.
 (pdftex.def)             Requested size: 284.52756pt x 28.45256pt.
- [18
+
+[17
 
  <./plots/ISR_backwards.png> <./plots/ISR_backwards_eq1.png> <./plots/ISR_backw
-ards_eq2.png>] [19
+ards_eq2.png>] [18
 
 ]
-<plots/hadronization.png, id=221, 1587.9325pt x 106.3975pt>
+File: plots/factorization_1.png Graphic file (type png)
+<use plots/factorization_1.png>
+Package pdftex.def Info: plots/factorization_1.png  used on input line 621.
+(pdftex.def)             Requested size: 170.71652pt x 104.60226pt.
+ [19
+
+]
+<plots/hadronization.png, id=222, 1587.9325pt x 106.3975pt>
 File: plots/hadronization.png Graphic file (type png)
 <use plots/hadronization.png>
-Package pdftex.def Info: plots/hadronization.png  used on input line 629.
+Package pdftex.def Info: plots/hadronization.png  used on input line 654.
 (pdftex.def)             Requested size: 241.84842pt x 16.20407pt.
  [20
 
@@ -1111,19 +1125,20 @@ Package pdftex.def Info: plots/hadronization.png  used on input line 629.
 \tf@snm=\write8
 \openout8 = `MonteCarlo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 672.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 672.
- (./MonteCarlo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 672.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 672.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 677.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 677.
+
+(./MonteCarlo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 677.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 677.
 Package rerunfilecheck Info: File `MonteCarlo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17315 strings out of 492982
- 330805 string characters out of 6134896
- 400567 words of memory out of 5000000
- 20396 multiletter control sequences out of 15000+600000
+ 17316 strings out of 492982
+ 330823 string characters out of 6134896
+ 401131 words of memory out of 5000000
+ 20397 multiletter control sequences out of 15000+600000
  17330 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,806b,845s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1132,25 +1147,26 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy9.pfb>
-Output written on MonteCarlo.pdf (22 pages, 1308453 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb>
+Output written on MonteCarlo.pdf (22 pages, 1317118 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
+ 324 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
  45 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

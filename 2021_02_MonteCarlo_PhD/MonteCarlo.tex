@@ -125,8 +125,8 @@
 			{\color{blue}\mu\frac{d\alpha_{s}(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
 		\end{equation}
 		\item Coupling {\color{blue}$\alpha_{s}$} evolves with scale {\color{blue}$\mu$} as given by RGE $\rightarrow$ LO behavior driven by $\beta_{0}$
-		\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies, asymptotic freedom
-		\item $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies, UV divergent!	
+		\item $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies, {\color{blue}UV divergent}
+		\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies, {\color{red}IR divergent}
 	\end{itemize}
 
 \end{frame}
@@ -150,16 +150,16 @@
 	\begin{itemize}
 		\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
 		\begin{equation}
-			\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{s}^{2}}\big)} \nonumber
+			\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{\textrm{QCD}}^{2}}\big)} \nonumber
 		\end{equation}
 		\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
-		\item \footnotesize $\Lambda_{s}$, parameter that defines value of the coupling at large scales
+		\item \footnotesize $\Lambda_{\textrm{QCD}}$, parameter that defines value of the coupling at large scales
 	\end{itemize}
 	
 \end{columns}
 	
 	\vspace{1cm}
-	\center QCD is weakly coupled for $\mu >> \Lambda_{s} \longrightarrow$ asymptotically free
+	\center QCD is weakly coupled for $\mu >> \Lambda_{\textrm{QCD}} \longrightarrow$ asymptotically free
 	\center \color{red} Perturbative Quantum Chromodynamics (pQCD)
 
 \end{frame}
@@ -223,8 +223,7 @@
 	\end{figure}
 	
 	\footnotesize Collinear factorization $\longrightarrow$ The cross section factorizes
-	into the product of a tree-level cross section and a splitting
-	factor out tree level amplitude and splitting
+	into the product of a tree-level cross section and a splitting probability
 	\begin{figure}
 		\includegraphics[width = 7 cm]{plots/eq_factorization_theorem.png}
 	\end{figure}
@@ -313,38 +312,11 @@
 
 \end{frame}
 
-% FSR I
-\begin{frame}
-
-	\frametitle{Final state radiation MC}
-	\framesubtitle{General structure}
-	
-	\footnotesize Approximated description of a hadronic final state \\
-	\footnotesize Model a given hard scattering with arbitrary number of enhanced radiations
-
-	\begin{itemize} 
-		\item Choose hard interaction with specified Born kinematics
-		\item Consider all possible tree-level splittings for each coloured parton
-		\item Assign the variables ($t, z, \phi$) at each splitting vertex, $t$ ordered in decreasing way
-		\item At each splitting vertex assign the weight 
-		\begin{figure}
-			\includegraphics[width = 2.5 cm]{plots/AP_weight.png}
-		\end{figure}
-		\item Each line has a weight known as Sudakov factor
-		\begin{figure}
-			\includegraphics[width = 7 cm]{plots/sudakov.png}
-		\end{figure}
-	\end{itemize}
-
-\end{frame}
-
 % FSR II - Formal representation of a shower
 \begin{frame}
 
 	\frametitle{Final state radiation MC}
 	\framesubtitle{Formal representation of a shower}
-	
-	\footnotesize Graphical notation for the representation of a shower \\
 	
 	\begin{columns} 
 		
@@ -356,15 +328,39 @@
 
 		\column{0.5\textwidth}
 		
-		\footnotesize Ensemble of all possible branchings from parton $i$ at scale $t$
+		\begin{itemize}
+			\item \footnotesize Ensemble of all possible branchings from parton $i$ at scale $t$
+			\item \footnotesize Shower Unitarity $\sum_{\mathcal{F}}S_{i}(t, E) = 1$  
+		\end{itemize}
 
 	\end{columns}
 
-	\begin{figure}
-		\includegraphics[width = 6 cm]{plots/shower_2.png}
-	\end{figure}
-		
-	\footnotesize Forward evolution equation $\rightarrow$ recursive structure
+	\begin{columns} 
+
+		\column{0.45\textwidth}
+				
+		\begin{figure}
+			\includegraphics[width = 6 cm]{plots/shower_2.png}
+		\end{figure}
+	
+		\column{0.55\textwidth}
+
+		\begin{itemize}
+			\item \footnotesize Splitting weighted by AP 
+			\begin{figure}
+				\includegraphics[width = 2.5 cm]{plots/AP_weight.png}
+			\end{figure}
+			\item \footnotesize Each line weighted by Sudakov factor
+			\begin{figure}
+				\includegraphics[width = 5.75 cm]{plots/sudakov.png}
+			\end{figure}
+		\end{itemize}
+
+	\end{columns}
+
+	\vspace{0.1cm}
+	
+	\footnotesize Forward evolution equation
 	\begin{figure}
 		\includegraphics[width = 10 cm]{plots/shower_2_eq.png}
 	\end{figure}
@@ -387,7 +383,7 @@
 		
 		\column{0.7\textwidth}
 		
-		\footnotesize Probability of branching in the infinitesimal volume $dt'\; dz\; d\phi$
+		\footnotesize Probability of branching in the infinitesimal volume $dt'\; dz'\; d\phi'$
 
 	\end{columns}
 
@@ -429,7 +425,7 @@
 	
 	\column{0.4\textwidth}
 	
-	\footnotesize Sudakov form factor
+	\footnotesize Sudakov form factor in $[t, t']$
 	
 	\end{columns}
 	
@@ -438,12 +434,12 @@
 		\column{0.4\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 4 cm]{plots/probability5.png}
+			\includegraphics[width = 4.5 cm]{plots/probability5.png}
 		\end{figure}
 		
 		\column{0.6\textwidth}
 		
-		\footnotesize Probability of, starting at $t$, first branching in the phase space element $dt'\; dz\; d\phi$
+		\footnotesize Probability of, starting at $t$, first branching in the phase space element $dt'\; dz'\; d\phi'$
 		
 	\end{columns}
 
@@ -503,8 +499,8 @@
 		\column{0.6\textwidth}
 		
 		\begin{itemize}
-			\item \footnotesize Initial parton is on shell
-			\item \footnotesize ISR showers are spacelike
+			\item \footnotesize Incoming parton is on shell $p^{2} = 0$
+			\item \footnotesize ISR showers are spacelike $q^{2} = (k - k')^{2} < 0$
 			\item \footnotesize Parton with scaled momentum $zp$ acquires negative virtuality
 		\end{itemize}
 	
@@ -541,13 +537,14 @@
 
 	\begin{itemize}
 		\item \footnotesize Procedure for evolution equation as in FSR (with spacelike showers)
-		\item \footnotesize Difference from FSR in Sudakov factors and Splitting functions arise at NLO
+		\item \footnotesize Forward evolution equation
 	\end{itemize}
 	
-	\footnotesize Forward evolution equation
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/ISR_shower_2.png}
 	\end{figure}
+
+	\footnotesize Difference from FSR in Sudakov factors and Splitting functions arise at NLO
 
 \end{frame}
 
@@ -557,7 +554,7 @@
 	\frametitle{Initial state radiation MC}
 	\framesubtitle{Backwards evolution equation}
 
-	\footnotesize Great amount of computation time to generate configurations leading to the hard scattering that we want \\
+	\footnotesize Great amount of computation time to hard scattering that we want \\
 	\footnotesize Moderns MC programs $\rightarrow$ recursive procedure starting at the large scale \\
 	
 	\begin{columns}
@@ -580,7 +577,8 @@
 	
 	\begin{itemize}
 		\item \footnotesize The {\color{red}blob I} at the splitting vertex is given by the inclusive splitting kernel $P_{jm}$ \\
-		\item \footnotesize Backwards evolution equation (scale dependent parton density)
+		\item \footnotesize Backwards evolution equation (scale dependent parton density) \\
+		Sum over all final states (yields 1 for timelike blobs, $f^{(i)}_{m}(x, t)$ for spacelike)
 	\end{itemize}
 
 	\begin{figure}
@@ -615,15 +613,9 @@
 	\frametitle{Hadronization}
 	\framesubtitle{Some basics}
 
-	\footnotesize A parton becomes a measurable hadron through the emission of a partonic shower \\
-	\footnotesize Large number of color approximation 
-	\begin{itemize}
-		\item \footnotesize Color indices ranging from 1 to $N_{c}$ and keep only dominant contribution
-		\item \footnotesize Each parton identified by a unique label
-	\end{itemize}
-
+	\center {\footnotesize Emit QCD radiation until becoming a measurable hadron $\rightarrow$ non-perturbative physics}
 	\begin{figure}
-		\includegraphics[width = 8.5 cm]{plots/hadronization.png}
+		\includegraphics[width = 6 cm]{plots/factorization_1.png}
 	\end{figure}
 
 \end{frame}
@@ -636,36 +628,49 @@
 	
 	\footnotesize Hadronization models
 	\begin{itemize}
+		\item Independent fragmentation model
+		\begin{itemize}
+			\item \footnotesize Each final state particle treated independently from all the others
+			\item \footnotesize Gluon forced to split in $q\bar{q}$ pair
+			\item \footnotesize Introduce diquarks for formation of baryons
+		\end{itemize}
 		\item Cluster models
-		\begin{itemize}
-			\item \footnotesize Gluons are forced to split in quark-antiquark pair
-			\item \footnotesize Then decay each color connected quark-antiquark pair independently
-			\item \footnotesize Preconfinement, assuming subsystems of color singlet partons
-			with universal invariant mass distribution (power suppressed at high masses)	
-		\end{itemize}
 		\item Lund string model
-		\begin{itemize}
-			\item \footnotesize Color connected partons collected in a system
-			consisting of a quark, several intermediate gluons, and an antiquark
-			\item \footnotesize Intermediate gluons are transverse kicks of a continuum medium
-		\end{itemize}
 	\end{itemize}
 
-	\footnotesize Fragmentation models are one of the most complex aspects of Shower Monte Carlo \\
-	\footnotesize These models have unavoidably a large number of parameters
+	\footnotesize Large number of color approximation (planar limit)
+	\begin{itemize}
+		\item \footnotesize Color indices ranging from 1 to $N_{c},$ replace $(N_{c}^{2} - 1) \rightarrow N_{c}^{2}$  
+		\item \footnotesize Represent color flow $\rightarrow$ t'Hooft double line notation
+	\end{itemize}
+	
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/hadronization.png}
+	\end{figure}
+
+	\footnotesize {\color{red}Hadronization models have unavoidably a large number of parameters \\
+	\footnotesize They are one of the most complex aspects of Shower Monte Carlo algorithms}
 
 \end{frame}
+
+% Summary
+\begin{frame}
+	
+	\begin{itemize}
+		\item \footnotesize LHC processes factorization in perturbative and non-perturbative components
+		\item \footnotesize Perturbative QCD applied only at high energies
+		\item \footnotesize Monte Carlo shower algorithms describe the enhanced emissions produced by initial and final state partons
+		\item \footnotesize Hadronization models describing the non-perturbative physics
+	\end{itemize}
+
+\end{frame}
+
 % Summary
 \begin{frame}
 
-	\frametitle{Summary}
+	\vspace{1cm}
+	\center \color{blue} \footnotesize Thank you!
 
-\begin{itemize}
-	\item \footnotesize LHC processes factorization in perturbative and non-perturbative components
-	\item \footnotesize Perturbative QCD applied only at high energies
-	\item \footnotesize Monte Carlo shower algorithms describe the enhanced emissions produced by initial and final state partons
-	\item \footnotesize Hadronization models describing the non-perturbative physics
-\end{itemize}
 
 \end{frame}
 
