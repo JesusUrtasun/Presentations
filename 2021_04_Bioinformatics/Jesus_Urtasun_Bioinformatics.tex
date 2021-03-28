@@ -69,8 +69,8 @@
 		\end{itemize}
 		\item {\color{blue}Machine Learning for particle physics}
 		\begin{itemize}	
-			\item The N3PDF project
-			\item The HTurbo project
+			\item Machine Learning algorithms
+			\item NN for building predictions
 		\end{itemize}	
 		\item {\color{blue}Bioinformatics}
 		\begin{itemize}
@@ -250,6 +250,36 @@
 
 \end{frame}
 
+% HTurbo IV - DYturbo
+\begin{frame}
+	
+	\frametitle{HTurbo}
+	\framesubtitle{Starting point: DYTurbo}
+	
+	\footnotesize $q_{\perp}$ resummation implemented in numerical codes \textbf{HqT} and \textbf{HRes} {\color{blue}[Catani et al.]} \\
+	\footnotesize Higher order accuracy require {\color{red}high computation times}
+	
+	\vspace{0.5cm}
+	
+	\footnotesize Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al. ATLAS collaboration, {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}]},\\
+	fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1} + h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$)
+	
+	\begin{itemize}
+		\item \footnotesize {\color{red}Goal}: set up a numerical code generalizing  \textbf{DYTurbo} for Higgs boson production
+		\item \footnotesize {\color{red}Goal}: extend theoretical accuracy up to N$^{3}$LL+N$^{3}$LO and to other processes
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	
+	\footnotesize Numerical code \textbf{HTurbo} {\color{blue}[Ferrera, Urtasun-Elizari (in preparation)]} \\
+	Fast and precise $q_{\perp}$ resummation and for Higgs boson production
+	\begin{itemize}
+		\item \footnotesize Old versions as \textbf{HqT} and \textbf{HRes} in Fortran
+		\item \footnotesize c++ allows for optimization in the integration routines
+	\end{itemize}
+
+\end{frame}
+
 % Results all
 \begin{frame}
 	
@@ -280,13 +310,29 @@
 \begin{frame}
 	
 	\frametitle{Bioinformatics}
-	\framesubtitle{Comoputer sciences}
+	\framesubtitle{Computer sciences}
 	
 	\begin{itemize}
-		\item Python, C++, R, Machine Learning
-		\item {\color{blue}[https://github.com/JesusUrtasun/CppCourse]}
-		\item {\color{blue}[https://github.com/JesusUrtasun/MLcourse]}
-		\item {\color{blue}[https://github.com/JesusUrtasun/Bioinformatics]}
+		\item C++ and computer sciences
+		\begin{itemize}
+			\item {\color{blue}[https://github.com/JesusUrtasun/CppCourse]}
+		\end{itemize}
+		\item Machine Learning
+		\begin{itemize}
+			\item {\color{blue}[https://github.com/JesusUrtasun/MLcourse]}
+		\end{itemize}
+		\item Data Frames (Numpy, Pandas) and R programming
+		\begin{itemize}
+			\item {\color{blue}[https://github.com/JesusUrtasun/Bioinformatics]}
+		\end{itemize}
+	
+	\end{itemize}
+
+	\begin{itemize}
+		\item NGS data analysis
+		\item Statistics and data analysis of BAM files with R
+		\item \textbf{Rsubred} and \textbf{Dseq2} packages
+		\item \color{blue} Fast learner!
 	\end{itemize}
 
 \end{frame}
@@ -298,7 +344,7 @@
 	\framesubtitle{DNA and RNA sequencing data}
 	
 	\begin{itemize}
-		\item Processing and data grooming of DNA and RNA sequencing data
+		\item NGS data analysis
 		\item Statistics and data analysis of BAM files with R
 		\item \textbf{Rsubred} and \textbf{Dseq2} packages
 		\item \color{blue} Fast learner!
@@ -361,39 +407,101 @@
 
 % The N3PDF project
 \begin{frame}
-
-\frametitle{Back up}
-\framesubtitle{Operator implementation in TF}
-
-\begin{figure}
-	\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution.png}
-\end{figure}
-
-
-\begin{itemize}
-	\item \footnotesize Build a NN model to compute $\sigma_{pred}$ observables from a grid $x_{i}$
-	\item \footnotesize Perform $\chi^{2}$ minimization comparing with data
-	\item \footnotesize Update values of PDF $\longrightarrow$ {\color{violet} Fit}
-\end{itemize}
+	
+	\frametitle{Back up}
+	\framesubtitle{Operator implementation in TF}
+	
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution.png}
+	\end{figure}
+	
+	
+	\begin{itemize}
+		\item \footnotesize Build a NN model to compute $\sigma_{pred}$ observables from a grid $x_{i}$
+		\item \footnotesize Perform $\chi^{2}$ minimization comparing with data
+		\item \footnotesize Update values of PDF $\longrightarrow$ {\color{violet} Fit}
+	\end{itemize}
 
 \end{frame}
 
 % The N3PDF project
 \begin{frame}
+	
+	\frametitle{The N3PDF project}
+	\framesubtitle{Operator implementation in TF}
+	
+	\begin{figure}
+		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution2.png}
+	\end{figure}
+	
+	\begin{enumerate}
+		\item \footnotesize TF relies in symbolic computation $\longrightarrow$ High memory usage
+		\item \footnotesize Implement c++ operator replacing the convolution
+		\item Further details in Urtasun-Elizari et al.\\
+		{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ https://arxiv.org/abs/1909.10547}
+	\end{enumerate}
 
-\frametitle{The N3PDF project}
-\framesubtitle{Operator implementation in TF}
+\end{frame}
 
-\begin{figure}
-\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution2.png}
-\end{figure}
+% HTurbo II - qT resummation
+\begin{frame}
+	
+	\frametitle{HTurbo}
+	\framesubtitle{All order $q_{\perp}$ resummation}
+	
+	\begin{columns}
+		
+		\column{0.55\textwidth}
+		
+		\center	\footnotesize Study the differential $q_{\perp}$ distribution \\
+		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
+		
+		\column{0.45\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 3.5cm]{plots/section2/qT_diagram.png}
+		\end{figure}
+		
+	\end{columns}
+	
+	\footnotesize {$$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad being \quad} L = \ln (q_{\perp} / M^{2})$$}
+	
+	\begin{figure}
+		\includegraphics[width = 7cm]{plots/section2/qT_logs_table.png}
+	\end{figure}
+	
+	\footnotesize Truncated fixed order predictions lead to {\color{red} logarithmic enhancement $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$} \\
+	\center \footnotesize {\color{red} All order resummation is needed} \\
 
-\begin{enumerate}
-\item \footnotesize TF relies in symbolic computation $\longrightarrow$ High memory usage
-\item \footnotesize Implement c++ operator replacing the convolution
-\item Further details in Urtasun-Elizari et al.\\
-{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ https://arxiv.org/abs/1909.10547}
-\end{enumerate}
+\end{frame}
+
+% HTurbo IV - DYturbo
+\begin{frame}
+
+\frametitle{HTurbo}
+\framesubtitle{Starting point: DYTurbo}
+	
+	\footnotesize $q_{\perp}$ resummation implemented in numerical codes \textbf{HqT} and \textbf{HRes} {\color{blue}[Catani et al.]} \\
+	\footnotesize Higher order accuracy require {\color{red}high computation times}
+	
+	\vspace{0.5cm}
+	
+	\footnotesize Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al. ATLAS collaboration, {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}]},\\
+	fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1} + h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$)
+	
+	\begin{itemize}
+		\item \footnotesize {\color{red}Goal}: set up a numerical code generalizing  \textbf{DYTurbo} for Higgs boson production
+		\item \footnotesize {\color{red}Goal}: extend theoretical accuracy up to N$^{3}$LL+N$^{3}$LO and to other processes
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	
+	\footnotesize Numerical code \textbf{HTurbo} {\color{blue}[Ferrera, Urtasun-Elizari (in preparation)]} \\
+	Fast and precise $q_{\perp}$ resummation and for Higgs boson production
+	\begin{itemize}
+		\item \footnotesize Old versions as \textbf{HqT} and \textbf{HRes} in Fortran
+		\item \footnotesize c++ allows for optimization in the integration routines
+	\end{itemize}
 
 \end{frame}
 

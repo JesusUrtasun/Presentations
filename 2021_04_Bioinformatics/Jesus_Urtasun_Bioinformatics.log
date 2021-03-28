@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  28 MAR 2021 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  28 MAR 2021 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1039,7 +1039,7 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 <plots/thinking.png, id=138, 287.0725pt x 420.57124pt>
 File: plots/thinking.png Graphic file (type png)
 <use plots/thinking.png>
-Package pdftex.def Info: plots/thinking.png  used on input line 337.
+Package pdftex.def Info: plots/thinking.png  used on input line 353.
 (pdftex.def)             Requested size: 71.13188pt x 104.20561pt.
 
 Overfull \hbox (14.10709pt too wide) has occurred while \output is active
@@ -1053,7 +1053,7 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 File: plots/section1/factorization_1.png Graphic file (type png)
 <use plots/section1/factorization_1.png>
 Package pdftex.def Info: plots/section1/factorization_1.png  used on input line
- 360.
+ 376.
 (pdftex.def)             Requested size: 199.16928pt x 122.04091pt.
 
 Overfull \hbox (14.10709pt too wide) has occurred while \output is active
@@ -1067,7 +1067,7 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 File: plots/section2/TF_convolution.png Graphic file (type png)
 <use plots/section2/TF_convolution.png>
 Package pdftex.def Info: plots/section2/TF_convolution.png  used on input line 
-379.
+395.
 (pdftex.def)             Requested size: 241.84842pt x 113.07437pt.
 
 Overfull \hbox (14.10709pt too wide) has occurred while \output is active
@@ -1081,10 +1081,10 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 File: plots/section2/TF_convolution2.png Graphic file (type png)
 <use plots/section2/TF_convolution2.png>
 Package pdftex.def Info: plots/section2/TF_convolution2.png  used on input line
- 398.
+ 414.
 (pdftex.def)             Requested size: 241.84842pt x 132.52304pt.
 
-Overfull \vbox (0.76906pt too high) detected at line 398
+Overfull \vbox (0.76906pt too high) detected at line 414
  []
 
 
@@ -1095,6 +1095,33 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 [18
 
  <./plots/section2/TF_convolution2.png>]
+<plots/section2/qT_diagram.png, id=175, 402.50375pt x 222.8325pt>
+File: plots/section2/qT_diagram.png Graphic file (type png)
+<use plots/section2/qT_diagram.png>
+Package pdftex.def Info: plots/section2/qT_diagram.png  used on input line 446.
+
+(pdftex.def)             Requested size: 99.58464pt x 55.12996pt.
+<plots/section2/qT_logs_table.png, id=176, 727.71875pt x 239.89626pt>
+File: plots/section2/qT_logs_table.png Graphic file (type png)
+<use plots/section2/qT_logs_table.png>
+Package pdftex.def Info: plots/section2/qT_logs_table.png  used on input line 4
+46.
+(pdftex.def)             Requested size: 199.16928pt x 65.65503pt.
+
+Overfull \hbox (14.10709pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+ <./plots/section2/qT_diagram.png> <./plots/section2/qT_logs_table.png>]
+Overfull \hbox (14.10709pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[20
+
+]
 \tf@nav=\write6
 \openout6 = `Jesus_Urtasun_Bioinformatics.nav'.
 
@@ -1104,20 +1131,20 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Jesus_Urtasun_Bioinformatics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
  (./Jesus_Urtasun_Bioinformatics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
 Package rerunfilecheck Info: File `Jesus_Urtasun_Bioinformatics.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17226 strings out of 492982
- 328940 string characters out of 6134896
+ 17247 strings out of 492982
+ 329377 string characters out of 6134896
  397667 words of memory out of 5000000
- 20326 multiletter control sequences out of 15000+600000
+ 20341 multiletter control sequences out of 15000+600000
  19626 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,824b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1126,20 +1153,22 @@ Here is how much of TeX's memory you used:
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-si9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Jesus_Urtasun_Bioinformatics.pdf (18 pages, 1334154 bytes).
+t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Jesus_Urtasun_Bioinformatics.pdf (20 pages, 1379358 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
