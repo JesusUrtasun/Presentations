@@ -67,7 +67,7 @@
 			\item Exploring matter at the small scales
 			\item Hadronic physics and the LHC
 		\end{itemize}
-		\item {\color{blue}Machine Learning for particle Physics}
+		\item {\color{blue}Machine Learning for particle physics}
 		\begin{itemize}	
 			\item The N3PDF project
 			\item The HTurbo project
@@ -94,17 +94,33 @@
 	\frametitle{QCD in a nutshell}
 	\framesubtitle{The Standard Model}
 	
-	\begin{figure}
-		\includegraphics[width =6cm]{plots/section1/SM.png}
-	\end{figure}
+	\begin{columns}
+
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width =6cm]{plots/section1/SM.png}
+		\end{figure}
+
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width =5.75cm]{plots/section1/nucleus.jpeg}
+		\end{figure}
+
+	\end{columns}
+
+	\vspace{0.5 cm}
+		
+	\footnotesize Quantum Field Theory describing physics at the TeV scale $\rightarrow$ \color{red}{less than a fermi!}
 	
-	
-	Quantum Field Theory describing physics at the TeV scale
 	\begin{enumerate}
-		\item Fermions composing matter
+		\item Fermions (quarks and leptons) composing matter
 		\item Bosons mediating interactions
-		\item Scalar Higgs generating mass
+		\item Scalar Higgs field generating mass
 	\end{enumerate}	
+
+	Quantum Chromodynamics is the theory describing the strong interactions
 
 \end{frame}
 
@@ -138,50 +154,63 @@
 	
 	\begin{columns}
 	
-	\column{0.5\textwidth}
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 2cm]{plots/section1/proton.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
 	
-	\includegraphics[width = 1.5cm]{plots/section1/proton.png}
-	
-	\column{0.5\textwidth}
-	
-	\includegraphics[width = 2.5cm]{plots/section1/proton2.jpg}
+		\begin{figure}
+			\includegraphics[width = 1.5cm]{plots/section1/proton2.jpg}
+		\end{figure}
 	
 	\end{columns}
 	
+	\vspace{0.5 cm}
+	
+	\footnotesize
 	\begin{itemize}
-		\item Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
-		\item Interactions take place only at partonic level
+		\item Hadrons made of constantly interacting partons $\longrightarrow$ non perturbative physics
+		\item {\color{blue}Parton distribution functions (PDFs)} are required for the precision era of the LHC
+		\item PDFs can not be predicted yet not measured $\longrightarrow$ {\color{blue} extracted from data via Machine Learning algorithms}
 	\end{itemize}
 	
-	{\color{blue}Parton Distribution Functions: probability distribution of finding a particular parton (u, d, ..., g) carrying a fraction x of the proton's momentum}
+\end{frame}
+
+% Machine Learning for particle physics
+\begin{frame}
+
+	\center{\color{blue}Machine Learning for particle physics}
 
 \end{frame}
 
-% Factorization theorem
+% Machine Learning introduction
 \begin{frame}
-
-	\frametitle{QCD factorization in a nutshell}
-	\framesubtitle{Factorization theorem}
-
-	\center \textrm{Hadronic Physics} \footnotesize $h_{1}(p_{1}) + h_{2}(p_{2}) \rightarrow F + X$ 
 	
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/section1/factorization_1.png}
-	\end{figure}
+	\frametitle{Machine learning}
+	\framesubtitle{What is Machine Learning?}
 	
-	\center \footnotesize {Factorize process as {\color{blue}PDFs} and {\color{red} partonic (hard) interaction}	
-	\begin{equation}
-		\sigma^{\textrm{F}}(p_{1}, p_{2}) = \sum_{\alpha, \beta}
-		\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha/h_{1}}(x_{1}, \mu_{F}^{2}) \ast f_{\beta/h_{2}}(x_{2}, \mu_{F}^{2})}
-		\; \ast \;  
-		{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
-	\end{equation}}
-\end{frame}
-
-% The N3PDF project
-\begin{frame}
-
-	\center{\color{blue}Machine Learning for particle Physics}
+	\footnotesize
+	
+	\begin{columns}
+		
+		\column{0.6\textwidth}
+		
+		\begin{enumerate}
+			\item Machine Learning algorithms are a subset of Artificial Intelligence (AI) algorithms 
+			\item Used to solve \textit{complex} tasks like classification, regression and pattern recognition
+			\item Rely on comparison with data $\longrightarrow$ {\color{red}Learning}
+		\end{enumerate}
+		
+		\column{0.4\textwidth}
+		
+		\begin{figure}[!htb]
+			\includegraphics[width = 4cm]{plots/section2/r2d2.jpeg}
+		\end{figure}
+		
+	\end{columns}
 
 \end{frame}
 
@@ -211,10 +240,12 @@
 	\vspace{0.5cm}
 	
 	\begin{itemize}
-		\item \footnotesize Use TensorFlow and Keras to determine the PDFs
-		\item \footnotesize Use Stochastic Gradient Descent {\color{violet} n3fit} replacing primitive genetic algorithms
+		\item \footnotesize Use TensorFlow and Keras to determine the PDFs using neural networks
+		\item \footnotesize Use Stochastic Gradient Descent {\color{violet} n3fit} replacing primitive fitting algorithms
 	    \item \footnotesize See paper by S.Carraza - J.Cruz-Martinez \\
 		\footnotesize {\color{blue}"Towards a new generation of parton densities with deep learning models",\\ https://arxiv.org/abs/1907.05075}
+		\item Operator Implementation in TF - Urtasun-Elizari et al.\\
+		{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ https://arxiv.org/abs/1909.10547}
 	\end{itemize}
 
 \end{frame}
@@ -224,6 +255,11 @@
 	
 	\frametitle{The HTurbo project}
 	\framesubtitle{Comparison HRes and HqT - all orders}
+
+	
+	\begin{figure}
+		\includegraphics[width = 8cm]{plots/hturbo_all_orders.png}
+	\end{figure}
 
 	\begin{itemize}
 		\item \footnotesize Older codes (\textbf{HRes}, \textbf{HqT}) need 3 days to produce NNLL distribution
@@ -236,27 +272,40 @@
 % Bioinformatics
 \begin{frame}
 
-\center{\color{blue}Bioinformatics}
+\center{\color{blue}Bioinformatics \\and \\data science for life sciences}
 
 \end{frame}
 
 % Bioinformatics
 \begin{frame}
 	
-	\frametitle{Results}
-	\framesubtitle{Comparison HRes and HqT - all orders}
-	
-	\begin{figure}
-		\includegraphics[width = 8cm]{plots/hturbo_all_orders.png}
-	\end{figure}
+	\frametitle{Bioinformatics}
+	\framesubtitle{Comoputer sciences}
 	
 	\begin{itemize}
-		\item Python, C++, R	
-		\item Machine Learning
-		\item R analyisis, Rnseq, DNaseq
+		\item Python, C++, R, Machine Learning
+		\item {\color{blue}[https://github.com/JesusUrtasun/CppCourse]}
+		\item {\color{blue}[https://github.com/JesusUrtasun/MLcourse]}
+		\item {\color{blue}[https://github.com/JesusUrtasun/Bioinformatics]}
 	\end{itemize}
 
 \end{frame}
+
+% Bioinformatics
+\begin{frame}
+	
+	\frametitle{Bioinformatics}
+	\framesubtitle{DNA and RNA sequencing data}
+	
+	\begin{itemize}
+		\item Processing and data grooming of DNA and RNA sequencing data
+		\item Statistics and data analysis of BAM files with R
+		\item \textbf{Rsubred} and \textbf{Dseq2} packages
+		\item \color{blue} Fast learner!
+	\end{itemize}
+
+\end{frame}
+
 % Conclusions
 \begin{frame}
 	
@@ -265,15 +314,10 @@
 	\vspace{2.0 cm}
 	
 	\begin{enumerate}
-		\item \footnotesize Precise knowledge of PDFs and partonic cross sections are required towards the precision era of the LHC
+		\item \footnotesize Precise knowledge of sub-nuclear interactions are required towards the precision era of the LHC
 		\item \footnotesize Machine Learning models provide a robust way for PDFs determination optimized through {\color{blue}operator implementation in TF}
 		\item \footnotesize We develop a numerical code \textbf{HTurbo}, implementing $q_{\perp}$ resummation for Higgs boson production, which is {\color{blue} faster than any of the existing codes}
-		\item \footnotesize Next steps: 
-		\begin{itemize}
-			\item \footnotesize Validate results at NNLO
-			\item \footnotesize Include full {\color{blue}N$^{3}$LO} prediction
-			\item \footnotesize Perform phenomenological studies comparing with LHC data
-		\end{itemize}
+		\item \footnotesize Experience with Python and R for NGS data, and still looking to improve!
 
 	\end{enumerate}
 
@@ -284,20 +328,41 @@
 % Conclusions
 \begin{frame}
 
-	\center {\color{blue}Thank you!}
+	\center \footnotesize {\color{blue}Thank you!}
 
 	\begin{figure}
 		\includegraphics[width = 2.5 cm]{plots/thinking.png}
 	\end{figure}		
 
-	{\footnotesize \color{blue} This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
+\end{frame}
+
+
+% Factorization theorem
+\begin{frame}
+	
+	\frametitle{Back up}
+	\framesubtitle{Hadronic collisions}
+	
+	\center \textrm{Hadronic Physics} \footnotesize $h_{1}(p_{1}) + h_{2}(p_{2}) \rightarrow F + X$ 
+	
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/section1/factorization_1.png}
+	\end{figure}
+	
+	\center \footnotesize {Factorize process as {\color{blue}PDFs} and {\color{red} partonic (hard) interaction}	
+	\begin{equation}
+		\sigma^{\textrm{F}}(p_{1}, p_{2}) = \sum_{\alpha, \beta}
+		\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha/h_{1}}(x_{1}, \mu_{F}^{2}) \ast f_{\beta/h_{2}}(x_{2}, \mu_{F}^{2})}
+		\; \ast \;  
+		{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
+	\end{equation}}
 
 \end{frame}
 
 % The N3PDF project
 \begin{frame}
 
-\frametitle{The N3PDF project}
+\frametitle{Back up}
 \framesubtitle{Operator implementation in TF}
 
 \begin{figure}
