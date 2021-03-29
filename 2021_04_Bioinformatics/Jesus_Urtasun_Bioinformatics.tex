@@ -20,7 +20,7 @@
 \definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
 
 % Title and author
-\title[Perturbative QCD predictions for Higgs production]{ML and Bioinformatics}
+\title[ML and Bioinformatics]{ML and Bioinformatics}
 \author{\textbf {Jes\'us Urtasun Elizari}}
 %\institute{\textbf {University of Milan}}
 \date{Milan, Mach 2021}
@@ -63,14 +63,14 @@
 	\begin{enumerate}
 		\item {\color{blue}QCD in a nutshell}
 		\begin{itemize}
-			\item The fundamental interactions
+			\item The Standard Model and fundamental interactions
 			\item Exploring matter at the small scales
 			\item Hadronic physics and the LHC
 		\end{itemize}
 		\item {\color{blue}Machine Learning for particle physics}
 		\begin{itemize}	
 			\item Machine Learning algorithms
-			\item NN for building predictions
+			\item Building precise prediction
 		\end{itemize}	
 		\item {\color{blue}Bioinformatics}
 		\begin{itemize}
@@ -130,6 +130,8 @@
 	\frametitle{QCD in a nutshell}
 	\framesubtitle{Explore the strong interactions}
 	
+	\footnotesize 
+	
 	How to explore proton's inner structure?
 	
 	\begin{figure}
@@ -138,11 +140,11 @@
 	
 	
 	\begin{itemize}
-	\item Point-like projectile on the object $\longrightarrow$ DIS
-	\item Smash the two objects $\longrightarrow$ LHC physics
+	\item Smash the two objects $\longrightarrow$ Hadronic physics
+	\item Large Hadron Collider (LHC) physics
 	\end{itemize}
 	
-	{\color{blue}"A way to analyze high energy collisions is to consider any hadron as a composition of point-like constituents $\longrightarrow$ \textbf{partons"} } R.Feynman, 1969 
+	{\color{blue}"A way to analyze high energy collisions is to consider any hadron as a \\ composition of point-like constituents $\longrightarrow$ \textbf{partons"} } R.Feynman, 1969 
 
 \end{frame}
 
@@ -218,7 +220,7 @@
 \begin{frame}
 	
 	\frametitle{The N3PDF project}
-	\framesubtitle{General structure of n3fit}
+	\framesubtitle{Machine Learning for PDFs}
 
 	\footnotesize Parton Distribution Functions (PDFs) can not be predicted or measured\\
 	{\color{red} PDFs need to be extracted from data!}
@@ -244,35 +246,42 @@
 		\item \footnotesize Use Stochastic Gradient Descent {\color{violet} n3fit} replacing primitive fitting algorithms
 	    \item \footnotesize See paper by S.Carraza - J.Cruz-Martinez \\
 		\footnotesize {\color{blue}"Towards a new generation of parton densities with deep learning models",\\ https://arxiv.org/abs/1907.05075}
-		\item Operator Implementation in TF - Urtasun-Elizari et al.\\
+		\item c++ Operator Implementation in TF - Urtasun-Elizari et al.\\
 		{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ https://arxiv.org/abs/1909.10547}
 	\end{itemize}
 
 \end{frame}
 
-% HTurbo IV - DYturbo
 \begin{frame}
 	
 	\frametitle{HTurbo}
-	\framesubtitle{Starting point: DYTurbo}
+	\framesubtitle{Reducing theory uncertainties}
 	
-	\footnotesize $q_{\perp}$ resummation implemented in numerical codes \textbf{HqT} and \textbf{HRes} {\color{blue}[Catani et al.]} \\
+	\begin{columns}
+		
+		\column{0.65\textwidth}
+		
+		\center	\footnotesize Study the Higgs boson differential $q_{\perp}$ distribution \\
+		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
+		
+		\column{0.45\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 3.5cm]{plots/section2/qT_diagram.png}
+		\end{figure}
+		
+	\end{columns}
+	
+	\vspace{0.5cm}
+	
+	\footnotesize Exist already numerical codes computing these distribution $\sigma(q_{\perp})$ \\ \textbf{HqT} and \textbf{HRes} {\color{blue}[Catani et al.]} \\
 	\footnotesize Higher order accuracy require {\color{red}high computation times}
-	
+
 	\vspace{0.5cm}
-	
-	\footnotesize Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al. ATLAS collaboration, {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}]},\\
-	fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1} + h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$)
-	
-	\begin{itemize}
-		\item \footnotesize {\color{red}Goal}: set up a numerical code generalizing  \textbf{DYTurbo} for Higgs boson production
-		\item \footnotesize {\color{red}Goal}: extend theoretical accuracy up to N$^{3}$LL+N$^{3}$LO and to other processes
-	\end{itemize}
-	
-	\vspace{0.5cm}
-	
+		
 	\footnotesize Numerical code \textbf{HTurbo} {\color{blue}[Ferrera, Urtasun-Elizari (in preparation)]} \\
-	Fast and precise $q_{\perp}$ resummation and for Higgs boson production
+	Fast and precise $q_{\perp}$ distribution for Higgs boson production
+	
 	\begin{itemize}
 		\item \footnotesize Old versions as \textbf{HqT} and \textbf{HRes} in Fortran
 		\item \footnotesize c++ allows for optimization in the integration routines
@@ -310,10 +319,16 @@
 \begin{frame}
 	
 	\frametitle{Bioinformatics}
-	\framesubtitle{Computer sciences}
+	\framesubtitle{Data science for life sciences}
 	
 	\begin{itemize}
-		\item C++ and computer sciences
+		\item \textbf{NGS} data analysis
+		\item Processing of FastQ files
+		\item Statistics and data analysis with R
+	\end{itemize}
+
+	\begin{itemize}
+		\item c++ and computer sciences
 		\begin{itemize}
 			\item {\color{blue}[https://github.com/JesusUrtasun/CppCourse]}
 		\end{itemize}
@@ -321,33 +336,11 @@
 		\begin{itemize}
 			\item {\color{blue}[https://github.com/JesusUrtasun/MLcourse]}
 		\end{itemize}
-		\item Data Frames (Numpy, Pandas) and R programming
+		\item Data Frames (Numpy, Pandas) and R
 		\begin{itemize}
 			\item {\color{blue}[https://github.com/JesusUrtasun/Bioinformatics]}
 		\end{itemize}
 	
-	\end{itemize}
-
-	\begin{itemize}
-		\item NGS data analysis
-		\item Statistics and data analysis of BAM files with R
-		\item \textbf{Rsubred} and \textbf{Dseq2} packages
-		\item \color{blue} Fast learner!
-	\end{itemize}
-
-\end{frame}
-
-% Bioinformatics
-\begin{frame}
-	
-	\frametitle{Bioinformatics}
-	\framesubtitle{DNA and RNA sequencing data}
-	
-	\begin{itemize}
-		\item NGS data analysis
-		\item Statistics and data analysis of BAM files with R
-		\item \textbf{Rsubred} and \textbf{Dseq2} packages
-		\item \color{blue} Fast learner!
 	\end{itemize}
 
 \end{frame}
@@ -382,7 +375,6 @@
 
 \end{frame}
 
-
 % Factorization theorem
 \begin{frame}
 	
@@ -414,7 +406,6 @@
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution.png}
 	\end{figure}
-	
 	
 	\begin{itemize}
 		\item \footnotesize Build a NN model to compute $\sigma_{pred}$ observables from a grid $x_{i}$

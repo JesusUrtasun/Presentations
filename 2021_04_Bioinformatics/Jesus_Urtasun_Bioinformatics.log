@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  28 MAR 2021 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  29 MAR 2021 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,10 +847,6 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./Jesus_Urtasun_Bioinformatics.nav)
-Overfull \hbox (14.10709pt too wide) in paragraph at lines 28--28
- [][][][]  
- []
-
 <plots/unimi.png, id=14, 1240.635pt x 416.2752pt>
 File: plots/unimi.png Graphic file (type png)
 <use plots/unimi.png>
@@ -867,6 +863,7 @@ File: plots/erc.png Graphic file (type png)
 Package pdftex.def Info: plots/erc.png  used on input line 56.
 (pdftex.def)             Requested size: 85.35826pt x 57.474pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -882,26 +879,12 @@ line 56.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/unimi.png> <./plot
-s/n3pdf.png> <./plots/erc.png (PNG copy)>]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
+s/n3pdf.png> <./plots/erc.png (PNG copy)>] [2
 
-[2
-
-]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[3
+] [3
 
 ]
 <plots/section1/SM.png, id=49, 361.35pt x 240.4182pt>
@@ -914,212 +897,138 @@ File: plots/section1/nucleus.jpeg Graphic file (type jpg)
 <use plots/section1/nucleus.jpeg>
 Package pdftex.def Info: plots/section1/nucleus.jpeg  used on input line 125.
 (pdftex.def)             Requested size: 163.60333pt x 71.90833pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[4
+ [4
 
  <./plots/section1/SM.png> <./plots/section1/nucleus.jpeg>]
 <plots/section1/protons.png, id=60, 491.8375pt x 173.64874pt>
 File: plots/section1/protons.png Graphic file (type png)
 <use plots/section1/protons.png>
-Package pdftex.def Info: plots/section1/protons.png  used on input line 147.
+Package pdftex.def Info: plots/section1/protons.png  used on input line 149.
 (pdftex.def)             Requested size: 171.14764pt x 60.42555pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[5
+ [5
 
  <./plots/section1/protons.png>]
-<plots/section1/proton.png, id=69, 225.84375pt x 225.84375pt>
+<plots/section1/proton.png, id=68, 225.84375pt x 225.84375pt>
 File: plots/section1/proton.png Graphic file (type png)
 <use plots/section1/proton.png>
-Package pdftex.def Info: plots/section1/proton.png  used on input line 180.
+Package pdftex.def Info: plots/section1/proton.png  used on input line 182.
 (pdftex.def)             Requested size: 56.9055pt x 56.90533pt.
-<plots/section1/proton2.jpg, id=70, 1003.75pt x 1003.75pt>
+<plots/section1/proton2.jpg, id=69, 1003.75pt x 1003.75pt>
 File: plots/section1/proton2.jpg Graphic file (type jpg)
 <use plots/section1/proton2.jpg>
-Package pdftex.def Info: plots/section1/proton2.jpg  used on input line 180.
+Package pdftex.def Info: plots/section1/proton2.jpg  used on input line 182.
 (pdftex.def)             Requested size: 42.67912pt x 42.67029pt.
+ [6
 
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[6
-
- <./plots/section1/proton.png> <./plots/section1/proton2.jpg>]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[7
+ <./plots/section1/proton.png> <./plots/section1/proton2.jpg>] [7
 
 ]
-<plots/section2/r2d2.jpeg, id=85, 803.0pt x 803.0pt>
+<plots/section2/r2d2.jpeg, id=84, 803.0pt x 803.0pt>
 File: plots/section2/r2d2.jpeg Graphic file (type jpg)
 <use plots/section2/r2d2.jpeg>
-Package pdftex.def Info: plots/section2/r2d2.jpeg  used on input line 215.
+Package pdftex.def Info: plots/section2/r2d2.jpeg  used on input line 217.
 (pdftex.def)             Requested size: 113.81102pt x 113.80379pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[8
+ [8
 
  <./plots/section2/r2d2.jpeg>]
-<plots/section2/TF.png, id=93, 217.81375pt x 232.87pt>
+<plots/section2/TF.png, id=92, 217.81375pt x 232.87pt>
 File: plots/section2/TF.png Graphic file (type png)
 <use plots/section2/TF.png>
-Package pdftex.def Info: plots/section2/TF.png  used on input line 251.
+Package pdftex.def Info: plots/section2/TF.png  used on input line 253.
 (pdftex.def)             Requested size: 42.67912pt x 45.62799pt.
-<plots/section2/Keras.png, id=94, 1204.5pt x 349.305pt>
+<plots/section2/Keras.png, id=93, 1204.5pt x 349.305pt>
 File: plots/section2/Keras.png Graphic file (type png)
 <use plots/section2/Keras.png>
-Package pdftex.def Info: plots/section2/Keras.png  used on input line 251.
+Package pdftex.def Info: plots/section2/Keras.png  used on input line 253.
 (pdftex.def)             Requested size: 71.13188pt x 20.62694pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[9
+ [9
 
  <./plots/section2/TF.png> <./plots/section2/Keras.png>]
-<plots/hturbo_all_orders.png, id=103, 462.528pt x 318.7107pt>
-File: plots/hturbo_all_orders.png Graphic file (type png)
-<use plots/hturbo_all_orders.png>
-Package pdftex.def Info: plots/hturbo_all_orders.png  used on input line 270.
-(pdftex.def)             Requested size: 227.62204pt x 156.84557pt.
+<plots/section2/qT_diagram.png, id=102, 402.50375pt x 222.8325pt>
+File: plots/section2/qT_diagram.png Graphic file (type png)
+<use plots/section2/qT_diagram.png>
+Package pdftex.def Info: plots/section2/qT_diagram.png  used on input line 290.
 
-Overfull \vbox (2.59158pt too high) detected at line 270
- []
+(pdftex.def)             Requested size: 99.58464pt x 55.12996pt.
 
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \hbox (12.32632pt too wide) detected at line 290
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [10
 
- <./plots/hturbo_all_orders.png>]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
+ <./plots/section2/qT_diagram.png>]
+<plots/hturbo_all_orders.png, id=112, 462.528pt x 318.7107pt>
+File: plots/hturbo_all_orders.png Graphic file (type png)
+<use plots/hturbo_all_orders.png>
+Package pdftex.def Info: plots/hturbo_all_orders.png  used on input line 309.
+(pdftex.def)             Requested size: 227.62204pt x 156.84557pt.
+
+Overfull \vbox (2.59158pt too high) detected at line 309
  []
 
 [11
 
-]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
+ <./plots/hturbo_all_orders.png>] [12
 
-[12
+] [13
 
-]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[13
+] [14
 
 ]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[14
-
-]
-<plots/thinking.png, id=138, 287.0725pt x 420.57124pt>
+<plots/thinking.png, id=140, 287.0725pt x 420.57124pt>
 File: plots/thinking.png Graphic file (type png)
 <use plots/thinking.png>
-Package pdftex.def Info: plots/thinking.png  used on input line 353.
+Package pdftex.def Info: plots/thinking.png  used on input line 376.
 (pdftex.def)             Requested size: 71.13188pt x 104.20561pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[15
+ [15
 
  <./plots/thinking.png>]
-<plots/section1/factorization_1.png, id=145, 1054.94125pt x 646.415pt>
+<plots/section1/factorization_1.png, id=147, 1054.94125pt x 646.415pt>
 File: plots/section1/factorization_1.png Graphic file (type png)
 <use plots/section1/factorization_1.png>
 Package pdftex.def Info: plots/section1/factorization_1.png  used on input line
- 376.
+ 398.
 (pdftex.def)             Requested size: 199.16928pt x 122.04091pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [16
 
  <./plots/section1/factorization_1.png>]
-<plots/section2/TF_convolution.png, id=159, 1221.56375pt x 571.13374pt>
+<plots/section2/TF_convolution.png, id=160, 1221.56375pt x 571.13374pt>
 File: plots/section2/TF_convolution.png Graphic file (type png)
 <use plots/section2/TF_convolution.png>
 Package pdftex.def Info: plots/section2/TF_convolution.png  used on input line 
-395.
+416.
 (pdftex.def)             Requested size: 241.84842pt x 113.07437pt.
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[17
+ [17
 
  <./plots/section2/TF_convolution.png>]
-<plots/section2/TF_convolution2.png, id=167, 1223.57124pt x 670.505pt>
+<plots/section2/TF_convolution2.png, id=168, 1223.57124pt x 670.505pt>
 File: plots/section2/TF_convolution2.png Graphic file (type png)
 <use plots/section2/TF_convolution2.png>
 Package pdftex.def Info: plots/section2/TF_convolution2.png  used on input line
- 414.
+ 435.
 (pdftex.def)             Requested size: 241.84842pt x 132.52304pt.
 
-Overfull \vbox (0.76906pt too high) detected at line 414
- []
-
-
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (0.76906pt too high) detected at line 435
  []
 
 [18
 
  <./plots/section2/TF_convolution2.png>]
-<plots/section2/qT_diagram.png, id=175, 402.50375pt x 222.8325pt>
 File: plots/section2/qT_diagram.png Graphic file (type png)
 <use plots/section2/qT_diagram.png>
-Package pdftex.def Info: plots/section2/qT_diagram.png  used on input line 446.
+Package pdftex.def Info: plots/section2/qT_diagram.png  used on input line 467.
 
 (pdftex.def)             Requested size: 99.58464pt x 55.12996pt.
 <plots/section2/qT_logs_table.png, id=176, 727.71875pt x 239.89626pt>
 File: plots/section2/qT_logs_table.png Graphic file (type png)
 <use plots/section2/qT_logs_table.png>
 Package pdftex.def Info: plots/section2/qT_logs_table.png  used on input line 4
-46.
+67.
 (pdftex.def)             Requested size: 199.16928pt x 65.65503pt.
+ [19
 
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[19
-
- <./plots/section2/qT_diagram.png> <./plots/section2/qT_logs_table.png>]
-Overfull \hbox (14.10709pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[20
+ <./plots/section2/qT_logs_table.png>] [20
 
 ]
 \tf@nav=\write6
@@ -1131,20 +1040,20 @@ Overfull \hbox (14.10709pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Jesus_Urtasun_Bioinformatics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 499.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 499.
  (./Jesus_Urtasun_Bioinformatics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 499.
 Package rerunfilecheck Info: File `Jesus_Urtasun_Bioinformatics.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17247 strings out of 492982
- 329377 string characters out of 6134896
- 397667 words of memory out of 5000000
- 20341 multiletter control sequences out of 15000+600000
+ 17249 strings out of 492982
+ 329413 string characters out of 6134896
+ 397639 words of memory out of 5000000
+ 20343 multiletter control sequences out of 15000+600000
  19626 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,824b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1160,15 +1069,14 @@ public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Jesus_Urtasun_Bioinformatics.pdf (20 pages, 1379358 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Jesus_Urtasun_Bioinformatics.pdf (20 pages, 1371107 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
  41 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
