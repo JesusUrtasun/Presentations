@@ -64,7 +64,7 @@
 		\item {\color{blue}QCD factorization in a nutshell}
 		\begin{itemize}
 			\item QCD factorization
-			\item Parton Densities and partonic cross section
+			\item PDFs and partonic cross section
 		\end{itemize}
 		\item {\color{blue}The N3PDF project}
 		\begin{itemize}	
@@ -72,8 +72,8 @@
 		\end{itemize}	
 		\item {\color{blue}Fast predictions for resummed distributions}
 		\begin{itemize}
-			\item Higher order corrections and all orders resummation
-			\item Higgs production at the LHC
+			\item Higher order corrections
+			\item All order resummation
 			\item \textbf{HTurbo} numerical code
 		\end{itemize}
 		\item {\color{blue}Conclusions}
@@ -115,7 +115,7 @@
 	\frametitle{QCD factorization in a nutshell}
 	\framesubtitle{Perturbative QCD}
 	
-	\footnotesize Precise QCD predictions require precise knowledge of {\color{blue}PDFs} and {\color{red} partonic cross section $\hat{\sigma}$}
+	\footnotesize Accurate QCD predictions require precise knowledge of {\color{blue}PDFs} and {\color{red} partonic cross section}
 	\begin{columns}
 		
 		\column{0.45\textwidth}
@@ -190,7 +190,8 @@
 % The N3PDF project
 \begin{frame}
 
-	\center \footnotesize Neural Network model for PDF fits $\longrightarrow$ {\color{violet}n3fit}
+	\frametitle{The N3PDF project}
+	\framesubtitle{Operator implementation in TF}
 	
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution.png}
@@ -208,7 +209,8 @@
 % The N3PDF project
 \begin{frame}
 
-	\center \footnotesize Neural Network model for PDF fits $\longrightarrow$ {\color{violet}n3fit}
+	\frametitle{The N3PDF project}
+	\framesubtitle{Operator implementation in TF}
 		
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/section2/TF_convolution2.png}
@@ -268,7 +270,7 @@
 	\frametitle{HTurbo}
 	\framesubtitle{Starting point: DYTurbo}
 
-	\footnotesize $q_{\perp}$ resummation implemented in numerical codes HqT and HRes {\color{blue}[Catani et al.]} \\
+	\footnotesize $q_{\perp}$ resummation implemented in numerical codes \textbf{HqT} and \textbf{HRes} {\color{blue}[Catani et al.]} \\
 	\footnotesize Higher order accuracy require {\color{red}high computation times}
 	
 	\vspace{0.5cm}
@@ -283,8 +285,13 @@
 
 	\vspace{0.5cm}
 	
-	\footnotesize Preliminary results to be seen in {\color{blue}[Ferrera, Urtasun-Elizari.]} \\
-	
+	\footnotesize Numerical code \textbf{HTurbo} {\color{blue}[Ferrera, Urtasun-Elizari (in preparation)]} \\
+	Fast and precise $q_{\perp}$ resummation and for Higgs boson production
+	\begin{itemize}
+		\item \footnotesize Old versions as \textbf{HqT} and \textbf{HRes} in Fortran
+		\item \footnotesize c++ allows for optimization in the integration routines
+	\end{itemize}
+
 \end{frame}
 
 % Results LL
