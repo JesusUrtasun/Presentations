@@ -82,7 +82,7 @@
 	
 \end{frame}
 
-% QCD in a nutshell
+% QCD and collider physics
 \begin{frame}
 
 	\center{\color{blue}QCD and collider physics}
@@ -92,25 +92,25 @@
 % LHC physics
 \begin{frame}
 
-	\frametitle{QCD}
+	\frametitle{QCD and collider physics}
 	\framesubtitle{LHC physics}
 	
 	\begin{figure}
-		\includegraphics[width = 9.5 cm]{plots/lhc_measurements.png}
+		\includegraphics[width = 9.5 cm]{plots/part_I/lhc_measurements.png}
 	\end{figure}
 
 \end{frame}
 
-% Factorization theorem
+% QCD and collider physics - Factorization theorem
 \begin{frame}
 
-	\frametitle{QCD}
+	\frametitle{QCD and collider physics}
 	\framesubtitle{Factorization theorem}
 
 	\vspace{0.4 cm}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/factorization_1.png}
+		\includegraphics[width = 7 cm]{plots/part_I/factorization_1.png}
 	\end{figure}
 	
 	Compute hadronic cross sections is a {\color{red}hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
@@ -124,14 +124,14 @@
 
 \end{frame}
 
-% Partonic cross section
+% and collider physics - Partonic cross section
 \begin{frame}
 	
-	\frametitle{QCD}
+	\frametitle{QCD and collider physics}
 	\framesubtitle{Partonic cross section}
 	
 	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/factorization_2.png}
+		\includegraphics[width = 7 cm]{plots/part_I/factorization_2.png}
 	\end{figure}
 	
 	\begin{itemize}
@@ -141,10 +141,43 @@
 	
 \end{frame}
 
-% Perturbative QCD
+% QCD and collider physics - QCD coupling
 \begin{frame}
 
-	\frametitle{QCD}
+	\frametitle{QCD and collider physics}
+	\framesubtitle{QCD coupling}
+
+	\begin{columns}	
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 5 cm]{plots/part_I/qcd_coupling.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\begin{itemize}
+			\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
+			\begin{equation}
+				\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{\textrm{QCD}}^{2}}\big)} \nonumber
+			\end{equation}
+			\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
+			\item \footnotesize $\Lambda_{\textrm{QCD}}$, parameter that defines value of the coupling at large scales
+		\end{itemize}
+		
+	\end{columns}
+
+	\vspace{1cm}
+	\center QCD is weakly coupled for $\mu >> \Lambda_{\textrm{QCD}} \longrightarrow$ asymptotically free
+	\center \color{red} Perturbative Quantum Chromodynamics (pQCD)
+
+\end{frame}
+
+% QCD and collider physics - Perturbative QCD
+\begin{frame}
+
+	\frametitle{QCD and collider physics}
 	\framesubtitle{Perturbative QCD}
 	
 	\begin{columns}
@@ -158,7 +191,7 @@
 		
 		\column{0.45\textwidth}
 		\begin{figure}[!htb]
-			\includegraphics[width = 5 cm]{plots/factorization_3.png}
+			\includegraphics[width = 5 cm]{plots/part_I/factorization_3.png}
 		\end{figure}
 	
 	\end{columns}
@@ -198,7 +231,7 @@
 	
 	\column{0.45\textwidth}
 	\begin{figure}[!htb]
-		\includegraphics[width = \linewidth]{plots/qcd_corrections.png}
+		\includegraphics[width = \linewidth]{plots/part_II/qcd_corrections.png}
 	\end{figure}
 	
 	\end{columns}
@@ -221,7 +254,7 @@
 		\column{0.45\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 4cm]{plots/qT_diagram.png}
+			\includegraphics[width = 4cm]{plots/part_II/qT_diagram.png}
 		\end{figure}
 
 	\end{columns}
@@ -229,7 +262,7 @@
 	$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad where \quad} L = \ln (q_{\perp} / M^{2})$
 
 	\begin{figure}
-		\includegraphics[width = 7.5cm]{plots/qT_logs_table.png}
+		\includegraphics[width = 7.5cm]{plots/part_II/qT_logs_table.png}
 	\end{figure}
 
 	Truncated fixed order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
@@ -285,7 +318,7 @@
 % HTurbo
 \begin{frame}
 
-	\center{\color{blue}Precise and fast predictions for Higgs boson physics}
+	\center{\color{blue}Accurate predictions for Higgs boson at the LHC}
 
 \end{frame}
 
@@ -342,10 +375,13 @@
 	\frametitle{HTurbo}
 	\framesubtitle{Starting point DYTurbo}
 
+	Both Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
 	\begin{align}
 		\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
 		\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + ...  \nonumber
 	\end{align}
+	
+	For each new order implement a factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
 	
 	\begin{columns}
 		
@@ -373,7 +409,7 @@
 	
 	Reimplementation of \textbf{HqT} and \textbf{HRes} for $q_{T}$-resummation
 	\begin{itemize}
-		\item \textbf{C++} structure with \textbf{Fortran interfaces} $\rightarrow$ Multi-threading
+		\item \textbf{C++} structure with \textbf{Fortran} interfaces $\rightarrow$ Multi-threading
 		\item Optimization in the integration routines / integral transforms 
 		\begin{itemize}
 			\item Factorize boson and decay kinematics
@@ -482,27 +518,15 @@
 % Results - Benchmark HRes - fixed order
 \begin{frame}
 
-\frametitle{Results}
-\framesubtitle{Comparison HTurbo and HRes - fixed order}
-
-	\begin{columns}
-	
-		\column{0.5\textwidth}
+	\frametitle{Results}
+	\framesubtitle{Comparison HTurbo and HRes - fixed order}
 		
-		\begin{figure}
-			\includegraphics[width = 7cm]{plots/part_III/hturbo_figure_6b_FO.png}
-		\end{figure}
-		
-		\column{0.5\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 7cm]{plots/part_III/hturbo_figure_7b_FO.png}
-		\end{figure}
-		
-	\end{columns}
+	\begin{figure}
+		\includegraphics[width = 7cm]{plots/part_III/hturbo_figure_7b_FO.png}
+	\end{figure}
 	
 	\begin{itemize}
-		\item Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item Represent fiducial (RHS) phase space - HRes vs HTurbo {\color{darkgreen}$\checkmark$} 
 		\item Agreement up to fixed order NL0 $\longrightarrow$ {\color{blue}ready for N$^{3}$LL}
 	\end{itemize}
 
@@ -513,25 +537,13 @@
 
 	\frametitle{Results}
 	\framesubtitle{Comparison HTurbo and HRes - finite}
-	
-	\begin{columns}
 		
-		\column{0.5\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 7cm]{plots/part_III/hturbo_figure_6b_FIN.png}
-		\end{figure}
-		
-		\column{0.5\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 7cm]{plots/part_III/hturbo_figure_7b_FIN.png}
-		\end{figure}
-		
-	\end{columns}
+	\begin{figure}
+		\includegraphics[width = 7cm]{plots/part_III/hturbo_figure_6b_FIN.png}
+	\end{figure}
 	
 	\begin{itemize}
-		\item Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item Represent fiducial phase space - HRes vs HTurbo {\color{darkgreen}$\checkmark$} 
 		\item Agreement up to finite NNLL+NLO $\longrightarrow$ {\color{blue}ready for N$^{3}$LL}
 	\end{itemize}
 
@@ -545,12 +557,12 @@
 	\vspace{2.0 cm}
 	
 	\begin{enumerate}
-		\item Fast and accurate predictions are required towards the precision era of the LHC
+		\item Fast and accurate predictions are needed towards the precision era of the LHC
 		\item Developing a novel numerical code, \textbf{HTurbo}, which implements $q_{\perp}$ resummation for Higgs boson production
 		\item HTurbo is {\color{blue} faster than any of the existing codes}
 		\item Outlook of thesis work: 
 		\begin{itemize}
-			\item Add {\color{blue}N$^{3}$LO} prediction
+			\item Add {\color{blue}N$^{3}$LO+N$^{3}$LL} prediction
 			\item Perform phenomenological studies comparing with LHC data
 		\end{itemize}
 
