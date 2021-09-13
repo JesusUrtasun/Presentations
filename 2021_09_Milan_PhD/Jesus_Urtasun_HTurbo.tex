@@ -20,10 +20,10 @@
 \definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
 
 % Title and author
-\title[QCD predictions for Higgs production]{QCD predictions for Higgs production}
+\title[Higgs boson production at the LHC]{Higgs boson production at the LHC}
 \author{\textbf {Jes\'us Urtasun Elizari}}
 %\institute{\textbf {University of Milan}}
-\date{Milan, September 2020}
+\date{Milan, September 2021}
 
 \begin{document}
 
@@ -33,7 +33,8 @@
 	%\maketitle
 	\vspace{1.0 cm}
 	
-	\center{\color{blue}High precision perturbative QCD predictions \\ for Higgs boson production at the LHC}
+	\center{\color{blue}Higgs boson production at the Large Hadron Collider:\\
+		accurate theoretical predictions at higher orders in QCD}
 	
 	\vspace{0.25 cm}
 	\center{Jes\'us Urtasun Elizari}
@@ -364,6 +365,40 @@
 
 \end{frame}
 
+% DYturbo II
+\begin{frame}
+
+	\frametitle{HTurbo}
+	\framesubtitle{Code optimization}
+	
+	Reimplementation of \textbf{HqT} and \textbf{HRes} for $q_{T}$-resummation
+	\begin{itemize}
+		\item \textbf{C++} structure with \textbf{Fortran interfaces} $\rightarrow$ Multi-threading
+		\item Optimization in the integration routines / integral transforms 
+		\begin{itemize}
+			\item Factorize boson and decay kinematics
+			\item Gauss-Legendre quadrature rules (1-dim.)
+			\item Vegas/Cuhre through \textbf{Cuba} (multi-dim.)
+		\end{itemize}
+	\end{itemize}
+	
+	\vspace{0.5cm}
+	
+	Comparison \textbf{HRes} and \textbf{HTurbo} - speed performance \\
+	\center
+	\begin{tabular}{ | c | c | c | }
+		\hline
+		Predictions & \textbf{HRes} & \textbf{HTurbo} \\ 
+		\hline
+		resummed NNLL & 10h & 10' \\
+		\hline
+		combined NNLO+NNLL & 20h & 1h \\
+		\hline
+	\end{tabular}
+
+	
+\end{frame}
+
 % Results LL
 \begin{frame}
 	
@@ -390,7 +425,7 @@
 	\begin{figure}
 		\includegraphics[width = 8cm]{plots/part_III/hturbo_NLL.png}
 	\end{figure}
-	
+
 	\begin{itemize}
 		\item HTurbo $q_{\perp}$ distribution vs HRes and HqT at NLL
 		\item Excellent numerical agreement up to the $0.1\%$ level
@@ -513,9 +548,8 @@
 		\item Fast and accurate predictions are required towards the precision era of the LHC
 		\item Developing a novel numerical code, \textbf{HTurbo}, which implements $q_{\perp}$ resummation for Higgs boson production
 		\item HTurbo is {\color{blue} faster than any of the existing codes}
-		\item Next steps: 
+		\item Outlook of thesis work: 
 		\begin{itemize}
-			\item Validate results at NNLO
 			\item Add {\color{blue}N$^{3}$LO} prediction
 			\item Perform phenomenological studies comparing with LHC data
 		\end{itemize}
