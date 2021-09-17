@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{geometry}
+\usepackage{indentfirst}
 \geometry{
 	a4paper,
 	total={170mm,257mm},
@@ -29,34 +30,21 @@
 
 \section{Introduction}
 
-This thesis is devoted to Quantum Chromodynamics (QCD), the sector of the Standard Model describing the strong interactions, meaning the interactions between quarks and gluons. A full chapter of this thesis is devoted to a proper introduction on QCD and its basic components. Finally heading towards the precision era of the LHC, as already mentioned, building fast and accurate predictions at the TeV scale and beyond has become the main task for theoreticians. Indeed, being the LHC a hadron collider, all the interesting reactions originate from a hadronic scattering, mediated by the strong interactions and described by QCD. LHC and related experiments finally started in 2010, being one of its original goals the detection of the Higgs boson, already predicted by Higgs and Englert, among others, back in the mid 1960s. The first collision at center-of-mass energy of 7 TeV took place in March of 2010, exceeding the previous world record set by the US Fermi National Accelerator Laboratory’s Tevatron collider in 2010, and setting the beginning of a new era for particle physics, which marked an important milestone in LHC commissioning. A second milestone, and such a famous one, was the detection of a resonance compatible with the Higgs boson predicted by the Standard Model.\\
-
-Our current understanding of particle physics depends crucially on the breaking of the electroweak symmetry (EWSB) to give mass to the $W$ and $Z$ bosons, as well as to all fermions composing matter. As we just mentioned, the Standard Model involves in its description a neutral scalar, the Higgs boson, whose dominant production mechanism at the LHC is the gluon-gluon fusion process. Through parts I and II of this manuscript we will go through the basics of QCD, perturbation theory and some of the most important process addressed in collider experiments, such as Deep Inelastic Scattering (DIS), the Drell-Yan lepton pair production, and the Higgs boson production.\\
-
-The observable quantities that are measured in LHC and related experiments are mainly cross sections, both total (inclusive) and differential (exclusive) in the various kinematic variables. Cross-sections in particle physics processes are typically computed using perturbation theory, which provides a very powerful set of tools to predict observable quantities from a Quantum Field Theory. It is based on the assumption that a given observable can be defined by a power series in the coupling constant of the theory: then, if such coupling is small enough to be considered a \textit{perturbative} parameter, the computation of the first few orders of the power series is sufficiently accurate to describe the observable. However, this assumption needs some care, since perturbative series can indeed de divergent. It is possible to interpret the perturbative expansion in the sense of an asymptotic series, where the inclusion of higher orders improves the estimate of the physical quantity under study, up to some finite order, thereby saving perturbation theory from a dramatic failure. However, there are situations in which the growth of the series already starts at the level of the first terms; in these cases, a truncation of the series is of no meaning and only a \textit{resummed} result is reliable. This is a situation that quite often appears in QCD, and hence one of the main problems addressed in this thesis. A cross-section generically depends on many energy scales, and the dependence is typically in the form of logarithmic ratios of energies. In some kinematical regimes, when two of such scales become very different each other these logs become large and the coefficients of the perturbative series are significantly enhanced, making the standard perturbative approach unreliable. Then, the entire series of these enhanced terms has to be resummed in order to have an accurate prediction for the observable.\\
-
-This thesis describes at its end a new numerical program, HTurbo, written following the structure of the code DYTurbo, for the calculation of the QCD transverse-momentum resummation of Higgs cross sections up to next-to-next-to-leading logarithmic accuracy combined with the fixed-order results at next-to-next-to-leading order, including the full kinematical dependence of the decaying lepton pair with the corresponding spin correlations and the finite-width effects. The HTurbo program is an improved reimplementation of the HqT, HRes and NNLO programs, which provides fast and numerically precise predictions through the factorization of the cross section into production and decay variables, and the usage of quadrature rules based on interpolating functions for the integration over kinematic variables. We show below a brief outline of this thesis, for the reader to have an overall sight of its contents, to be used as a roadmap.	
+The argument of my PhD lies on Standard Model (SM) physics, and in the accurate description of matter and its interactions at the fundamental scales. It is based on both Computation Sciences and Quantum Chromodynamics (QCD), oriented to LHC physics. When addressing LHC and Standard Model physics, for which extremely precise predictions exist up to the TeV scale, reducing the theoretical uncertainties has become a main task for theoreticians, specially for the precision era of the LHC. While the first part of my PhD was devoted to the precise determination of the Parton Distribution Functions, the second part has focused on developing a new numerical code, HTurbo, which aims to produce fast and numerically precise predictions for the Higgs boson at the LHC. Both projects are summarized in this report.\\
 
 \section{Machine Learning for the precise determination of the Parton Distribution Functions}
-The argument of my PhD lies on Standard Model (SM) physics, and in the accurate description of matter and its interactions at the fundamental scales. The first year of my PhD, within the NNPDF Collaboration, was devoted to Machine Learning applications to the precise numerical determination of the Parton Distribution Functions (PDFs), describing the probability distributions of the quarks and gluons inside the proton, which are crucial for the computation of the SM observables required for the LHC physics, and which cannot be precisely calculated from first principles. Therefore, the use of such artificial intelligence algorithms provides a powerful set of techniques towards the production of precise and reliable predictions. In the following paper we described and quantified the most promising data-model configurations to increase PDF fitting performance, such as the implementation of
-C++ operators within the TensorFlow library and adapting the current code frameworks to
-hardware accelerators such as graphics processing units. \\
+The first year of my PhD, within the NNPDF Collaboration, was devoted to Machine Learning applications to the precise numerical determination of the Parton Distribution Functions (PDFs), which describe the probability distributions of the quarks and gluons inside the proton. PDFs are crucial for the computation of the SM observables required for the LHC physics, and hence they cannot be precisely calculated from first principles. Therefore, the use of such artificial intelligence algorithms provides a powerful set of techniques towards the production of precise and reliable predictions. In the proceedings linked at the end of this report, we described and quantified the most promising data-model configurations to increase PDF fitting performance, such as the implementation of C++ operators within the TensorFlow library and adapting the current code frameworks to hardware accelerators such as graphics processing units.\\
 
-I also worked on a subgroup of Machine Learning algorithms, the so-called Gaussian Processes and Hyper-optimization, to interpolate partonic distributions and reduce theory uncertainties by training on their asymptotic expressions. Preliminary results are shown in the following contribution at the Italian Physical Society, where the Hyper-optimized Gaussian Process regressor is shown to build excellent numerical agreement up to next-to-next-to- leading order (NNLO) accuracy on inclusive observables. 
+I also worked on a subgroup of Machine Learning algorithms, the so-called Gaussian Processes and Hyper-optimization, to interpolate partonic distributions and reduce theory uncertainties by training on their asymptotic expressions. Preliminary results are shown in the following contribution at the Italian Physical Society, where the Hyper-optimized Gaussian Process regressor is shown to build excellent numerical agreement up to next-to-next-to- leading order (NNLO) accuracy on inclusive observables.
 
 \section{Accurate theoretical predictions for Higgs boson physics at the LHC}
-From the second year of my PhD I started to work on perturbative QCD phenomenology at hadron colliders, in particular on Sudakov resummation, that is, resummation of double-logarithmic perturbative contributions produced by soft-gluon radiation. I am currently working on transverse-momentum (qT) resummation for Higgs boson production at the LHC, developing a new numerical program for the calculation of the Higgs boson qT cross sections up to next-to-next-to-next-to-leading logarithmic (N3LL) accuracy combined with the fixed-order results, including the full kinematical dependence of the decaying photon pair. The goal is to provide fast and numerically precise predictions through the factorization of the cross section into production and decay variables, to be used towards the next runs of the LHC, where the accuracy of predictions and the minimization of theory uncertainties has become the main task for theoreticians.\\
+From the second year of my PhD I started to work on perturbative QCD phenomenology at hadron colliders, in particular on Sudakov resummation, that is, resummation of double-logarithmic perturbative contributions produced by soft-gluon radiation. Our main goal goal is to provide fast and numerically precise predictions through the factorization of the cross section into production and decay variables, to be used towards the next runs of the LHC, where the accuracy of predictions and the minimization of theory uncertainties has become the main task for theoreticians.\\
 
-As stated already, the production of fast and accurate predictions has become one of the main tasks among theoreticians, heading towards the high luminosity era of the LHC, and resummation in QCD is needed for the prediction of hadronic observables, and in particular of differential distributions. The HTurbo program provides fast and numerically precise predictions for Higgs boson production, through a new implementation of the HqT, HRes and NNLO numerical codes. The cross-section predictions include the calculation of the QCD transverse-momentum resummation up to next-to-next-to-leading logarithmic accuracy combined with the fixed-order results at next-to-next-to-leading order. They also include the full kinematical dependence of the decaying photon pair. The enhancement in performance over previous programs is achieved by code optimization, by factorizing the cross section into production and decay variables, and with the usage of numerical integration based on interpolating functions. The resulting cross-section predictions are in agreement with the results of the original programs at the per mille level. The great reduction of computing time for performing cross-sections calculation opens new possibilities for Higgs processes at the LHC, and also opens the possibility of searches for physics beyond the SM.
+Cross-sections in particle physics processes are typically computed using perturbation theory, which provides a very powerful set of tools to predict observable quantities from a Quantum Field Theory. It is based on the assumption that a given observable can be defined by a power series in the coupling constant of the theory: then, if such coupling is small enough to be considered a \textit{perturbative} parameter, the computation of the first few orders of the power series is sufficiently accurate to describe the observable. However, this assumption needs some care, since perturbative series can indeed de divergent. It is possible to interpret the perturbative expansion in the sense of an asymptotic series, where the inclusion of higher orders improves the estimate of the physical quantity under study, up to some finite order, thereby saving perturbation theory from a dramatic failure. However, there are situations in which the growth of the series already starts at the level of the first terms; in these cases, a truncation of the series is of no meaning and only a \textit{resummed} result is reliable. This is a situation that quite often appears in QCD, and hence one of the main problems addressed in this thesis. A cross-section generically depends on many energy scales, and the dependence is typically in the form of logarithmic ratios of energies. In some kinematical regimes, when two of such scales become very different each other these logs become large and the coefficients of the perturbative series are significantly enhanced, making the standard perturbative approach unreliable. Then, the entire series of these enhanced terms has to be resummed in order to have an accurate prediction for the observable.\\
+
+Therefore, the production of fast and accurate - resummed - predictions has become one of the main tasks among theoreticians, heading towards the high luminosity era of the LHC, and resummation in QCD is needed for the prediction of hadronic observables, and in particular of differential distributions. The HTurbo program provides fast and numerically precise predictions for Higgs boson production, through a new implementation of the HqT, HRes and NNLO numerical codes. The cross-section predictions include the calculation of the QCD transverse-momentum resummation up to next-to-next-to-leading logarithmic accuracy combined with the fixed-order results at next-to-next-to-leading order. They also include the full kinematical dependence of the decaying photon pair. The enhancement in performance over previous programs is achieved by code optimization, by factorizing the cross section into production and decay variables, and with the usage of numerical integration based on interpolating functions. With paper in preparation, the resulting cross-section predictions are in agreement with the results of the original programs at the per mille level. The great reduction of computing time for performing cross-sections calculation opens new possibilities for Higgs processes at the LHC, and also opens the possibility of searches for physics beyond the SM.
+
 \newpage
-
-\section{Publications and Conferences}
-
-\begin{enumerate}{\leftmargin 15pt \itemsep 0pt \topsep 3pt}
-	\item{\bf \href{https://arxiv.org/abs/1909.10547}{https://arxiv.org/abs/1909.10547}}
-	\item{\bf https://indico.ifae.es/event/645/}
-	\item{\bf https://agenda.infn.it/event/23656/contributions/120309/}
-\end{enumerate}
 
 \section{Formations activities}
 
@@ -66,23 +54,43 @@ As stated already, the production of fast and accurate predictions has become on
 	\item{\bf Computational, simulation and machine learning methods in high energy physics and beyonf: Automated Computational Tools (3 CFU - 15 hrs, Prof. Fabio Maltoni)}
 	\item{\bf Computational, simulation and machine learning methods in high energy physics and beyonf: Monte Carlo Methods (3 CFU - 15 hrs, Prof. Paolo Nason)}
 	\item{\bf Computational, simulation and machine learning methods in high energy physics and beyonf: Machine Learning Tools (3 CFU - 15 hrs, Dr. Stefano Carrazza)}
-	\item{\bf Quantum Coherent Phenomena (6 CFU - 15 hrs, Prof. Fabrizio Castelli, DR. Marco Geoni, Dr. Claudia Benedetti)}
+	\item{\bf Quantum Coherent Phenomena (6 CFU - 15 hrs, Prof. Fabrizio Castelli, Dr. Marco Geoni, Dr. Claudia Benedetti)}
 \end{enumerate}
-
 
 \subsection{International Schools}
 
 \begin{enumerate}{\leftmargin 15pt \itemsep 0pt \topsep 3pt}
-	\item{\bf CERN-Fermilab: Hadron Collider Physics Summer School (HCPSS). Fermilab (via zoom), August 2020.}
-	\item{\bf CTEQ: QCD and EW Phenomenology Summer School (HCPSS). University of Pittsburgh, Pennsylvania, USA, July 2019.}
-	\item{\bf GGI School: Theory of the Fundamental Interactions. Galileo Galilei Institute, Florence, Italy, January 2019.}
+	\item{\bf GGI School on Theory of the Fundamental Interactions. Galileo Galilei Institute, Florence, Italy, January 2019. \\ \href{https://www.ggi.infn.it/ggilectures/ggilectures2019/}{https://www.ggi.infn.it/ggilectures/ggilectures2019/}}
+	\item{\bf CTEQ summer schools on QCD and EW Phenomenology. University of Pittsburgh, Pennsylvania, USA, July 2019. \\ \href{https://indico.fnal.gov/event/43762/overview}{https://indico.fnal.gov/event/43762/overview}}
+	\item{\bf CERN-Fermilab summer school on Hadron Collider Physics (HCPSS). Fermilab (via zoom), August 2020. \\ \href{https://inspirehep.net/conferences/1713348}{https://inspirehep.net/conferences/1713348}}
 \end{enumerate}
 
 \subsection{Teaching activities}
 
 \begin{enumerate}{\leftmargin 15pt \itemsep 0pt \topsep 3pt}
 	\item{\bf Teaching assistant for \textit{Informatica - Computer Sciences} \hspace{1cm} Oct-Feb 2019}
-	\item{\bf Teaching assistant for \textit{Meccanica Quantistica} \hspace{1cm} Mar-Jul 2021}
+	\item{\bf Teaching assistant for \textit{Meccanica Quantistica} \hspace{3.5cm} Mar-Jul 2021}
 \end{enumerate}
 
+\section{Publications and Conferences}
+
+\begin{enumerate}{\leftmargin 15pt \itemsep 0pt \topsep 3pt}
+	\item{\bf Towards hardware acceleration for parton densities estimation - Photon 19 \href{https://arxiv.org/abs/1909.10547}{https://arxiv.org/abs/1909.10547}}
+	\item{\bf Machine Learning for the determination of Parton Distribution
+		Functions - Institute of High Energy Physics IFAE Barcelona \\ \href{https://indico.ifae.es/event/645/}{https://indico.ifae.es/event/645/}}
+	\item{\bf Gaussian Processes for the estimation of theory uncertainties - Italian Physical Society SIF National congress 2020\\ \href{https://agenda.infn.it/event/23656/contributions/120309/}{https://agenda.infn.it/event/23656/contributions/120309/}}
+	\item {\bf HTurbo: Fast and numerically precise predictions for Higgs boson physics at the LHC - paper in preparation}
+\end{enumerate}
+
+\newpage
+
+
+\hspace{2cm}
+
+
+PhD student: Jesús Urtasun\\
+
+\hspace{2cm}
+
+\indent Supervisor: Giancarlo Ferrera
 \end{document}
