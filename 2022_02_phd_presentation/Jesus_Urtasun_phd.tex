@@ -1,4 +1,4 @@
-\documentclass[aspectratio=43]{beamer}
+	\documentclass[aspectratio=43]{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -92,28 +92,6 @@
 % Introduction ...........................................................................
 %
 
-% Introduction
-\begin{frame}
-
-	\center{\color{blue}Introduction}
-
-\end{frame}
-
-% QCD - A historical approach
-\begin{frame}
-
-	\frametitle{Introduction}
-	\framesubtitle{QCD - A historical approach}
-	
-	\begin{itemize}
-		\item \footnotesize The Standard Model
-		\item \footnotesize QCD and the strong interactions
-		\item \footnotesize Higgs boson physics and the LHC
-	\end{itemize}
-
-
-\end{frame}
-
 %
 % Part 1 .................................................................................
 % QCD and collider pysics ................................................................
@@ -133,11 +111,33 @@
 	\framesubtitle{QCD and the strong interactions}
 	
 	\begin{itemize}
-		\item \footnotesize The Standard Model
-		\item \footnotesize QCD and the strong interactions
-		\item \footnotesize Higgs boson physics and the LHC
+		\item \footnotesize The parton model
+		\item \footnotesize QCD is the theory of the strong interactions
+		\item \footnotesize Predictions in QFTs are done by computing cross sections
+		\item \footnotesize Experiments for high energy physics are done at the LHC
 	\end{itemize}
 
+\end{frame}
+
+% QCD and the strong interactions
+\begin{frame}
+
+	\frametitle{Introduction}
+	\framesubtitle{QCD and the strong interactions}
+	
+	How to explore proton's inner structure?
+
+	\begin{figure}
+		\includegraphics[width = 0.5\linewidth]{plots/part1/intro/protons.png}
+	\end{figure}
+	
+	
+	\begin{itemize}
+		\item \footnotesize Point-like projectile on the object $\longrightarrow$ DIS
+		\item \footnotesize Smash the two objects $\longrightarrow$ LHC physics
+	\end{itemize}
+	
+	{\color{blue} \footnotesize "A way to analyze high energy collisions is to consider any hadron as a composition of point-like constituents $\longrightarrow$ \textbf{partons"} } R.Feynman, 1969 
 
 \end{frame}
 
@@ -149,28 +149,44 @@
 
 	\begin{columns}	
 		
-		\column{0.5\textwidth}
+		\column{0.3\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 5 cm]{plots/part1/chapter1/qcd_running_coupling.png}
+
+			\includegraphics[width = 2 cm]{plots/part1/intro/proton2.jpg}
 		\end{figure}
 		
-		\column{0.5\textwidth}
+		\column{0.7\textwidth}
 		
 		\begin{itemize}
-			\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
-			\begin{equation}
-				\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{\textrm{QCD}}^{2}}\big)} \nonumber
-			\end{equation}
-			\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
-			\item \footnotesize $\Lambda_{\textrm{QCD}}$, parameter that defines value of the coupling at large scales
+			\item \footnotesize QCD and QFTs, coupling strength changes with energy
+			\item \footnotesize Charge a particle feels depends on the scale
+			\item \footnotesize QED
 		\end{itemize}
 		
 	\end{columns}
 	
 	\vspace{1cm}
-	\center \footnotesize QCD is weakly coupled for $\mu >> \Lambda_{\textrm{QCD}} \longrightarrow$ asymptotically free
-	\center \footnotesize \color{red} Perturbative Quantum Chromodynamics (pQCD)
+	\center \footnotesize QCD is strongly coupled at short scales $\longrightarrow$ confinement
+	\center \footnotesize \color{red} Non-perturbative physics
+
+\end{frame}
+
+%Asymptotic freedom and pQCD
+\begin{frame}
+	
+	\frametitle{QCD and collider physics}
+	\framesubtitle{Asymptotic freedom and pQCD}
+	
+	\begin{itemize}
+		\item \footnotesize Running coupling given by Renormalization Group Equation (RGE)
+		\begin{equation}
+		{\color{blue}\mu\frac{d\alpha_{s}(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
+		\end{equation}
+		\item \footnotesize Coupling {\color{blue}$\alpha_{s}$} evolves with scale {\color{blue}$\mu$} as given by RGE $\rightarrow$ LO behavior driven by $\beta_{0}$
+		\item \footnotesize $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies, {\color{blue}UV divergent}
+		\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies, {\color{red}IR divergent}
+	\end{itemize}
 
 \end{frame}
 
@@ -209,24 +225,40 @@
 
 % Hadronic processes and factorization
 \begin{frame}
-	
+
 	\frametitle{QCD and collider physics}
 	\framesubtitle{Hadronic processes and factorization}
 	
-	\begin{itemize}
-		\item \footnotesize Hadronic processes and factorization
-	\end{itemize}
+	\vspace{0.4 cm}
+	
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/part1/chapter2/factorization_1.png}
+	\end{figure}
+	
+	\footnotesize Compute hadronic cross sections is a {\color{red}hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
+	
+	\begin{equation}
+		\sigma^{\textrm{F}}(p_{1}, p_{2}) =
+		\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha}(x_{1}, \mu_{F}^{2}) \ast f_{\beta}(x_{2}, \mu_{F}^{2})}
+		\; \ast \;  
+		{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
+	\end{equation}
 
 \end{frame}
 
-% The parton model
+% Hadronic processes and factorization
 \begin{frame}
-	
+
 	\frametitle{QCD and collider physics}
-	\framesubtitle{The parton model}
+	\framesubtitle{Hadronic processes and factorization}
+	
+	\begin{figure}
+		\includegraphics[width = 7 cm]{plots/part1/chapter2/factorization_2.png}
+	\end{figure}
 	
 	\begin{itemize}
-		\item \footnotesize The parton model
+		\item \footnotesize Parton densities (PDFs) ${\color{blue} f_{\alpha}(x_{i}, \mu_{F}^{2})}$: non perturbative but universal
+		\item \footnotesize Partonic cross section {\color{red}$\hat{\sigma}^{\textrm{F}}_{\alpha \beta}$}: process dependent but computable as perturbative series in $\alpha_{s}$
 	\end{itemize}
 
 \end{frame}
@@ -237,29 +269,42 @@
 	\frametitle{QCD and collider physics}
 	\framesubtitle{Parton densities}
 	
+	\begin{figure}
+		\includegraphics[width = 6 cm]{plots/part1/chapter2/PDFs.png}
+	\end{figure}
+	
 	\begin{itemize}
-		\item \footnotesize Parton densities
+		\item \footnotesize Hadrons made of partonic objects $\longrightarrow$ non perturbative physics
+		\item \footnotesize Interactions take place only at partonic level
+	\end{itemize}
+	
+	{\color{blue} \footnotesize Parton Distribution Functions: probability distribution of finding a particular parton \\ (u, d, ..., g) carrying a fraction x of the proton's momentum}
+
+\end{frame}
+
+% Parton densities
+\begin{frame}
+	
+	\frametitle{QCD and collider physics}
+	\framesubtitle{Parton densities}
+	
+	\begin{figure}
+		\includegraphics[width = 3 cm]{plots/part1/chapter2/PDF.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item \footnotesize Each parton has a different PDF $\longrightarrow$ ${\color{blue}u(x)}, {\color{green}d(x)}, ..., {\color{red}g(x)}$
+		\item \footnotesize PDFs can not predicted and yet can not measured $\longrightarrow$ {\color{blue}extracted} from data
+		\item \footnotesize The N$^{3}$PDF project: ML for PDFs determination
 	\end{itemize}
 
 \end{frame}
 
-% Fixed-order QCD
+% Partonic cross section and pQCD
 \begin{frame}
 	
 	\frametitle{QCD and collider physics}
-	\framesubtitle{Fixed-order QCD}
-	
-	\begin{itemize}
-		\item \footnotesize Fixed-order QCD
-	\end{itemize}
-
-\end{frame}
-
-% Perturbative QCD
-\begin{frame}
-	
-	\frametitle{QCD and collider physics}
-	\framesubtitle{Perturbative QCD}
+	\framesubtitle{Partonic cross section and pQCD}
 	
 	\begin{columns}
 	
@@ -288,59 +333,19 @@
 
 \end{frame}
 
-% Factorization theorem
-\begin{frame}
-
-	\frametitle{QCD and collider physics}
-	\framesubtitle{Factorization theorem}
-
-	\vspace{0.4 cm}
-	
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/part1/chapter2/factorization_1.png}
-	\end{figure}
-	
-	\footnotesize Compute hadronic cross sections is a {\color{red}hard problem} $\longrightarrow$ {\color{blue} QCD Factorization}
-	
-	\begin{equation}
-		\sigma^{\textrm{F}}(p_{1}, p_{2}) =
-		\int_{0}^{1} dx_{1} dx_{2} \; {\color{blue} f_{\alpha}(x_{1}, \mu_{F}^{2}) \ast f_{\beta}(x_{2}, \mu_{F}^{2})}
-		\; \ast \;  
-		{\color{red}\hat{\sigma}^{\textrm{F}}_{\alpha \beta}(x_{1}p_{1}, x_{2}p_{2}, \alpha_{s}(\mu_{R}^{2}), \mu_{F}^{2})} \nonumber
-	\end{equation}
-
-\end{frame}
-
-% Partonic cross section
-\begin{frame}
-	
-	\frametitle{QCD and collider physics}
-	\framesubtitle{Partonic cross section}
-	
-	\begin{figure}
-		\includegraphics[width = 7 cm]{plots/part1/chapter2/factorization_2.png}
-	\end{figure}
-	
-	\begin{itemize}
-		\item \footnotesize Parton densities (PDFs) ${\color{blue} f_{\alpha}(x_{i}, \mu_{F}^{2})}$: non perturbative but universal
-		\item \footnotesize Partonic cross section {\color{red}$\hat{\sigma}^{\textrm{F}}_{\alpha \beta}$}: process dependent but computable as perturbative series in $\alpha_{s}$
-	\end{itemize}
-	
-\end{frame}
-
 % LHC physics
 \begin{frame}
 	
 	\frametitle{QCD and collider physics}
 	\framesubtitle{LHC phenomenology}
 	
-	\begin{figure}
-		\includegraphics[width = 8.5 cm]{plots/part1/chapter3/lhc_measurements.png}
-	\end{figure}
+	\footnotesize Predictions made by the Standard Model
 	
 	\begin{itemize}
-		\item \footnotesize Physics at the LHC
-		\item \footnotesize Computing cross sections
+		\item \footnotesize Eight gluons and three generations of quarks, described by the SU(3) gauge group, mixing angles described by CKM matrix
+		\item \footnotesize Three generations of charged leptons and three generations of massive neutrinos mixing angles described by PMNS matrix
+		\item \footnotesize The photon and the massive $W^{\pm}$ and $Z$ bosons
+		\item \footnotesize A scalar Higgs boson, responsible for the electroweak symmetry breaking 
 	\end{itemize}
 
 \end{frame}
@@ -354,10 +359,21 @@
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/part1/chapter3/lhc_measurements.png}
 	\end{figure}
+
+\end{frame}
+
+% LHC physics
+\begin{frame}
+	
+	\frametitle{QCD and collider physics}
+	\framesubtitle{LHC phenomenology}
+	
+	\footnotesize Main processes studied at the LHC
 	
 	\begin{itemize}
-		\item \footnotesize Physics at the LHC
-		\item \footnotesize Computing cross sections
+		\item \footnotesize Deep inelastic scattering
+		\item \footnotesize Drell-Yan lepton pair production
+		\item \footnotesize Higgs boson production through gluon fusion
 	\end{itemize}
 
 \end{frame}
@@ -392,9 +408,9 @@
 	\column{0.5\textwidth}
 	
 	\begin{enumerate}
-		\item Calculation of higher order corrections is {\color{red}not an easy task} due to {\color{red} infrared (IR) soft and collinear singularities}
-		\item Final state singularities {\color{blue}cancel} by combining real and virtual contributions
-		\item Initial state collinear singularities {\color{blue}factorized} inside the PDFs
+		\item \footnotesize Calculation of higher order corrections is {\color{red}not an easy task} due to {\color{red} infrared (IR) soft and collinear singularities}
+		\item \footnotesize Final state singularities {\color{blue}cancel} by combining real and virtual contributions
+		\item \footnotesize Initial state collinear singularities {\color{blue}factorized} inside the PDFs
 	\end{enumerate}
 	
 	\column{0.45\textwidth}
@@ -416,7 +432,7 @@
 	
 		\column{0.55\textwidth}
 		
-		\center	Study the differential $q_{\perp}$ distribution \\
+		\center	\footnotesize Study the differential $q_{\perp}$ distribution \\
 		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
 	
 		\column{0.45\textwidth}
@@ -427,75 +443,14 @@
 
 	\end{columns}
 
+	\footnotesize 
 	$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad where \quad} L = \ln (q_{\perp} / M^{2})$
 
 	\begin{figure}
 		\includegraphics[width = 7.5cm]{plots/part2/qT_logs_table.png}
 	\end{figure}
 
-	Truncated fixed order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
-
-\end{frame}
-
-% qT resummation I
-\begin{frame}
-	
-	\frametitle{Resummation in QCD}
-	\framesubtitle{$q_{\perp}$ resummation}
-	
-	\begin{columns}
-		
-		\column{0.55\textwidth}
-		
-		\center	Study the differential $q_{\perp}$ distribution \\
-		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
-		
-		\column{0.45\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 4cm]{plots/part2/qT_diagram.png}
-		\end{figure}
-		
-	\end{columns}
-	
-	$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad where \quad} L = \ln (q_{\perp} / M^{2})$
-	
-	\begin{figure}
-		\includegraphics[width = 7.5cm]{plots/part2/qT_logs_table.png}
-	\end{figure}
-	
-	Truncated fixed order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
-
-\end{frame}
-
-% qT resummation I
-\begin{frame}
-
-	\frametitle{Resummation in QCD}
-	\framesubtitle{$q_{\perp}$ resummation}
-	
-	\begin{columns}
-		
-		\column{0.55\textwidth}
-		
-		\center	Study the differential $q_{\perp}$ distribution \\
-		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
-		
-		\column{0.45\textwidth}
-		
-		\begin{figure}
-			\includegraphics[width = 4cm]{plots/part2/qT_diagram.png}
-		\end{figure}
-		
-	\end{columns}
-	
-	$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad where \quad} L = \ln (q_{\perp} / M^{2})$
-	
-	\begin{figure}
-		\includegraphics[width = 7.5cm]{plots/part2/qT_logs_table.png}
-	\end{figure}
-	
-	Truncated fixed order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
+	\footnotesize Truncated fixed order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
 
 \end{frame}
 
@@ -505,7 +460,7 @@
 	\frametitle{Resummation in QCD}
 	\framesubtitle{$q_{\perp}$ resummation}
 
-	Separate partonic $q_{\perp}$ distribution as follows
+	\footnotesize Separate partonic $q_{\perp}$ distribution as follows
 	
 	\begin{equation}
 		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} =
@@ -518,7 +473,7 @@
 		\lim_{q_{\perp} \rightarrow 0}\int_{0}^{q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &= 0 \nonumber 
 	\end{align}
 
-	Resummed and finite components can be matched (LL+LO, NLL+NLO, NNLO+NNLL, ...) to have uniform accuracy in a wide range of $q_{\perp}$
+	\footnotesize Resummed and finite components can be matched (LL+LO, NLL+NLO,\\ NNLO+NNLL, ...) to have uniform accuracy in a wide range of $q_{\perp}$
 \end{frame}
 
 % qT resummation III
@@ -527,11 +482,12 @@
 	\frametitle{Resummation in QCD}
 	\framesubtitle{$q_{\perp}$ resummation}
 	
-	Resummation holds in impact parameter space $b$
+	\footnotesize Resummation holds in impact parameter space $b$
 	\begin{equation}
 		\frac{d\hat{\sigma}_{ab}^{\textrm{(res.)}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; {\color{red} \mathcal{W}_{ab}(b, M)} \nonumber
 	\end{equation}
 	
+	\footnotesize 
 	with ${\color{red}\mathcal{W}_{ab}}$ also expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$)
 	\begin{equation}
 		{\color{red} \mathcal{W}_{N}(b, M) = \mathcal{H}_{N}(\alpha_{s}) \times \exp\{\mathcal{G}_{N}(\alpha_{s}, L)\}} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
