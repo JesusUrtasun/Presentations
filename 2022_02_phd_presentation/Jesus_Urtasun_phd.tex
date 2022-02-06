@@ -432,9 +432,12 @@
 	
 		\column{0.55\textwidth}
 		
-		\center	\footnotesize Study the differential $q_{\perp}$ distribution \\
-		\center	$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
-	
+		\begin{itemize}
+			\item \footnotesize Cancellation only works in completely inclusive final states \\
+			\item \footnotesize Study the differential $q_{\perp}$ distribution \\
+			$h_{1}(p_{1}) + h_{2}(p_{2}) \longrightarrow F(M, {\color{red}q_{\perp}}) + X$
+		\end{itemize}
+		
 		\column{0.45\textwidth}
 		
 		\begin{figure}
@@ -444,13 +447,13 @@
 	\end{columns}
 
 	\footnotesize 
-	$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad where \quad} L = \ln (q_{\perp} / M^{2})$
+	$\int_{0}^{Q_{\perp}^{2}} \; dq_{\perp}^{2} \frac{d\hat{\sigma}}{dq_{\perp}^{2}} \sim c_{0} + \alpha_{s}(c_{12}L^{2} + c_{11}L + c_{10}) + ..., \textrm{\quad where \quad} L = \ln (M^{2} / q_{\perp}^{2})$
 
 	\begin{figure}
-		\includegraphics[width = 7.5cm]{plots/part2/qT_logs_table.png}
+		\includegraphics[width = 7cm]{plots/part2/qT_logs_table.png}
 	\end{figure}
 
-	\footnotesize Truncated fixed order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
+	\footnotesize Truncated fixed-order predictions $\rightarrow$ {\color{red}enhanced $\alpha_{s}^{n}\ln^{m}(M^{2}/q_{\perp}^{2})$ appear}
 
 \end{frame}
 
@@ -469,7 +472,7 @@
 	\end{equation}
 
 	\begin{align}
-		\int_{0}^{q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} \sim & \sum \alpha_{s}^{n} \log^{m} \frac{M^{2}}{q_{\perp}^{2}} \textrm{\quad for \quad} q_{\perp} \rightarrow 0 \nonumber \\
+		\int_{0}^{q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} \sim & \sum \alpha_{s}^{n} \log^{m} \bigg( \frac{M^{2}}{q_{\perp}^{2}} \bigg) \textrm{\quad for \quad} q_{\perp} \rightarrow 0 \nonumber \\
 		\lim_{q_{\perp} \rightarrow 0}\int_{0}^{q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &= 0 \nonumber 
 	\end{align}
 
@@ -497,8 +500,66 @@
 		\item Large logarithms exponentiated in the universal Sudakov form factor {\color{red}$\mathcal{G}_{N}(\alpha_{s}, L)$}
 		\item Constant (b-independent) terms factorized in the process dependent hard factor {\color{red}$\mathcal{H}_{N}(\alpha_{s})$}
 	\end{itemize}
-
 	
+\end{frame}
+
+% qT resummation IV
+\begin{frame}
+	
+	\frametitle{Resummation in QCD}
+	\framesubtitle{$q_{\perp}$ resummation}
+	
+	\footnotesize
+	Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
+	\begin{align}
+	\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
+	\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + ...  \nonumber
+	\end{align}
+	
+	For each new order implement a factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
+	
+	\begin{columns}
+		
+		\column{0.45\textwidth}
+		
+		\begin{align}
+		&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
+		&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
+		&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
+		\end{align}
+		
+		\column{0.45\textwidth}
+		
+		Each term $g^{(i)}$ and $\mathcal{H}^{(i)}$ in the series becomes increasingly complicated \\
+		\vspace{0.25 cm}
+		Current codes able to produce only up to NNLL predictions!
+		
+	\end{columns}
+
+\end{frame}
+
+% qT resummation III
+\begin{frame}
+	
+	\frametitle{Resummation in QCD}
+	\framesubtitle{$q_{\perp}$ resummation}
+	
+	\footnotesize Resummation holds in impact parameter space $b$
+	\begin{equation}
+	\frac{d\hat{\sigma}_{ab}^{\textrm{(res.)}}}{dq_{\perp}^{2}} = \frac{M^{2}}{\hat{s}} \int db \; \frac{b}{2} \; J_{0}(b q_{\perp}) \; {\color{red} \mathcal{W}_{ab}(b, M)} \nonumber
+	\end{equation}
+	
+	\footnotesize 
+	with ${\color{red}\mathcal{W}_{ab}}$ also expressed in Mellin space (with respect to $z = M^{2}/\hat{s}$)
+	\begin{equation}
+	{\color{red} \mathcal{W}_{N}(b, M) = \mathcal{H}_{N}(\alpha_{s}) \times \exp\{\mathcal{G}_{N}(\alpha_{s}, L)\}} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
+	\end{equation}
+	
+	\begin{itemize}
+		\item Large logarithms exponentiated in the universal Sudakov form factor {\color{red}$\mathcal{G}_{N}(\alpha_{s}, L)$}
+		\item Constant (b-independent) terms factorized in the process dependent hard factor {\color{red}$\mathcal{H}_{N}(\alpha_{s})$}
+	\end{itemize}
+
 \end{frame}
 
 %
@@ -513,12 +574,27 @@
 
 \end{frame}
 
-% Need for fast numerical implementations
+% Resummation for Higgs differential distribution
 \begin{frame}
 	
 	\frametitle{HqT and HRes}
-	\framesubtitle{Need for fast numerical implementations}
+	\framesubtitle{Resummation for Higgs differential distribution}
 
+	\footnotesize
+	
+	\begin{itemize}
+	\item Meaningful description of exclusive final states requires resummed predictions
+	\item Resummation is combined with the finite component
+	
+	\end{itemize}
+
+	\begin{align}
+		\sigma^{\textbf{(res.)}}_{N(NLL)} = \hat{\sigma}^{\textbf{H}}_{\textbf{LO}} \times \mathcal{H} \times \exp{\mathcal{G}} \nonumber \\
+		\sigma^{\textbf{(asy.)}}_{N(LO)} = \hat{\sigma}^{\textbf{H}}_{\textbf{LO}} \times \mathcal{H} \times \exp{\mathcal{G}} \nonumber
+	\end{align}
+	
+	NNLL predictions can take up to 24h $\longrightarrow$ need for {\color{red} fast numerical implementations}
+	
 \end{frame}
 
 % HqT and HRes
@@ -526,6 +602,8 @@
 
 	\frametitle{HqT and HRes}
 	\framesubtitle{Predictions for Higgs $q_{\perp}$ distribution}
+	
+	\footnotesize
 	
 	\begin{columns}
 		
@@ -553,10 +631,13 @@
 	\frametitle{HTurbo}
 	\framesubtitle{Starting point DYTurbo}
 
+	\footnotesize
+	
 	Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1}h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$) 
 	
+	{\color{red}First goal}: set up a numerical code for Higgs boson production starting from  \textbf{DYTurbo}
+ 
 	\begin{itemize}
-		\item {\color{red}First goal}: set up a numerical code for Higgs boson production starting from  \textbf{DYTurbo}
 		\item Set LO amplitude $gg \rightarrow H$
 		\item Set Sudakov and Hard coefficients for Higgs production
 		\item Compare with \textbf{HRes} and \textbf{HqT}
@@ -574,7 +655,9 @@
 	\frametitle{HTurbo}
 	\framesubtitle{Starting point DYTurbo}
 
-	Both Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
+	\footnotesize
+	
+	Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
 	\begin{align}
 		\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
 		\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + ...  \nonumber
@@ -605,6 +688,8 @@
 
 	\frametitle{HTurbo}
 	\framesubtitle{Code optimization}
+	
+	\footnotesize
 	
 	Reimplementation of \textbf{HqT} and \textbf{HRes} for $q_{T}$-resummation
 	\begin{itemize}
@@ -657,8 +742,8 @@
 	\end{columns}
 	
 	\begin{itemize}
-		\item \footnotesize Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item \footnotesize Excellent numerical agreement at NLL
+		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -668,6 +753,8 @@
 	
 	\frametitle{Results}
 	\framesubtitle{Comparison HTurbo and HRes - NNLL resummed}
+	
+	\footnotesize
 	
 	\begin{columns}
 	
@@ -686,8 +773,8 @@
 	\end{columns}
 	
 	\begin{itemize}
-	\item \footnotesize Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-	\item \footnotesize Excellent numerical agreement at NNLL
+	\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+	\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -697,6 +784,8 @@
 	
 	\frametitle{Results}
 	\framesubtitle{Comparison HTurbo and HRes - LO asymptotic}
+	
+	\footnotesize
 	
 	\begin{columns}
 		
@@ -715,18 +804,20 @@
 	\end{columns}
 	
 	\begin{itemize}
-		\item \footnotesize Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item \footnotesize Excellent numerical agreement at LO
+		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
 
 % Results - Benchmark HRes - NLO asymptotic
 \begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{Comparison HTurbo and HRes - NLO asymptotic}
 
-\frametitle{Results}
-\framesubtitle{Comparison HTurbo and HRes - NLO asymptotic}
-
+	\footnotesize
+	
 	\begin{columns}
 		
 		\column{0.5\textwidth}
@@ -744,8 +835,8 @@
 	\end{columns}
 	
 	\begin{itemize}
-		\item \footnotesize Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item \footnotesize Excellent numerical agreement at NLO
+		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -755,6 +846,8 @@
 
 	\frametitle{Results}
 	\framesubtitle{Comparison HTurbo and HRes - LO fixed-order}
+	
+	\footnotesize
 	
 	\begin{columns}
 		
@@ -773,8 +866,8 @@
 	\end{columns}
 	
 	\begin{itemize}
-		\item \footnotesize Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item \footnotesize Excellent numerical agreement at LO
+		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -784,6 +877,8 @@
 	
 	\frametitle{Results}
 	\framesubtitle{Comparison HTurbo and HRes - NLO fixed-order}
+	
+	\footnotesize
 	
 	\begin{columns}
 		
@@ -802,8 +897,8 @@
 	\end{columns}
 	
 	\begin{itemize}
-		\item \footnotesize Represent full (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item \footnotesize Excellent numerical agreement at NLO
+		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
