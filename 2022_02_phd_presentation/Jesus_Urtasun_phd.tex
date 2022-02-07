@@ -611,36 +611,47 @@
 % Resummation for Higgs differential distribution
 \begin{frame}
 	
-	\frametitle{HqT and HRes}
+	\frametitle{HTurbo}
 	\framesubtitle{Resummation for Higgs differential distribution}
 
 	\footnotesize
 	
 	\begin{itemize}
-		\item Meaningful description of exclusive final states requires resummed predictions
-		\item Resummation is combined with the finite component
+		\item Fast and accurate predictions for Higgs boson production cross section
+		\item Predictions for differential cross section $d\sigma^{\textrm{H}} / dq_{\perp}^{2}$
+		\item Numerical implementation of resummed and finite components
 	\end{itemize}
 
-	\begin{equation}
-		d\sigma^{\textbf{H}}_{\textrm{(N)NLL+(n)LO}} = 
-		d\sigma^{\textbf{(res.)}}_{\textrm{(N)NLL}} - 
-		d\sigma^{\textbf{(asy.)}}_{\textrm{(N)LO}} + 
-		d\sigma^{\textbf{(f.o.)}}_{\textrm{(N)LO}} \; , \nonumber
-	\end{equation}
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{equation}
+			d\sigma^{\textrm{H}}_{\textrm{(N)NLL+(N)LO}} = 
+			d\sigma^{\textrm{(res.)}}_{\textrm{(N)NLL}} - 
+			d\sigma^{\textrm{(asy.)}}_{\textrm{(N)LO}} + 
+			d\sigma^{\textrm{(f.o.)}}_{\textrm{(N)LO}} \; , \nonumber
+		\end{equation}
+	
+		\begin{align}
+			d\sigma^{\textrm{(res.)}}_{\textrm{(N)NLL}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \mathcal{H}_{\textrm{(N)LO}} \times \exp{\mathcal{G}}_{\textrm{(N)NLL}} \; , \nonumber \\
+			d\sigma^{\textrm{(asy.)}}_{\textrm{(N)LO}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \Sigma_{\textrm{(N)LO}} \; ,\nonumber
+		\end{align}
+	
+		\column{0.45\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 5 cm]{plots/part3/chapter6/higgs_qt_all.png}
+		\end{figure}	
+		
+	\end{columns}
 
-	\begin{align}
-		d\sigma^{\textbf{(res.)}}_{\textrm{(N)NLL}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \mathcal{H}_{\textrm{(N)LO}} \times \exp{\mathcal{G}}_{\textrm{(N)NLL}} \; , \nonumber \\
-		d\sigma^{\textrm{(asy.)}}_{\textrm{(N)LO}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \Sigma_{\textrm{(N)LO}} \; ,\nonumber
-	\end{align}
-	
-	NNLL predictions can take up to 24h $\longrightarrow$ need for {\color{red} fast numerical implementations}
-	
 \end{frame}
 
 % HqT and HRes
 \begin{frame}
 
-	\frametitle{HqT and HRes}
+	\frametitle{HTurbo}
 	\framesubtitle{Predictions for Higgs $q_{\perp}$ distribution}
 	
 	\footnotesize
@@ -650,40 +661,49 @@
 		\column{0.5\textwidth}
 			
 		\begin{itemize}
-			\item $q_{\perp}$ resummation implemented in numerical codes HqT and HRes {\color{blue}[Catani, de Florian, Ferrera, Grazzini, Tommasini]} 
-			\item Higher order accuracy require {\color{red}high computation times}
-			\item Codes producing fast and accurate predictions are needed for precision era of the LHC
+			\item $q_{\perp}$ resummation implemented in numerical codes \textbf{HRes}, \textbf{HRes}, \textbf{HNNLO} {\color{blue}[Catani, de Florian, Ferrera, Grazzini, Tommasini]} 
+			\item Higher order accuracy require \\
+			{\color{red}high computation times}
+			\item NNLL predictions can take up to 48h $\longrightarrow$ need for {\color{red} fast numerical implementations}
 		\end{itemize}
 
-		\column{0.55\textwidth}
+		\column{0.45\textwidth}
 	
 		\begin{figure}
-			\includegraphics[width = 7 cm]{plots/part3/chapter6/higgs_qt_all.png}
+			\includegraphics[width = 6 cm]{plots/part3/chapter6/higgs_qt_all.png}
 		\end{figure}		
 			
 	\end{columns}
 
+	\vspace{0.5 cm}
+	
+	Codes producing fast and accurate predictions are needed for precision era of the LHC
+	
 \end{frame}
 
 % DYturbo I
 \begin{frame}
 
 	\frametitle{HTurbo}
-	\framesubtitle{Starting point DYTurbo}
+	\framesubtitle{Starting point: DYTurbo}
 
 	\footnotesize
 	
 	Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1}h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$) 
 	
+	\vspace{0.5 cm}
+	
 	{\color{red}First goal}: set up a numerical code for Higgs boson production starting from  \textbf{DYTurbo}
  
 	\begin{itemize}
 		\item Set LO amplitude $gg \rightarrow H$
-		\item Set Sudakov and Hard coefficients for Higgs production
+		\item Set Sudakov and Hard coefficients for resummed component
+		\item Set $\Sigma$ coefficients for asymptotic term
+		\item Implement MC producing the LO and NLO H+jet cross sections
 		\item Compare with \textbf{HRes} and \textbf{HqT}
 	\end{itemize}
 
-	\vspace{0.5 cm}
+	\vspace{0.2 cm}
 
 	{\color{red}Final goal}: extend theoretical accuracy up to N$^{3}$LL+N$^{3}$LO
 
@@ -693,7 +713,7 @@
 \begin{frame}
 
 	\frametitle{HTurbo}
-	\framesubtitle{Starting point DYTurbo}
+	\framesubtitle{Implementation of Higgs boson factors}
 
 	\footnotesize
 	
@@ -731,7 +751,10 @@
 	
 	\footnotesize
 	
-	Reimplementation of \textbf{HqT} and \textbf{HRes} for $q_{T}$-resummation
+	Optimized reimplementation of \textbf{HqT}, \textbf{HRes} and \textbf{HNNLO} for $q_{T}$-resummation
+	
+	\vspace{0.2 cm}
+		
 	\begin{itemize}
 		\item \textbf{C++} structure with \textbf{Fortran} interfaces $\rightarrow$ Multi-threading
 		\item Optimization in the integration routines / integral transforms 
@@ -745,6 +768,7 @@
 	\vspace{0.5cm}
 	
 	Comparison \textbf{HRes} and \textbf{HTurbo} - speed performance \\
+	
 	\center
 	\begin{tabular}{ | c | c | c | }
 		\hline
@@ -752,7 +776,7 @@
 		\hline
 		resummed NNLL & 10h & 10' \\
 		\hline
-		combined NNLO+NNLL & 20h & 1h \\
+		combined NNLO+NNLL & 48h & 2h \\
 		\hline
 	\end{tabular}
 
@@ -764,6 +788,8 @@
 	
 	\frametitle{Results}
 	\framesubtitle{Comparison HTurbo and HRes - NLL resummed}
+	
+	\footnotesize
 	
 	\begin{columns}
 		
@@ -783,7 +809,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -814,7 +840,7 @@
 	
 	\begin{itemize}
 	\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-	\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+	\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -845,7 +871,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -876,7 +902,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -907,7 +933,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -938,7 +964,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $sqrt(s) = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
