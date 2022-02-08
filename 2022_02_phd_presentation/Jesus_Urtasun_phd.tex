@@ -62,35 +62,29 @@
 	\frametitle{Outline}
 	
 	\begin{enumerate}
-		\item {\color{blue}Introduction to QCD}
-		\begin{itemize}
-			\item A historical approach
-			\item Asymptotic freedom and pQCD
-		\end{itemize}
 		\item {\color{blue}QCD and collider physics}
 		\begin{itemize}
+			\item The strong interactions
+			\item Asymptotic freedom and pQCD
 			\item QCD Factorization
-			\item Partonic cross section and perturbative QCD
+			\item Phenomenology at the LHC
 		\end{itemize}
 		\item {\color{blue}All order perturbative resummation}
 		\begin{itemize}
 			\item Higher order radiative corrections
 			\item Resummation of large logarithmic corrections
-			\item Resummed, asymptotic and fixed-order
+			\item Resummed component, asymptotic and fixed-order
 		\end{itemize}
-		\item {\color{blue}Precise and fast predictions for Higgs boson physics}
+		\item {\color{blue}HTurbo numerical implementation}
 		\begin{itemize}
 			\item Higgs production at the LHC
-			\item HTurbo numerical code
-			\item Preliminary results $\&$ Conclusions
+			\item HTurbo numerical implementation
+			\item N$^{3}$LL implementation
 		\end{itemize}
+		\item Results $\&$ Conclusions
 	\end{enumerate}
 	
 \end{frame}
-
-%
-% Introduction ...........................................................................
-%
 
 %
 % Part 1 .................................................................................
@@ -114,8 +108,9 @@
 	
 	\begin{itemize}
 		\item QCD is the theory of the strong interactions
-		\item Sector of the Standard describing fundamental interactions at the TeV scale
-		\item Fundamental objects described as homogeneous field with quantum mechanical behavior U(1)$\times$SU(2)$\times$SU(3)
+		\item Part of the Standard describing fundamental interactions at the TeV scale
+		\item Fundamental objects described as irreducible representations of Lorentz group
+		\item Particles as local excitations of fields with quantum mechanical behavior
 	\end{itemize}
 
 \end{frame}
@@ -173,7 +168,7 @@
 	\end{columns}
 	
 	\vspace{1cm}
-	\center \footnotesize QCD is strongly coupled at large scales / low energies $\longrightarrow$ confinement
+	\center \footnotesize QCD is strongly coupled at large distances / low energies $\longrightarrow$ confinement
 	\center \footnotesize \color{red} Non-perturbative physics
 
 \end{frame}
@@ -247,7 +242,7 @@
 	
 	\begin{itemize}
 		\item LHC physic rely on hadronic collisions $\longrightarrow$ pQCD
-		\item Compute cross section $\longrightarrow$ probability for a given process
+		\item Compute \textbf{cross section} $\sigma^{F}$ $\longrightarrow$ probability for a given process
 	\end{itemize}
 
 \end{frame}
@@ -373,40 +368,6 @@
 		\includegraphics[width = 8.5 cm]{plots/part1/chapter3/lhc_measurements.png}
 	\end{figure}
 
-\end{frame}
-
-% LHC physics
-\begin{frame}
-	
-	\frametitle{QCD and collider physics}
-	\framesubtitle{LHC phenomenology}
-	
-	\footnotesize
-	
-	Main processes studied in hadronic physics
-	
-	\begin{columns}
-	
-		\column{0.5\textwidth}
-		
-		\begin{itemize}
-			\item Deep Inelastic Scattering (DIS)
-			\item Drell-Yan lepton pair production
-			\item Higgs boson production
-		\end{itemize}
-		
-		\column{0.45\textwidth}
-		
-		\begin{figure}[!htb]
-			\includegraphics[width = 5 cm]{plots/part1/chapter2/factorization_1.png}
-		\end{figure}
-		
-	\end{columns}
-
-	\vspace{1 cm}
-	
-	\center Focus on Higgs production through gluon fusion
-	
 \end{frame}
 
 %
@@ -572,30 +533,6 @@
 
 \end{frame}
 
-% qT resummation III
-\begin{frame}
-	
-	\frametitle{Resummation in QCD}
-	\framesubtitle{Finite component}
-	
-	\footnotesize
-	
-	Finite component by fixed-order truncation of the resummed cross section
-	
-	\begin{equation}
-		\frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} =
-		\Bigg[ \frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} + 
-		\Bigg[ \frac{d\hat{\sigma}^{\textrm{(res.)}}_{ab}}{dq_{\perp}^{2}} \Bigg]_{\textrm{f.o.}} \nonumber
-	\end{equation}
-	
-	the truncation of the resummed cross section is written in terms of the $\Sigma$ coefficients
-	
-	\begin{equation}
-		{\color{red} \mathcal{W}_{a, b}(b, M) = \sigma^{(0)} \times \mathcal{H}_{N}(\alpha_{s}) \times \alpha_{s}^{n} \Sigma^{n}(z, L)} \quad\textrm{being}\quad L \equiv \log(M^{2}b^{2}) \nonumber
-	\end{equation}
-
-\end{frame}
-
 %
 % Part 3 .................................................................................
 % HTurbo numerical implementation ........................................................
@@ -624,24 +561,21 @@
 
 	\begin{columns}
 		
-		\column{0.5\textwidth}
-		
-		\begin{equation}
-			d\sigma^{\textrm{H}}_{\textrm{(N)NLL+(N)LO}} = 
+		\column{0.45\textwidth}
+
+		\begin{align}
+			d\sigma^{\textrm{H}}_{\textrm{(N)NLL+(N)LO}} &= 
 			d\sigma^{\textrm{(res.)}}_{\textrm{(N)NLL}} - 
 			d\sigma^{\textrm{(asy.)}}_{\textrm{(N)LO}} + 
-			d\sigma^{\textrm{(f.o.)}}_{\textrm{(N)LO}} \; , \nonumber
-		\end{equation}
-	
-		\begin{align}
-			d\sigma^{\textrm{(res.)}}_{\textrm{(N)NLL}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \mathcal{H}_{\textrm{(N)LO}} \times \exp{\mathcal{G}}_{\textrm{(N)NLL}} \; , \nonumber \\
-			d\sigma^{\textrm{(asy.)}}_{\textrm{(N)LO}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \Sigma_{\textrm{(N)LO}} \; ,\nonumber
+			d\sigma^{\textrm{(f.o.)}}_{\textrm{(N)LO}} \nonumber \\
+			d\sigma^{\textrm{(res.)}}_{\textrm{(N)NLL}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \mathcal{H}_{\textrm{(N)LO}} \times \exp{\mathcal{G}}_{\textrm{(N)NLL}} \; \nonumber \\
+			d\sigma^{\textrm{(asy.)}}_{\textrm{(N)LO}} &= \hat{\sigma}^{\textrm{H}}_{\textrm{LO}} \times \Sigma_{\textrm{(N)LO}} \nonumber
 		\end{align}
 	
-		\column{0.45\textwidth}
+		\column{0.5\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 5 cm]{plots/part3/chapter6/higgs_qt_all.png}
+			\includegraphics[width = 5 cm]{plots/part3/chapter5/higgs.png}
 		\end{figure}	
 		
 	\end{columns}
@@ -706,40 +640,6 @@
 	\vspace{0.2 cm}
 
 	{\color{red}Final goal}: extend theoretical accuracy up to N$^{3}$LL+N$^{3}$LO
-
-\end{frame}
-
-% DYturbo II
-\begin{frame}
-
-	\frametitle{HTurbo}
-	\framesubtitle{Implementation of Higgs boson factors}
-
-	\footnotesize
-	
-	Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
-	\begin{align}
-		\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
-		\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + ...  \nonumber
-	\end{align}
-	
-	For each new order implement a factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
-	
-	\begin{columns}
-		
-		\column{0.45\textwidth}
-
-		\begin{align}
-			&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
-			&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
-			&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
-		\end{align}
-	
-		\column{0.45\textwidth}
-		
-		Start by building predictions up to NNLO+NNLL, then add {\color{blue}N$^{3}$LO+N$^{3}$LL}
-		
-	\end{columns}
 
 \end{frame}
 
@@ -965,6 +865,74 @@
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
 		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+	\end{itemize}
+
+\end{frame}
+
+% Results - N3LL implementation
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{N$^{3}$LL implementation}
+	
+	\footnotesize
+	
+	Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
+	\begin{align}
+	\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + {\color{red}\frac{\alpha_{s}}{\pi}g^{(4)}(\alpha_{s}L)} + ... \nonumber \\
+	\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + {\color{red}\alpha_{s}^{2}\mathcal{H}^{(3)}} + ...  \nonumber
+	\end{align}
+	
+	For each new order implement a factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
+	
+	\begin{columns}
+		
+		\column{0.45\textwidth}
+		
+		\begin{align}
+			&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
+			&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
+			&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber \\
+			&\textrm{N$^{3}$LL} (\sim \alpha_{s}^{n}L^{n-2}): g^{(4)}, \mathcal{H}^{(3)} \nonumber
+		\end{align}
+		
+		\column{0.45\textwidth}
+		
+		Start by building predictions up to NNLO+NNLL, then add {\color{red}N$^{3}$LO+N$^{3}$LL}
+		
+	\end{columns}
+
+\end{frame}
+
+% Results - N3LL implementation
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{N$^{3}$LL implementation}
+	
+	\footnotesize
+	
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6cm]{plots/part3/chapter7/hturbo_n3ll.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6cm]{plots/part3/chapter7/hturbo_n3ll_cuts.png}
+		\end{figure}
+		
+	\end{columns}
+	
+	\begin{itemize}
+		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
+		\item Implementation of N$^{3}$LL factors following
+		{\color{blue}[Li - Zhu]}, {\color{blue} \href{https://arxiv.org/abs/1604.01404}{1604.01404}} \\
+		{\color{blue}[Von Manteuffel et al.]}, {\color{blue} \href{https://arxiv.org/abs/2002.04617}{2002.04617}}
 	\end{itemize}
 
 \end{frame}
