@@ -38,7 +38,7 @@
 	
 	\vspace{0.25 cm}
 	\center{Jes\'us Urtasun Elizari}
-	\center{PhD presentation - Milan, February 25th, 2022}
+	\center{PhD thesis defense - Milan, February 25th, 2022}
 
 	\begin{figure}
 		\minipage{1\textwidth}
@@ -66,7 +66,7 @@
 		\begin{itemize}
 			\item The strong interactions
 			\item Asymptotic freedom and pQCD
-			\item QCD Factorization
+			\item Factorization in QCD
 			\item Phenomenology at the LHC
 		\end{itemize}
 		\item {\color{blue}All order perturbative resummation}
@@ -81,7 +81,7 @@
 			\item HTurbo numerical implementation
 			\item N$^{3}$LL implementation
 		\end{itemize}
-		\item Results $\&$ Conclusions
+		\item {\color{blue}Results $\&$ Conclusions}
 	\end{enumerate}
 	
 \end{frame}
@@ -107,12 +107,17 @@
 	\footnotesize
 	
 	\begin{itemize}
-		\item QCD is the theory of the strong interactions
-		\item Part of the Standard describing fundamental interactions at the TeV scale
+		\item The Standard Model describes fundamental interactions at the TeV scale
 		\item Fundamental objects described as irreducible representations of Lorentz group
 		\item Particles as local excitations of fields with quantum mechanical behavior
 	\end{itemize}
 
+	\begin{figure}
+		\includegraphics[width = 0.5\linewidth]{plots/part1/intro/qcd_lagrangian.png}
+	\end{figure}
+
+		QCD is the theory of the strong interactions $\longrightarrow$ interactions between {\color{red} quarks and gluons}
+		
 \end{frame}
 
 % QCD and the strong interactions
@@ -204,7 +209,7 @@
 		\column{0.5\textwidth}
 		
 		\begin{figure}
-			\includegraphics[width = 5 cm]{plots/part1/chapter1/qcd_running_coupling.png}
+			\includegraphics[width = 6 cm]{plots/part1/chapter1/qcd_running_fit.png}
 		\end{figure}
 		
 		\column{0.5\textwidth}
@@ -215,7 +220,7 @@
 			\alpha_{s}(\mu) = \frac{1}{\beta_{0} \log\big( \frac{\mu^{2}}{\Lambda_{\textrm{QCD}}^{2}}\big)} \nonumber
 			\end{equation}
 			\item \footnotesize $\beta_{0}$ LO of the $\beta$ function, is $ > 0$
-			\item \footnotesize $\Lambda_{\textrm{QCD}}$, parameter that defines value of the coupling at large scales
+			\item \footnotesize $\Lambda_{\textrm{QCD}}$, parameter that defines value \\ of the coupling at large scales
 		\end{itemize}
 		
 	\end{columns}
@@ -322,6 +327,34 @@
 
 \end{frame}
 
+% The N3PDF project
+\begin{frame}
+	
+	\frametitle{QCD and collider physics}
+	\framesubtitle{The N3PDF project}
+	
+	\footnotesize
+	
+	\begin{figure}[!htb]
+		\minipage{0.32\textwidth}
+		\includegraphics[width = 0.5\linewidth]{plots/backup/TF.png}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+		\includegraphics[width = 0.5\linewidth]{plots/backup/Keras.png}
+		\endminipage\hfill
+	\end{figure}
+	
+	\begin{itemize}
+		\item Use \texttt{TensorFlow} and \texttt{Keras} to determine the PDFs with ML fitting models
+		\item See paper by S.Carraza - J.Cruz-Martinez \\
+		{\color{blue}"Towards a new generation of parton densities with deep learning models",\\
+		Carrazza et al., https://arxiv.org/abs/1907.05075}
+		\item TensorFlow operator implementation $\longrightarrow$ optimize PDF fitting \\
+		{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ Urtasun-Elizari et al., https://arxiv.org/abs/1909.10547}
+	\end{itemize}
+
+\end{frame}
+
 % Partonic cross section and pQCD
 \begin{frame}
 	
@@ -367,7 +400,7 @@
 	\begin{figure}
 		\includegraphics[width = 8.5 cm]{plots/part1/chapter3/lhc_measurements.png}
 	\end{figure}
-
+		
 \end{frame}
 
 %
@@ -455,7 +488,15 @@
 	\frametitle{Resummation in QCD}
 	\framesubtitle{$q_{\perp}$ resummation}
 
-	\footnotesize Separate partonic $q_{\perp}$ distribution as follows
+	\footnotesize
+	
+	\begin{itemize}
+		\item Formalism developed by Catani-Bozzi (*) \\
+		{\color{blue}"Transverse-momentum resummation and the spectrum\\
+			of the Higgs boson at the LHC",\\
+		Bozzi, Catani et al., https://arxiv.org/abs/hep-ph/0508068}
+		\item Separate partonic $q_{\perp}$ distribution as follows:
+	\end{itemize}
 	
 	\begin{equation}
 		\frac{d\hat{\sigma}_{ab}}{dq_{\perp}^{2}} =
@@ -468,7 +509,8 @@
 		\lim_{q_{\perp} \rightarrow 0}\int_{0}^{q_{\perp}^{2}} dq_{\perp}^{2} \frac{d\hat{\sigma}^{\textrm{(fin.)}}_{ab}}{dq_{\perp}^{2}} &= 0 \nonumber 
 	\end{align}
 
-	\footnotesize Resummed and finite components can be matched (LL+LO, NLL+NLO,\\ NNLO+NNLL, ...) to have uniform accuracy in a wide range of $q_{\perp}$
+	Resummed and finite components can be matched (LL+LO, NLL+NLO,\\ NNLO+NNLL, ...) to have uniform accuracy in a wide range of $q_{\perp}$
+	
 \end{frame}
 
 % qT resummation III
@@ -497,18 +539,18 @@
 	
 \end{frame}
 
-% qT resummation IV
+% Extend formalism to N3LL
 \begin{frame}
-	
+
 	\frametitle{Resummation in QCD}
-	\framesubtitle{Resummed component}
+	\framesubtitle{Extend formalism to N$^{3}$LL}
 	
 	\footnotesize
 	
 	Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
 	\begin{align}
-	\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + ... \nonumber \\
-	\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + ...  \nonumber
+		\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + {\color{red} \bigg( \frac{\alpha_{s}}{\pi} \bigg) ^{2}g^{(4)}(\alpha_{s}L)} + ... \nonumber \\
+		\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + {\color{red}\alpha_{s}^{2}\mathcal{H}^{(3)}} + ...  \nonumber
 	\end{align}
 	
 	For each new order implement a factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
@@ -518,17 +560,19 @@
 		\column{0.45\textwidth}
 		
 		\begin{align}
-		&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
-		&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
-		&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber
+			&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
+			&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
+			&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber \\
+			&{\color{red} \textrm{N$^{3}$LL} (\sim \alpha_{s}^{n}L^{n-2}): g^{(4)}, \mathcal{H}^{(3)}} \nonumber
 		\end{align}
 		
 		\column{0.45\textwidth}
 		
-		Each term $g^{(i)}$ and $\mathcal{H}^{(i)}$ in the series becomes increasingly complicated \\
-		\vspace{0.25 cm}
-		Current codes able to produce only up to NNLL predictions!
-		
+		\begin{itemize}
+			\item Implement Catani-Bozzi resummation up to \texttt{C++} implementation
+			\item Extend the formalism up to {\color{red}N$^{3}$LO+N$^{3}$LL} accuracy!
+		\end{itemize}
+	
 	\end{columns}
 
 \end{frame}
@@ -561,7 +605,7 @@
 
 	\begin{columns}
 		
-		\column{0.45\textwidth}
+		\column{0.5\textwidth}
 
 		\begin{align}
 			d\sigma^{\textrm{H}}_{\textrm{(N)NLL+(N)LO}} &= 
@@ -580,6 +624,10 @@
 		
 	\end{columns}
 
+	\begin{itemize}
+		\item LO process is just gg $\rightarrow$ H, but NLO and beyond require gg $\rightarrow$ H + jet!
+	\end{itemize}
+
 \end{frame}
 
 % HqT and HRes
@@ -595,10 +643,10 @@
 		\column{0.5\textwidth}
 			
 		\begin{itemize}
-			\item $q_{\perp}$ resummation implemented in numerical codes \textbf{HRes}, \textbf{HRes}, \textbf{HNNLO} {\color{blue}[Catani, de Florian, Ferrera, Grazzini, Tommasini]} 
+			\item $q_{\perp}$ resummation implemented in numerical codes \textbf{HqT}, \textbf{HRes}, \textbf{HNNLO} {\color{blue}[Catani, de Florian, \\ Ferrera, Grazzini, Tommasini]} 
 			\item Higher order accuracy require \\
 			{\color{red}high computation times}
-			\item NNLL predictions can take up to 48h $\longrightarrow$ need for {\color{red} fast numerical implementations}
+			\item NNLL predictions can take \\ more than 48h $\longrightarrow$ need for \\ {\color{red} fast numerical implementations}
 		\end{itemize}
 
 		\column{0.45\textwidth}
@@ -611,7 +659,8 @@
 
 	\vspace{0.5 cm}
 	
-	Codes producing fast and accurate predictions are needed for precision era of the LHC
+	Codes producing fast and accurate predictions are needed for precision era of the LHC \\
+	(High Luminosity LHC, from 80 - 140 fb$^{-1}$ to \textbf{2000 fb$^{-1}$} !)
 	
 \end{frame}
 
@@ -623,7 +672,7 @@
 
 	\footnotesize
 	
-	Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}, fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1}h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$) 
+	Numerical code \textbf{DYTurbo} {\color{blue}[Camarda et al., https://arxiv.org/abs/1910.07049]}, \\ fast and precise $q_{\perp}$ resummation and several improvements for Drell-Yan ($h_{1}h_{2} \rightarrow V + X \rightarrow l^{+}l^{-} + X$) 
 	
 	\vspace{0.5 cm}
 	
@@ -869,9 +918,10 @@
 
 \end{frame}
 
+
 % Results - N3LL implementation
 \begin{frame}
-	
+
 	\frametitle{Results}
 	\framesubtitle{N$^{3}$LL implementation}
 	
@@ -879,29 +929,23 @@
 	
 	Sudakov factor $\mathcal{G}_{N}$ and hard coefficient $\mathcal{H}_{N}$ can be expanded as perturbative series in $\alpha_{s}$
 	\begin{align}
-	\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + {\color{red}\frac{\alpha_{s}}{\pi}g^{(4)}(\alpha_{s}L)} + ... \nonumber \\
-	\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + {\color{red}\alpha_{s}^{2}\mathcal{H}^{(3)}} + ...  \nonumber
+		\mathcal{G}_{N}(\alpha_{s}, L) &= L\;g^{(1)}(\alpha_{s}L) + g^{(2)}(\alpha_{s}L) + \frac{\alpha_{s}}{\pi}g^{(3)}(\alpha_{s}L) + {\color{red} \bigg( \frac{\alpha_{s}}{\pi} \bigg) ^{2}g^{(4)}(\alpha_{s}L)} + ... \nonumber \\
+		\mathcal{H}_{N}(\alpha_{s}) &= 1 + \alpha_{s}\mathcal{H}^{(1)} + \alpha_{s}^{2}\mathcal{H}^{(2)} + {\color{red}\alpha_{s}^{2}\mathcal{H}^{(3)}} + ...  \nonumber
 	\end{align}
 	
-	For each new order implement a factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
+	For each new order implement a new factor of $\mathcal{G}_{N}$ and Hard $\mathcal{H}_{N}$
+		
+	\begin{itemize}
+		\item Extend the formalism up to {\color{red}N$^{3}$LO+N$^{3}$LL} accuracy!
+		\item Implementation of N$^{3}$LL factors following \\
+		\begin{itemize}
+			\item {\color{blue} "Anomalous dimension for transverse-momentum resummation", \\
+			Li - Zhu, https://arxiv.org/abs/1604.01404},
+			\item {\color{blue} "Cusp and collinear anomalous dimensions in four-loop QCD", \\
+			Von Manteuffel et al., https://arxiv.org/abs/2002.04617}
+		\end{itemize}
+	\end{itemize}
 	
-	\begin{columns}
-		
-		\column{0.45\textwidth}
-		
-		\begin{align}
-			&\textrm{LL} (\sim \alpha_{s}^{n}L^{n+1}): g^{(1)}, \hat{\sigma}^{(0)} \nonumber \\
-			&\textrm{NLL} (\sim \alpha_{s}^{n}L^{n}): g^{(2)}, \mathcal{H}^{(1)} \nonumber \\
-			&\textrm{NNLL} (\sim \alpha_{s}^{n}L^{n-1}): g^{(3)}, \mathcal{H}^{(2)} \nonumber \\
-			&\textrm{N$^{3}$LL} (\sim \alpha_{s}^{n}L^{n-2}): g^{(4)}, \mathcal{H}^{(3)} \nonumber
-		\end{align}
-		
-		\column{0.45\textwidth}
-		
-		Start by building predictions up to NNLO+NNLL, then add {\color{red}N$^{3}$LO+N$^{3}$LL}
-		
-	\end{columns}
-
 \end{frame}
 
 % Results - N3LL implementation
@@ -930,9 +974,10 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item Implementation of N$^{3}$LL factors following
-		{\color{blue}[Li - Zhu]}, {\color{blue} \href{https://arxiv.org/abs/1604.01404}{1604.01404}} \\
-		{\color{blue}[Von Manteuffel et al.]}, {\color{blue} \href{https://arxiv.org/abs/2002.04617}{2002.04617}}
+		\item Implementation of N$^{3}$LL factors following \\
+		{\color{blue}[Li - Zhu, 1604.01404]}, 
+		{\color{blue}[Von Manteuffel et al., 2002.04617]}
+		\item First implementation of resummation at N$^{3}$LL accuracy!
 	\end{itemize}
 
 \end{frame}
@@ -942,41 +987,24 @@
 	
 	\frametitle{Summary $\&$ Conclusions}
 	
+	\footnotesize
+	
 	\vspace{2.0 cm}
 	
 	\begin{enumerate}
-		\item \footnotesize Fast and accurate predictions are needed towards the precision era of the LHC
-		\item \footnotesize Developing a novel numerical code, \textbf{HTurbo}, which implements $q_{\perp}$ resummation for Higgs boson production
-		\item \footnotesize HTurbo is {\color{blue} faster than any of the existing codes}
-		\item \footnotesize Outlook of thesis work: 
+		\item Accurate predictions are needed towards the precision era of the LHC
+		\item Resummation is needed for describing differential distributions
+		\item Fast numerical implementation are needed towards the precision era of the LHC
+		\item Developing a novel numerical code, \textbf{HTurbo}, which implements $q_{\perp}$ resummation for Higgs boson production
+		\item HTurbo is {\color{blue} faster than any of the existing codes}
+		\item HTurbo contains the {\color{blue} first implementation of resummation at N$^{3}$LL accuracy!}
+			
+		\item Next steps: 
 		\begin{itemize}
-			\item \footnotesize Add {\color{blue}N$^{3}$LO+N$^{3}$LL} prediction
-			\item \footnotesize Perform phenomenological studies comparing with LHC data
+			\item Add full {\color{blue}N$^{3}$LO+N$^{3}$LL} prediction
+			\item Perform phenomenological studies comparing with LHC data
 		\end{itemize}
 		
-	\end{enumerate}
-
-	\vspace{2.0 cm}
-
-\end{frame}
-
-% Discussion $\&$ next steps
-\begin{frame}
-	
-	\frametitle{Discussion $\&$ next steps}
-
-	\vspace{2.0 cm}
-	
-	\begin{enumerate}
-		\item \footnotesize Fast and accurate predictions are needed towards the precision era of the LHC
-		\item \footnotesize Developing a novel numerical code, \textbf{HTurbo}, which implements $q_{\perp}$ resummation for Higgs boson production
-		\item \footnotesize HTurbo is {\color{blue} faster than any of the existing codes}
-		\item \footnotesize Outlook of thesis work: 
-		\begin{itemize}
-			\item \footnotesize Add {\color{blue}N$^{3}$LO+N$^{3}$LL} prediction
-			\item \footnotesize Perform phenomenological studies comparing with LHC data
-		\end{itemize}
-
 	\end{enumerate}
 
 	\vspace{2.0 cm}
@@ -1000,6 +1028,52 @@
 \begin{frame}
 
 	\frametitle{Back up}
+	\framesubtitle{Back up}
+	
+\end{frame}
+
+% Back up
+\begin{frame}
+
+	\frametitle{Back up}
+	\framesubtitle{General structure of n3fit}
+	
+	\footnotesize
+	
+	\begin{figure}[!htb]
+		\minipage{0.32\textwidth}
+		\includegraphics[width = 0.5\linewidth]{plots/backup/TF.png}
+		\endminipage\hfill
+		\minipage{0.5\textwidth}
+		\includegraphics[width = 0.5\linewidth]{plots/backup/Keras.png}
+		\endminipage\hfill
+	\end{figure}
+	
+	\begin{itemize}
+		\item Use TensorFlow and Keras to determine the PDFs
+		\item See paper by S.Carraza - J.Cruz-Martinez \\
+		{\color{blue}"Towards a new generation of parton densities\\ with deep learning models",\\ https://arxiv.org/abs/1907.05075}
+	\end{itemize}
+
+\end{frame}
+
+% Back up
+\begin{frame}
+	
+	\frametitle{Back up}
+	\framesubtitle{General structure of n3fit}
+	
+	\footnotesize
+	
+	\begin{figure}
+		\includegraphics[width = 9 cm]{plots/backup/n3fit1.png}
+	\end{figure}	
+
+	\begin{enumerate}
+		\item Build a NN to compute $y_{pred}$ observables from a grid of momentum fractions $x_{i}$
+		\item Compute loss function by comparing with LHC data
+		\item Update values of PDF $\longrightarrow$ {\color{violet} Fit}
+	\end{enumerate}
 
 \end{frame}
 
@@ -1007,13 +1081,26 @@
 \begin{frame}
 
 	\frametitle{Back up}
+	\framesubtitle{Operator implementation}
+
+	\footnotesize
+	
+	\begin{figure}
+		\includegraphics[width = 10.5 cm]{plots/backup/n3fit2.png}
+	\end{figure}
+
+	\begin{enumerate}
+		\item TF relies in symbolic computation $\longrightarrow$ High memory usage
+		\item Implement \texttt{C++} operator replacing the convolution
+	\end{enumerate}
 
 \end{frame}
 
 % Back up
 \begin{frame}
-
+	
 	\frametitle{Back up}
+	\framesubtitle{Back up}
 
 \end{frame}
 
