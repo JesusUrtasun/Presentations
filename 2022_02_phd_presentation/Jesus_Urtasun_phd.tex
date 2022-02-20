@@ -1,4 +1,4 @@
-	\documentclass[aspectratio=43]{beamer}
+\documentclass[aspectratio=43]{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -108,8 +108,8 @@
 	
 	\begin{itemize}
 		\item The Standard Model describes fundamental interactions at the TeV scale
-		\item Fundamental objects described as irreducible representations of Lorentz group
 		\item Particles as local excitations of fields with quantum mechanical behavior
+		\item Lagrangian describing the fundamental objects ot the theory
 	\end{itemize}
 
 	\begin{figure}
@@ -137,7 +137,7 @@
 	
 	\begin{itemize}
 		\item At different scales, hadrons show different behavior
-		\item From point-like to complex internal dynamics
+		\item From point-like objects to complex internal dynamics
 		\item Scattering experiments (DIS) and hadronic physics (LHC)
 	\end{itemize}
 	
@@ -166,7 +166,7 @@
 		
 		\begin{itemize}
 			\item Parton model as LO approximation to QCD
-			\item Real QCD coupling strength changes with energy
+			\item QCD coupling strength $\alpha_{s}$ changes with energy
 			\item At high energies the hadron involves extremely complex internal dynamics
 		\end{itemize}
 		
@@ -192,8 +192,11 @@
 		{\color{blue}\mu\frac{d\alpha_{s}(\mu)}{d\mu} = \beta(\alpha_{s}(\mu)) = -\sum_{n = 0}^{\infty} \beta_{n} \Big( \frac{\alpha_{s}}{\pi} \Big)^{n + 1}} \nonumber
 		\end{equation}
 		\item Coupling {\color{blue}$\alpha_{s}$} evolves with scale {\color{blue}$\mu$} as given by RGE $\rightarrow$ LO behavior driven by $\beta_{0}$
-		\item $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies, {\color{blue}UV divergent}
-		\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies, {\color{red}IR divergent}
+		\item Main difference between QED and QCD
+		\begin{itemize}
+			\item $\beta_{0}^{\textrm{QED}} < 0 \implies$ strongly coupled at large energies
+			\item $\beta_{0}^{\textrm{QCD}} > 0 \implies$ weakly coupled at large energies
+		\end{itemize}
 	\end{itemize}
 
 \end{frame}
@@ -246,7 +249,7 @@
 	\end{figure}
 	
 	\begin{itemize}
-		\item LHC physic rely on hadronic collisions $\longrightarrow$ pQCD
+		\item LHC physics rely on hadronic collisions $\longrightarrow$ pQCD
 		\item Compute \textbf{cross section} $\sigma^{F}$ $\longrightarrow$ probability for a given process
 	\end{itemize}
 
@@ -321,8 +324,7 @@
 	\begin{itemize}
 		\item Each parton has a different PDF $\longrightarrow$ ${\color{blue}u(x)}, {\color{green}d(x)}, ..., {\color{red}g(x)}$
 		\item PDFs can not predicted and yet can not measured $\longrightarrow$ extracted from data \\ (MSTW, CTEQ, NNPDF collaborations)
-		\item The N3PDF project: Machine Learning for PDFs determination \\
-		{\color{blue}[Urtasun-Elizari et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}
+		\item The N3PDF project: Machine Learning for PDFs determination
 	\end{itemize}
 
 \end{frame}
@@ -346,12 +348,52 @@
 	
 	\begin{itemize}
 		\item Use \texttt{TensorFlow} and \texttt{Keras} to determine the PDFs with ML fitting models
-		\item See paper by S.Carraza - J.Cruz-Martinez \\
+		\item See paper by S.Carrazza - J.Cruz-Martinez \\
 		{\color{blue}"Towards a new generation of parton densities with deep learning models",\\
 		Carrazza et al., https://arxiv.org/abs/1907.05075}
 		\item TensorFlow operator implementation $\longrightarrow$ optimize PDF fitting \\
 		{\color{blue}"Towards hardware acceleration for parton densities estimation",\\ Urtasun-Elizari et al., https://arxiv.org/abs/1909.10547}
 	\end{itemize}
+
+\end{frame}
+
+% The N3PDF project
+\begin{frame}
+	
+	\frametitle{QCD and collider physics}
+	\framesubtitle{General structure of n3fit}
+	
+	\footnotesize
+	
+	\begin{figure}
+		\includegraphics[width = 9 cm]{plots/backup/n3fit1.png}
+	\end{figure}	
+	
+	\begin{enumerate}
+		\item Build a NN to compute $y_{pred}$ observables from a grid of momentum fractions $x_{i}$
+		\item Compute $\chi^{2}$ loss function by comparing with LHC data
+		\item Update values of PDF through $\chi^{2}$ minimization $\longrightarrow$ {\color{violet} Fit}
+	\end{enumerate}
+	
+	\end{frame}
+
+% The N3PDF project
+\begin{frame}
+	
+	\frametitle{QCD and collider physics}
+	\framesubtitle{Operator implementation in TF}
+	
+	\footnotesize
+	
+	\begin{figure}
+	\includegraphics[width = 10.5 cm]{plots/backup/n3fit2.png}
+	\end{figure}
+	
+	\begin{enumerate}
+	\item TF relies in symbolic computation $\longrightarrow$ High memory usage
+	\item Implement \texttt{C++} operator replacing the convolution
+	\item {\color{blue}[Urtasun-Elizari et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}
+\end{enumerate}
 
 \end{frame}
 
@@ -442,7 +484,7 @@
 
 	\vspace{0.5 cm}
 	
-	Cancellation only works in completely inclusive final states!
+	Complete cancellation only works in inclusive final states!
 
 \end{frame}
 
@@ -491,10 +533,10 @@
 	\footnotesize
 	
 	\begin{itemize}
-		\item Formalism developed by Catani-Bozzi (*) \\
+		\item Catani - Bozzi - de Florian - Grazzini (CBFG) formalism (*) \\
 		{\color{blue}"Transverse-momentum resummation and the spectrum\\
 			of the Higgs boson at the LHC",\\
-		Bozzi, Catani et al., https://arxiv.org/abs/hep-ph/0508068}
+		Bozzi et al., https://arxiv.org/abs/hep-ph/0508068}
 		\item Separate partonic $q_{\perp}$ distribution as follows:
 	\end{itemize}
 	
@@ -569,7 +611,8 @@
 		\column{0.45\textwidth}
 		
 		\begin{itemize}
-			\item Implement Catani-Bozzi resummation up to \texttt{C++} implementation
+			\item Implement CBFG resummation \\ 
+			in \texttt{C++} code
 			\item Extend the formalism up to {\color{red}N$^{3}$LO+N$^{3}$LL} accuracy!
 		\end{itemize}
 	
@@ -646,7 +689,8 @@
 			\item $q_{\perp}$ resummation implemented in numerical codes \textbf{HqT}, \textbf{HRes}, \textbf{HNNLO} {\color{blue}[Catani, de Florian, \\ Ferrera, Grazzini, Tommasini]} 
 			\item Higher order accuracy require \\
 			{\color{red}high computation times}
-			\item NNLL predictions can take \\ more than 48h $\longrightarrow$ need for \\ {\color{red} fast numerical implementations}
+			\item NNLL predictions can take \\ more than 48h {\color{red} just for 1 PDF set \\
+			and 1 $\mu_{R}, \mu_{F}$ value} $\longrightarrow$ need for \\ {\color{red} fast numerical implementations}
 		\end{itemize}
 
 		\column{0.45\textwidth}
@@ -1051,7 +1095,7 @@
 	
 	\begin{itemize}
 		\item Use TensorFlow and Keras to determine the PDFs
-		\item See paper by S.Carraza - J.Cruz-Martinez \\
+		\item See paper by S.Carrazza - J.Cruz-Martinez \\
 		{\color{blue}"Towards a new generation of parton densities\\ with deep learning models",\\ https://arxiv.org/abs/1907.05075}
 	\end{itemize}
 

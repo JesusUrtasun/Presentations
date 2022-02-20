@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  12 FEB 2022 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  20 FEB 2022 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,20 +917,20 @@ Package pdftex.def Info: plots/part1/intro/proton2.jpg  used on input line 179.
  <./plots/part1/intro/proton2.jpg>] [7
 
 ]
-<plots/part1/chapter1/qcd_running_fit.png, id=86, 1204.5pt x 714.67pt>
+<plots/part1/chapter1/qcd_running_fit.png, id=88, 1204.5pt x 714.67pt>
 File: plots/part1/chapter1/qcd_running_fit.png Graphic file (type png)
 <use plots/part1/chapter1/qcd_running_fit.png>
 Package pdftex.def Info: plots/part1/chapter1/qcd_running_fit.png  used on inpu
-t line 232.
+t line 235.
 (pdftex.def)             Requested size: 170.71652pt x 101.28537pt.
  [8
 
  <./plots/part1/chapter1/qcd_running_fit.png>]
-<plots/part1/chapter2/factorization_1.png, id=96, 1054.94125pt x 646.415pt>
+<plots/part1/chapter2/factorization_1.png, id=99, 1054.94125pt x 646.415pt>
 File: plots/part1/chapter2/factorization_1.png Graphic file (type png)
 <use plots/part1/chapter2/factorization_1.png>
 Package pdftex.def Info: plots/part1/chapter2/factorization_1.png  used on inpu
-t line 253.
+t line 256.
 (pdftex.def)             Requested size: 199.16928pt x 122.04091pt.
  [9
 
@@ -938,346 +938,361 @@ t line 253.
 File: plots/part1/chapter2/factorization_1.png Graphic file (type png)
 <use plots/part1/chapter2/factorization_1.png>
 Package pdftex.def Info: plots/part1/chapter2/factorization_1.png  used on inpu
-t line 278.
+t line 281.
 (pdftex.def)             Requested size: 199.16928pt x 122.04091pt.
 
 [10
 
 ]
-<plots/part1/chapter2/factorization_2.png, id=110, 1058.95625pt x 648.4225pt>
+<plots/part1/chapter2/factorization_2.png, id=113, 1058.95625pt x 648.4225pt>
 File: plots/part1/chapter2/factorization_2.png Graphic file (type png)
 <use plots/part1/chapter2/factorization_2.png>
 Package pdftex.def Info: plots/part1/chapter2/factorization_2.png  used on inpu
-t line 297.
+t line 300.
 (pdftex.def)             Requested size: 199.16928pt x 121.9549pt.
  [11
 
  <./plots/part1/chapter2/factorization_2.png>]
-<plots/part1/chapter2/PDF.png, id=118, 508.90125pt x 660.4675pt>
+<plots/part1/chapter2/PDF.png, id=121, 508.90125pt x 660.4675pt>
 File: plots/part1/chapter2/PDF.png Graphic file (type png)
 <use plots/part1/chapter2/PDF.png>
-Package pdftex.def Info: plots/part1/chapter2/PDF.png  used on input line 328.
+Package pdftex.def Info: plots/part1/chapter2/PDF.png  used on input line 330.
 (pdftex.def)             Requested size: 85.35826pt x 110.77637pt.
  [12
 
  <./plots/part1/chapter2/PDF.png>]
-<plots/backup/TF.png, id=127, 217.81375pt x 232.87pt>
+<plots/backup/TF.png, id=129, 217.81375pt x 232.87pt>
 File: plots/backup/TF.png Graphic file (type png)
 <use plots/backup/TF.png>
-Package pdftex.def Info: plots/backup/TF.png  used on input line 356.
+Package pdftex.def Info: plots/backup/TF.png  used on input line 358.
 (pdftex.def)             Requested size: 54.7685pt x 58.55136pt.
-<plots/backup/Keras.png, id=128, 1204.5pt x 349.305pt>
+<plots/backup/Keras.png, id=130, 1204.5pt x 349.305pt>
 File: plots/backup/Keras.png Graphic file (type png)
 <use plots/backup/Keras.png>
-Package pdftex.def Info: plots/backup/Keras.png  used on input line 356.
+Package pdftex.def Info: plots/backup/Keras.png  used on input line 358.
 (pdftex.def)             Requested size: 85.57382pt x 24.81628pt.
  [13
 
  <./plots/backup/TF.png> <./plots/backup/Keras.png>]
-<plots/part1/chapter2/factorization_3.png, id=139, 447.6725pt x 368.37625pt>
+<plots/backup/n3fit1.png, id=141, 1003.75pt x 501.875pt>
+File: plots/backup/n3fit1.png Graphic file (type png)
+<use plots/backup/n3fit1.png>
+Package pdftex.def Info: plots/backup/n3fit1.png  used on input line 378.
+(pdftex.def)             Requested size: 256.0748pt x 128.03386pt.
+ [14
+
+ <./plots/backup/n3fit1.png>]
+<plots/backup/n3fit2.png, id=149, 1163.34625pt x 549.05125pt>
+File: plots/backup/n3fit2.png Graphic file (type png)
+<use plots/backup/n3fit2.png>
+Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 398.
+(pdftex.def)             Requested size: 298.75394pt x 140.999pt.
+ [15
+
+ <./plots/backup/n3fit2.png>]
+<plots/part1/chapter2/factorization_3.png, id=158, 447.6725pt x 368.37625pt>
 File: plots/part1/chapter2/factorization_3.png Graphic file (type png)
 <use plots/part1/chapter2/factorization_3.png>
 Package pdftex.def Info: plots/part1/chapter2/factorization_3.png  used on inpu
-t line 392.
+t line 434.
 (pdftex.def)             Requested size: 142.26378pt x 117.06776pt.
- [14
+ [16
 
  <./plots/part1/chapter2/factorization_3.png>]
-<plots/part1/chapter3/lhc_measurements.png, id=148, 2855.66875pt x 2144.01pt>
+<plots/part1/chapter3/lhc_measurements.png, id=167, 2855.66875pt x 2144.01pt>
 File: plots/part1/chapter3/lhc_measurements.png Graphic file (type png)
 <use plots/part1/chapter3/lhc_measurements.png>
 Package pdftex.def Info: plots/part1/chapter3/lhc_measurements.png  used on inp
-ut line 404.
+ut line 446.
 (pdftex.def)             Requested size: 241.84842pt x 181.56778pt.
- [15
-
- <./plots/part1/chapter3/lhc_measurements.png>] [16
-
-]
-<plots/part2/qcd_corrections.png, id=162, 507.8975pt x 436.63126pt>
-File: plots/part2/qcd_corrections.png Graphic file (type png)
-<use plots/part2/qcd_corrections.png>
-Package pdftex.def Info: plots/part2/qcd_corrections.png  used on input line 44
-7.
-(pdftex.def)             Requested size: 154.03183pt x 132.41614pt.
  [17
 
+ <./plots/part1/chapter3/lhc_measurements.png>]
+[18
+
+]
+<plots/part2/qcd_corrections.png, id=181, 507.8975pt x 436.63126pt>
+File: plots/part2/qcd_corrections.png Graphic file (type png)
+<use plots/part2/qcd_corrections.png>
+Package pdftex.def Info: plots/part2/qcd_corrections.png  used on input line 48
+9.
+(pdftex.def)             Requested size: 154.03183pt x 132.41614pt.
+ [19
+
  <./plots/part2/qcd_corrections.png>]
-<plots/part2/qT_diagram.png, id=170, 402.50375pt x 222.8325pt>
+<plots/part2/qT_diagram.png, id=191, 402.50375pt x 222.8325pt>
 File: plots/part2/qT_diagram.png Graphic file (type png)
 <use plots/part2/qT_diagram.png>
-Package pdftex.def Info: plots/part2/qT_diagram.png  used on input line 483.
+Package pdftex.def Info: plots/part2/qT_diagram.png  used on input line 525.
 (pdftex.def)             Requested size: 113.81102pt x 63.0047pt.
-<plots/part2/qT_logs_table.png, id=171, 727.71875pt x 239.89626pt>
+<plots/part2/qT_logs_table.png, id=192, 727.71875pt x 239.89626pt>
 File: plots/part2/qT_logs_table.png Graphic file (type png)
 <use plots/part2/qT_logs_table.png>
-Package pdftex.def Info: plots/part2/qT_logs_table.png  used on input line 483.
+Package pdftex.def Info: plots/part2/qT_logs_table.png  used on input line 525.
 
 (pdftex.def)             Requested size: 199.16928pt x 65.65503pt.
- [18
+ [20
 
- <./plots/part2/qT_diagram.png> <./plots/part2/qT_logs_table.png>] [19
-
-] [20
-
-] [21
+ <./plots/part2/qT_diagram.png> <./plots/part2/qT_logs_table.png>] [21
 
 ] [22
 
+] [23
+
+] [24
+
 ]
-Overfull \hbox (30.12123pt too wide) detected at line 631
+Overfull \hbox (30.12123pt too wide) detected at line 674
 []
  []
 
-<plots/part3/chapter5/higgs.png, id=208, 489.83pt x 241.90375pt>
+<plots/part3/chapter5/higgs.png, id=227, 489.83pt x 241.90375pt>
 File: plots/part3/chapter5/higgs.png Graphic file (type png)
 <use plots/part3/chapter5/higgs.png>
-Package pdftex.def Info: plots/part3/chapter5/higgs.png  used on input line 631
+Package pdftex.def Info: plots/part3/chapter5/higgs.png  used on input line 674
 .
 (pdftex.def)             Requested size: 142.26378pt x 70.25732pt.
 
-Overfull \hbox (8.22116pt too wide) detected at line 631
+Overfull \hbox (8.22116pt too wide) detected at line 674
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
-[23
+[25
 
  <./plots/part3/chapter5/higgs.png>]
-<plots/part3/chapter6/higgs_qt_all.png, id=216, 462.528pt x 318.7107pt>
+<plots/part3/chapter6/higgs_qt_all.png, id=236, 462.528pt x 318.7107pt>
 File: plots/part3/chapter6/higgs_qt_all.png Graphic file (type png)
 <use plots/part3/chapter6/higgs_qt_all.png>
 Package pdftex.def Info: plots/part3/chapter6/higgs_qt_all.png  used on input l
-ine 665.
+ine 709.
 (pdftex.def)             Requested size: 170.71652pt x 117.63417pt.
 
-Overfull \hbox (16.6847pt too wide) in paragraph at lines 665--665
+Overfull \hbox (16.6847pt too wide) in paragraph at lines 709--709
  [] 
  []
 
-[24
+[26
 
- <./plots/part3/chapter6/higgs_qt_all.png>] [25
+ <./plots/part3/chapter6/higgs_qt_all.png>] [27
 
-] [26
+] [28
 
 ]
-<plots/part3/chapter6/nlo-res-1.png, id=237, 462.528pt x 346.896pt>
+<plots/part3/chapter6/nlo-res-1.png, id=256, 462.528pt x 346.896pt>
 File: plots/part3/chapter6/nlo-res-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-res-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-res-1.png  used on input line
- 764.
+ 808.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 764--764
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 808--808
  [] 
  []
 
-<plots/part3/chapter6/nlo-res-fid-1.png, id=238, 462.528pt x 346.896pt>
+<plots/part3/chapter6/nlo-res-fid-1.png, id=257, 462.528pt x 346.896pt>
 File: plots/part3/chapter6/nlo-res-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-res-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-res-fid-1.png  used on input 
-line 764.
+line 808.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 764--764
- [] 
- []
-
-[27
-
- <./plots/part3/chapter6/nlo-res-1.png> <./plots/part3/chapter6/nlo-res-fid-1.p
-ng>]
-<plots/part3/chapter6/nnlo-res-1.png, id=248, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nnlo-res-1.png Graphic file (type png)
-<use plots/part3/chapter6/nnlo-res-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nnlo-res-1.png  used on input lin
-e 795.
-(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
-
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 795--795
- [] 
- []
-
-<plots/part3/chapter6/nnlo-res-fid-1.png, id=249, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nnlo-res-fid-1.png Graphic file (type png)
-<use plots/part3/chapter6/nnlo-res-fid-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nnlo-res-fid-1.png  used on input
- line 795.
-(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
-
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 795--795
- [] 
- []
-
-[28
-
- <./plots/part3/chapter6/nnlo-res-1.png> <./plots/part3/chapter6/nnlo-res-fid-1
-.png>]
-<plots/part3/chapter6/nlo-ct-1.png, id=258, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nlo-ct-1.png Graphic file (type png)
-<use plots/part3/chapter6/nlo-ct-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nlo-ct-1.png  used on input line 
-826.
-(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
-
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 826--826
- [] 
- []
-
-<plots/part3/chapter6/nlo-ct-fid-1.png, id=259, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nlo-ct-fid-1.png Graphic file (type png)
-<use plots/part3/chapter6/nlo-ct-fid-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nlo-ct-fid-1.png  used on input l
-ine 826.
-(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
-
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 826--826
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 808--808
  [] 
  []
 
 [29
 
- <./plots/part3/chapter6/nlo-ct-1.png> <./plots/part3/chapter6/nlo-ct-fid-1.png
->]
-<plots/part3/chapter6/nnlo-ct-1.png, id=268, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nnlo-ct-1.png Graphic file (type png)
-<use plots/part3/chapter6/nnlo-ct-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nnlo-ct-1.png  used on input line
- 857.
+ <./plots/part3/chapter6/nlo-res-1.png> <./plots/part3/chapter6/nlo-res-fid-1.p
+ng>]
+<plots/part3/chapter6/nnlo-res-1.png, id=267, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nnlo-res-1.png Graphic file (type png)
+<use plots/part3/chapter6/nnlo-res-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nnlo-res-1.png  used on input lin
+e 839.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 857--857
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 839--839
  [] 
  []
 
-<plots/part3/chapter6/nnlo-ct-fid-1.png, id=269, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nnlo-ct-fid-1.png Graphic file (type png)
-<use plots/part3/chapter6/nnlo-ct-fid-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nnlo-ct-fid-1.png  used on input 
-line 857.
+<plots/part3/chapter6/nnlo-res-fid-1.png, id=268, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nnlo-res-fid-1.png Graphic file (type png)
+<use plots/part3/chapter6/nnlo-res-fid-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nnlo-res-fid-1.png  used on input
+ line 839.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 857--857
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 839--839
  [] 
  []
 
 [30
 
- <./plots/part3/chapter6/nnlo-ct-1.png> <./plots/part3/chapter6/nnlo-ct-fid-1.p
-ng>]
-<plots/part3/chapter6/nlo-fo-1.png, id=278, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nlo-fo-1.png Graphic file (type png)
-<use plots/part3/chapter6/nlo-fo-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nlo-fo-1.png  used on input line 
-888.
+ <./plots/part3/chapter6/nnlo-res-1.png> <./plots/part3/chapter6/nnlo-res-fid-1
+.png>]
+<plots/part3/chapter6/nlo-ct-1.png, id=277, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nlo-ct-1.png Graphic file (type png)
+<use plots/part3/chapter6/nlo-ct-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nlo-ct-1.png  used on input line 
+870.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 888--888
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 870--870
  [] 
  []
 
-<plots/part3/chapter6/nlo-fo-fid-1.png, id=279, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nlo-fo-fid-1.png Graphic file (type png)
-<use plots/part3/chapter6/nlo-fo-fid-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nlo-fo-fid-1.png  used on input l
-ine 888.
+<plots/part3/chapter6/nlo-ct-fid-1.png, id=278, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nlo-ct-fid-1.png Graphic file (type png)
+<use plots/part3/chapter6/nlo-ct-fid-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nlo-ct-fid-1.png  used on input l
+ine 870.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 888--888
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 870--870
  [] 
  []
 
 [31
 
- <./plots/part3/chapter6/nlo-fo-1.png> <./plots/part3/chapter6/nlo-fo-fid-1.png
+ <./plots/part3/chapter6/nlo-ct-1.png> <./plots/part3/chapter6/nlo-ct-fid-1.png
 >]
-<plots/part3/chapter6/nnlo-fo-1.png, id=289, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nnlo-fo-1.png Graphic file (type png)
-<use plots/part3/chapter6/nnlo-fo-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nnlo-fo-1.png  used on input line
- 919.
+<plots/part3/chapter6/nnlo-ct-1.png, id=288, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nnlo-ct-1.png Graphic file (type png)
+<use plots/part3/chapter6/nnlo-ct-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nnlo-ct-1.png  used on input line
+ 901.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 919--919
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 901--901
  [] 
  []
 
-<plots/part3/chapter6/nnlo-fo-fid-1.png, id=290, 462.528pt x 346.896pt>
-File: plots/part3/chapter6/nnlo-fo-fid-1.png Graphic file (type png)
-<use plots/part3/chapter6/nnlo-fo-fid-1.png>
-Package pdftex.def Info: plots/part3/chapter6/nnlo-fo-fid-1.png  used on input 
-line 919.
+<plots/part3/chapter6/nnlo-ct-fid-1.png, id=289, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nnlo-ct-fid-1.png Graphic file (type png)
+<use plots/part3/chapter6/nnlo-ct-fid-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nnlo-ct-fid-1.png  used on input 
+line 901.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 919--919
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 901--901
  [] 
  []
 
 [32
 
+ <./plots/part3/chapter6/nnlo-ct-1.png> <./plots/part3/chapter6/nnlo-ct-fid-1.p
+ng>]
+<plots/part3/chapter6/nlo-fo-1.png, id=298, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nlo-fo-1.png Graphic file (type png)
+<use plots/part3/chapter6/nlo-fo-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nlo-fo-1.png  used on input line 
+932.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 932--932
+ [] 
+ []
+
+<plots/part3/chapter6/nlo-fo-fid-1.png, id=299, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nlo-fo-fid-1.png Graphic file (type png)
+<use plots/part3/chapter6/nlo-fo-fid-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nlo-fo-fid-1.png  used on input l
+ine 932.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 932--932
+ [] 
+ []
+
+[33
+
+ <./plots/part3/chapter6/nlo-fo-1.png> <./plots/part3/chapter6/nlo-fo-fid-1.png
+>]
+<plots/part3/chapter6/nnlo-fo-1.png, id=308, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nnlo-fo-1.png Graphic file (type png)
+<use plots/part3/chapter6/nnlo-fo-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nnlo-fo-1.png  used on input line
+ 963.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 963--963
+ [] 
+ []
+
+<plots/part3/chapter6/nnlo-fo-fid-1.png, id=309, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/nnlo-fo-fid-1.png Graphic file (type png)
+<use plots/part3/chapter6/nnlo-fo-fid-1.png>
+Package pdftex.def Info: plots/part3/chapter6/nnlo-fo-fid-1.png  used on input 
+line 963.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 963--963
+ [] 
+ []
+
+[34
+
  <./plots/part3/chapter6/nnlo-fo-1.png> <./plots/part3/chapter6/nnlo-fo-fid-1.p
-ng>] [33
+ng>] [35
 
 ]
-<plots/part3/chapter7/hturbo_n3ll.png, id=305, 462.528pt x 346.896pt>
+<plots/part3/chapter7/hturbo_n3ll.png, id=324, 462.528pt x 346.896pt>
 File: plots/part3/chapter7/hturbo_n3ll.png Graphic file (type png)
 <use plots/part3/chapter7/hturbo_n3ll.png>
 Package pdftex.def Info: plots/part3/chapter7/hturbo_n3ll.png  used on input li
-ne 983.
+ne 1027.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<plots/part3/chapter7/hturbo_n3ll_cuts.png, id=306, 462.528pt x 346.896pt>
+<plots/part3/chapter7/hturbo_n3ll_cuts.png, id=325, 462.528pt x 346.896pt>
 File: plots/part3/chapter7/hturbo_n3ll_cuts.png Graphic file (type png)
 <use plots/part3/chapter7/hturbo_n3ll_cuts.png>
 Package pdftex.def Info: plots/part3/chapter7/hturbo_n3ll_cuts.png  used on inp
-ut line 983.
+ut line 1027.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [34
+ [36
 
  <./plots/part3/chapter7/hturbo_n3ll.png> <./plots/part3/chapter7/hturbo_n3ll_c
 uts.png>]
-Overfull \vbox (30.75146pt too high) detected at line 1012
+Overfull \vbox (30.75146pt too high) detected at line 1056
  []
 
-[35
+[37
 
 ]
-<plots/final/thinking.png, id=321, 287.0725pt x 420.57124pt>
+<plots/final/thinking.png, id=341, 287.0725pt x 420.57124pt>
 File: plots/final/thinking.png Graphic file (type png)
 <use plots/final/thinking.png>
-Package pdftex.def Info: plots/final/thinking.png  used on input line 1025.
+Package pdftex.def Info: plots/final/thinking.png  used on input line 1069.
 (pdftex.def)             Requested size: 56.9055pt x 83.36833pt.
- [36
+ [38
 
- <./plots/final/thinking.png>] [37
+ <./plots/final/thinking.png>] [39
 
 ]
 File: plots/backup/TF.png Graphic file (type png)
 <use plots/backup/TF.png>
-Package pdftex.def Info: plots/backup/TF.png  used on input line 1058.
+Package pdftex.def Info: plots/backup/TF.png  used on input line 1102.
 (pdftex.def)             Requested size: 54.7685pt x 58.55136pt.
 File: plots/backup/Keras.png Graphic file (type png)
 <use plots/backup/Keras.png>
-Package pdftex.def Info: plots/backup/Keras.png  used on input line 1058.
+Package pdftex.def Info: plots/backup/Keras.png  used on input line 1102.
 (pdftex.def)             Requested size: 85.57382pt x 24.81628pt.
- [38
-
-]
-<plots/backup/n3fit1.png, id=341, 1003.75pt x 501.875pt>
-File: plots/backup/n3fit1.png Graphic file (type png)
-<use plots/backup/n3fit1.png>
-Package pdftex.def Info: plots/backup/n3fit1.png  used on input line 1078.
-(pdftex.def)             Requested size: 256.0748pt x 128.03386pt.
- [39
-
- <./plots/backup/n3fit1.png>]
-<plots/backup/n3fit2.png, id=350, 1163.34625pt x 549.05125pt>
-File: plots/backup/n3fit2.png Graphic file (type png)
-<use plots/backup/n3fit2.png>
-Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 1097.
-(pdftex.def)             Requested size: 298.75394pt x 140.999pt.
  [40
 
- <./plots/backup/n3fit2.png>] [41
+]
+File: plots/backup/n3fit1.png Graphic file (type png)
+<use plots/backup/n3fit1.png>
+Package pdftex.def Info: plots/backup/n3fit1.png  used on input line 1122.
+(pdftex.def)             Requested size: 256.0748pt x 128.03386pt.
+ [41
+
+]
+File: plots/backup/n3fit2.png Graphic file (type png)
+<use plots/backup/n3fit2.png>
+Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 1141.
+(pdftex.def)             Requested size: 298.75394pt x 140.999pt.
+ [42
+
+] [43
 
 ]
 \tf@nav=\write6
@@ -1289,45 +1304,49 @@ Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 1097.
 \tf@snm=\write8
 \openout8 = `Jesus_Urtasun_phd.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1107.
- (./Jesus_Urtasun_phd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1151.
+
+(./Jesus_Urtasun_phd.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1151.
 
 Package rerunfilecheck Info: File `Jesus_Urtasun_phd.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17432 strings out of 492982
- 333682 string characters out of 6134896
+ 17440 strings out of 492982
+ 333752 string characters out of 6134896
  400651 words of memory out of 5000000
- 20458 multiletter control sequences out of 15000+600000
+ 20462 multiletter control sequences out of 15000+600000
  19772 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,57p,813b,845s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Jesus_Urtasun_phd.pdf (41 pages, 2035097 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb>
+Output written on Jesus_Urtasun_phd.pdf (43 pages, 2059957 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 83 named destinations out of 1000 (max. 500000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
