@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  20 FEB 2022 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  24 FEB 2022 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,10 +1082,10 @@ Overfull \hbox (16.6847pt too wide) in paragraph at lines 709--709
 File: plots/part3/chapter6/nlo-res-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-res-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-res-1.png  used on input line
- 808.
+ 800.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 808--808
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 800--800
  [] 
  []
 
@@ -1093,10 +1093,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 808--808
 File: plots/part3/chapter6/nlo-res-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-res-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-res-fid-1.png  used on input 
-line 808.
+line 800.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 808--808
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 800--800
  [] 
  []
 
@@ -1108,10 +1108,10 @@ ng>]
 File: plots/part3/chapter6/nnlo-res-1.png Graphic file (type png)
 <use plots/part3/chapter6/nnlo-res-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nnlo-res-1.png  used on input lin
-e 839.
+e 831.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 839--839
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 831--831
  [] 
  []
 
@@ -1119,10 +1119,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 839--839
 File: plots/part3/chapter6/nnlo-res-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nnlo-res-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nnlo-res-fid-1.png  used on input
- line 839.
+ line 831.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 839--839
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 831--831
  [] 
  []
 
@@ -1134,10 +1134,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 839--839
 File: plots/part3/chapter6/nlo-ct-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-ct-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-ct-1.png  used on input line 
-870.
+862.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 870--870
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 862--862
  [] 
  []
 
@@ -1145,10 +1145,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 870--870
 File: plots/part3/chapter6/nlo-ct-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-ct-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-ct-fid-1.png  used on input l
-ine 870.
+ine 862.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 870--870
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 862--862
  [] 
  []
 
@@ -1160,10 +1160,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 870--870
 File: plots/part3/chapter6/nnlo-ct-1.png Graphic file (type png)
 <use plots/part3/chapter6/nnlo-ct-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nnlo-ct-1.png  used on input line
- 901.
+ 893.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 901--901
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 893--893
  [] 
  []
 
@@ -1171,10 +1171,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 901--901
 File: plots/part3/chapter6/nnlo-ct-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nnlo-ct-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nnlo-ct-fid-1.png  used on input 
-line 901.
+line 893.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 901--901
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 893--893
  [] 
  []
 
@@ -1186,10 +1186,10 @@ ng>]
 File: plots/part3/chapter6/nlo-fo-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-fo-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-fo-1.png  used on input line 
-932.
+924.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 932--932
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 924--924
  [] 
  []
 
@@ -1197,10 +1197,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 932--932
 File: plots/part3/chapter6/nlo-fo-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nlo-fo-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nlo-fo-fid-1.png  used on input l
-ine 932.
+ine 924.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 932--932
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 924--924
  [] 
  []
 
@@ -1212,10 +1212,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 932--932
 File: plots/part3/chapter6/nnlo-fo-1.png Graphic file (type png)
 <use plots/part3/chapter6/nnlo-fo-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nnlo-fo-1.png  used on input line
- 963.
+ 955.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 963--963
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 955--955
  [] 
  []
 
@@ -1223,10 +1223,10 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 963--963
 File: plots/part3/chapter6/nnlo-fo-fid-1.png Graphic file (type png)
 <use plots/part3/chapter6/nnlo-fo-fid-1.png>
 Package pdftex.def Info: plots/part3/chapter6/nnlo-fo-fid-1.png  used on input 
-line 963.
+line 955.
 (pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (28.02164pt too wide) in paragraph at lines 963--963
+Overfull \hbox (28.02164pt too wide) in paragraph at lines 955--955
  [] 
  []
 
@@ -1235,66 +1235,86 @@ Overfull \hbox (28.02164pt too wide) in paragraph at lines 963--963
  <./plots/part3/chapter6/nnlo-fo-1.png> <./plots/part3/chapter6/nnlo-fo-fid-1.p
 ng>] [35
 
+] [36
+
 ]
-<plots/part3/chapter7/hturbo_n3ll.png, id=324, 462.528pt x 346.896pt>
+<plots/part3/chapter7/hturbo_n3ll.png, id=330, 462.528pt x 346.896pt>
 File: plots/part3/chapter7/hturbo_n3ll.png Graphic file (type png)
 <use plots/part3/chapter7/hturbo_n3ll.png>
 Package pdftex.def Info: plots/part3/chapter7/hturbo_n3ll.png  used on input li
-ne 1027.
+ne 1040.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<plots/part3/chapter7/hturbo_n3ll_cuts.png, id=325, 462.528pt x 346.896pt>
+<plots/part3/chapter7/hturbo_n3ll_cuts.png, id=331, 462.528pt x 346.896pt>
 File: plots/part3/chapter7/hturbo_n3ll_cuts.png Graphic file (type png)
 <use plots/part3/chapter7/hturbo_n3ll_cuts.png>
 Package pdftex.def Info: plots/part3/chapter7/hturbo_n3ll_cuts.png  used on inp
-ut line 1027.
+ut line 1040.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [36
+ [37
 
  <./plots/part3/chapter7/hturbo_n3ll.png> <./plots/part3/chapter7/hturbo_n3ll_c
 uts.png>]
-Overfull \vbox (30.75146pt too high) detected at line 1056
+Overfull \vbox (30.75146pt too high) detected at line 1069
  []
 
-[37
+[38
 
 ]
-<plots/final/thinking.png, id=341, 287.0725pt x 420.57124pt>
+<plots/final/thinking.png, id=347, 287.0725pt x 420.57124pt>
 File: plots/final/thinking.png Graphic file (type png)
 <use plots/final/thinking.png>
-Package pdftex.def Info: plots/final/thinking.png  used on input line 1069.
+Package pdftex.def Info: plots/final/thinking.png  used on input line 1082.
 (pdftex.def)             Requested size: 56.9055pt x 83.36833pt.
- [38
+ [39
 
- <./plots/final/thinking.png>] [39
+ <./plots/final/thinking.png>] [40
 
 ]
 File: plots/backup/TF.png Graphic file (type png)
 <use plots/backup/TF.png>
-Package pdftex.def Info: plots/backup/TF.png  used on input line 1102.
+Package pdftex.def Info: plots/backup/TF.png  used on input line 1115.
 (pdftex.def)             Requested size: 54.7685pt x 58.55136pt.
 File: plots/backup/Keras.png Graphic file (type png)
 <use plots/backup/Keras.png>
-Package pdftex.def Info: plots/backup/Keras.png  used on input line 1102.
+Package pdftex.def Info: plots/backup/Keras.png  used on input line 1115.
 (pdftex.def)             Requested size: 85.57382pt x 24.81628pt.
- [40
+ [41
 
 ]
 File: plots/backup/n3fit1.png Graphic file (type png)
 <use plots/backup/n3fit1.png>
-Package pdftex.def Info: plots/backup/n3fit1.png  used on input line 1122.
+Package pdftex.def Info: plots/backup/n3fit1.png  used on input line 1135.
 (pdftex.def)             Requested size: 256.0748pt x 128.03386pt.
- [41
+ [42
 
 ]
 File: plots/backup/n3fit2.png Graphic file (type png)
 <use plots/backup/n3fit2.png>
-Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 1141.
+Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 1154.
 (pdftex.def)             Requested size: 298.75394pt x 140.999pt.
- [42
+ [43
 
-] [43
+] [44
+
+] [45
 
 ]
+<plots/part3/chapter6/hturbo_sv_a.png, id=392, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/hturbo_sv_a.png Graphic file (type png)
+<use plots/part3/chapter6/hturbo_sv_a.png>
+Package pdftex.def Info: plots/part3/chapter6/hturbo_sv_a.png  used on input li
+ne 1241.
+(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+<plots/part3/chapter6/hturbo_sv_b.png, id=393, 462.528pt x 346.896pt>
+File: plots/part3/chapter6/hturbo_sv_b.png Graphic file (type png)
+<use plots/part3/chapter6/hturbo_sv_b.png>
+Package pdftex.def Info: plots/part3/chapter6/hturbo_sv_b.png  used on input li
+ne 1241.
+(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+ [46
+
+ <./plots/part3/chapter6/hturbo_sv_a.png> <./plots/part3/chapter6/hturbo_sv_b.p
+ng>]
 \tf@nav=\write6
 \openout6 = `Jesus_Urtasun_phd.nav'.
 
@@ -1304,21 +1324,21 @@ Package pdftex.def Info: plots/backup/n3fit2.png  used on input line 1141.
 \tf@snm=\write8
 \openout8 = `Jesus_Urtasun_phd.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1151.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1151.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1243.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1243.
 
 (./Jesus_Urtasun_phd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1243.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1243.
 
 Package rerunfilecheck Info: File `Jesus_Urtasun_phd.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17440 strings out of 492982
- 333752 string characters out of 6134896
+ 17461 strings out of 492982
+ 334195 string characters out of 6134896
  400651 words of memory out of 5000000
- 20462 multiletter control sequences out of 15000+600000
+ 20475 multiletter control sequences out of 15000+600000
  19772 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,57p,813b,845s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1343,10 +1363,10 @@ s/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb>
-Output written on Jesus_Urtasun_phd.pdf (43 pages, 2059957 bytes).
+Output written on Jesus_Urtasun_phd.pdf (46 pages, 2124170 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -760,19 +760,11 @@
 	
 	\vspace{0.5cm}
 	
-	Comparison \textbf{HRes} and \textbf{HTurbo} - speed performance \\
-	
-	\center
-	\begin{tabular}{ | c | c | c | }
-		\hline
-		Predictions & \textbf{HRes} & \textbf{HTurbo} \\ 
-		\hline
-		resummed NNLL & 10h & 10' \\
-		\hline
-		combined NNLO+NNLL & 48h & 2h \\
-		\hline
-	\end{tabular}
-
+	Benchmark comparison with \textbf{HRes, HNNLO} - numerical and speed performance \\
+	\begin{itemize}
+		\item {\color{blue}"Higgs boson production at the LHC:
+			fast and precise predictions in QCD at higher orders", Urtasun-Elizari et al., https://arxiv.org/abs/2202.10343}
+	\end{itemize}
 	
 \end{frame}
 
@@ -962,6 +954,27 @@
 
 \end{frame}
 
+% Results - Speed performance
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{Speed performance}
+	
+	\footnotesize
+	Test time performance in machine with 3.50 GHz Intel Xeon CPUs:
+	
+	\vspace{0.5 cm}
+	
+	\begin{itemize}
+		\item HRes NLL resummed $\rightarrow$ 0.5h with with 1\% uncertainty
+		\item HTurbo NLL resummed (without multi-threading) $\rightarrow$ 20s with 0.001\% uncertainty
+		\item HRes NNLL resummed $\rightarrow$ 48h with 1\% uncertainty
+		\item HTurbo NNLL resummed (without multi-threading) $\rightarrow$ 5' with 0.01\% uncertainty
+		\item Improvement of {\color{blue}two orders of magnitude in the time performance}
+		\item Improvement of {\color{blue}three orders of magnitude in numerical precision}
+	\end{itemize}
+
+\end{frame}
 
 % Results - N3LL implementation
 \begin{frame}
@@ -1021,7 +1034,7 @@
 		\item Implementation of N$^{3}$LL factors following \\
 		{\color{blue}[Li - Zhu, 1604.01404]}, 
 		{\color{blue}[Von Manteuffel et al., 2002.04617]}
-		\item First implementation of resummation at N$^{3}$LL accuracy!
+		\item First implementation of resummed Higgs cross section at N$^{3}$LL accuracy!
 	\end{itemize}
 
 \end{frame}
@@ -1101,7 +1114,7 @@
 
 \end{frame}
 
-% Back up
+% Back up - TF operator
 \begin{frame}
 	
 	\frametitle{Back up}
@@ -1121,7 +1134,7 @@
 
 \end{frame}
 
-% Back up
+% Back up - TF operator
 \begin{frame}
 
 	\frametitle{Back up}
@@ -1140,12 +1153,91 @@
 
 \end{frame}
 
-% Back up
+% Back up - benchmark DIS
 \begin{frame}
+
+	\footnotesize
 	
 	\frametitle{Back up}
-	\framesubtitle{Back up}
+	\framesubtitle{Benchmark DIS}
+	
+	{\Large DIS only:}
+	\begin{table}
+		\centering
+		\begin{tabular}{c c c c}
+			& TensorFlow & Custom & Ratio \\ \hline
+			& 1.9207904 & 1.9207904 & {\color{darkgreen} 1.0000000} \\
+			Convolution & 2.4611666 & 2.4611664 & {\color{darkgreen} 0.9999999} \\
+			& 1.3516952 & 1.3516952 & {\color{darkgreen} 1.0000000} \\
+			\hline
+			& 1.8794115 & 1.8794115 & {\color{darkgreen} 1.0000000} \\
+			Gradient & 1.505316 & 1.505316 & {\color{darkgreen} 1.0000000} \\
+			& 2.866085 & 2.866085 & {\color{darkgreen} 1.0000000} \\
+			\hline
+		\end{tabular}
+	\end{table}
 
+\end{frame}
+
+% Back up - benchmark hadronic
+\begin{frame}
+	
+	\footnotesize
+	
+	\frametitle{Back up}
+	\framesubtitle{Benchmark hadronic}
+	
+	{\Large DY-like only:}
+	\begin{table}
+	\centering
+	\begin{tabular}{c c c c}
+		& TensorFlow & Custom & Ratio \\ \hline
+		& 8.142365 & 8.142366 & {\color{darkgreen} 1.0000001} \\
+		Convolution & 8.947762 & 8.947762 & {\color{darkgreen} 1.0000000} \\
+		& 7.4513326 & 7.4513316 & {\color{darkgreen} 0.9999999} \\
+		\hline
+		& 18.525095 & 18.525095 & {\color{darkgreen} 1.0000000} \\
+		Gradient & 19.182995 & 19.182993 & {\color{darkgreen} 0.9999999} \\
+		& 19.551006 & 19.551004 & {\color{darkgreen} 0.9999999} \\
+		\hline
+	\end{tabular}
+	\end{table}
+
+\end{frame}
+
+% Back up - scale variations
+\begin{frame}
+	
+	\frametitle{Results}
+	\framesubtitle{N$^{3}$LL implementation}
+	
+	\footnotesize
+	
+	\begin{columns}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6cm]{plots/part3/chapter6/hturbo_sv_a.png}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width = 6cm]{plots/part3/chapter6/hturbo_sv_b.png}
+		\end{figure}
+		
+	\end{columns}
+	
+	Estimate theory uncertainty:
+	
+	\vspace{0.5 cm}
+	
+	\begin{itemize}
+		\item i) by performing scale variations on $\mu_{R}$, $\mu_{F}$
+		\item ii) by comparing the last two contributions in the perturbative expansion
+	\end{itemize}
+	
 \end{frame}
 
 \end{document}
