@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.10)  24 SEP 2019 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.1)  12 FEB 2022 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1221,7 +1221,7 @@ Package rerunfilecheck Info: File `Jesus_Urtasun_N3PDF.out' has not changed.
 Here is how much of TeX's memory you used:
  23635 strings out of 492982
  500032 string characters out of 6134896
- 611831 words of memory out of 5000000
+ 611830 words of memory out of 5000000
  26598 multiletter control sequences out of 15000+600000
  17378 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1239,7 +1239,7 @@ sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 >
-Output written on Jesus_Urtasun_N3PDF.pdf (20 pages, 1928937 bytes).
+Output written on Jesus_Urtasun_N3PDF.pdf (20 pages, 1928925 bytes).
 PDF statistics:
  236 PDF objects out of 1000 (max. 8388607)
  166 compressed objects within 2 object streams

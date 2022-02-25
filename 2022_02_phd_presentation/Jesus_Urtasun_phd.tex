@@ -386,14 +386,35 @@
 	\footnotesize
 	
 	\begin{figure}
-	\includegraphics[width = 10.5 cm]{plots/backup/n3fit2.png}
+		\includegraphics[width = 10.5 cm]{plots/backup/n3fit2.png}
 	\end{figure}
 	
 	\begin{enumerate}
-	\item TF relies in symbolic computation $\longrightarrow$ High memory usage
-	\item Implement \texttt{C++} operator replacing the convolution
-	\item {\color{blue}[Urtasun-Elizari et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}
-\end{enumerate}
+		\item TF relies in symbolic computation $\longrightarrow$ High memory usage
+		\item Implement \texttt{C++} operator replacing the convolution
+		\item {\color{blue}[Urtasun-Elizari et al.]} ref. at {\color{blue} \href{https://arxiv.org/abs/1910.07049}{1910.07049}}
+	\end{enumerate}
+
+\end{frame}
+
+% The N3PDF project
+\begin{frame}
+
+	\frametitle{QCD and collider physics}
+	\framesubtitle{Operator implementation in TF}
+	
+	\footnotesize
+	
+	\begin{enumerate}
+		\item Build {\color{blue}.cc} files computing the convolution and the gradient.
+		\item Compile them to build {\color{darkgreen}.so} libraries. \\
+		{\color{orange}g++ -std=c++11 -shared My$\_$Convolution$\_$.cc -o My$\_$Convolution$\_$.so $\$$TF$\_$FLAGS}
+		\item Load libraries in DIS/DY layers of {\color{violet} n3fit} with {\color{orange} load$\_$op$\_$library()} function of TF
+	\end{enumerate}
+
+	\begin{figure}
+			\includegraphics[width = 10.5 cm]{plots/backup/n3fit3.png}
+	\end{figure}
 
 \end{frame}
 
@@ -763,7 +784,7 @@
 	Benchmark comparison with \textbf{HRes, HNNLO} - numerical and speed performance \\
 	\begin{itemize}
 		\item {\color{blue}"Higgs boson production at the LHC:
-			fast and precise predictions in QCD at higher orders", Urtasun-Elizari et al., https://arxiv.org/abs/2202.10343}
+			fast and precise predictions \\ in QCD at higher orders", Urtasun-Elizari et al.,\\ https://arxiv.org/abs/2202.10343, submitted to EPJC}
 	\end{itemize}
 	
 \end{frame}
@@ -794,7 +815,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ TeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -825,7 +846,7 @@
 	
 	\begin{itemize}
 	\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-	\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+	\item CM energy $\sqrt s = 13$ TeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -856,7 +877,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ TeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -887,7 +908,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ TeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -918,7 +939,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ TeV and PDF set \texttt{NNPDF31\_nlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -949,7 +970,7 @@
 	
 	\begin{itemize}
 		\item Cross section for fully inclusive (LHS) and fiducial (RHS) phase space {\color{darkgreen}$\checkmark$} 
-		\item CM energy $\sqrt s = 13$ GeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
+		\item CM energy $\sqrt s = 13$ TeV and PDF set \texttt{NNPDF31\_nnlo\_as\_0118 PDF} set
 	\end{itemize}
 
 \end{frame}
@@ -1071,10 +1092,12 @@
 % Conclusions
 \begin{frame}
 
+	\footnotesize
+	
 	\center {\color{blue}Thank you!}
 
 	\begin{figure}
-		\includegraphics[width = 2 cm]{plots/final/thinking.png}
+		\includegraphics[width = 3.5 cm]{plots/final/physicist.png}
 	\end{figure}		
 
 	{\small \color{blue} \footnotesize This project has received funding from the European Union$'$s Horizon 2020 research and innovation program under grant agreement No 740006.}
