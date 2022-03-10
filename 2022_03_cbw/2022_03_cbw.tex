@@ -154,8 +154,10 @@
 		\begin{itemize}
 			\item Binomial distribution: probability of getting $k$ events in $n$ trials
 			\begin{equation}
-				B(x = k) = {n \choose x} p^{k}(1-p)^{n-k} \nonumber
+				B(x = k) = {n \choose k} p^{k}(1-p)^{n-k} \nonumber
 			\end{equation}
+			\item Getting $k$ heads in $n$ coins
+			\item Getting $k$ successes randomly filling a test
 		\end{itemize}
 		
 	\end{columns}
@@ -185,6 +187,9 @@
 			\begin{equation}
 				P(x = k) = \frac{\lambda^{k} \; e^{-\lambda}}{k!} \nonumber
 			\end{equation}
+			\item Counting $k$ new cancer patients per day
+			\item Counting $k$ car accidents per year
+			\item Counting $k$ reads from RNAseq exp
 		\end{itemize}
 		
 	\end{columns}
@@ -199,8 +204,8 @@
 
 	\footnotesize
 
-	Compute probability of measuring a particular height \\
-	Used when comparing means
+	Compute probability of measuring a particular height, weight (...) \\
+	Used in statistical analysis when (comparing means, errors, p-values, ...)
 
 \end{frame}
 
@@ -276,7 +281,7 @@
 		\begin{equation}
 		\textrm{SE} = \frac{\sigma}{\sqrt{N}} \nonumber
 		\end{equation}
-		\item Source of confusion: SE can be estimated from single set of measurements, even though it describes variation of means
+		\item Source of confusion: SE can be estimated from single set of measurements,\\ even though it describes variation of means
 	\end{itemize}
 
 \end{frame}
@@ -376,8 +381,18 @@
 		
 		\begin{enumerate}
 			\item Fit count data (non-linearly distributed)
-			\item Poisson regression (assume variance ~ mean)
+			\item Exponential regression (problem with negative values)
+			\begin{equation}
+				y(x) = e^{b_{0} + b_{1}x} = y_{0}e^{b_{1}x} \nonumber
+			\end{equation}
+			\item Poisson regression (assume variance $\sim$ mean)
+			\begin{equation}
+				y(x) = P(x) \nonumber
+			\end{equation}
 			\item Negative binomial
+			\begin{equation}
+				y(x) = NB(x) \nonumber
+			\end{equation}
 		\end{enumerate}
 		
 		\column{0.4\textwidth}
@@ -550,12 +565,18 @@
 		\column{0.6\textwidth}
 		
 		\begin{enumerate}
-			\item Do not just add samples until getting a good p-value $\rightarrow$ increases chance of reporting a false positive
+			\item Do not just add samples until getting a good p-value $\rightarrow$ increases chance of reporting a \\false positive
 			\item "Power": probability that a test will {\color{blue}correctly} give a small p-value
-			\item 4 factors affect power (effect size, variation in data, sample size, test used)
+			\item Factors that affect power
+			\begin{enumerate}
+				\item Effect size
+				\item Variation in data
+				\item Sample size
+				\item Test used
+			\end{enumerate}
 		\end{enumerate}
 		
-		\column{0.46\textwidth}
+		\column{0.4\textwidth}
 		
 		\begin{figure}[!htb]
 			\includegraphics[width = \linewidth]{plots/part3/hypothesis.png}
